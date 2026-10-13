@@ -1,0 +1,17 @@
+# Private working material and authentication
+private/
+.codex/
+.claude/
+.env
+.env.*
+!.env.example
+auth.json
+credentials*.json
+*.pem
+*.key
+.DS_Store
+
+# Internal records and unpublished presentation
+MEMORY.md
+AGENTS.md
+*.html
