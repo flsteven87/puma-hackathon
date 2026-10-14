@@ -393,6 +393,11 @@ line. The sections run in this order; the optional ones may be left out:
 Navigation labels use these section names exactly; an `h2` may phrase its section as a question.
 The footer records the evidence cutoff and the SHA-256 of the topic Markdown.
 
+Link behavior: links to other pages, research documents and sources open in a new tab with
+`target="_blank" rel="noopener"`; fragment-only links (`#section`) stay in the current page.
+Do not add link-opening instructions or notices to reports or README files (owner, 2026-10-14).
+GitHub-rendered Markdown keeps its native link behavior.
+
 Chinese line breaking: headings, the thesis, eyebrows, captions, summaries and table cells use
 `word-break: keep-all; overflow-wrap: anywhere` so they break at punctuation rather than inside a
 word (「沒｜人協調」); body prose keeps normal breaking, and `scripts/cjk_line_ends.py` keeps each
