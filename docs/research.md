@@ -393,6 +393,12 @@ line. The sections run in this order; the optional ones may be left out:
 Navigation labels use these section names exactly; an `h2` may phrase its section as a question.
 The footer records the evidence cutoff and the SHA-256 of the topic Markdown.
 
+Chinese line breaking: headings, the thesis, eyebrows, captions, summaries and table cells use
+`word-break: keep-all; overflow-wrap: anywhere` so they break at punctuation rather than inside a
+word (「沒｜人協調」); body prose keeps normal breaking, and `scripts/cjk_line_ends.py` keeps each
+eligible block's final four characters together as a best-effort orphan-line reduction; endings
+inside existing inline elements are left unchanged. Copy the rule from an existing report.
+
 ### Rules
 
 - **Naming.** Files are named `issue-N-<english-slug>`. Workflow IDs keep their track prefix
@@ -491,6 +497,7 @@ Run these steps in order. Each step ends with something written in the topic doc
 | --- | --- | --- |
 | Links and anchors | `python3 scripts/check_links.py` | Missing files, renamed headings, wrong relative depth |
 | HTML gate | `python3 ~/.agents/skills/html-report-system/scripts/validate_html_report.py --portable <page>` | Report-system structure and portability |
+| Chinese line endings | `python3 scripts/cjk_line_ends.py <pages>` (idempotent; run after any HTML text edit) | Paragraphs ending on a line of one or two characters; `text-wrap: pretty` does not prevent this for Chinese in Chrome |
 | Rendering | `uv run --with playwright python scripts/render_check.py <scratch-dir> <pages>` | Horizontal scroll at 1200 px and 390 px; then look at the screenshots |
 | Source hash | `shasum -a 256 <topic>.md` against the HTML footer | Stale mirror |
 
