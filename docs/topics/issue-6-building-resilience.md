@@ -4,7 +4,7 @@
 | --- | --- |
 | Official prompt | [Issue 6](https://puma.taipei/hackathon#issue-6) 「危老耐震如何查，風險評級怎麼找」 |
 | Template | [Topic document standard](../research.md#topic-document-standard) v1 |
-| Pain re-read | 2026-10-14 11:51 Taipei, live official page and public citizen-voice feed |
+| Pain recorded | 2026-10-14 11:51 Taipei, live official page and public citizen-voice feed |
 | Evidence cutoff | 2026-10-14 |
 | Workflows | Inspection allocation A; public-renewal review B; T06-A–C; T06-D route finder. Status: [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates) |
 | Reading mirror | [老屋韌性研究報告](issue-6-building-resilience.html) |

@@ -4,7 +4,7 @@
 | --- | --- |
 | Official prompt | [Issue 3](https://puma.taipei/hackathon#issue-3) 「鼠患四處跑，衛生安全怎麼辦」 |
 | Template | Legacy layout. Migrate to the [topic document standard](../research.md#topic-document-standard) at the next pain re-read |
-| Pain re-read | Pending under the 2026-10-14 owner rule; last organizer read 2026-10-13 |
+| Pain recorded | Pending under the 2026-10-14 owner rule; last organizer read 2026-10-13 |
 | Evidence cutoff | 2026-10-13 unless a section states otherwise |
 | Status | [Canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates) |
 | Reading mirror | None yet; summary in the [research overview](../research-report.html) |

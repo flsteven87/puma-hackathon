@@ -8,7 +8,7 @@ and names its next action. Delete these comments. -->
 | --- | --- |
 | Official prompt | [Issue N](https://puma.taipei/hackathon#issue-N) 「<verbatim title>」 |
 | Template | [Topic document standard](../research.md#topic-document-standard) v1 |
-| Pain re-read | <YYYY-MM-DD HH:MM> Taipei, live official page and citizen-voice source |
+| Pain recorded | <YYYY-MM-DD HH:MM> Taipei, live official page and citizen-voice source |
 | Evidence cutoff | <YYYY-MM-DD> |
 | Workflows | <IDs>. Status: [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates) |
 | Reading mirror | <議題>研究報告 at `issue-N-<slug>.html` (link it once it exists), or None yet |

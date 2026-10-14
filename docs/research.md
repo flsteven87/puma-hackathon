@@ -156,11 +156,16 @@ research to GPT-6.1-Sol, with bounded Luna assistance for source discovery. Sour
 to Twinkle or government APIs. This direction supersedes data-readiness-first research priority;
 it preserves research-only scope and the existing participation, payment and contact boundaries.
 
-**Owner decision — 2026-10-14:** the original pain is the core of every topic. Before any further
-work on a topic, re-read its official prompt verbatim on the live page and look for the citizen
-voices it was organized from. Record the verbatim pain sentence, retrieval time and what the
-citizens themselves describe, separately from the policy team's suggested solution. A suggested
-model, map or ranking is a direction to test against that pain, not the problem definition.
+**Owner decision — 2026-10-14:** the original pain is the core of every topic. When a topic starts,
+read its official prompt verbatim on the live page once and look for the citizen voices it was
+organized from. Record the verbatim pain sentence, retrieval time and what the citizens themselves
+describe in the topic document, separately from the policy team's suggested solution. Every later
+step works from that recorded pain, not from a paraphrase. A suggested model, map or ranking is a
+direction to test against that pain, not the problem definition.
+
+**Owner decision — 2026-10-14 (later):** re-reading the live page before every piece of work is
+excessive. Re-check it only before relying on event facts that change (deadlines, rules, data
+terms) for an action, or when there is a reason to think the prompt changed.
 
 ### Decision-first sequence
 
@@ -345,7 +350,7 @@ The order and numbered headings are fixed. A section without work yet says `Not 
 and names its next action.
 
 0. **Title and status table.** `# Issue N — <English name>`, then a table with these fields: the
-   official prompt link and verbatim title, the template version, the pain re-read time, the
+   official prompt link and verbatim title, the template version, the pain recorded time, the
    evidence cutoff, the workflows with a link to the canonical readiness record, the reading
    mirror and the open owner decisions.
 1. **`## 1. Official prompt and citizen pain`.** The verbatim pain sentence and its retrieval
@@ -392,14 +397,14 @@ The footer records the evidence cutoff and the SHA-256 of the topic Markdown.
 
 - **Naming.** Files are named `issue-N-<english-slug>`. Workflow IDs keep their track prefix
   (T06-A), and candidates C01–C08 keep their identities.
-- **Start from the source.** Every topic begins from the live official prompt and its citizen
+- **Start from the source.** Every topic begins from its recorded official prompt and citizen
   voices (owner rule above). Quote organizer text verbatim only for the prompt; paraphrase
   citizen voices.
 - **One place per fact.** Link instead of duplicating.
 - **Keep sensitive material out of Git.** This covers raw downloads, names, addresses and
   restricted data.
 - **Migrate legacy documents with new research.** A legacy topic document keeps its earlier
-  layout and says so in its status table. Migrate it at its next pain re-read; do not reformat it
+  layout and says so in its status table. Migrate it when its pain is first recorded; do not reformat it
   without new research.
 - **Update in order.** When a topic's conclusions change materially, update its Markdown first,
   then its HTML mirror, then its row in the master topic index.
@@ -413,10 +418,11 @@ way. Each lesson cites the issue-6 observation that produced it.
 
 Run these steps in order. Each step ends with something written in the topic document.
 
-1. **Re-read the source.** Run `python3 scripts/official_prompt.py N --rules`. Quote the issue's
-   pain sentence verbatim with the printed retrieval time, and check the rules for changed
-   deadlines or data terms. Compare extracted text, not page hashes: the markup changed between
-   two reads on 2026-10-14 while the text did not.
+1. **Record the source once.** Run `python3 scripts/official_prompt.py N --rules`. Quote the
+   issue's pain sentence verbatim with the printed retrieval time in §1; later work starts from
+   that record. Re-run it only before relying on deadlines or data terms for an action. Compare
+   extracted text, not page hashes: the markup changed between two reads on 2026-10-14 while the
+   text did not.
 2. **Find the citizen voices.** The prompts were organized from the campaign's citizen stage (see
    [Official pain points](#official-pain-points-and-decision-fit)). Read what the public pages
    show, paraphrase, and state the sample limits. Do not collect the feed systematically, and
@@ -449,9 +455,10 @@ Run these steps in order. Each step ends with something written in the topic doc
 
 ### Method lessons
 
-- **Re-read before relying on anything.** Event facts move: registration was brought forward
-  from 18 October to 14 October 14:00. A paraphrase in this repository drifted from the source
-  and framed issue 6 around the wrong problem.
+- **Anchor on the recorded pain; re-check facts that move.** A paraphrase in this repository
+  drifted from the source and framed issue 6 around the wrong problem, so work from the verbatim
+  record. Event facts do move (registration was brought forward from 18 October to 14 October
+  14:00), so re-check the live page before acting on a deadline or rule.
 - **No public data is a starting point, not a stop.** Look for the original agency document, a
   request route or a collectable observation. If a route needs external contact, name it and wait
   for owner confirmation.
@@ -475,8 +482,8 @@ Run these steps in order. Each step ends with something written in the topic doc
   exactly; headings may be questions.
 - **Stamp each mirror with its source.** The footer carries the source Markdown's SHA-256.
   Recompute it after any Markdown edit made after the HTML build.
-- **Migrate legacy topics with new research.** Reformat a legacy topic only when it is next
-  re-read.
+- **Migrate legacy topics with new research.** Reformat a legacy topic only when its pain is
+  first recorded.
 
 ### Checks and tooling
 
@@ -506,7 +513,7 @@ The canonical readiness record and next-investigation queue own status and conse
 
 ## Topic index
 
-| Issue | Official prompt | Topic document | Template | Pain re-read | Reading mirror |
+| Issue | Official prompt | Topic document | Template | Pain recorded | Reading mirror |
 | --- | --- | --- | --- | --- | --- |
 | 1 | 把三千棵樹種回來 | [Trees and shade equity](topics/issue-1-trees.md) (T01) | Legacy | Pending | — |
 | 2 | 找回消失的垃圾桶 | [Public bins](topics/issue-2-bins.md) (T02, C07) | Legacy | Pending | — |
