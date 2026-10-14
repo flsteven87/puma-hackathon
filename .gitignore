@@ -14,4 +14,3 @@ credentials*.json
 # Internal records and unpublished presentation
 MEMORY.md
 AGENTS.md
-*.html
