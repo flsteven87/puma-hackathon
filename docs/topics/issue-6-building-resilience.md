@@ -5,12 +5,12 @@
 | Official prompt | [Issue 6](https://puma.taipei/hackathon#issue-6) 「危老耐震如何查，風險評級怎麼找」 |
 | Template | [Topic document standard](../research.md#topic-document-standard) v1 |
 | Pain recorded | 2026-10-14 11:51 Taipei, live official page and public citizen-voice feed |
-| Evidence cutoff | 2026-10-14 |
-| Workflows | Inspection allocation A; public-renewal review B; T06-A–C; T06-D route finder. Status: [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates) |
+| Evidence cutoff | 2026-10-15 |
+| Workflows | Current question: whether evidence improves one municipal investigation-selection decision (§4). A real, aggregate permit/organisation reconciliation now tests a preparatory step; no selection gain is established. Initial-assessment eligibility and post-assessment tracking remain separate fictional references. Public-renewal review B is deferred. Status: [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates) |
 | Reading mirror | [老屋韌性研究報告](issue-6-building-resilience.html) |
-| Open owner decisions | Information requests to agencies need confirmation; public reading continues by default |
+| Open owner decisions | Research and a bounded real-data explanation are authorised; production implementation and final entry selection are not. A historical practitioner comparison is deferred beyond hackathon delivery. No dashboard is presumed; external requests and publication require confirmation |
 
-Research-only findings, retrieved 2026-10-13; No application, contact, registration, account, payment, API inference, or canonical-file edit. **Evidence** below means inspected original material; **Inference** is this analysis; **Hypothesis** identifies untested practitioner value. Topic selection remains an **Owner decision**.
+Research-only findings, evidence retrieved 2026-10-13 through 2026-10-15. Local fictional-data prototypes are documented in §4. No production application, external contact, payment or case-data request was performed. **Evidence** means inspected original material; **Inference** is analysis; **Hypothesis** identifies untested practitioner value. Product selection remains an **Owner decision**.
 
 Scope: private residential communities in Taipei; mandatory nonresidential inspections and public-school retrofit programs are separate workflows and are not assessed here.
 
@@ -18,12 +18,15 @@ Method, event facts and cross-topic comparison live in the [research master](../
 
 ## 1. Official prompt and citizen pain
 
-**Evidence — official prompt, verbatim:** issue 6 is titled 「危老耐震如何查，風險評級怎麼找」 with
-tags 居住安全, 加權模型, 都更. Its pain sentence is the 「人老＋屋老」 double-aging dilemma. The
-50-year-plus share of the housing stock is projected at over 20% in 2025, over 50% in 2035 and over
-65% in 2045, so most homes predate the post-921 seismic code. The weighted rating model for
-health-check and public-renewal priority is posed as the question 「我們要如何…？」, not as the
-pain. Projections remain organizer assertions.
+**Evidence — official prompt, verbatim, re-read 2026-10-14 13:59 Taipei:**
+
+> 台北面臨「人老＋屋老」的雙老困境。50 年以上老屋在 2025 年突破 20%，2035 年將破 50%，2045 年超過 65%，代表多數房屋是在 921 地震修正耐震法規之前興建。我們要如何整合屋齡、建築結構、高齡人口、土壤液化潛勢與狹小巷弄消防搶救困難圖資，建立「危老耐震風險加權評級模型」，讓市府科學化排出老屋健檢與公辦都更的優先順序？
+
+**Interpretation:** residents are the affected population; the city is the explicitly named
+decision user; inspection and public-renewal priorities are the requested decisions. A weighted
+model is the proposed method, whose usefulness must be tested against existing practice.
+The age forecasts remain organizer assertions. The working research scope is municipal
+decisions A/B, not a selected product or an assumption that existing officials lack a method.
 
 **Evidence — citizen voices observed, 2026-10-14 public feed sample (paraphrased):** of 76 visible
 recent voices, two concern old buildings. One, under 市政, comes from a Shilin owner of a
@@ -34,12 +37,11 @@ city to coordinate old-housing renewal as a project manager that tracks progress
 two-word voice simply asks for 老宅都更. **Limitations:** a four-per-topic rolling sample; the
 statutory consent rule and the households' situations are unverified here.
 
-**Inference:** the citizen-side pain observed so far is consent and coordination after a building
-is known to be old or unsafe. It is not "which building to inspect first". This matches the
-downstream bottleneck evidence below (P05, X24) and the willingness thresholds (P20–P23). A
-ranking of whom to inspect first addresses the policy team's suggested direction, not these
-voices. Keep hypothesis A as the answer to that direction and to the EY rubric demand (P30). Open
-a pain-first track for owners blocked by non-resident co-owners and missing coordination.
+**Inference, bounded to this sample:** these voices raise consent and coordination concerns.
+They do not establish their prevalence, prove that either building had a professional assessment,
+or rule out a municipal inspection-allocation problem. Use them to test whether resource
+decisions connect to an executable next action; do not replace the official municipal objective
+with a resident tool on this evidence alone. T06-D remains a secondary, unvalidated hypothesis.
 
 **Next check:** a larger set of old-building voices should come from the organizer's de-identified
 event copy, now that the owner has registered. Do not collect the public feed systematically:
@@ -57,7 +59,7 @@ below works backward from the voices already observed.
 | No one coordinates or follows up (voice, Neihu) | City: where public coordination or promoter support should go | Filings by stage, age of each filing, stalled cases, household count | Promoter register snapshots over time; CMO statistics; organizer event voices |
 | Elderly residents in walk-ups (official sentence) | Committee: lift or reconstruction; city: lift-subsidy outreach | Storeys, lift presence, units, residents' age, consent status | Pre-2003 no-management list; 3D model storeys; village age data (context only) |
 | Owners cannot tell whether the building is safe (issue title) | Owner: apply for an initial assessment | Eligibility, subsidy, institutions | Existing CMO pack and promoters (strong baseline) |
-| City needs a priority order (policy direction; EY rubric demand) | City: inspection and outreach sequence | See hypothesis A | See hypothesis A |
+| City needs inspection/public-renewal priorities (explicit official objective) | City: inspection allocation and public-renewal review, kept separate | See hypothesis A | See hypothesis A |
 
 ### Evidence behind the pain tree
 
@@ -91,6 +93,38 @@ unverified at its original source, the elevator subsidy count.
 | Adding a lift (permit) | Majority of co-owners and of shares; shares alone if above 2/3 | CMO elevator FAQ A-21 |
 | Adding a lift (Taipei subsidy) | All owners in principle, or an owners'-meeting resolution plus undertakings | CMO elevator FAQ A-21 |
 
+**Evidence — unreachable or legally restricted owners, read 2026-10-15:** statutes re-read on the
+national law database (curl, HTMLParser); CMO 危老問答集合併版 (PDF created 2025-11-06, modified
+2025-11-17, 273 pp., SHA-256 `3a21746c1790b34f3a33071f66ee732c87fd4c74b816146acdd5effe21450bca`)
+parsed with `pdftotext -layout`; Taipei Land Administration dataset
+[臺北市未辦繼承登記土地建物列冊管理辦理標售](https://data.gov.tw/dataset/134972) (metadata
+2026-10-13; CSV SHA-256 `fc14f9b639166c4d3c0b53547fd5add6a43f1b073c2ab5e42d581e178c29b094`) parsed in full.
+
+| Owner situation | 危老 reconstruction (all owners, D0070249 §5) | Urban renewal consent count |
+| --- | --- | --- |
+| Heirs have not registered the inheritance | Must finish inheritance registration first, then all owners consent (FAQ E-31, 2019-07-30 MOI letter) | Counted by the share of consenting co-heirs (D0070008 §39) |
+| Unregistered over one year, listed by the land office | No exclusion found in the act | Excluded from the count (§24(3), applied by §37) |
+| Court-restricted: seizure, provisional attachment or disposition, bankruptcy | Not prohibited, but the FAQ advises removing the restriction first because the building permit must follow within 180 days (E-33) | Excluded (§24(4)) |
+| Estate administrator appointed | Depends on the court's appointment scope (E-32) | — |
+| Owner living abroad | Can authorise a relative with the consular-affairs form (E-28) | — |
+| Unregistered ancestral trust or deity association | No exclusion found in the act | Excluded (§24(5)–(6)) |
+
+Under 土地法 §73-1, an inheritance unregistered for a year is listed for 15 years before the
+National Property Administration auctions it. Taipei's dataset reports 2,607 buildings and 19,052
+land parcels under that listing at the latest year-end; new building listings rose from 206 (2021
+cohort) to 459 (2025 cohort). **Limitations:** citywide and not limited to old or reconstruction
+sites; the dataset counts building entries with partial shares; registered heirs who disagree,
+and inheritances under one year old, are not counted. Leads, unverified: press accounts from New
+Taipei and Beitou describe elderly owners unwilling to move and owners adding demands at
+re-signing; neither is a Taipei prevalence measure.
+
+**Inference:** in 危老, a single unreachable or legally stuck owner works as a veto, and the
+remedies are slow (heirs' cooperation, or 15 years to auction). Urban renewal removes most of
+these owners from the count, which is part of why the city's FAQ Q30 lets a building assessed
+below the minimum grade switch toward prompt designation. How many stalled Taipei 危老 cases
+involve such owners is unknown; neither the promoter register nor any agency report records why
+an integration failed.
+
 **Inference — the check is a legal lever, not only a safety check.** The issue title asks how to
 check (如何查). For an owner blocked by a dissenting co-owner, an assessment below the minimum
 grade can move the building from the unanimous 危老 route toward prompt designation, which needs
@@ -118,11 +152,11 @@ in the sequence:
 **Limitations:** this is a filing register, not completions. Its cumulative or active scope is
 not stated. Address matching is approximate, and filings carry no dates.
 
-**Inference:** the Neihu voice asks the city to act as project manager. That role is already
-outsourced to per-stage-paid promoters, mostly on small pre-1981 walk-ups. The observable gap is
-conversion: most addresses never move from an assessment filing to a plan filing. Whether
-promoter incentives, co-owner dissent or economics cause this is unknown. A further unknown is
-whether promoter affiliation affects trust.
+**Inference:** a promoter service already covers explanation and coordination. This snapshot
+contains many more initial-assessment filings than plan filings, but cannot measure progression,
+duration, abandonment or a cause of delay. The address match does not establish that an address
+never advanced. Comparing dated versions or cohorts is needed before describing a conversion
+bottleneck. Promoter incentives, dissent, economics and trust remain untested explanations.
 
 **Evidence — 人老 branch.** The official pain sentence is the double-aging of residents and buildings.
 Lift retrofits need only majority consent for the permit. The lack of a lift is also one of the
@@ -143,17 +177,314 @@ treat both as readable, not redistributable.
 
 ## 3. Current practice and baseline
 
+### Municipal allocation baseline — bounded refresh (2026-10-14)
+
+**Question and predeclared exits:** before designing a priority tool, identify one programme's
+owner, unit, capacity, eligibility, consent gate and actual selection evidence. Support further
+research if a published decision exposes an unresolved, action-relevant information gap. Reject
+another ranking if the existing process already answers the same task. If only rules and totals
+are available, record selection performance as unresolved; do not manufacture a deficient queue.
+
+**Evidence — M01, 2026 Taipei proactive initial assessment:** city announcement
+府都建字第11561076341號, 2026-04-17, gazette No. 71 p. 36 (PDF p. 37), names a planned 50 cases, not observed completion or remaining capacity.
+Eligibility is quick-screen F>60 or age ≥30, with ≥6 storeys and a management organization,
+or city recognition. CMO's use section receives applications. Attached rules points 5–6 specify
+eligibility, city solicitation, consent, then assignment to a qualified institution. The announcement
+does not show invitations, accepted/refused candidates, a backlog or an oversubscription rule.
+Point 14's discretionary ordering sits in the weak-storey subsidy provisions; it is not evidence
+of an inspection-queue ranking. The separate NT$13.5m weak-storey budget is not an assessment slot.
+
+**Evidence — M02, Taipei 2025 reported activity:** UDD 114年度主管決算, total explanation p. 31
+(PDF p. 35), reports 166 approvals for the 危老 structural-assessment subsidy; ordinary weak-storey
+design-fee applications numbered 4 and the 0403 scheme separately numbered 5. Design-fee
+applications are not completed retrofits. Proactive assessments appear as two lines of 50 cases /
+NT$0.8m, labelled retained and current budget; without case IDs or clarification do not sum them
+into 100 unique buildings, compare them as a cohort, or calculate conversion. This corrects the
+previous blanket statement that no Taipei annual counts were found. Multi-year results and
+assessment-grade distributions remain missing. The report's p. 2 attributes lower related grant
+receipts partly to application-dependent spending; this is an agency explanation, not a causal study.
+
+**Evidence — M03, historical implementation example:** CMO's 2016-11-03 announcement describes
+prioritizing the Chongqing and Heping road axes within high-liquefaction-potential areas and the
+27 rescue-road network for professional reconnaissance of ≥30-year buildings. It allows requests
+from tenants and applicants without majority consent. The stated 1,500 buildings is a year-end
+target, not observed completion. Reconnaissance is not statutory initial assessment. This shows
+an existing place-first outreach approach, not its current force or superior performance.
+
+**Evidence — M04, public-renewal selection:** the live city law system lists the 2020-04-09
+revision. Articles 4–7 define eligible areas, written suitability assessment and city selection;
+UDD reviews applications from other agencies, stating reasons if unnecessary or reporting to
+the city for selection. Article 5 requires ten report contents, including willingness,
+public-interest, relocation and finance; it does not specify ten weighted factors. These are
+project-level gates, not an all-city building risk ranking or evidence of review difficulty.
+
+**Evidence — M05, contrary evidence on weighting:** the 2018 citywide renewal-area designation
+plan pp. 7–9 explicitly uses weighted overlay scoring to identify potential/need areas before
+boundary adjustment. It is a different decision from selecting a public-renewal project or
+assessing structural safety. Reject the blanket claim that Taipei never uses weighted planning;
+purpose-specific criteria and validation remain necessary.
+
+**Evidence — M06/M07, bounded advancement case:** URO's 2023-12-29 account of 虎林街60巷 reports
+a 2023-07 application, 83.93% doorplate-household willingness for entry, technical financial and
+floor-exchange estimates, and 91.07% willingness before simulated allocation. A 2025-05-27
+follow-up reports city agreement to the Taipei housing/renewal centre as implementer and
+investor-procurement preparation. Neither is completed reconstruction or a comparison with
+rejected candidates. Doorplate-household intent is this programme's measure, not statutory
+owner/area consent. The live URO FAQ (updated 2025-10-28, reviewed 2026-09-11) confirms the
+staged 75/90/90 process. This is community-initiated 7599, not every public-led selection route;
+these percentages cannot be applied to A or the Shilin voice.
+
+**Inference:** the immediate A unit can be an eligible programme candidate, rather than every
+old building in Taipei. The new evidence establishes an announced programme scale and a documented
+process; it does not establish excess demand, wasted slots or missing software. A public-only
+all-city ranking remains unsupported. Resident consent, access and available professionals are
+separate execution gates, not safety weights. A candidate lacking evidence stays unresolved;
+missingness alone does not give it unlimited priority over every other unknown candidate.
+
+**Outcome of this desk check:** rules and planned programme scale are supported; selection quality and
+incremental tool value remain unresolved. No original case-level 2026 inspection selection
+record was located in the inspected announcement, annexes or 2025 accounts. The B case supports
+reconstructing a stage gate, not comparative priority, software benefit or the performance of
+city-initiated suitability review.
+
+### Assessment and retrofit activity — separate cohorts and unresolved bottlenecks
+
+**Owner decision — 2026-10-15:** continue deepening issue 6. Beyond the 2026-10-24 demonstration,
+the owner cares whether the work actually solves the problem. This research therefore judges each
+candidate by whether it moves a building toward lower risk, not only by whether it ranks buildings.
+
+**Question and predeclared exits (2026-10-15 checkpoint):** test the premise behind hypothesis A,
+that the 50 proactive slots are oversubscribed so that ordering matters. Supported if the agency
+reports more willing candidates than slots; refuted if slots go unfilled for lack of consenting
+candidates; unresolved if only filled totals exist. Then trace what follows an assessment.
+
+**Evidence — M08, the city solicits before it assigns:** CMO's annex 5 flow for the proactive
+programme (PDF created 2023-02-08) runs: contract the assessment institutions → the executing
+agency consults a management organisation or owners → consent → the agency assigns an institution
+→ the agency sends the report to the building. The 2022 UDD account (M09) adds that consent forms
+are collected until 50 are in hand before cases are dispatched. The agency conducts solicitation before assignment. The 2026-04-17 announcement also accepts citizen applications (rechecked in §4); this is not an agency-only intake route. A concerns a bounded investigation-selection decision; programme and operator still need confirmation.
+
+**Evidence — M09, UDD final accounts 2022–2025, 辦理情形 rows (reporting-period order):**
+
+| ROC year (AD) | Proactive initial assessment | Owner-initiated 危老 assessment subsidy | Weak-storey retrofit | Source page |
+| --- | --- | --- | --- | --- |
+| 111 (2022) | 50 planned; contract let, consents being collected, none completed; executed in 112 | 194 initial + 1 detailed | 4 applications, 2 at design, no works paid | 總說明 p. 33 / PDF p. 36 |
+| 112 (2023) | 50 completed (111 retained) and 50 completed (112 budget), NT$0.8m each | 82 approvals | 3 design-fee cases; 1 works completion paid (NT$4.5m) | 總說明 pp. 31–32 / PDF p. 35 |
+| 113 (2024) | 50 completed (113 retained) and 50 (labelled 114 budget) | 200 approvals | 3 design-fee cases | 總說明 p. 32 / PDF p. 36 |
+| 114 (2025) | Two lines of 50 completed (labelled 114 retained and 114 budget); see M02 | 166 approvals | 4 design-fee cases; 403 scheme 5 design-fee cases | 總說明 p. 31 / PDF p. 35 |
+
+The accounts' revenue notes repeat across 2023–2025 that the assessment and retrofit subsidies
+"須民眾主動申請" and fell short of budget; 2025 realised 48.98% of a NT$252m allocation. The 2025
+account (總說明 p. 5 / PDF p. 9) gives the agency's own explanation for low retrofit completion:
+an application needs only more than half of owners, but the subsidy is capped at 80% of works,
+households pay about 20%, works are generally expensive, and residents doubt what they will
+actually pay. By contrast, sea-sand demolition subsidies ran out of budget and carried cases to the
+next year (2023–2025 rows). **Limitations:** labels overlap across years, so do not sum the 50-case
+lines into unique buildings (M02 rule). No invitation, refusal, waitlist, candidate-pool or grade
+record appears. Design-fee applications are not completed retrofits.
+
+**Evidence — M10, UDD reports to the city council, 2026-04 and 2026-07:** of the 2024-04-03
+earthquake's 2,140 damage reports, 2 buildings received red and 26 yellow tags. By 2026-02-28 one
+red was demolished, one red and 18 yellows repaired, 3 were in weak-storey retrofit, and 8 central
+weak-storey applications were all in NCREE design review (2026-04 report, printed pp. 77–78 /
+PDF pp. 79–80). The city used prompt designation for tagged buildings: 41 areas, about 5.72 ha,
+lowering the filing threshold to 50% (same pages). The 575 dangerous-building project received 7
+applications and assisted 5 communities by 2026-05-31; one signed an investor (2026-07 report,
+PDF p. 76). Promoter filings reached 3,635 by 2026-05-31; three residents' signatures bring a
+resident architect, ten bring a community briefing (PDF p. 53). **Limitations:** agency-reported
+progress; no case list or independent check.
+
+**Inference — what the funnel shows:**
+1. The proactive programme's reported limit is its 50-case budget, and it fills every year.
+   The premise is half-supported: slots fill, but demand beyond 50 and refusals are unobserved.
+2. Scale: about 50 proactive and 80–200 owner-initiated assessments a year, against 201,642
+   buildings aged ≥30 years (I). A better order changes which 50 buildings get a free assessment.
+3. Downstream activity warrants investigation, not a measured cohort-conversion claim: single-digit retrofit design applications a year
+   in 2022–2025 and one paid works completion in 2023. The agency itself names household cost and
+   uncertainty about the actual burden. Risk falls only where an assessment leads to retrofit or
+   reconstruction; 危老 reconstruction (P29: 1,179 applications, 530 starts) is the larger exit and
+   depends on site economics.
+4. Who no channel reaches: the proactive rule needs ≥6 storeys and a management organisation, so
+   walk-ups and the 5,489 listed ≥6-storey buildings without one (pain tree) enter only by city
+   discretion. They overlap the 人老 stock the official prompt names.
+
+**Inference — each exit stalls at a different gate (route map; mirrored as a diagram in the HTML
+report's section 03):**
+
+| Exit after assessment | Consent gate | Observed volume | Where it stalls | Evidence type |
+| --- | --- | --- | --- | --- |
+| Weak-storey retrofit | More than half of owners to apply (agency, 2025 account) | 3–5 design applications a year; one paid works completion 2022–2025 | Household share, high cost, doubt about actual burden | Agency statement (M09) |
+| 危老 reconstruction | All owners (D0070249 §5); applications close 2027-05-31 | Taipei 1,179 applications, 1,047 approvals to 2025-11-30; 530 starts by end-2024 (P29) | Unanimity and site economics for the cases that do not proceed | Statute and one citizen voice; prevalence unknown |
+| Urban renewal | More than 1/2 after discretionary prompt designation; 3/4 or 4/5 otherwise (D0070008); 575 project >50% to apply, ≥75% to proceed | 575 project: 7 applications, 5 assisted, 1 investor signed by 2026-05-31 (M10) | Low intake; finance and investor procurement | Volume observed; cause unverified |
+
+Consent is therefore one gate among several, not the single blocker: retrofit needs only a
+majority yet stalls on money, while reconstruction's unanimity rule binds a subset whose size is
+unknown. Selection quality upstream is unverified rather than shown to be adequate.
+
+**Consequence:** an assessment-priority model alone cannot establish physical risk reduction.
+Selection quality and downstream implementation require separate validation; the observed counts
+do not identify the dominant bottleneck. Follow-up needs an executable referral or action, but a
+funded construction outcome is not a prerequisite for testing an upstream information improvement. Whether that doubt is magnitude
+(work costs too much) or uncertainty (the share is unknown until design) is unresolved; §7 owns it.
+
+### Household burden check — magnitude, uncertainty or access? (2026-10-15)
+
+**Question and predeclared exits (§7, 2026-10-15):** is the retrofit burden mainly magnitude or
+uncertainty? Supported (uncertainty) if public rules and cases yield a pre-design self-pay range
+narrow enough to change a meeting's decision; refuted if the share is knowable only after design
+or public cases cannot bound it.
+
+**Evidence — subsidy rules:** P02 point 8 (CMO-hosted MOI rule, effective 2022-10-17, PDF p. 3,
+SHA-256 `51b99be0ff2c5e0c0dc3e7e9ff98af92cca580170faa6450111de41d57dc1414`): plans A and B pay at
+most 45% of total retrofit cost, capped at NT$3m (plan A, layer under 500 m², rising NT$0.1m per
+50 m² to NT$4.5m) or NT$4.5m (plan B). The rate rises to 85%, cap NT$4.5m, when the initial danger
+score exceeds 45, a detailed assessment requires retrofit or rebuild, **or the executing agency
+recognises a potential seismic hazard**. The subsidy covers design, supervision, works and permit
+certification. The 403 scheme caps each building at NT$15m (≥6 storeys), NT$7.5m (<6) or NT$2m
+(detached), at 85% (M10). Plan annexes 6–7 (CMO, 2023-02-08) are engineering criteria and carry no
+cost figures. NCREE's programme pages state rules only; no case costs are published there.
+
+**Evidence — observed cases (originals read 2026-10-15):**
+
+| Case | Scale | Cost and subsidy | Household share | Source and limits |
+| --- | --- | --- | --- | --- |
+| New Taipei, Xinzhuang (first completion) | 5-storey apartment | Works NT$5.29m; 85% rate, NT$4.5m cap | NT$0.8m in total, under NT$0.1m each; PTS reports NT$80k each | [NTPC release 2024-01-22](https://www.ntpc.gov.tw/ch/home.jsp?id=e8ca970cde5c00e1&dataserno=d5b95e3934fe202cf8d8ded22dce0ca3); [PTS 2024-07-02](https://news.pts.org.tw/article/703006). Agency account; household count not stated |
+| Hualien, 華爾街 (red tag) | 12 storeys, 246 households | Works about NT$70m+ (county official) | Not stated; if one building at the NT$15m cap, about NT$224k each (inference) | [CTEE 2026-01-10](https://www.ctee.com.tw/news/20260110700569-431401). Building count, other aid and final cost unverified |
+| Hualien, 蓮花 (yellow tag) | 4 × 17 storeys, 128 households | Maximum NT$15m per building at 85% | Not stated | [Newtalk 2026-05-08](https://newtalk.tw/news/view/2026-05-08/1033993), citing MOI/NCREE |
+| New Taipei, U-shaped complex | Several buildings, plan A | 85% approved, NT$4.5m cap per building | — ; works cannot start | [Moneyweekly 2026-01-30](https://www.moneyweekly.com.tw/_Article?AID=209034). Attributed account; site unnamed |
+
+The New Taipei complex could not start because a few owners in a structurally critical building
+refused to take part; dropping it would leave the retrofit unbalanced. The account states no
+public power compels them; only owners' litigation can. In Hualien, the county attributes slower
+agreement partly to retrofit reducing some units' floor area. Taipei context: PTS quotes 14
+weak-storey approvals in Taipei in 2024, while the 2024 account (M09) pays design fees for 3; these
+are different stages.
+
+**Computed — self-pay for a 10-household walk-up under the rules (scenario, NT$10k):**
+
+| Total cost | R > 45 (85%, cap 450) | R 30–45, plan B (45%, cap 450) | R 30–45, plan A < 500 m² (45%, cap 300) |
+| --- | --- | --- | --- |
+| 300 | 4.5 each | 16.5 | 16.5 |
+| 530 | 8.0 | 29.1 | 29.1 |
+| 700 | 25.0 | 38.5 | 40.0 |
+| 900 | 45.0 | 49.5 | 60.0 |
+
+The cost band 300–900 is an assumption anchored on one observed 5.29m case, not a Taipei
+distribution. The cap binds at 529 (85%), 667 (plan A) and 1,000 (plan B).
+
+**Inference — result against the exits:** unresolved, and the question splits three ways.
+1. **Magnitude depends on the regime.** Below the cap at 85%, households pay a fixed 15% of cost;
+   the one observed walk-up paid about NT$80k each. At 45% the same building costs three to four
+   times more per household. Large buildings exceed the cap, and costs per household rise.
+2. **Uncertainty is half removable.** The subsidy side is fully knowable before design: the rate
+   follows the initial score, the cap follows the plan and the household count is known. The cost
+   side is not: no public cost-per-area reference exists, and above the cap every extra unit of
+   cost falls on households. NCREE reviews every design and therefore holds the cost data.
+3. **Access is a separate gate.** Applying needs a majority, but works sit in specific units,
+   often the ground floor; one refusing owner can stop a funded project, and floor-area loss
+   hits those units hardest.
+
+**Consequence for the endgame:** a pre-design estimator is defensible for the subsidy side and for
+the near-threshold decision (R just under 45 changes the household share several-fold; a detailed
+assessment or the agency's own hazard recognition can lift the rate to 85%). It cannot by itself
+remove cost uncertainty without a cost reference, and it cannot resolve access refusals.
+The agency's discretion to recognise hazard and raise the rate is a city lever the stall board
+should expose. No Taipei cost distribution, household allocation rule or refusal count is public.
+The access gate is analysed with the other owner situations in the next subsection.
+
+### Owner reachability and standing — the second stall (2026-10-15)
+
+**Owner decision — 2026-10-15:** demonstration direction (a). The city stall board leads, the
+resident route and self-pay estimate is its entry, and physical risk is an admission threshold
+rather than the ranking. Alongside the information gap, the owner asks to cover buildings that
+stall because owners cannot be reached or are in other situations. Reversible; planning and a
+`/reverse-thinking` audit follow.
+
+**Question and predeclared exits:** are unreachable or legally constrained owners a stall
+distinct from dissent, with their own levers? Supported if public rules give each situation a
+route-specific remedy that a community or the city can trigger; refuted if persuasion is the only
+remedy; prevalence stays unresolved unless a count exists.
+
+**Evidence — three ways an owner drops out (originals read 2026-10-15; M11–M14):**
+
+| Kind | Situation | What the rules say | Source |
+| --- | --- | --- | --- |
+| Cannot be found | Anyone holding the public transcript | The class-2 transcript, open to anyone, shows the first character of the name and part of the ID; the registered address is shown unless the owner asked to mask it after the street. The class-3 transcript (full name and address) goes only to the owner or a party with a legal duty to notify or a change of rights | 土地登記規則 §24-1; transcript rules points 2–4 (M12) |
+| | 危老 organiser | Not a listed party. CMO's answer: elect a manager or form a committee and register it; its chair may then obtain all owners' class-3 transcripts. Until then a consent form may carry the masked name | FAQ B-14 (p. B53), D-09 (M11) |
+| | Urban-renewal organiser | Owners holding more than 1/10 by headcount or by land and floor area, an approved preparatory group or the (prospective) implementer may obtain class-3 transcripts for the unit and adjoining land; Taipei URO confirms the range first. The authority itself notifies all owners when a summary or plan is approved | Transcript rules point 4(6); URO procedure 2021-01-22 (M12); D0070008 §22, §32 |
+| Cannot sign validly | Unregistered inheritance, court restriction, estate administrator, abroad | See the §2 table | §2 |
+| | Owner under guardianship | A guardian's disposal of the ward's real property is void without court permission (民法 §1101 ¶2(1), applied to adults by §1113). No source read settles whether consenting to 危老 reconstruction counts as disposal | M14 |
+| Present but blocks the works | Refuses entry to a unit that holds the retrofit | Main beams, columns and load-bearing walls are common parts (公寓大廈管理條例 §7). Residents may not refuse entry the committee needs to repair common parts (§6 ¶1(3)); after notice the authority may fine NT$3,000–15,000 repeatedly (§47(3)), or the committee may sue (§6 ¶3) | M13 |
+
+Whether a weak-storey retrofit that permanently takes a unit's floor area counts as "repairing
+common parts" under §6 is untested here. The New Taipei account in the burden check reports that
+no compulsion was available; it is an attributed account, not a legal finding.
+
+**Evidence — the management organisation decides how a missing owner counts:**
+- Retrofit subsidy: with a registered organisation the chair applies with an owners'-meeting
+  resolution; without one, more than half of owners by headcount and share must sign (headcount
+  ignored above two-thirds of shares) (P02 points 10–11).
+- A re-convened owners' meeting opens with three owners and one-fifth of owners and shares, and
+  decides by a majority of those present. The minutes are served on every owner; the resolution
+  stands unless written objections from more than half of all owners and shares arrive within
+  seven days (§32).
+- A committee may apply for a seismic assessment with meeting minutes instead of individual
+  consent forms (FAQ D-10, D-12, pp. D88–D90). Proactive initial assessment admits only buildings
+  with a management organisation, unless the city uses discretion (P02 point 5).
+- Forming one: owners elect a convener; failing that, the city may designate a temporary convener
+  (§25) or a manager (§29). §29-1 (2022) lets the city order buildings deemed at risk to form an
+  organisation within a deadline, with guidance as a city duty and fines of NT$40k–200k per unit
+  (§49-1). MOI's criteria (announced 2023-06-06) cover only buildings of 11 storeys or more that
+  failed a fire or building-safety inspection, and mention no seismic assessment; the statute lets
+  a city publicly expand them (§29-1 ¶2). A bounded search found no Taipei expansion; absence is
+  unverified.
+- Taipei pays a promoter NT$20k–90k, by household count, for guiding a pre-2003 building of six
+  or more storeys to register an organisation (FAQ H-06, p. H205), drawing on the list parsed in §2.
+- 危老 still needs every owner (D0070249 §5). An organisation helps find owners; it does not lower
+  that threshold.
+
+**Evidence — counts:** only the inheritance listing (2,607 building entries; §2) is public. No
+public source counts untraceable owners, owners under guardianship or refusals of entry. CMO's
+monthly report template for 危老 work stations records briefings, hours, visitors and consultation
+content, not why an integration failed (station report form, SHA-256
+`97a0df652de51d4cb50849802647995f19bd9aa4eb9467cb33d1ab91a1822740`). A search for studies of the
+causes returned financial and general integration studies, no count of owner situations (lead,
+unverified).
+
+**Inference — result against the exits:** supported for mechanisms, unresolved for prevalence.
+1. "Cannot be found" depends mostly on the route and the building's organisation. Renewal
+   organisers and registered committees can lawfully obtain full addresses; a 危老 organiser in a
+   building without one cannot. Under signatures, a missing owner works as a "no"; under a §32
+   resolution, the owner counts only by objecting.
+2. Each situation has a matching lever and an owner of that lever: findability → organisation and
+   transcript route (city convener designation, promoter fee, §29-1 expansion); standing → heir
+   registration, guardianship court step, estate administrator, consular authorisation, or a move
+   to prompt-designated renewal where listed and restricted owners leave the count; access → §6
+   notice and §47 fine (scope untested), a design that avoids the unit, or the hazard-recognition
+   rate lift.
+3. A stall board can record each assessed building's stall as information, money, findability,
+   standing or access, and show the lever and who holds it. It cannot find people: identities stay
+   with the organisation and the land office under personal-data rules. The city-facing board
+   should carry stall categories and counts, never owner names.
+4. The endgame's crack narrows but stays open. If most stalls are unaffordable cost, digital help
+   is marginal; where they are findability or standing, the city already holds a lever. The inspected public sources do not establish which dominates; internal records may already exist. Whether a new board adds value remains a hypothesis.
+
+**Consequence for the demonstration:** use fictional buildings with stall categories and levers;
+show no real owner, address or count beyond the published inheritance figure. The management
+organisation is a recurring gate: it admits a building to proactive assessment, decides whether a
+missing owner blocks a retrofit application and opens the transcript route for 危老.
+
 ### Selection practice, bottleneck and professional anchors
 
 **Owner decision — 2026-10-14:** deepen the old-building resilience research and gather more complete professional and practical detail. Research-only; no request, contact, account, submission or implementation.
 
 **Method:** four bounded tracks ran in parallel on 2026-10-14: current Taipei selection rules and baseline (P sources), professional assessment and retrofit practice (E), old-building stock data (I), and prioritization precedents elsewhere (X). Each track read original government, professional-body, research or operator documents. HTML pages were read with the web tool or curl; PDFs were read with `pdftotext -layout`; open datasets were downloaded and parsed with `uv run python -I`. The topic owner then re-read the decisive values in the downloaded originals: the MOI proactive-assessment criteria (P02 point 5), the 2019–2021 national target/achievement table (P05), the 2026 national demand for an explicit ranking rubric (P30), Taipei 危老 counts (P29), the initial-assessment grade table (E01/E02 附表五), the single-building R variation (E10), the Taichung screen-positive share (E21), the tax-office district totals (I, 115年度 CSV sums), the MOI unit table for Da'an, and the national initial-assessment and weak-story counts (X24). Search snippets and news remain labelled leads. Raw downloads, owner names and addresses stay outside Git. Table rows below come from the track records; a row is evidence only for the sections stated in its ledger entry.
 
-**Evidence — selection practice:** Taipei publishes no weighted ranking for either decision. Proactive initial assessment is a national eligibility filter (quick-screen F>60 or age ≥30, plus a management organization and ≥6 storeys, or the city's discretion), followed by owner consent (P02). The only ordering language lets the executing agency order applications "因地制宜" (P02 point 14). The routine assessment subsidy is applicant-initiated and reconstruction-oriented (P15–P17). Public-led renewal origination depends on land thresholds, public-land assets, a suitability report and owner willingness (P19, P24). Hazard-linked renewal channels (575, disaster-prevention renewal) start only after owners prove hazard, using ID<0.35, sea-sand listing or tags, and then clear 50/75/90% willingness thresholds (P20–P23). Taipei's closest published hazard ordering is the 2016–2017 老屋健檢 plan. Its first-phase priority classes were suspected soft storey or frontage on the 27 disaster-relief roads, prior 921/331 tags, fault or liquefaction zones, and public housing (P01). A 2014 Taipei study selected pilot villages from simulated Shanchiao-fault damage, and judged parcel-level hazard data too coarse (P25).
+**Earlier source scope — qualified by the municipal baseline above:** the inspected sources did not establish a current cross-programme seismic ranking. Do not infer that Taipei has no selection criteria or internal prioritization. Proactive initial assessment is a national eligibility filter (quick-screen F>60 or age ≥30, plus a management organization and ≥6 storeys, or the city's discretion), followed by owner consent (P02). P02 point 14 allows ordering in the weak-storey subsidy context; it does not establish how initial-assessment candidates are ranked. The routine assessment subsidy is applicant-initiated and reconstruction-oriented (P15–P17). Public-led renewal origination depends on land thresholds, public-land assets, a suitability report and owner willingness (P19, P24). Hazard-linked renewal channels (575, disaster-prevention renewal) start only after owners prove hazard, using ID<0.35, sea-sand listing or tags, and then clear 50/75/90% willingness thresholds (P20–P23). Taipei's closest published hazard ordering is the 2016–2017 老屋健檢 plan. Its first-phase priority classes were suspected soft storey or frontage on the 27 disaster-relief roads, prior 921/331 tags, fault or liquefaction zones, and public housing (P01). A 2014 Taipei study selected pilot villages from simulated Shanchiao-fault damage, and judged parcel-level hazard data too coarse (P25).
 
 **Evidence — explicit official demand:** the Executive Yuan's 2026-03-16 approval of 老宅延壽機能復新計畫 (114–116) requires the MOI to "建立受理申請審查之明確評比基準及核定優先順序", and asks professional teams to select priority areas, inventory potential cases and overlay maps (P30). It targets 4–6-storey apartments aged ≥30 years, the stock that the proactive ≥6-storey rule omits. This is national demand for a transparent ranking rubric, not a Taipei commitment or allocation.
 
-**Evidence — the bottleneck is downstream:** nationally, 2019 to 2021-09 delivered 4,147 of 19,555 planned subsidized initial assessments, 2 of 500 detailed assessments and 21 of 725 weak-storey retrofits (P05). Cumulative national initial assessments reached 17,277 by December 2024, Taipei 5,754 of them, while weak-storey subsidy applications totalled 194 (X24). In 2016 MOI linked low uptake to owners' fear that results would be disclosed and promised confidentiality (X02, X04). A detailed assessment costs about NT$0.15–1.8 million per building under the Taipei-published 2026 fee schedules, depending on floor area and fee family (E14). Weak-storey retrofit subsidy is normally ≤45%, so owners pay the rest (E08). Tokyo's route-side program reached 98.6% diagnosis but left about 2,000 buildings unretrofitted, citing cost and co-owner consensus (X13). **Inference:** a better ranking alone is unlikely to change outcomes. Its defensible value is sequencing outreach and assessment and keeping unknown cases visible.
+**Evidence — historical national uptake, not a Taipei cohort funnel:** nationally, 2019 to 2021-09 delivered 4,147 of 19,555 planned subsidized initial assessments, 2 of 500 detailed assessments and 21 of 725 weak-storey retrofits (P05). Cumulative national initial assessments reached 17,277 by December 2024, Taipei 5,754 of them, while weak-storey subsidy applications totalled 194 (X24). In 2016 MOI linked low uptake to owners' fear that results would be disclosed and promised confidentiality (X02, X04). A detailed assessment costs about NT$0.15–1.8 million per building under the Taipei-published 2026 fee schedules, depending on floor area and fee family (E14). Weak-storey retrofit subsidy is normally ≤45%, so owners pay the rest (E08). Tokyo's route-side program reached 98.6% diagnosis but left about 2,000 buildings unretrofitted, citing cost and co-owner consensus (X13). **Inference:** these records justify investigating downstream feasibility alongside selection. They do not identify the current Taipei bottleneck or establish that a new ranking improves outcomes.
 
 **Evidence — professional decision anchors:** one initial-assessment danger score R drives several decisions at different cut points: 危老 grades at 30/45 (E01–E03), weak-storey subsidy at R>30 and an increased rate at R>45 (E08), PSERCB/public-building action at 60 (E12, E17), and the renewal danger criterion ID<0.35 (E07). R combines 40 qualitative points with 60 points from a first-floor-only capacity calculation, without coring. PSERCB guidance excludes hidden defects, high chloride and additions (E12). In one official teaching case, two engineering assumptions moved a building's R from 10.8 to 42.3 (E10). **Inference:** a model should target a named decision threshold. Near-threshold buildings are uncertain even after a formal initial assessment.
 
@@ -161,9 +492,9 @@ treat both as readable, not redistributable.
 
 **Evidence — site hazard and known conditions:** site amplification already enters R through the Taipei basin microzone or ground class (E12). Liquefaction maps are planning-grade, and the agency stated that past collapses were caused by poor structural systems, not liquefaction (E29–E31). Sea-sand status is a separately listed regime with its own sampling and demolition criteria (E22, E24). **Inference:** treat liquefaction as a geotechnical-check flag and sea-sand listing as a known-condition flag or exclusion, not as additive seismic weights.
 
-**Evidence — stock data:** the finest open old-building data is district level. The Taipei Revenue Service's 臺北市房屋概況 115年度 reports 220,254 buildings, 201,642 (91.5%) aged ≥30 years; the district rows reconcile to DBAS's citywide building series (I). MOI's real-estate platform publishes residential units by district and quarter, as separate age, structure and floor tables, with no cross-tabulation: Taipei had 921,951 units at 115Q2, 74.5% older than 30 years (I). Building counts and unit counts rank districts differently. Building-level age, structure and floors exist only in restricted or per-record sources (qualified 2026-10-14: CMO publishes two scoped building-level lists; see T06 pain tree): house-tax records (稅捐稽徵法 §33 ¶2 permits supply to agencies and researchers for statistics or research without names), land-registry building records (per-record to anyone; bulk under local data-supply fee rules), and the NLSC 3D model. The 3D model has floors and height but no age; Taipei files are referred to the city's Department of Information Technology (I). NCDR built a 500 m grid from the tax register, available to agencies and academia on written request (I).
+**Evidence — aggregate stock data:** the inspected open population-wide age tables are district level; D03 (§5, retrieved 2026-10-15) separately supplies historical individual permit attributes, without establishing a current stock census. The Taipei Revenue Service's 臺北市房屋概況 115年度 reports 220,254 buildings, 201,642 (91.5%) aged ≥30 years; the district rows reconcile to DBAS's citywide building series (I). MOI's real-estate platform publishes residential units by district and quarter, as separate age, structure and floor tables, with no cross-tabulation: Taipei had 921,951 units at 115Q2, 74.5% older than 30 years (I). Building counts and unit counts rank districts differently. Authoritative contemporary building attributes may come from restricted or per-record sources; this is not an exclusive-source claim after the D03 archive discovery. Sources include house-tax records (稅捐稽徵法 §33 ¶2 permits supply to agencies and researchers for statistics or research without names), land-registry building records (per-record to anyone; bulk under local data-supply fee rules), and the NLSC 3D model. The 3D model has floors and height but no age; Taipei files are referred to the city's Department of Information Technology (I). NCDR built a 500 m grid from the tax register, available to agencies and academia on written request (I).
 
-**Evidence — precedents:** no reviewed jurisdiction ranks individual private buildings by a continuous weighted score. Los Angeles, San Francisco, Japan and New Zealand use an observable inclusion rule, coarse deadline tiers and a binding engineer evaluation (X05–X19). Missing information triggers evaluation rather than implying safety: New Zealand deems an unassessed building earthquake-prone after 12 months; Los Angeles non-ductile concrete applies "whether identified or not"; Japan targets 耐震不明 buildings (X07, X13, X19). In FEMA's only benchmark against engineering evaluation, Level 1 rapid screening missed 1 of 31 unacceptable buildings but referred 11 of 18 acceptable ones (X20, computed). Tokyo measures route priority as road-section reachability and named 50 priority sections where few retrofits restore the most network function (X13). Japan and San Francisco express elderly or vulnerable occupancy as facility-use classes; social-vulnerability index rankings are sensitive to construction choices (X09, X12, X28, X29).
+**Evidence — inspected precedents:** the reviewed Los Angeles, San Francisco, Japan and New Zealand programmes do not establish a transferable continuous-score safety verdict. This is a bounded source comparison, not a claim about every jurisdiction or a rejection of transparent policy scoring. Los Angeles, San Francisco, Japan and New Zealand use an observable inclusion rule, coarse deadline tiers and a binding engineer evaluation (X05–X19). Missing information triggers evaluation rather than implying safety: New Zealand deems an unassessed building earthquake-prone after 12 months; Los Angeles non-ductile concrete applies "whether identified or not"; Japan targets 耐震不明 buildings (X07, X13, X19). In FEMA's only benchmark against engineering evaluation, Level 1 rapid screening missed 1 of 31 unacceptable buildings but referred 11 of 18 acceptable ones (X20, computed). Tokyo measures route priority as road-section reachability and named 50 priority sections where few retrofits restore the most network function (X13). Japan and San Francisco express elderly or vulnerable occupancy as facility-use classes; social-vulnerability index rankings are sensitive to construction choices (X09, X12, X28, X29).
 
 ### Earlier findings, fit and disposition (2026-10-13)
 
@@ -217,6 +548,244 @@ treat both as readable, not redistributable.
 
 ## 4. Candidate workflows
 
+### Post-assessment stall board — supporting hypothesis
+
+**Current disposition:** the fictional board at `prototype/stall-board/board.html` explores
+post-assessment coordination. It is not the core product or evidence of improved selection.
+Its distinct user task is to record a stalled assessed case, a responsible person and a next action.
+Practitioner need and benefit over existing internal tracking are unverified. The narrative reset
+below governs the primary research direction; this supporting workflow remains available for inspection.
+
+| Critical pain (evidence) | What digital help can reach | Board part | What it cannot do |
+| --- | --- | --- | --- |
+| Why a building is approached is not visible; walk-ups and buildings without an organisation fall outside proactive assessment (M08, P02, §2 list) | Show eligibility gates, missing evidence and the reason each candidate was approached or deferred; flag buildings without an organisation | Intake (hypothesis A) | Prove a building safe, or rank unknowns by missingness |
+| Residents doubt what they will pay (M09) | Route gates and the subsidy-side self-pay before design; flag scores near 45 and the hazard-recognition rate lift | Resident entry and money check (T06-D, burden check) | Give one cost figure before a cost reference exists |
+| The works cost more than households can pay (burden check) | Show the subsidy regime, the cap and which lever applies (85% recognition, 403 scheme, phased option) | Money stall | Pay for the works |
+| Owners cannot be found (owner reachability) | Track organisation status and the transcript route; prompt convener designation or promoter guidance | Findability stall | Locate people or hold names and addresses |
+| Owners cannot sign validly (§2, M14) | Name the situation and its remedy: heir registration help, guardianship court step, consular authorisation, or a switch to prompt-designated renewal | Standing stall | Decide legal capacity |
+| An owner refuses entry (burden check, M13) | Record the refusal and the available step: a §6 request or a design that avoids the unit | Access stall | Compel entry; §6 scope untested |
+| No one coordinates or follows up (Neihu voice) | Every building has an owner of its next action and a date; overdue items surface | The board itself | Replace promoters, architects or the city's authority |
+| No one records why integration fails (M10, station form) | Stall categories counted across buildings show where a city lever matters | Board summary and stall-distribution map | Establish prevalence before real use |
+
+**Success, predeclared:** compared with the city's current tracking, more assessed-risky buildings
+reach a funded next step (retrofit design approval, 危老 or renewal filing) within a fixed period,
+and every stalled building carries a recorded reason and lever owner. An earlier, testable
+proxy: with fictional cases, a city officer names the stall and the next lever faster and with
+fewer omissions than with current documents.
+
+**Rejection:** the city already tracks stalls and levers per building; most stalls are
+unaffordable cost with no lever; or the city cannot lawfully hold stall reasons per building.
+Then shrink to the resident estimator or stop.
+
+**Data:** a working board runs on the city's own records (assessment results, subsidy
+applications, promoter filings, organisation registrations); the scoped public lists do not provide the complete case evidence needed (§5). The demonstration uses fictional buildings and labelled public aggregates (district
+stock, the inheritance listing, programme counts). A cost reference would improve the estimator, but baseline records, case evidence and practitioner need are also missing for a claim of decision value.
+
+**Prototype / reading outline (updated 2026-10-15):** `prototype/stall-board/index.html`
+presents the research method, official pain, existing practice, data limits, real aggregate
+reconciliation and allocation hypothesis. S01–S04 remains a disclosed fictional rule explanation,
+not evidence of allocation benefit. `board.html`
+retains the separate A04 post-assessment workflow. No city officer has tested either; no real
+selection or improved outcome is established.
+
+### Research direction — explain and test one investigation decision
+
+**Owner decision — 2026-10-15:** rebuild the argument from the research method, original pain and
+supplied data, with one author. The requested HTML revision applies this reset. Neither an intake
+checklist nor a post-assessment board is a predetermined product endpoint.
+
+**Method:** evidenced pain → existing practice → bounded decision → predeclared success/rejection
+→ necessary evidence → comparison → presentation. The organizer proposes a weighted model, but
+that method must earn its place by improving a named decision. The campaign organizer is not a
+verified government commissioning client. Two resident voices establish possible consent and
+coordination constraints, not their prevalence or a municipal software requirement.
+
+**Endgame (hypothesis):** in one municipal old-building investigation round, staff can explain which
+candidates merit professional attention, what evidence supports that choice and what to check next.
+The loop is candidate pool → traceable evidence → comparison with current practice → human-reviewed
+action → professional findings → checked selection performance. Investigation selection, formal
+assessment eligibility, public-renewal feasibility and post-assessment tracking are distinct decisions.
+
+**Invariants:** every recommendation carries a source, unit/date and next action; area aggregates
+never become individual diagnoses; assistance need stays separate from execution feasibility;
+unknown is neither safe nor automatically highest priority; simulation never counts as observed gain.
+
+**What the evidence changes:** the four supplied files are not a joinable building inventory.
+The B01–B06 identity audit and scoped CMO lists improve knowledge of coverage but still do not define
+the old-building candidate universe (§5). Published programme rules demonstrate existing practice;
+annual counts do not reveal comparative selection quality. Different assessment and retrofit totals
+cannot establish a cohort funnel or identify the dominant bottleneck. Downstream barriers therefore
+remain a separate research question, not proof that selection is either adequate or inadequate.
+
+**Post-event effectiveness comparison, not a hackathon delivery gate, not yet run:** choose one programme and one lawful de-identified
+round with selected and unselected candidates, decision-time evidence, actual capacity and reasons.
+First establish whether staff encounter an information problem. Agree with a qualified practitioner
+which omissions and unsupported referrals matter before looking at proposed results. Compare current
+practice with the added evidence on that same pool and information date; measure review-worthy
+omissions, unsupported choices and preparation effort. Inspect whether plausible data uncertainty
+changes the suggested action. Changed ordering alone is not success; unchanged choices with reduced
+work may be useful if error does not increase. No numerical threshold is claimed before the operator
+and task are identified.
+
+**Rejection:** stop or narrow the candidate if current practice already answers the question,
+additional evidence improves neither relevant errors nor effort, the join cannot support the decision,
+or the binding constraint is authority/funding/capacity rather than information. Data access and
+practitioner review are unresolved; a missing baseline means unresolved, not a successful simulation.
+
+**Presentation:** explain method → original pain → existing practice → reproducible public-data
+finding → declared action scenario → demonstration acceptance and deferred effectiveness validation.
+The current real-data comparison below is an input-preparation subtask, not a replacement for
+municipal selection or an unvalidated dashboard. Public-renewal review B and tracking remain separate.
+
+### Real-data example — reconcile records before an investigation enquiry
+
+**Owner decision — 2026-10-15:** deeply discover real sources and available connectors before
+declaring inputs simulated. Complete the hackathon explanation using obtainable evidence;
+interviews, agency replies and a historical decision cohort are post-event validation, not prerequisites.
+Simulation needs a specific missing decision input and evidenced feasible acquisition/replacement.
+The research request authorises calculations and report updates, not a production application.
+
+**Hypothesis / bounded user outcome:** a municipal officer preparing an old-building enquiry can
+see which public records need identity or management-scope confirmation before choosing whom to
+approach. This supports one prerequisite of the official inspection-allocation question. It does
+not solve allocation, consent, funding or physical safety, and does not establish an information
+bottleneck. The existing baseline includes CMO's own lists, application service and internal records;
+whether this comparison adds anything to that baseline remains unknown.
+
+**Exploratory comparison completed, not a preregistered efficacy test:** use the same 5,489 permit
+records in CMO's 2026-07-17 list throughout. Compare them with the original 2026-10-05 organisation
+registration CSV, using exact use-permit ID intersection (D01/D02, §5). This is the named reference
+rule, not the city's observed selection rule. Unit: permit records, never automatically buildings,
+households or available assessment slots. The list is scoped to permits through ROC92, at least
+six storeys and two households, titled **未成立管委會**; it is neither the complete old-stock pool
+nor a verified age-30-plus or residential-only population.
+
+**Evidence / finding:** the CSV has 1,017,840 parsed rows, but 1,008,127 are entirely blank. Its
+9,713 nonempty rows contain 9,657 distinct permit IDs, including 53 repeated-ID groups. Exact
+intersection finds **3** IDs. All three pairs have different representative addresses; one has
+different district labels. Each registration name ends in **管理負責人**. This is a literal label
+observation, not a legal determination of current management. The other 5,486 IDs have no matching
+registration row in this snapshot; that does not prove they have no organisation.
+
+**Inference / explainable action:** flag the three permit collisions for identity, management
+scope, organisation-type and currentness verification. Do not transfer the registration state to
+the listed building, automatically remove it from assistance, or call the sources contradictory.
+A permit can cover multiple buildings/doorplates; a committee and a management representative
+are different organisation forms. File refresh dates do not timestamp an organisation's formation.
+The CSV's 核發日期 is not established as a registration-change date and is not used as one.
+
+**Declared policy scenario, not observed agency action:** source list → permit collision →
+verify shared building/management scope → if current organisation evidence is confirmed, retain it
+for the officer's general-condition review; if scopes differ, keep the records separate; if still
+unknown, request the missing scope evidence. Age, floors, recognition and consent still need their
+own records. No scenario resolution is assigned to an identifiable real building, and no synthetic
+F, resident count or risk score is needed. The age branch of P02 can be considered without F;
+the pre-2003 list alone does not prove age ≥30.
+
+**Prospective demonstration acceptance / rejection:** reproduce the two source hashes, 5,489-row
+PDF sequence, nonempty CSV count and three intersections; retain all three as unresolved and all
+5,486 nonmatches as unknown; show source dates, distinct units and the conditional next action.
+Reject a claimed building-status finding if identity/scope cannot be linked. Reject a priority or
+efficiency claim without the actual comparison. Source changes require a new audit, not silently
+reusing these numbers. These are delivery checks; professional effectiveness, effort saved and
+civic outcomes remain unverified. No owner/agency contact has occurred.
+
+**Decision-to-data feasibility (audited 2026-10-15):**
+
+| Essential or earlier-demo input | Decision it changes | Real source / availability and effort basis | Disposition and replacement path |
+| --- | --- | --- | --- |
+| Scoped candidate ID, source date, district, representative address, floors | Which records refer to the enquiry target? | D02 original 80-page PDF fully parsed, 5,489 numbered rows; simple local extraction; raw addresses private. Not a unique building key or current survey | **Use real** for aggregate reconciliation; verify identity before individual action. No invented all-city population |
+| Organisation record/type/scope | Is organisation evidence available, or must it be checked? | D01 original CSV fully parsed; permit/name/address, no current-scope or change-history field. Free download; 53 repeated permit IDs | **Use real** as positive registration evidence only; missing or collided scope → **narrow scope**, not synthetic yes/no. Current proof would come from authorised committee/representative documents or agency lookup; not acquired |
+| Age/completion and original structure/floors | Can age/floor branch support further review? | D03 historic raw XML is downloadable and parsed, including pre-2001 records. Dates/conflicts/current survival unresolved; D04 supplies historic government-license provenance, not byte equivalence. D02 permit year ≤92 is not age ≥30 | **Fetch/derive real** historical attributes for corroboration, not current eligibility. Missing/conflicted dates → unknown. Present-day identity/completion evidence must replace stale archive fields before case action |
+| Professional F (S04), professional findings | Does the alternative F>60 branch apply? | No public candidate-level F source established. CMO FAQ D-19 restricts disclosure of assessment results; it is not evidence that F and initial-assessment R are identical. Acquisition needs the holder's lawful permission and a professional record; no case-access agreement exists | **Narrow scope:** unnecessary for this real reconciliation or an adequately evidenced age branch. S04 remains fictional rule teaching; not justified simulation of a real building or an established feasible data feed |
+| Confirmed absence of an organisation (S01), current organisation (S02/S04), unknown (S03) | What evidence must be checked before a service route? | D01/D02 offer dated observations, not complete current yes/no truth. S01–S04 have no audited corresponding real records | Keep all four explicitly fictional. Do not grandfather their acquisition feasibility. The selected real example uses observation/unknown states instead of simulated organisation status |
+| Agency recognition, willingness/consent, slot availability, officer decision reasons | Can a building proceed or receive a slot? | P02 provides the rule/sequence; public annual counts do not provide case evidence or live capacity. Holder is agency/community; no lawful case access or effort basis verified | **Narrow scope** to pre-enquiry evidence preparation; no synthetic recognition, consent, capacity or observed baseline. Historical cohort and practitioner study deferred |
+| Building occupants, soil-site condition, rescue access | Who is exposed and what professional checks matter? | Existing starter audits are area geometry/statistics or textual lists, not joined case observations | Not essential to this example; **narrow scope**, retain source-grain restrictions. No synthetic attributes attached to real buildings |
+
+**Result:** one complete pain → real-data finding → conditional action explanation is reproducible
+without simulated inputs. It establishes a preparatory data-check result only. The stronger claim
+that a new tool improves investigation selection remains an unresolved hypothesis. The next research
+check is whether a bounded age-branch subset can link dated completion/floors and management scope
+without treating a permit as a building; no UI expansion is needed to answer that check.
+
+### Eligibility example — supporting teaching exercise
+
+**Purpose and limit:** S01–S04 are four fictional records demonstrating that a published eligibility
+rule needs case evidence. The age-only reveal is not a municipal baseline. Correct branches prove
+rule consistency only; they do not compare priority between eligible candidates or discover a real
+allocation insight. The example remains optional reference material, not the reason to choose this
+research direction.
+
+**Evidence — original-source recheck, 2026-10-15:** current
+[CMO service page](https://cmo.gov.taipei/cp.aspx?n=53F406AE758E3270) (updated/reviewed 2026-09-17),
+[operative points 5–6](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/0f3092a5-106a-4ce1-87b5-aefc03e9900f.pdf)
+(revision order 2022-10-17), and
+[flow attachment 5](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/d1c62bc5-5690-431c-93eb-51f85515dc16.pdf)
+were read as HTML/PDF text. General eligibility is `(F > 60 OR age >= 30) AND management organisation
+AND storeys >= 6`, with a separate executing-agency recognition route. F is the professional quick
+screen, not initial-assessment R. The sequence is institutional contracting → solicitation → consent
+→ institution assignment → report delivery. No consent percentage is inferred from other schemes.
+The [2026-04-17 announcement, gazette pp. 36/39](https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=fb8cb02f-8402-4261-88e0-f000f5c6e8fe)
+also receives citizen applications; solicitation does not establish an agency-only intake route.
+M01 digest remains `15d080547443febea9676183120723df0f7e093128ce2aeeaaaf0fcda6aef63c`;
+P02 PDF digest is `51b99be0ff2c5e0c0dc3e7e9ff98af92cca580170faa6450111de41d57dc1414`.
+These checks establish the documented process, not a city's actual choice difficulty or a particular
+building's formal eligibility. The demo states general-condition evidence only and requires review.
+
+**Evidence — full starter CSV recheck, 2026-10-15:** the
+[DBAS original export](https://tsis.dbas.gov.taipei/statis/webMain.aspx?sys=220&ymf=6500&kind=21&type=0&funid=a05019201&cycle=4&outmode=12&compmode=0&outkind=1&deflst=2&nzo=1)
+still has 50 yearly rows, 13 columns, ROC65–114; SHA-256 matches §5's `8f471e3d2ab5ef6e17d5b7408a74b370458cc12870de57e0dced2fc086c2bde4`.
+It supplies citywide totals and marginal age/floor bands, not building IDs, addresses, structure,
+organisation or assessment evidence. The 5–6-storey band cannot isolate 6-storey buildings; there
+is no age-by-floor cross-tab. Method: full download and CSV parse, original catalog checked.
+**Inference:** even the number of generally eligible candidates cannot be derived from this source;
+combining its margins would invent a relationship. Existing quality qualifications in §5 still apply.
+No new dataset suitability or redistribution claim is made for unreviewed resources.
+
+**Simulated comparison — one fixed set, not a baseline-effectiveness test:**
+
+| Case | Fictional records dated 2026-10-15 | With age only | With case records | Action and boundary |
+| --- | --- | --- | --- | --- |
+| S01 | 62 years, 4 storeys, no organisation | Unresolved | General conditions not met | Ask agency about recognition/other service; retain support need, never infer safety |
+| S02 | 46 years, 7 storeys, organisation confirmed | Unresolved | General-condition evidence present | Prepare solicitation, subject to review and consent; no priority or assignment claim |
+| S03 | 35 years, 6 storeys, organisation unknown | Unresolved | Organisation evidence missing | Request/check that record, retain agency-recognition route |
+| S04 | 28 years, 8 storeys, organisation confirmed, professional F=64 | Unresolved | Alternative F>60 branch supports general conditions | Prepare solicitation under review, despite age below 30; not a safety rank |
+
+The interface can hide organisation evidence without changing the other inputs: S02/S04 become
+unresolved; S01's known floor condition still requires agency consideration. A boundary test uses
+F=60 to verify it does not pass the strict >60 branch. This tests logic consistency, not actual
+prevalence, selection benefit or safety. The age-only view is a teaching reveal, **not** the city's
+current process. A real comparison must include all evidence the officer already has, use the same
+cases and capacity, and judge important omissions, unsupported claims and preparation effort.
+An unchanged choice with lower effort can be useful; a different choice without justification cannot.
+
+**Result:** supported as a bounded explanation of evidence-dependent next actions; insufficient for
+priority between generally eligible buildings. No real allocation is made. Practitioner need,
+case access, role authority, budget/capacity and adoption remain unknown. Hypothesis: the smallest
+useful tool may be an evidence-comparison record, not a new board. Reject it if the current process
+already achieves the same result without the alleged burden. Public-renewal project selection
+remains a separate decision, and post-assessment funding/physical improvement remain separate outcomes.
+
+**Bounded public baseline search — 2026-10-15:** three targeted searches of CMO, UDD and council
+sources, followed by the original M01 announcement, M09 2025 accounts (printed p.31 / PDF p.35),
+service page and flow attachment, did not locate a round-level candidate list with contemporaneous
+evidence, actions, reasons and capacity. This is a bounded search result, not proof of no internal
+records. Annual totals and published procedures cannot substitute for an observed decision round.
+The actual-baseline experiment remains **unresolved**; no performance comparison was run.
+
+**Prepared acquisition scope (not sent):** request one historical round's random case IDs for both
+selected and unselected candidates; decision date/rule version; age or F evidence, storeys,
+organisation and agency-recognition state as known at that date; solicitation/request-evidence/
+defer action and reason; and that round's service capacity. No owner names, identity numbers,
+addresses, contact details or free text containing personal information are needed. Ask whether
+an existing de-identified table can be reused, rather than requiring new data collection. The
+purpose is to compare decision completeness and preparation effort, not evaluate named staff or
+publish building safety claims. Actual contact requires action-time owner confirmation.
+
+**Next / disposition:** retain S01–S04 as fictional rule teaching. The current delivery path is
+the real reconciliation above; a historical solicitation round is deferred effectiveness validation.
+No request is sent and no real-acquisition feasibility is assumed for the fictional fields.
+
 ### Allocation hypotheses A and B — inspection and public renewal are different decisions
 
 **Owner decision — 2026-10-13; report revised2026-10-14:** reorganize the existing report around official issue6's core resource-allocation pain, using reverse thinking and point-of-decision data assessments. Record available/missing fields, observation period, file/metadata update dates, retrieval dates, quality tests and decision suitability. Retain professional domain education as supporting explanation. HTML remains local; this request does not authorize public publication or implementation.
@@ -238,9 +807,59 @@ Snapshot identities SHA256: population `a478cb4d3cdf509eec3453285bf0c1c542b7f532
 
 **Inference — suitability:** whole-city age totals cannot create a neighborhood building-age layer; neighborhood older-population context cannot identify residents of a building; fire-access text cannot establish a building's actual access or structural vulnerability; liquid-susceptibility geometry cannot establish building capacity. Combining those units does not recover the missing linkage. Data completeness has separate meanings: successful whole-file retrieval, geographic/time/universe coverage, complete necessary decision fields, internal consistency and independent accuracy. Passing the first or fourth does not imply the others. Use claim-specific categorical states (usable for context, conditional, blocked for a stated claim, unknown), not unsupported overall quality scores.
 
-**Hypothesis — A, municipal inspection allocation:** a city assessment-program reviewer assigns a limited number of investigation/assessment slots across a defined candidate universe and period. Actual office/authority, existing queue/rules and user bottleneck remain unverified. Baseline must be the existing program's case selection and professional review, not an invented oldest-first policy. Input authorized building identities/status, dated site/structural evidence, relevant consequence context, missing-evidence flags, existing assessments and available slots → compare inspect/request evidence/defer with reasons → authorized reviewer issues a checkable assignment and records deferred/unknown cases. Success is fewer independently adjudicated important omissions or lower effort at equal coverage than the same-case baseline, without misrepresenting unknown as safe. Reject if existing practice already covers those decisions or missing building evidence prevents meaningful discrimination. Current public inputs support data-gap documentation only; no real queue/ranking. Demonstration specified as a disclosed fictional allocation case; decision insufficient; operational/civic gain unobserved. Adoption needs named authority, professional reviewer, secure identity/evidence handling, assessment capacity and cost; none committed. Next: verify one building identity/permit-source join, then discover current selection rules and backlog definitions without requesting personal case data.
+**Hypothesis — A, municipal inspection allocation:** a CMO programme reviewer prepares the
+next selection/solicitation round for the 2026 proactive-assessment programme. Authority for the
+programme is documented (M01); the particular officer, actual selection method, available remaining
+slots and user difficulty are unobserved. The unit is a verified candidate building/幢 under that
+programme, not an arbitrary address or the whole city. Baseline: eligibility → solicitation →
+consent → institution assignment, with the existing agency evidence and professional judgement.
 
-**Hypothesis — B, public-renewal review priority:** an authorized municipal renewal reviewer decides whether a previously assessed area/case merits further public-renewal feasibility review. Exact authority/program/baseline unknown. A result of A is not an automatic B decision. Inputs need professional assessment/current status, project boundaries, reinforcement and other alternatives, public-interest/equity considerations, consent/property constraints, temporary housing, costs, funding and execution capacity → compare investigate alternatives/advance feasibility/defer with explicit unresolved issues → attributable review disposition, not a reconstruction order. Success is a better-supported, executable and professionally adjudicated review disposition than existing practice; reject automatic renewal recommendations without these inputs or when a new artifact changes no action. Existing subsidy rules are not a public-renewal allocation rule or an actual funded project queue. Demonstration specified only with fictional cases; decision insufficient; no real benefit/cost or safety result. Adoption requires municipal/legal/engineering expertise, lawful project evidence and capacity; costs unknown. Next after A's identity prerequisite: locate the exact public-renewal selection criteria and one published decision record; do not substitute private retrofit subsidy criteria.
+**Workflow and dependencies:** authorized candidate identity, eligibility evidence, dated
+structural leads, prior assessment, consent/contact state and remaining slots → separate eligible,
+excluded and unresolved cases → compare the eligible cases using the existing programme rules →
+reviewer records solicit/assign/request evidence/defer and its reason. Unknown eligibility requires
+a bounded evidence request; it is not a high danger score or an automatic place in the queue.
+Keep difficult-to-coordinate cases visible without treating consent as proof of safety. Older
+residents' actual access/assistance needs inform outreach and execution support, not frame strength.
+
+**Success and rejection:** compare the same round with current agency practice. Success means
+fewer independently adjudicated important omissions or less preparation effort without worse
+eligibility/unsupported-claim errors. Reject a new tool if existing records already support those
+actions, if there is no contested allocation decision, or if essential evidence cannot distinguish
+candidates. If most cases remain equally unknown, suspend priority ordering and test evidence
+acquisition instead. No public-only real ranking or effectiveness result is supported.
+
+**Outcome boundary:** reported activity does not prove the quality or difficulty of selection.
+Test allocation gain against actual practice; separately track professional findings, funded
+improvement and physical safety. A useful upstream decision is not proof of downstream success,
+and downstream financing difficulty does not prove the upstream decision is already adequate.
+
+**Validation/adoption/presentation:** first reconstruct one published selection record and its
+rule version; include an eligible case, an unresolved case and an excluded case as boundary tests,
+not a prevalence sample. A later authorized paired reviewer task must compare omissions, effort
+and reason traceability. A disclosed fictional round can explain the interaction but cannot
+validate it. CMO, qualified institutions, lawful case handling and actual slots are required;
+professional availability, costs and adoption are unknown. Demonstration remains specified,
+decision insufficient. Before/action/after: a fictional mixed candidate batch → apply the actual
+programme gates and record unresolved evidence → attributable assignment proposal, not safer homes.
+
+**Hypothesis — B, public-renewal review priority:** the city renewal authority prepares which
+project area/case should advance to suitability/feasibility review. It is a separate project-scale
+decision. Baseline is the applicable public-led-renewal rule and existing suitability/financial
+review, not A's seismic screen. Professional condition, project boundary, public land/interest,
+owner willingness, reinforcement alternatives, displacement, cost and execution capacity must
+remain separately visible. The output is advance review / request named missing evidence / defer
+with reasons, never an automatic reconstruction order. Current source detail and a published
+case are recorded in this section's municipal baseline refresh.
+
+**Success/rejection and validation:** reproduce a public case's recorded decision and missing
+conditions under its own rule version, then identify whether a new comparison changes a defensible
+review action. Reject direct renewal selection from an inspection flag or an unexplained overall
+score. Defer a prototype if project-level evidence is absent or existing review already supplies
+the same result. Before/action/after: a disclosed project proposal → compare feasibility evidence
+and alternatives under the official criteria → reasoned review disposition. A later authorized
+reviewer comparison measures omissions and preparation effort; no adoption, cost, completed
+renewal or civic gain is observed. Demonstration specified; decision insufficient.
 
 **Validation proposal — not executed:** freeze a professional-adjudicated case set with building IDs, dated evidence and decision purpose. Compare current process against the proposed reasoned triage, including assessed/unassessed, contradictory, recently altered, high-consequence and hard-to-coordinate cases; selection is failure-mode coverage, not representative prevalence. Measure important omissions, unsupported assertions, reviewer effort, unknown-case handling and reason traceability. Test rank/list changes under plausible evidence and weight assumptions; flag unstable cases instead of claiming precise order. No arbitrary score, success percentage, equal weights, top-N budget, sensitivity range or complete candidate census is invented. Legal safety gates must remain professional gates. Observed task benefit, stable decisions and later allocation/civic outcomes are separate acceptance stages.
 
@@ -248,10 +867,10 @@ Snapshot identities SHA256: population `a478cb4d3cdf509eec3453285bf0c1c542b7f532
 
 ### Hypothesis A revised — tiered screen-to-verification sequencer
 
-**Inference — no implementation authorized:** reframe A from a weighted safety score to a **tiered screen-to-verification sequencer**:
+**Hypothesis — no implementation authorized:** test a programme-specific evidence review before adopting a **tiered screen-to-verification sequencer**:
 
 1. An observable inclusion rule, such as a pre-1999-12-31 construction permit, with an explicit "status unknown" class.
-2. Recorded quick-screen-like attributes assign tiers with stated reasons. Missing attributes raise verification priority instead of lowering risk.
+2. Apply programme eligibility and consent gates before comparing candidates. Record missing evidence with a bounded follow-up; do not rank equally unknown buildings by missingness alone.
 3. A separate road-segment layer counts how many candidate buildings could block each fire-rescue segment.
 4. A separate support layer uses elderly occupancy and facility type to choose outreach intensity, not hazard.
 5. Versioned rules and a change log.
@@ -261,8 +880,8 @@ Success still requires a frozen professional comparison. Candidate validation da
 **Hypothesis B consequence:** public renewal is driven by land, willingness and finance thresholds. A risk ranking can at most inform the city-designated policy-area clause and outreach, not select cases.
 
 **Open questions / unfound:**
-- Taipei annual proactive and owner-initiated initial and detailed assessment counts, result distributions and weak-storey completions (likely in CMO monthly reports to MOI, council business reports or Taipei audit reports).
-- The Taipei quick-screen F-value list.
+- Taipei multi-year proactive and owner-initiated assessment counts, grade distributions and completed retrofits; M02 now resolves selected 2025 programme totals only.
+- The Taipei quick-screen F-value list and actual 2026 candidate/consent/assignment records.
 - Full text of the 115–118 national seismic plan.
 - 575/7599 intake counts.
 - Private full-retrofit costs per m².
@@ -270,9 +889,9 @@ Success still requires a frozen professional comparison. Candidate validation da
 - Guest-visible coverage of img2.gov.taipei.
 - The current status of NCDR's grid and NCREE inventories.
 
-**Current next step:** two routes remain, and the owner chooses between them:
-- **Public read-only:** read Taipei City Council business reports and Taipei audit reports for Taipei-specific assessment and retrofit counts.
-- **Information request:** request de-identified initial-assessment statistics from CMO, or house-tax statistics under 稅捐稽徵法 §33 ¶2. A request is an external contact and needs owner confirmation.
+**Current next step:** §7 owns the one current action. The annual-count search above is now
+partly resolved by M02; multi-year results and case-level selection remain open. Information
+requests still need action-time owner confirmation.
 
 ### T06-A — Reach the appropriate professional assessment pathway
 
@@ -293,6 +912,8 @@ Success still requires a frozen professional comparison. Candidate validation da
 **Problem/user/decision.** Hypothesized Taipei community representative, with an existing professional assessment, decides whether to seek a scoped comparison of interim reinforcement, broader retrofit and reconstruction. NCREE's Pingtung account documents an operator encountering unaffordable full reinforcement and developing a phased alternative [S08]. The concrete problem is financing and coordination around an actionable professional option, not merely identifying an old building. Transfer to Taipei is unresolved.
 
 **Baseline.** Existing professionals explain assessment results and evaluate alternatives; NCREE supplies cases and free explanations. Taipei has separate assessment/weak-layer routes and URO's structural-reinforcement subsidy pack, including contracts, cost breakdown and household self-funding shares [S02,S06,S14]. These are different programs; a single subsidy calculator risks mixing requirements. City renewal audit landing evidence also points to valuation transparency and supervision, not a missing risk heatmap [S13].
+
+**Evidence added 2026-10-15 (§3 funnel, M09–M10):** Taipei's own 2025 account attributes low weak-storey completion to the household share (about 20% of works), high works cost and residents' doubt about their actual burden. Retrofit design applications stayed in single digits a year in 2022–2025. This is an agency-stated downstream pain, attached to the official municipal user, and it moves T06-B from a supporting alternative to the follow-through that A needs. It does not show whether better information would change decisions when the burden itself is unaffordable.
 
 **Success/rejection.** Improvement would be a meeting ending with an agreed, executable professional feasibility request and explicit unresolved financing/consent items, with fewer misunderstandings than the existing professional explanation. Problem rejection: liquidity, disagreement, relocation or procurement blocks every feasible next step despite correct information. **Plausible and unresolved**, so do not promise faster renewal. Data rejection: no actual report, professional scope/quotes, ownership decision or funding-status evidence means no comparative recommendation. **Supported** for present public inputs; reject automated “rebuild versus reinforce” selection. S07 shows subsidy is capped/partial and can stop when exhausted; information cannot eliminate the funding gap.
 
@@ -318,21 +939,123 @@ Success still requires a frozen professional comparison. Candidate validation da
 
 ### T06-D — Route finder for a blocked walk-up
 
-**Candidate — T06-D route finder for a blocked walk-up (hypothesis, not implemented):**
-- Input: one building's facts.
-- Output: the routes it can legally take, each route's consent threshold, and the evidence (for
-  example an assessment result) that would change which routes apply.
-- Action: an informed next step with a promoter or CMO.
-- Baseline: the promoter's explanation and the CMO FAQ.
-- Rejection: the FAQ or a promoter already answers it in one step, or blockage is economic rather
-  than informational.
+**Deferred candidate — T06-D (hypothesis, not implemented):** a resident/promoter compares
+applicable routes and asks the existing service a specific next-step question. This is supporting
+research, not the primary municipal-allocation target. The CMO FAQ already contains the
+prompt-designation route; discovering it does not establish an information-service gap.
 
-**Data experiment, not yet run:** freeze the promoter register now. Re-read it later and compare
-stage transitions. Look for an archived older copy that would give conversion without waiting.
+**Baseline/success/rejection:** compare an identical case using the FAQ/promoter explanation and
+a proposed route summary. Potential success is fewer unsupported eligibility/consent claims or
+less preparation effort at equal correctness, not overcoming dissent or completing renewal.
+Reject if existing services answer the task adequately, the route does not apply, or finance and
+consent rather than comprehension determine the action.
+
+**Smallest validation, not run:** freeze four distinct boundary cases: unanimous consent; more
+than half by the applicable owner/area tests; exactly half; and unknown ownership/assessment/site
+area. The Shilin account does not establish four equal owners or shares. In a hypothetical
+four-equal-owner case, two approvals fail a strict majority; it must return unresolved/no demonstrated
+route rather than a promise to bypass dissent. Separately verify whether assessment itself can
+be obtained under that case's consent, whether prompt designation is discretionary, and applicable
+unit-size limits. Failure in one case refutes that case's path, not every possible route tool.
+
+**Dependencies/adoption/readiness:** verified professional results, ownership/area, programme
+version, lawful source use and a professional recipient are necessary. No real case record,
+user comparison, professional acceptance or cost is observed. Keep demonstration unassessed and
+decision insufficient. Resume only if the municipal baseline work reveals a specific unresolved
+case question that existing services do not already answer. Do not use undated promoter filings
+as a substitute for this task comparison.
 
 ## 5. Evidence and data audits
 
+### Broad discovery and real-input feasibility audit (2026-10-15)
+
+**Method / question:** search from the official inspection-allocation pain for evidence that can
+support one pre-enquiry action. Inspect original content before calling a field unavailable or
+simulating it. Web routes covered organisation registration, unregistered-committee lists,
+professional F/results, historic permits, research exposure inventories and public GIS. Download
+and parse CSV/XML in full with standard-library Python, PDF with `pdftotext -layout`; inspect the
+first/last PDF pages visually. Research calculations emit aggregates only. No public-feed
+collection, model inference API, account enrolment, external contact or purchase occurred.
+
+**Source ledger — retrieved 2026-10-15:**
+
+| ID / original source | Observed content, coverage and access | Rights, limits and decision consequence |
+| --- | --- | --- |
+| **D01** CMO [organisation registration catalog 132391](https://data.gov.tw/dataset/132391), [city catalog](https://data.taipei/dataset/detail?id=d665fc9b-0f60-4d53-bd43-971ae8755680), [original CSV](https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=b879cc87-7f42-4911-8093-d1f055ea9c45) | Original file updated 2026-10-05, 8,195,989 bytes. Fields: permit ID, issue date, district code/name, organisation name/address. 1,017,840 parsed rows, 1,008,127 entirely blank; 9,713 nonempty/distinct rows, 9,657 distinct permit IDs, 53 repeated-ID groups, no missing field in nonempty rows; 12 districts | Original national catalog explicitly OGDL v1, free. Publication snapshot, not proof of active scope, formation date or complete coverage. Permits can have several organisations. Positive evidence can support verification; absence cannot prove no organisation |
+| **D02** CMO [service page](https://cmo.gov.taipei/cp.aspx?n=023341AF71C3812D), [可輔導成立公寓大廈管理組織清冊 PDF](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/eb00caaf-7533-4e47-9871-fc2b04028d22.pdf) | 80 pages, dated 115/07/17. Title: permit year ≤92, ≥6 above-ground storeys, ≥2 households, **未成立管委會**. 5,489 contiguous numbered rows / distinct permit IDs; fields ID, district, representative address, above/below-ground floors, households; floors 6–50 | Public read established; no file-specific redistribution license established. Cite source and derived aggregate observations only; do not publish the raw/per-building list. Not a full-city stock, age-30 eligibility list, residential-only cohort or current organisation truth |
+| **D03** imdataman [pinned raw XML directory](https://github.com/imdataman/taipei-house-age-map/tree/ce08b2240fe68dc5cf78dc2f4dbd71b111112026/%E4%BD%BF%E7%94%A8%E5%9F%B7%E7%85%A7), [README provenance](https://github.com/imdataman/taipei-house-age-map/blob/ce08b2240fe68dc5cf78dc2f4dbd71b111112026/README.md) | Public unauthenticated full download: 66 XML files / 230,040,887 bytes; 71,690 permit records / 71,257 IDs, 433 repeated-ID groups, 18 with conflicting extracted identity/decision fields. `51.xml` and `52.xml` byte-identical. Fields: permit, issue/completion, original construction permit, type/structure, floors/households, addresses/lots. 55,268 records have nonempty completion; 69,894 have positive integer floors | Archive author attributes raw XML to CMO catalog 128203, whose current original file starts ROC90. Raw XML entered Git 2016-12-30; pinned repo commit 2017-01-09 is custody, not source retrieval date. D04 documents historic government terms. Exact equivalence to old publisher bytes unverified; current survival/demolition untested. Do not use author's geocoded derivatives or code under assumed permission. Historical corroboration only; no present-day full inventory or safety verdict |
+| **D04** GFZ [source-specific README](https://git.gfz-potsdam.de/globaldynamicexposure/datasources/-/blob/15631b0e20096c9c6d0bdc619fe47992cabafa38/Taipei_construction_permits_1950_2020/README.md), [data license](https://git.gfz-potsdam.de/globaldynamicexposure/datasources/-/blob/15631b0e20096c9c6d0bdc619fe47992cabafa38/Taipei_construction_permits_1950_2020/LICENSE), [download script](https://git.gfz-potsdam.de/globaldynamicexposure/datasources/-/blob/15631b0e20096c9c6d0bdc619fe47992cabafa38/Taipei_construction_permits_1950_2020/download.sh) | Full source text read at pinned commit 2021-10-26; identifies catalog 128203, OGDL v1 copied 2021-10-07, and historic resource ID `07b57a4e-5ac8-471b-a5cd-4cb8bb4e5c59`. Historic publisher endpoint returned HTTP500; new download endpoint with historic rid returned HTTP200 / zero bytes | Research-institution provenance supports the historic government-data license, not byte authentication of D03. GFZ's exposure project publishes no downloadable model output; source directory contains no second data inventory. No historic original release was recovered |
+| **D05** GEM [Taiwan v2026.0.0](https://github.com/gem/global_exposure_model/blob/v2026.0.0/East_Asia/Taiwan/README.md), [Adm1 CSV](https://raw.githubusercontent.com/gem/global_exposure_model/v2026.0.0/East_Asia/Taiwan/summaries/Exposure_Summary_Adm1.csv), [taxonomy CSV](https://raw.githubusercontent.com/gem/global_exposure_model/v2026.0.0/East_Asia/Taiwan/summaries/Exposure_Summary_Taxonomy.csv), [license](https://github.com/gem/global_exposure_model/blob/v2026.0.0/LICENSE.txt) | Full CSV parses: 66 Adm1 rows (22 divisions ×3 occupancies), 99 taxonomy rows. Model aligns counts to 2025 using census sources; no individual permits, addresses, F, organisation or completion records in public summaries. Finer data require a request | CC BY-NC-SA4.0; modeled exposure is not observed local building eligibility. Retain as model context only, exclude from this reconciliation. No request made |
+| **D06** Zhuang et al. [2024 primary paper](https://link.springer.com/article/10.1007/s44195-024-00064-8), §2.1 / data availability | Full relevant source text: authors used 1949–2019 Taipei permits, retained 60,387 entries after obsolete-address exclusions, then 29,170 after geolocation filtering. No separately released case inventory observed; source link has a malformed UUID | Article CC BY4.0 does not license all imagery or prove D03 coverage/accuracy. Corroborates historic-source existence and identity uncertainty; not professional assessment or a current inventory |
+| **D07** UDD [building-statistics function manual](https://webgis.udd.gov.taipei/upis_v2/pdf/%E5%BB%BA%E7%AF%89%E7%B5%B1%E8%A8%88.pdf) | Original 3-page PDF downloaded/text read. Public interface aggregates age/floors/structure in a selected area using building-map SHP periodically obtained from CMO; buildings without permits excluded | No bulk export/field-level coverage or reuse right established. Existing-service baseline, not an inspected new old-building dataset; excludes an unsupported claim that no such municipal lookup exists |
+| **D08** CMO [current assessment service](https://cmo.gov.taipei/cp.aspx?n=53F406AE758E3270), [P02 original](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/0f3092a5-106a-4ce1-87b5-aefc03e9900f.pdf), [FAQ D-19, printed D94](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/35b648d6-30d1-4a2a-96ba-8e9ca300b37b.pdf) | Re-read original PDF text. P02 §5 permits age≥30 or professional F>60, with organisation/≥6 floors, plus agency recognition. §6 requires agreement before assignment. FAQ says subsidised assessment results are not proactively published and disclosure needs applicant consent | Rules and form availability do not provide actual F, recognition, consent or current capacity. FAQ concerns assessment results; do not conflate F with R. Narrow the example instead of synthesising these absent case records |
+
+**Content audit / dependent-claim correction:** D03 disproves a blanket inference that pre-2001
+permit attributes cannot be publicly retrieved. B01–B07's actual current-original-file coverage
+findings remain valid, as do transaction-selection and address≠building limits. D03 is a dated
+archive, not a verified surviving stock. Nonempty fields are not valid dates or independently
+accurate attributes. Filenames are not year filters; duplicate IDs need field-level comparison.
+All claims about a complete contemporary old-stock universe remain unresolved.
+
+**Reproducible real comparison and uncertainty checks:**
+
+1. Remove only entirely blank D01 rows; do not infer one row equals one building. Preserve the
+   53 repeated-ID groups, then intersect distinct permit IDs with D02. This yields 3 IDs /3 pairs;
+   deduplicating D01 exact rows does not change the result (all 9,713 nonempty rows are distinct).
+2. Parse all D02 numbered rows and verify sequence 1–5,489; visually check first/last pages.
+   All three intersections differ in representative address, one in district; their D01 names
+   end in 管理負責人. NFKC width, whitespace and city-prefix normalization does not resolve addresses.
+   A separate floor-suffix/district-prefix sensitivity check also finds no exact address agreement;
+   no fuzzy match, geocoder or invented building ID is used.
+3. Withhold automatic building-status transfer for all three. If future verification establishes
+   a shared scope, the organisation evidence can enter the P02 review; if not, keep separate.
+   The 5,486 nonmatches remain unmatched observations, not confirmed absence. No eligibility,
+   invitation, assessment slot or safety label is assigned.
+
+Run from the repository root with downloads at any private location:
+
+```sh
+python3 scripts/issue6_feasibility.py \
+  --organisations /path/to/organisations.csv \
+  --unregistered /path/to/unregistered.pdf \
+  --archive-dir /path/to/community-permits
+```
+
+`--archive-dir` is optional; the two original official files alone reproduce the current finding.
+The script checks original hashes, rejects malformed/missing PDF rows and emits no names, addresses
+or permit IDs. D01 SHA-256 `a6e3883a772aa0caee72b754c495a28a98116e99e6c0404879f84818bb1ed245`;
+D02 `0b75c68c602dafc21858e374ac6183ca212fab28c913b19250403b3f147d7225`.
+Archive sorted filename/digest-list SHA-256 from the script is
+`d5bf4cfc5b8d41d8310be784dd1c810d48343df6ad83f2fbf2c1e497c7e04233`.
+No simulated input is required for these calculations.
+
+**Search-route limits and stopping reason:** current-list reconciliation has two usable original
+sources and a reproduced finding; historical permits have been fully inspected with explicit
+provenance limits. GEM/GFZ model routes stop at aggregate summaries or unreleased output; NCREE's
+[TERA report landing page](https://www.ncree.niar.org.tw/accomplishment/technicalreports/page/12183)
+describes insurance exposure, not a released Taipei candidate table (full report not inspected).
+The [EGU2020 original abstract](https://meetingorganizer.copernicus.org/EGU2020/EGU2020-19670.html)
+describes permit/OSM/NCDR modelling, with no raw inventory linked in the inspected abstract.
+Community geospatial searches led to D03; live OSM feature downloads were not run because footprints
+cannot resolve management scope or professional F for this decision. This is an unexecuted route,
+not evidence of no features. Targeted Taipei professional-F searches yielded no new case-level
+public source; CMO sources give rules and restricted-result boundaries, not a public F feed.
+The earlier exhausted historical-selection-cohort search was not restarted.
+
+**Connector-assisted discovery:** an open-data search found 132391 and returned its columns and
+download URL; the topic author verified publisher bytes and terms rather than adopting a quality
+badge or catalog row count as usability. A
+臺北+耐震 search returned no hits; a broad 快篩 search returned irrelevant water datasets, so web
+and original service pages remained necessary. Code-repository search found pinned README/source
+paths for D03, verified with raw XML. No additional public municipal/academic inventory route was
+established through account-content connectors; this does not establish absence of other data.
+
 ### Building identity audit — public chains cover new buildings, not the old-building universe
+
+**Scope correction — 2026-10-15:** this heading describes the B01–B07 current-publisher audit,
+not all publicly retrievable history. D03 below supplies a community-preserved pre-2001 permit
+archive; the earlier inference that historical building attributes are available only through
+restricted sources is superseded. A complete current old-building universe remains unverified.
 
 **Owner decision — 2026-10-14:** continue focusing on issue6 old-building resilience. Research-only; no request, account, submission or implementation.
 
@@ -352,7 +1075,7 @@ stage transitions. Look for an archived older copy that would give conversion wi
 
 **Evidence — completion-date consistency:** 27 B05-listed buildings appear in B04 with35 transactions. In all35 the completion ROC year equals the year of the listed use permit. Both values likely descend from the same permit/registration chain, so this checks internal consistency, not independent accuracy.
 
-**Inference — consequence for allocation:** the verified building-level chain covers the newest part of the stock: issue6's target population, buildings roughly30 years or older (use permits before1996), is outside B01/B02 by construction. For older buildings, public data supply only (a) transaction-derived completion year, material and floors for about one in ten address keys, biased toward traded residential units, and (b) listed problem registers such as B05. Neither defines the eligible universe, and an untraded or unlisted building remains **unknown**, not newer or safe. A full old-building inventory with identity, completion date and structure would need an authoritative non-open source: building registration, house-tax registry or the scanned permit-image system (`img2.gov.taipei`, a script-rendered app whose coverage, query rules and terms were not observable without interactive use). Access to any of them is an owner/authority question, not a data-engineering step.
+**Inference — consequence for allocation:** the verified building-level chain covers the newest part of the stock: issue6's target population, buildings roughly30 years or older (use permits before1996), is outside B01/B02 by construction. Within this 2026-10-14 current-publisher audit, older-building sources included (a) transaction-derived completion year, material and floors for about one in ten address keys, biased toward traded residential units, and (b) listed problem registers such as B05. Neither defines the eligible universe, and an untraded or unlisted building remains **unknown**, not newer or safe. D03 now adds historical permit attributes, superseding the exclusive-source inference. A complete current inventory still needs authoritative identity and survival checks; possible routes include building registration, house-tax registry or the scanned permit-image system (`img2.gov.taipei`, a script-rendered app whose coverage, query rules and terms were not observable without interactive use). Access to any of them is an owner/authority question, not a data-engineering step.
 
 **Hypothesis consequence:** A, municipal inspection allocation, can now demonstrate a disclosed three-state universe for a fictional or authorized pilot area: buildings with 2001-or-later use permits with verified identity; older addresses with transaction-derived attributes; and buildings with no public attributes. It still cannot rank real buildings. B05 is useful as a test of whether a reviewer's list preserves known listed cases, not as risk labels for unlisted buildings. B is unchanged.
 
@@ -535,6 +1258,25 @@ Snapshot hashes (prefix): Revenue Service 113/114/115 `47656df3…`/`39998cff…
 
 Unverified leads: 2025 Kahramanmaraş 1,015-building sidewalk-survey comparison; Sucuoğlu et al. 2007 Düzce street-survey calibration; Bingöl 2003 FEMA P-154 over-estimation; Tainan post-0206 soft-storey screening counts; ISMEP ranking method; Italy Sismabonus uptake; NZ amendment bill passage.
 
+### Source ledger — municipal baseline refresh (retrieved 2026-10-14)
+
+| ID | Original source / period | Inspected method and scope | Limits and use |
+| --- | --- | --- | --- |
+| M01 | [Taipei gazette 115 No. 71](https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=fb8cb02f-8402-4261-88e0-f000f5c6e8fe), announcement 2026-04-17 府都建字11561076341 | Normal-TLS curl; full PDF text extraction, visual check of printed p. 36 / PDF p. 37; attached rules pp. 38–44 points 5, 6, 14, 16 and annex headings | SHA-256 `15d080547443febea9676183120723df0f7e093128ce2aeeaaaf0fcda6aef63c`. Capacity/eligibility/process, not selection results or remaining slots. Official announcement/rule paraphrase; no raw register republished. |
+| M02 | [UDD 114年度主管決算](https://www-ws.gov.taipei/Download.ashx?icon=.pdf&n=6YO955m85bGAMTE05bm05bqm5Li7566h5rG6566XLnBkZg%3D%3D&u=LzAwMS9VcGxvYWQvMzI4L3JlbGZpbGUvMzExMTQvOTU2ODQxMS8zMTNkZWYzMC01MDRkLTQzNGEtOGU4MS1mMzBmN2ZjODYzMWMucGRm), 2025 reporting period | Normal-TLS curl; full PDF extraction; total explanation pp. 2 and 31; p. 31 / PDF p. 35 visually checked | SHA-256 `c2b35aa99a93619dbb8c2a4d8d587ca2cf09f93d2bd6b72dea35a2e7bc4ee39e`. Programme aggregates; two 50-case budget lines cannot establish unique cases or conversion. Design fees are not completed works. Publication date not independently resolved. Aggregate paraphrase; no individual records. |
+| M03 | [CMO professional reconnaissance announcement](https://cmo.gov.taipei/News_Content.aspx?n=2489C7DF2B5C1860&s=A10AD6427FA383AD&sms=72544237BBE4C5F6), page updated 2016-11-03 | Normal-TLS curl HTML main text: chosen Chongqing/Heping road axes, ≥30-year scope, 2016-11-07 start and 1,500 target | Historical agency account, no completion or current-force check. Reconnaissance is not formal initial assessment; 2016 consent statements cannot be used as a current exemption. Paraphrase and link only. |
+| M04 | [Taipei public-renewal implementation rules](https://laws.gov.taipei/law/LawSearch/LawPrint/FL080447?type=0), revision 2020-04-09 / effective 2020-04-30 | Live city law-system HTML; articles 4–7 and 11–12 re-read in full | Defines project selection and written suitability review; ten required contents are not ten weighted factors. No case queue, quantitative weights or review-effort result. Statutory text is linked/paraphrased, not a licence for other site content. |
+| M05 | [Citywide renewal-area designation plan](https://www-ws.gov.taipei/001/Upload/373/relfile/18970/9353208/d34b29fc-b649-4c03-9757-7bcd03a1d375.pdf), 2018 plan | Normal-TLS curl and PDF text extraction; printed pp. 7–9 weighted overlays and boundary/exclusion rules | SHA-256 `41b291b8fbc29ea616ad5a2cd981d64ec1e275b2b3f0db20433b744a37030cd3`. Area designation, not public-renewal project selection; later changes not audited. Official planning document paraphrase; no raw geodata redistributed. |
+| M06 | [URO 虎林街60巷 advancement account](https://udd.gov.taipei/events/fhqekzq-19812), issued 2023-12-29 / page updated 2024-03-15; [follow-up](https://udd.gov.taipei/events/fhqekzq-20722), 2025-05-27 | Original HTML main text re-read; entry, technical estimates, willingness and advancement/implementer steps | Agency-reported success case, no rejected-case comparison, independent causal evaluation, source intent forms or completed rebuilding verified. Paraphrase and link only. |
+| M07 | [URO public-renewal application FAQ](https://english.udd.gov.taipei/News_Content.aspx?n=6E18BA96F3CB0148&s=75051238204F5D67&sms=87415A8B9CE81B16), updated 2025-10-28 / reviewed 2026-09-11 | Original publisher HTML, all four 7599 stages | Programme intent/selection stages are distinct from statutory owner/area consent. FAQ is not every public-renewal route; exact site eligibility annex not independently refreshed here. Link/paraphrase only. |
+| M08 | [CMO proactive initial-assessment flow, annex 5](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/d1c62bc5-5690-431c-93eb-51f85515dc16.pdf), PDF created 2023-02-08, linked from [CMO 建物耐震評估](https://cmo.gov.taipei/cp.aspx?n=53F406AE758E3270) | Normal-TLS curl, `pdftotext -layout`, one page in full | SHA-256 `e4b6706d0bd7737f341a8bd75cea2ea985ef70239a090ea2ee1c3916ef5d9354`. Process only; no selection criterion or volume. Paraphrase and link only. |
+| M09 | UDD 主管決算 for [111](https://udd.gov.taipei/assets/c1psQ9R9EaX5htDXRd8UdL/attachs/111年度都發局主管決算.pdf), [112](https://udd.gov.taipei/assets/c1psQ9R9EaX5htDXRd8UdL/attachs/112年度都發局主管決算.pdf), [113](https://udd.gov.taipei/assets/c1psQ9R9EaX5htDXRd8UdL/attachs/都發局113年度主管決算.pdf) and 114 (M02), from [UDD 預決算書](https://udd.gov.taipei/collection/d37gqja) | Normal-TLS curl, `pdftotext -layout`; CMO revenue notes and 辦理情形 rows at the pages cited in §3; 114 PDF p. 9 explanation | SHA-256 111 `d84bfe36ac6d3522a0222310f244597792a9d2d69cc174b396e8fd3717f03918`, 112 `8991617cdbf14fb92cc07bb2f3e4a477005365adb14c8ccd9f2d00173b720d87`, 113 `e8df07b8914847ca13a7b17b01a5fde95ed09e24a1eaebc9843f4c8602e4d35c`; 114 matches M02. Agency-reported aggregates; overlapping year labels; no case identities. |
+| M10 | UDD reports to the council, [第14屆第7次 (2026-04)](https://udd.gov.taipei/assets/nvKF2cDhA7pKtLuWKQLGHn/attachs/臺北市議會第14屆第7次大會都發局工作報告(115年4月).pdf) and [第8次 (2026-07)](https://udd.gov.taipei/assets/nvKF2cDhA7pKtLuWKQLGHn/attachs/臺北市議會第14屆第8次大會都發局工作報告(115年7月).pdf), from [機關工作報告](https://udd.gov.taipei/article/LnthK8f) | Normal-TLS curl, `pdftotext -layout`, keyword search then the 危老, 403 and 575 passages read in full | SHA-256 2026-04 `9458c2c9f7d1e428a4280649ed2bc67111f2d1ff39753be21468449534b66673`, 2026-07 `a8803169dc3448b5efe5ea70f991b2e864d65d31fc52991e2ef8ecd46de0ac57`. No passage on the proactive 50-case programme; agency-reported progress. |
+| M11 | [CMO 危老問答集合併版](https://www-ws.gov.taipei/001/Upload/845/relfile/-1/845/35b648d6-30d1-4a2a-96ba-8e9ca300b37b.pdf), PDF created 2025-11-06, modified 2025-11-17, 273 pp., linked from [CMO 危老重建](https://cmo.gov.taipei/cp.aspx?n=CC5912F40B7F47CE) | Normal-TLS curl 2026-10-15, `pdftotext -layout`, keyword search; B-14, C-10, D-09–D-13, E-28–E-33, G-11 and H-02/H-06 read in full | SHA-256 `3a21746c1790b34f3a33071f66ee732c87fd4c74b816146acdd5effe21450bca` (same file as §2). Agency FAQ, not a legal instrument |
+| M12 | [土地登記規則](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0060003) §24-1 (amended 2021-07-13); [URO class-3 transcript procedure](https://uract.nlma.gov.tw/uploads/rule/B3101110018700000.pdf), dated 2021-01-22, attaching MOI's 核發土地登記及地價資料謄本注意事項 (issued 2015-01-09) | National law database HTML; PDF curl and `pdftotext -layout`, points 1–7 of the attached rules read in full | PDF SHA-256 `42ee69d2d254a2ab4cfa13853301382d80b5d406c28a8ed10beae0c5de984988`. The attached MOI rules are the 2021 copy; later amendments unchecked, though FAQ B-14 (2025) is consistent |
+| M13 | [公寓大廈管理條例](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0070118) §6, §7, §25, §29, §29-1, §30–32, §47, §49-1 (amended 2022-05-11); [MOI criteria for at-risk buildings](https://www.moi.gov.tw/news_content.aspx?n=145&sms=9082&s=280390), issued 2023-06-06 | National law database HTML parsed in full; MOI page read with the web tool | Whether §6 covers a retrofit that takes floor area is untested; Taipei expansion under §29-1 ¶2 not found in a bounded search, absence unverified |
+| M14 | [民法](https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000001&flno=1101) §1101 and §1113 | National law database single-article HTML | Application to 危老 consent is unsettled in the sources read; court decisions found concern sales only |
+
 ### Source ledger — deep investigation (retrieved 2026-10-14)
 
 P: current selection rules and baseline.
@@ -703,19 +1445,69 @@ All dates below are retrieval dates **2026-10-13**, unless a publication/observa
 
 ## 6. Readiness and integration
 
-Preserve T06 and all three workflows as hypotheses with explicit rejections above. Carry forward **demonstration=specified / decision=insufficient**, not a safety-prioritization readiness upgrade. S12 refresh strengthens the existing `7889e8a0` aggregation limit; S11 confirms the `ec40e067` interpretation restriction without refreshing its GeoJSON audit. At the earlier deep-run stage, `a6394e3f` and `7a800e92` were not refreshed; the later T06 domain primer now records full-file shape refreshes, without upgrading physical accuracy or decision readiness. Neither is essential to these narrowed actions. The owner subsequently refocused the allocation-priority record on inspection/public-renewal decisions. The 2026-10-14 identity audit verified a permit/footprint/doorplate chain for2001+ use permits only; the same-day deep investigation found selection rules, professional thresholds, district-level stock data and precedents, and reframed A as tiered screen-to-verification sequencing. Bounded quality audits now qualify the population, building-count and liquefaction dependencies; the earlier T06-C intake comparison remains a bounded fallback, not the current priority.
+The [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates)
+owns status. Primary A now has a reproduced real aggregate input-reconciliation example (D01/D02),
+while allocation itself and B remain demonstration specified / decision insufficient. T06-D is a
+secondary deferred hypothesis, demonstration unassessed / decision insufficient. Earlier T06-A–C
+remain bounded supporting alternatives with existing-service baselines; no new operational gain
+is established. Local fictional-data prototypes exist (§4); no production application or real allocation has been implemented.
 
-Status lives in the [canonical readiness record](../research.md#problem-fit-and-separate-readiness-of-the-expanded-candidates); this section records only the issue-specific consequence.
+**Changed evidence and consequence:** M01 establishes the 2026 programme's planned 50-case scale,
+not a backlog or remaining slots. M02 supplies selected 2025 activity totals, correcting the
+blanket count gap but not supplying cohorts or grade distributions. M04/M06/M07 establish
+public-renewal criteria and stage advancement; they do not validate comparative priority.
+M05 refutes a blanket absence-of-weighting claim at the area-planning level. B01–B07 remain a
+post-2001 identity-chain audit, not the old-stock universe. The two scoped CMO lists remain
+readable sources, not licensed all-city inventory or progression evidence.
+D03 additionally establishes retrievable historical pre-2001 permit attributes, superseding the
+blanket restricted-only inference. It does not establish current survival or a complete inventory.
+D01/D02 establish three permit-ID collisions with unmatched addresses, not three confirmed
+building-status contradictions. No simulation is needed for that input-preparation example.
+M08–M10 describe assessment activity and an agency explanation for retrofit funding difficulty.
+Their different programmes and cohorts do not establish a conversion rate or the main bottleneck.
+A remains demonstration specified / decision insufficient. T06-B is separate follow-up research;
+S01–S04 and the board demonstrate different tasks, not measured allocation value.
+
+**Supported / refuted / unresolved:** supported: existing programme gates and planned scale;
+refuted for current public inputs: real all-city individual safety/renewal rankings and treating
+missingness alone as a meaningful priority order; unresolved: actual selection difficulty,
+incremental decision value, adoption and civic effect. A disclosed fictional example illustrates
+logic only. Citizen samples inform execution questions, not a replacement for the explicit
+municipal user. Propagate these qualifications to the master comparison, dependency index,
+queue and reading mirrors; §7 owns the one current check.
 
 ## 7. Next actions and open decisions
 
-**Next executable check:** two open facts decide the route finder's value. First, how often Taipei
-has granted prompt designation to a 危老 case that lacked unanimity. Second, the minimum unit size
-that then applies. Read the urban renewal office's designation notices and the current
-臺北市都市更新自治條例. Publication or outreach is not authorized by this check.
+**Next executable research check:** within D02's scoped permit list, measure whether a bounded
+age-branch subset can link D03's dated completion/floors to D01 management evidence without
+ambiguous permit-to-building transfer. Start with the three observed collisions and the archive's
+duplicate/conflict groups; inspect permitted original identity records, keep raw identities private,
+and report an explicit linked/unresolved result. Stop an individual action claim if contemporary
+scope or survival cannot be confirmed. Do not add a citywide score, F simulation or UI before
+this question is answered. The present all-real reconciliation is already reproducible (§4/§5).
 
-**Open owner decision:** route 1 reads public Taipei City Council business reports and audit
-reports for annual assessment and retrofit counts (default, no contact). Route 2 files information
+**Hackathon delivery versus effectiveness:** show the original pain, existing rules, fixed source
+population, real finding, uncertainty checks and conditional action using the reproducible aggregate
+comparison. No interview, agency reply or historical cohort is a delivery prerequisite. The
+historical solicitation comparison needs lawful selected/unselected records, decision-time
+information, capacity and practitioner error/effort criteria; it is deferred post-event and remains
+unresolved. The prepared request is retained as a later route, not sent.
+
+**Deferred supporting check:** the public weak-storey cost reference (at least five comparable cases
+with cost, layer area, storeys and households) remains useful to the estimator but does not establish
+allocation value. Until supported, the estimator remains subsidy-side only.
+
+**Completed 2026-10-15:** the 115年度 council-report and 2022–2025 account check (§3 funnel); the household burden check (§3), which is unresolved and adds an access gate. The owner-reachability check (§3): mechanisms supported, prevalence unresolved; the management organisation is a recurring gate.
+The inspected public sources did not yield a complete candidate, invitation and refusal cohort; internal availability is unknown.
+
+**Deferred owner-situation checks:** whether §6 entry duties cover a weak-storey retrofit that takes floor area, and whether Taipei has expanded the §29-1 at-risk criteria; both need an agency answer, which is external contact. Count owner situations only from de-identified agency statistics, never from personal records.
+
+**Deferred checks:** T06-D's assessment-consent, discretionary designation and unit-size questions
+remain open but do not lead this municipal-allocation cycle. Dated promoter-register comparisons
+could test progression; a one-date filing snapshot cannot. Public-renewal case evidence informs B
+separately and never transfers its project criteria to A.
+
+**Acquisition boundary:** public council/agency/audit records remain the default. An alternative files information
 requests for de-identified initial-assessment statistics or house-tax statistics under 稅捐稽徵法
 §33 ¶2; this is external contact and needs action-time confirmation.
 
@@ -726,5 +1518,8 @@ document's conclusions change materially.
 
 | Date | Change |
 | --- | --- |
+| 2026-10-15 | Broad web/connector and academic/community discovery; D01–D08 original-source audit; real 5,489-permit/9,657-registration-ID reconciliation with three unresolved collisions; historic pre-2001 XML recovered and qualified; field feasibility including S01–S04; separated demonstration acceptance from post-event effectiveness |
 | 2026-10-13 | Owner focus on issue 6; domain primer; allocation reorganization into decisions A and B |
+| 2026-10-14 | Municipal decision scope clarified; 50-case programme and 2025 accounts verified; candidate baselines/rejections aligned; undated-filing and sample inferences qualified |
+| 2026-10-15 | Owner adds "actually solves it" test; programme funnel (M08–M10): proactive slots fill, retrofit stalls on household burden; A gains downstream success condition; T06-B becomes follow-through; route map of exits and their gates; unreachable/restricted-owner rules and Taipei inheritance-listing counts; household burden check (regime-dependent magnitude, half-removable uncertainty, access gate); owner chooses demo direction (a); owner reachability and standing (M11–M14): transcript routes, management organisation as gate, guardianship and access levers; owner makes the stall board the core candidate, mapping each critical pain to its digital part; fictional-data HTML prototype of the board |
 | 2026-10-14 | Identity audit; deep investigation (P/E/I/X); owner rule to start from the live prompt and citizen voices; pain re-anchor and pain tree; T06-D added; moved into this topic document (template v1) |
