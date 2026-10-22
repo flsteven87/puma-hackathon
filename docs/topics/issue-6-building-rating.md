@@ -3,11 +3,11 @@
 | Field | Value |
 | --- | --- |
 | Parent topic | [Issue 6 — Old-building seismic resilience](issue-6-building-resilience.md) (official prompt, practice and evidence) |
-| Owner decisions | 2026-10-21: 「我認為應該有棟層級的分析，最多我們可以遮蔽具體哪一棟」; 「單棟分析可以用另一個文件」; return both reports to the official prompt, 「1，而且我們是兩種類型的報告，都要回到根本」; one score and a top-share cut by 棟, 「用同一種數據，然後讓分佈圖取前面的 % 數目」, with first priority the top 1% |
+| Design decisions | 2026-10-21: analyse by building without identifying individual buildings; keep the building analysis in its own document; answer the official prompt; one score per building and a top-share cut, first priority the top 1% |
 | Evidence cutoff | Computation/F01 audit 2026-10-22; other evidence 2026-10-21 (D03 historical permits, MOI smallest-statistical-area age groups, both Fire Department lists, city liquefaction polygons, designated renewal areas, D01/D02 organisation lists, NCREE Meinong/Hualien case export) |
 | Status | Development analysis after exposure: every field, list and the 里 bands had been seen before the contract was written. No damage label is fitted |
 | Publication | Aggregates only. The per-building table carries permit numbers and stays in private research custody |
-| Lay page | [哪些老房子，該先做耐震健檢？](../demo/issue-6-building-rating.html), built from this document's numbers; owner review before any showing |
+| Lay page | [哪些老房子，該先做耐震健檢？](../demo/issue-6-building-rating.html), built from this document's numbers |
 
 ## 1. Decision
 
@@ -131,32 +131,16 @@ record of one permit shares its score, because the permit carries no attributes 
 
 - **Owner direction — independent optimisation (2026-10-22):** preserve the research question and independent criteria. The parent's method-admission plan examines stock identity, spatial demand, exposure/support, structural coverage and rescue/site mechanisms. Incorporate an input only after its source and decision-specific measurement checks pass; neither matching the city nor retaining this 385-building set is success. Current scores remain unchanged while these checks are pending.
 - **Done:** the main/possible first-priority disagreement (29 permits / 44 buildings) was traced to source text, the publisher's sub-alley listing convention and doorplate geometry; the main set stands.
-- **Done 2026-10-22:** the existing generated lay page now distinguishes regional potential, unknown coverage and multi-doorplate means; presents the bounded384/385 joint-stress finding beside unchanged385/332 results; uses descriptive groups and conditional assessment routes. Scores, map geometry and interactive capacity data are unchanged.
-- **Next:** review the corrected existing reading reports for owner-confirmed publication; numerical results remain unchanged. National numerical replacement remains separate.
-- **Separate follow-ups:** completed F05/care diagnostics have not adopted new inputs. F04 standard finest-geometry recovery, current-site/LTC identity, upstream tall/mixed taxonomy and soil-profile CRS remain explicit research questions.
-- **Owner decision:** final entry and public release; local research and report updates are complete.
+- **Done 2026-10-22:** the lay page distinguishes regional potential, unknown coverage and multi-doorplate means; presents the bounded384/385 joint-stress finding beside unchanged385/332 results; uses descriptive groups and conditional assessment routes. Scores, map geometry and interactive capacity data are unchanged.
+- **Next:** national liquefaction numerical replacement remains a separate research question; numerical results are unchanged.
+- **Separate follow-ups:** completed F05/care diagnostics have not adopted new inputs. F04 finest geometry is recovered and joined to permits in one fixed rectangle, where its brick symbol does not locate masonry permits. A [desk pre-check](issue-6-building-resilience.md#first-priority-currentness-desk-pre-check-2026-10-22) of the first priority finds 311/385 represented buildings on a municipal segment whose floor annotation matches the permit, and 74 with a site-check prompt; the lay page states this aggregate split in its first-use step; scores are unchanged; current-site/LTC identity, upstream tall/mixed taxonomy and soil-profile CRS remain explicit research questions.
 
 
 ## Change log
 
-- 2026-10-21: created for the official prompt's five factors and both actions, with the 2026 proactive
-  assessment as one route; one median priority score per record, band 1 the top 1% of buildings and band 2
-  the rest of the top 10% (owner choice); buildings are the unit throughout.
-- 2026-10-21: the 65+ share and the fire-access flag moved to their finest public levels (owner: 「我們應該要用
-  最好的 granularity」); §1–§6 and the lay page carry these results.
-- 2026-10-21: organisation status of band-1 6–7-storey buildings split into listed-as-unorganised and unknown.
-
-- 2026-10-22: building report made primary; village comparison retired; broad source discovery precedes case review. Numerical results unchanged.
-
-- 2026-10-22: F01 mapping qualification added; numerical results unchanged pending segment/entrance reconciliation.
-
-- 2026-10-22: owner-authorized F01 refresh adopted as the current documented-evidence scenario; scope sensitivity and separate uplift-off stress completed; all dependent report outputs regenerated.
-
-- 2026-10-22: main/possible first-priority disagreement traced; all possible-only entrants are on unlisted branches or outside the listed stretch, so the main set stands. Numerical results unchanged.
-- 2026-10-22: lay page reorganised around one ranking pass followed by the three kinds of first priority; the post-hoc narrowing funnel, heat map and factor-ratio bars were removed. Numerical results unchanged.
-
-- 2026-10-22: five-track original-source/linkage deepening completed without score adoption; existing municipal liquefaction-export legend promoted to an explicit current-result condition.
-
-- 2026-10-22: municipal liquefaction categories verified exhaustively; full source/coverage audit reproduces all L values, separates unknown/mixed inputs and queues lay-page explanation reconciliation, with no scoring adoption.
-
-- 2026-10-22: completed paired missing-liquefaction stress with unchanged source/model/weights and full baseline reproduction; current published result retained, uncertainty limits updated.
+- 2026-10-21: created for the official prompt's five factors and both actions: one median priority score per
+  building record, first priority the top 1% of buildings and second wave the rest of the top 10%; the 65+
+  share and the fire-access flag at their finest public levels.
+- 2026-10-22: fire-lane lists linked by confirmed doorplate match, with possible-scope and uplift-off checks
+  (385 first priority, 332 retained uplift-off); missing-liquefaction stress (384/385 retained); desk
+  pre-check against the 2025 municipal layer (311 consistent, 74 site-check prompts). Scores unchanged.

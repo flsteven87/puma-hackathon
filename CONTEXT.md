@@ -8,4 +8,4 @@
 | Simulated data | Fabricated demonstration input, clearly separated from observed measurements. |
 | MVP | A minimum working demonstration of one proposed workflow. |
 
-Event facts and the research position are owned by [the research brief](docs/research.md).
+Event facts are owned by [the official page](https://puma.taipei/hackathon); the research position by [the issue-6 research document](docs/topics/issue-6-building-resilience.md).
