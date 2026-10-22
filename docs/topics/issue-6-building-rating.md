@@ -4,7 +4,7 @@
 | --- | --- |
 | Parent topic | [Issue 6 — Old-building seismic resilience](issue-6-building-resilience.md) (official prompt, practice and evidence) |
 | Design decisions | 2026-10-21: analyse by building without identifying individual buildings; keep the building analysis in its own document; answer the official prompt; one score per building and a top-share cut, first priority the top 1% |
-| Evidence cutoff | Computation/F01 audit 2026-10-22; other evidence 2026-10-21 (D03 historical permits, MOI smallest-statistical-area age groups, both Fire Department lists, city liquefaction polygons, designated renewal areas, D01/D02 organisation lists, NCREE Meinong/Hualien case export) |
+| Evidence cutoff | Rationale and zero-share source audit 2026-10-23; computation/F01 audit 2026-10-22; other evidence 2026-10-21 (D03 historical permits, MOI smallest-statistical-area age groups, both Fire Department lists, city liquefaction polygons, designated renewal areas, D01/D02 organisation lists, NCREE Meinong/Hualien case export) |
 | Status | Development analysis after exposure: every field, list and the 里 bands had been seen before the contract was written. No damage label is fitted |
 | Publication | Aggregates only. The per-building table carries permit numbers and stays in private research custody |
 | Lay page | [哪些老房子，該先做耐震健檢？](../demo/issue-6-building-rating.html), built from this document's numbers |
@@ -16,7 +16,7 @@ age, structure, older population, liquefaction potential and narrow-lane rescue 
 building health checks (老屋健檢) and public renewal (公辦都更). It sets no case limit and no programme
 eligibility. The event is organised by 沈伯洋競選辦公室; this is independent research for a potential municipal decision, not a city commission.
 
-**Decision here:** which historical-permit candidates merit earlier professional investigation, and which follow-up route could reach them after current identity, previous assessment and applicable programme conditions are checked. This document is the primary inspection-priority report. Village totals summarize the candidates geographically; they do not supply a separate priority score.
+**Decision under research:** which historical-permit candidates merit earlier professional investigation, and which follow-up route could reach them after current identity, previous assessment and applicable programme conditions are checked. **Current result:** an older-neighbourhood-emphasis investigation scenario, not an accepted general inspection order. The general decision remains the research objective; describing this narrower result does not establish a city-adopted objective or solve that decision. This document is the primary inspection-priority report. Village totals summarize the candidates geographically; they do not supply a separate priority score.
 
 **What each factor resolves to:**
 
@@ -51,14 +51,22 @@ taller records fall outside this implementation's class table (the national mode
 C1H, which the signed model does not carry) and form a separate *tall lane*, described by the
 same factors and never scored.
 
-**Score:** the parent's loss-chain quantity, with each factor at its finest level:
+**Score:** a declared policy index combining a structural class prior and contextual indicators, with each factor at its finest adopted level:
 
 `E = p × O × (1 + δR) × (1 + λL)`
 
-p is the building's chance of moderate or worse damage under the code design scenario; O the 65+ share of
+p is the research model's class-conditional Moderate+ damage estimate under the code design scenario, used only as a relative prior, not a calibrated building probability; O the 65+ share of
 its smallest statistical area; R is 1 for an audited text-confirmed F01 narrow-lane relationship or the unchanged fire-access stretch flag; possible-only F01 relationships receive no increment in the main documented-evidence scenario and are included in a separate scope sensitivity; L is the
 liquefaction value at its doorplates (1 high, 0.5 medium, 0 low). δ and λ are the two declared policy
 multipliers.
+
+**Why these inputs (rationale checked 2026-10-23):** material, storeys and design era enter one engineering procedure rather than receiving separate arbitrary age/material points. They describe a class, not present walls, alterations or retrofit. The older share expresses a preference for neighbourhoods with more registered older residents; it does not measure the building's occupants, mobility or the number of people protected. A listed address supplies an access-check lead, and regional liquefaction potential supplies a ground/foundation-check lead. Neither is an observed rescue delay or foundation failure. These roles justify investigating the factors; they do not determine their numerical combination.
+
+**Why multiplication, and its unresolved tradeoff:** the product rewards the co-occurrence of the class prior and older share, then increases that base when the two contextual flags warrant an increment under the declared settings. Holding other inputs fixed, a proportional change in p or O has the same proportional effect on the raw index. Thus a lower structural prior can be offset by higher older share or increments. This is an explicit research preference, not a derived expected loss or validated exchange rate. Both 25% increments together multiply the base by 1.5625, not 1.50; the interaction is imposed by the formula, not measured. There is no inspected source calibrating the 0/25/50% grid or the medium-liquefaction value 0.5 for this decision. Multiplication is a testable choice, not a uniquely justified engineering rule.
+
+**Observed boundary:** the [source-traced zero-share audit](issue-6-building-resilience.md#priority-rationale-and-zero-share-audit-2026-10-23) finds three permits representing ten scored buildings with O=0 and score=0. Original area-age counts are zero for ages 65+, with population at least 50 and unique polygon matches; this is not missing-value imputation. It is not evidence about their actual occupants or safety. Direct multiplication therefore suppresses a building even when its structural prior is positive. This prevents adopting the current index as a complete general inspection order. No numerical floor or changed objective is silently adopted; the present output remains a declared scenario, and a general-purpose rule must resolve this boundary before operational use.
+
+**Why combine settings:** the grid exposes sensitivity to selected implementation, era and policy assumptions; its median supplies one reproducible displayed index. The grid's range, equal representation and median are themselves choices, not learned probabilities or a policy-neutral consensus. The 3,600 recomputations are not independent empirical validations. Report the combined input/policy frequency as such, never as engineering confidence. Normalizing the index to 100 changes its reading scale, not its evidential strength; 200 does not mean twice the damage risk or twice the benefit.
 
 **Uncertainty and the priority score:** 4 implementations of the national model × 100 draws of the design era
 where the permit date straddles a boundary × δ, λ ∈ {0, 0.25, 0.5}: 3,600 recomputations. In each, E is divided
@@ -70,8 +78,7 @@ its 3,600 values, rounded to 0.1: 100 is the typical old building. A stress test
 at the finest adopted levels in §1, with F01 refreshed and decimal-rounding links recovered on 2026-10-22. The signed model and other inputs remain unchanged.
 
 **Bands (changed after exposure, owner choice):** records are ordered by the score and the pool's buildings
-(棟數) are counted down from the top. *Band 1* is the top 1%, *band 2* the rest of the top 10%, band 3 the remainder; the record that crosses a line counts inside. Both lines are policy
-choices sized to inspection capacity; the lay page lets the reader move the line from 0.5% to 10%. Every
+(棟數) are counted down from the top. *Band 1* is the top 1%, *band 2* the rest of the top 10%, band 3 the remainder; the record that crosses a line counts inside. Both lines are illustrative workload fractions chosen for the demonstration, not thresholds calibrated to observed inspection capacity; the lay page lets the reader move the line from 0.5% to 10%. Every
 record of one permit shares its score, because the permit carries no attributes per building.
 
 **Routes, after the order (feasibility, never risk):** first verify present building identity, previous assessments, organisation and applicable procedure. For walk-ups (under 6 storeys), the owner-applied 危老 assessment subsidy (M02) is a documented route; M03 is a 2016 reconnaissance precedent whose current force was not checked, not a present consent exemption or committed deployment. Six-storey-or-higher records with registered organisations are candidates for checking proactive initial-assessment eligibility (M01, 50 planned cases in 2026, not remaining slots); solicitation, consent and qualified assignment still follow the applicable procedure, and organisation/city-recognition status needs confirmation. A represented-building count is not a programme case count. Being inside a designated renewal-area piece is a geographic clue for B's separate area-scope and suitability review, not inherited public-renewal priority.
@@ -92,7 +99,7 @@ record of one permit shares its score, because the permit carries no attributes 
 
 **Evidence — inputs:** 1,193 scored buildings have confirmed F01 narrow-lane links; 580 have possible-only F01 relationships. Union with the unchanged fire-access list gives 2,762 rescue-flagged scored buildings. These are historical address associations, not current access observations. Original source dates remain distinct from the calculation date.
 
-**Evidence — input variation:** 94 first-priority buildings occur in the top 1% in at least 90% of the 3,600 model/era/weight combinations. The minimum top-10% member frequency in the main first-priority set is 86.7%. This is conditional input sensitivity; records were not bootstrapped and no sampling-stable set is claimed.
+**Evidence — combined model, era and policy variation:** 94 first-priority buildings occur in the top 1% in at least 90% of the 3,600 model/era/weight combinations. The minimum top-10% member frequency in the main first-priority set is 86.7%. This frequency mixes engineering/era uncertainty and disagreement over policy weights; it cannot isolate engineering confidence. Records were not bootstrapped and no sampling-stable set is claimed.
 
 **Evidence — routes:** 236 first-priority buildings are walk-ups. Of the 149 with six or seven storeys, 68 have a registered organisation and 81 require organisation/recognition checks; 68 of the latter appear on the no-organisation assistance list and 13 appear on neither organisation list. 13 first-priority buildings lie in designated renewal-area pieces; that alone does not establish public-renewal suitability.
 
@@ -128,6 +135,8 @@ record of one permit shares its score, because the permit carries no attributes 
 - Input-frequency sensitivity is not record-bootstrap robustness. The 1%/10% cuts are policy choices; ties and the crossing permit remain together.
 
 ## 7. Next actions and open decisions
+
+Before general-purpose use, resolve whether and how older-neighbourhood emphasis may offset structural need, including O=0. Preserve the present scenario and its declared choices until a purpose-matched rule is justified; do not select a replacement to retain 385 buildings. Candidate identity/site checks remain useful independent work, not proof that the priority rule is accepted.
 
 - **Owner direction — independent optimisation (2026-10-22):** preserve the research question and independent criteria. The parent's method-admission plan examines stock identity, spatial demand, exposure/support, structural coverage and rescue/site mechanisms. Incorporate an input only after its source and decision-specific measurement checks pass; neither matching the city nor retaining this 385-building set is success. Current scores remain unchanged while these checks are pending.
 - **Done:** the main/possible first-priority disagreement (29 permits / 44 buildings) was traced to source text, the publisher's sub-alley listing convention and doorplate geometry; the main set stands.
