@@ -4,8 +4,9 @@
 
 研究起點是[市政 debug松](https://puma.taipei/hackathon)，由沈伯洋競選辦公室主辦。本專案獨立維護，與主辦單位沒有合作關係。
 
-## 先看這兩份報告
+## 從這裡開始讀
 
+- [老屋健檢展示頁](https://flsteven87.github.io/puma-hackathon/demo/issue-6-building-rating.html)：單棟優先調查的理由、分布與後續途徑。
 - [研究總覽](https://flsteven87.github.io/puma-hackathon/research-report.html)：研究方法、活動規則、七個題目的進度。
 - [老屋韌性研究報告](https://flsteven87.github.io/puma-hackathon/topics/issue-6-building-resilience.html)：第 6 題「危老耐震如何查」，目前研究得最完整的一題。
 
@@ -13,13 +14,14 @@
 
 ## 目前進度
 
-更新於 2026-10-15。老屋韌性研究已完成原始來源查找、必要欄位可行性評估，以及兩份官方清冊的可重現比對。
+更新於 2026-10-22。現行研究以歷史使照連結屋齡與構造、周邊高齡人口、液化圖及消防清冊，形成可說明的優先調查情境。
 
-- 5,489 個清冊使照號碼與 9,657 個組織報備使照號碼，有 3 組重疊；代表地址皆不同，仍需確認建物身分與管理範圍，不能直接當成建物狀態矛盾。
-- 社群保存檔補到 71,690 筆歷史使照紀錄，包含早年建物屬性；重複、缺值與現況未確認的限制仍保留。
-- 目前這個資料查核例子不需要模擬輸入；選案效益與安全成效尚未驗證。
+- 第一優先 385 棟，分布於 62 個里；取消未驗證的中樓層加重後，保留 332 棟。這不是個別安全或實際選案效益的驗證。
+- 使照可能代表多棟，未必等於現存建築；液化圖是區域潛勢，多門牌平均不是單一基地分類，查不到資料也不等於低潛勢。
+- 固定其他條件，讓未知液化位置共同取最高加成，保留現行 384／385 棟；該情境因同分等規則共選 388 棟。這只是特定假設檢查，現行名單未改。
+- 公辦都更 B 保留為有限區域案例；建物現況、工程安全、計畫資格與實際效益仍須專業確認。
 
-詳見[真實資料發現](https://flsteven87.github.io/puma-hackathon/topics/issue-6-building-resilience.html#real-data-check)與[完整資料稽核及重現方法](docs/topics/issue-6-building-resilience.md#broad-discovery-and-real-input-feasibility-audit-2026-10-15)。公開版提供研究與閱讀報告；文件提及的本機互動原型不在本版的發布範圍。
+詳見[單棟展示頁](https://flsteven87.github.io/puma-hackathon/demo/issue-6-building-rating.html)、[目前研究結果](https://flsteven87.github.io/puma-hackathon/topics/issue-6-building-resilience.html#current-results)與[完整研究文件](docs/topics/issue-6-building-resilience.md)。公開版包含研究文件、閱讀報告及彙總展示，不含個別建築名單、原始資料或本機探索工具。
 
 ## 七個題目
 
@@ -30,7 +32,7 @@
 | 3 | 鼠患四處跑，衛生安全怎麼辦 | [鼠患](docs/topics/issue-3-rats.md) | 初步整理 |
 | 4 | 內湖尖峰車流好比停車場 | [內湖交通](docs/topics/issue-4-neihu-traffic.md) | 初步整理 |
 | 5 | 公車路網如何即時反應需求 | [公車路網](docs/topics/issue-5-buses.md) | 初步整理 |
-| 6 | 危老耐震如何查，風險評級怎麼找 | [老屋韌性](docs/topics/issue-6-building-resilience.md) | 真實清冊查核已重現；個案連結與效益待驗證 |
+| 6 | 危老耐震如何查，風險評級怎麼找 | [老屋韌性](docs/topics/issue-6-building-resilience.md) | 單棟優先調查示範與來源查核完成；安全與選案效益待驗證 |
 | 7 | 自由題：你看見的市政 bug | [自由題](docs/topics/issue-7-free-topic.md) | 初步整理 |
 
 方法、跨題比較和資料集索引都在[研究主文件](docs/research.md)。專有名詞見[名詞表](CONTEXT.md)。
@@ -48,13 +50,13 @@
 
 - 這是研究底稿，不是驗證過的產品提案，也不是官方指引。
 - 我們還沒觀察過實際使用者操作，任何「能幫上忙」的說法都還是假設。
-- 資料查閱截至 2026-10-15，各來源描述的時間點不同。引用前，請回原始來源確認最新內容。
+- 本次更新截至 2026-10-22，各項原始證據保留自己的查閱日期；各來源描述的時間點不同。引用前，請回原始來源確認最新內容。
 
 ## 資料與授權
 
 - 本專案的原創文字與分析採 [CC BY 4.0](LICENSE) 授權。
 - 引用的政府資料、論文、引文和商標不在此授權內，仍依各自原本的條款。
-- 我們只放來源連結和彙總結果，不轉載原始資料、市民陳情內容或個人資料。有些來源的條款不明或禁止轉載；公開看得到，不代表可以再利用。
+- 研究資料只放來源連結和彙總結果，不轉載原始資料、市民陳情內容或個人資料。展示照片依各自開放授權使用，署名與條款見頁尾及 [credits.json](docs/demo/assets/credits.json)。有些來源的條款不明或禁止轉載；公開看得到，不代表可以再利用。
 
 引用格式如下，並請附上 commit 和查閱日期：
 

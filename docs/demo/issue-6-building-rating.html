@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>哪些老房子，該先做耐震健檢？</title>
+<meta name="description" content="照市府題目指定的五類資料，一棟一棟評臺北 30 年以上的老房子，排出該先做耐震健檢的大樓，也說清楚每一棟可以走哪條路。">
+<style>
+:root{
+--ground:#14302b;--ground-2:#1c3d37;--paper:#f4f6f2;--paper-2:#e6ebe7;--ink:#172221;--soft:#46544f;
+--accent:#0f766e;--accent-ink:#0b5c55;--on-dark:#f4f6f2;--on-dark-soft:#c4d3ce;--mark:#9ad8cb;
+--t-giant:clamp(7.5rem,18vw,17rem);--t-display:clamp(2.35rem,6vw,5.25rem);--t-head:clamp(1.6rem,3vw,2.5rem);--t-body:1.125rem;--t-small:.875rem;
+--m:clamp(16px,4vw,56px);--gap:clamp(72px,9vw,136px);--ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{color:var(--ink);background:var(--ground);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",ui-sans-serif,system-ui,sans-serif;font-size:100%;line-height:1.6;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);font-size:var(--t-body)}
+h1,h2,h3,p,ol,ul,figure{margin:0}
+h1,h2,h3{font-weight:800;letter-spacing:-.02em;text-wrap:balance;word-break:normal}
+p,li{text-wrap:pretty;line-break:strict}
+a{color:inherit;text-underline-offset:.2em;text-decoration-thickness:2px}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
+.nw{display:inline-block}
+.wrap{width:min(1240px,100%);margin:0 auto;padding-inline:var(--m)}
+.num{font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 22px;border:0;border-radius:0;background:var(--accent);color:#fff;font:inherit;font-weight:750;text-decoration:none;cursor:pointer;transition:transform .2s var(--ease),background-color .2s}
+.btn:hover{background:var(--accent-ink);transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.98)}
+.link{font-weight:700;transition:color .2s}
+.link:hover{color:var(--accent)}
+
+/* hero: the use permit over a dim street */
+.hero{position:relative;height:165vh;background:var(--ground)}
+.hero-stage{position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center;padding:var(--m)}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55) saturate(.8);transform:scale(var(--ps,1.08));transform-origin:50% 40%}
+.permit{position:relative;width:min(760px,100%);background:var(--paper);padding:clamp(24px,3.4vw,44px);transform:scale(var(--cs,1));transform-origin:50% 60%}
+.permit h1{font-size:var(--t-display);line-height:1.08}
+.permit .thesis{margin-top:18px;font-size:var(--t-body);font-weight:650;max-width:32em}
+.fields{margin:26px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.fields li{display:grid;grid-template-columns:4.5em 1fr;gap:12px;align-items:baseline;padding:12px 14px;background:var(--paper-2)}
+.fields b{color:var(--accent-ink);font-size:var(--t-small);font-weight:800}
+.permit-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;margin-top:28px;padding-top:22px;border-top:4px dotted var(--soft)}
+.permit-foot small{color:var(--soft);font-size:var(--t-small)}
+
+/* intro: title, note, facts row */
+.intro{background:var(--paper);padding-block:clamp(88px,10vw,150px) clamp(80px,9vw,130px)}
+.intro-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
+.intro-top h2{grid-column:1/7;font-size:var(--t-display);line-height:1.05}
+.intro-top p{grid-column:7/13}
+.facts{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px 40px;margin:clamp(64px,8vw,110px) 0 0;padding:0;list-style:none}
+.facts li{min-width:10ch}
+.facts b{display:block;font-size:var(--t-head);font-weight:800;line-height:1.15;color:var(--accent-ink)}
+.facts span{display:block;margin-top:6px;color:var(--soft);font-size:var(--t-small);max-width:16em}
+.intro-photo{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:clamp(56px,7vw,90px)}
+.intro-photo figure{grid-column:6/13}
+.intro-photo .aside{grid-column:1/6;align-self:end;font-size:var(--t-head);font-weight:800;line-height:1.3}
+figcaption{margin-top:10px;color:var(--soft);font-size:var(--t-small)}
+.intro-photo img{aspect-ratio:4/3;object-fit:cover;width:100%}
+
+/* how it works: the computation slip */
+.how{background:var(--ground);color:var(--on-dark);padding-block:var(--gap)}
+.how-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
+.how-text{grid-column:1/6}
+.how-text h2{font-size:var(--t-display);line-height:1.05}
+.how-text p{margin-top:22px;color:var(--on-dark-soft)}
+.how-text figure{margin-top:40px}
+.how-text img{aspect-ratio:3/2;object-fit:cover;width:100%}
+.how figcaption{color:var(--on-dark-soft)}
+.slip{grid-column:7/13;justify-self:stretch;background:var(--paper);color:var(--ink);padding:34px 30px 56px;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 18px), 100.000% calc(100% - 18px), 95.455% 100%, 90.909% calc(100% - 18px), 86.364% 100%, 81.818% calc(100% - 18px), 77.273% 100%, 72.727% calc(100% - 18px), 68.182% 100%, 63.636% calc(100% - 18px), 59.091% 100%, 54.545% calc(100% - 18px), 50.000% 100%, 45.455% calc(100% - 18px), 40.909% 100%, 36.364% calc(100% - 18px), 31.818% 100%, 27.273% calc(100% - 18px), 22.727% 100%, 18.182% calc(100% - 18px), 13.636% 100%, 9.091% calc(100% - 18px), 4.545% 100%, 0.000% calc(100% - 18px))}
+.slip h3{margin-top:28px;font-size:var(--t-body);font-weight:800}
+.slip h3:first-child{margin-top:0}
+.row{display:flex;align-items:baseline;gap:10px;margin-top:10px}
+.row span:first-child{flex:0 1 auto}
+.row .dots{flex:1 1 24px;min-width:24px;border-bottom:4px dotted #9aa7a3;transform:translateY(-5px)}
+.row span:last-child{flex:0 0 auto;color:var(--soft);font-size:var(--t-small);text-align:right}
+.row.result{margin:30px -30px 0;padding:12px 30px;background:var(--ink);color:var(--paper);font-weight:800}
+.row.result .dots{border-color:#6f7f7a}
+.row.result span:last-child{color:var(--paper)}
+
+/* live: the printed list sheet */
+.live{background:var(--accent-ink);padding-block:var(--gap)}
+.sheet{position:relative;width:min(860px,100%);margin:0 auto;background:var(--paper);padding:clamp(28px,5vw,64px)}
+.sheet::before,.sheet::after{content:"";position:absolute;left:0;right:0;height:14px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14'%3E%3Cpath d='M0 14 A14 14 0 0 1 28 14 Z' fill='%23f4f6f2'/%3E%3C/svg%3E") repeat-x}
+.sheet::before{top:-13px}
+.sheet::after{bottom:-13px;transform:rotate(180deg)}
+.sheet h2{text-align:center;font-size:var(--t-head);line-height:1.25}
+.sheet .note{margin:14px auto 0;max-width:36em;text-align:center}
+.toplist{margin:30px auto 0;padding:0;list-style:none;columns:2;column-gap:44px;max-width:640px}
+.toplist li{display:flex;align-items:baseline;gap:10px;padding:6px 0;break-inside:avoid;transition:opacity .35s,transform .35s var(--ease)}
+.toplist .v{font-weight:750}
+.toplist .d{color:var(--soft);font-size:var(--t-small)}
+.toplist .k{margin-left:auto;padding:0 8px;font-size:var(--t-small);font-weight:800;white-space:nowrap}
+.k.assume{background:var(--paper-2);color:var(--ink)}
+.toplist li.fresh{opacity:0;transform:translateY(6px)}
+.dist{margin:34px 0 0}
+.dist .cap{color:var(--soft);font-size:var(--t-small);font-weight:800;text-align:center}
+.plot{position:relative;margin-top:12px;height:clamp(220px,32vw,300px)}
+.plot svg{display:block;width:100%;height:100%;overflow:visible}
+.plot .bar{transition:fill .2s}
+.plot .hit{fill:transparent;cursor:pointer}
+.plot .tick{fill:var(--soft);font-size:13px;font-variant-numeric:tabular-nums}
+.plot .grid{stroke:#d3dbd7;stroke-width:1}
+.plot .cutline{stroke:var(--ink);stroke-width:2}
+.plot .cutlabel{fill:var(--ink);font-size:13px;font-weight:800;font-variant-numeric:tabular-nums}
+.plot .big{fill:var(--ink);font-size:13px;font-weight:750}
+.tip{position:absolute;top:0;padding:6px 10px;background:var(--ink);color:var(--paper);font-size:var(--t-small);font-weight:700;white-space:nowrap;pointer-events:none;transform:translate(-50%,-100%)}
+html:not(.js) .dist,html:not(.js) .key,html:not(.js) .js-only{display:none}
+.lh{margin:34px auto 0;max-width:640px;font-size:var(--t-body);font-weight:800;padding-bottom:8px;border-bottom:4px dotted #b6c1bd}
+.lh+.toplist{margin-top:14px}
+.lh small{display:block;margin-top:2px;color:var(--soft);font-size:var(--t-small);font-weight:650}
+.toplist li.dim{opacity:.45}
+.pick{max-width:640px;margin:26px auto 0}
+.pick label{display:block;font-weight:800}
+.pick label b{color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.pick input{display:block;width:100%;margin:10px 0 6px;accent-color:var(--accent-ink);min-height:32px}
+.pick p{font-weight:700;font-variant-numeric:tabular-nums}
+.plot .pickline{stroke:var(--accent-ink);stroke-width:2}
+.plot .picklabel{fill:var(--accent-ink);font-size:12px;font-weight:800}
+.plot .refline{stroke:var(--soft);stroke-width:1.5;stroke-dasharray:4 4}
+.plot .reflabel{fill:var(--soft);font-size:12px;font-weight:750}
+/* map */
+.map-sec{background:var(--paper);padding-block:var(--gap)}
+.map-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px 24px;align-items:start}
+.map-text{grid-column:1/6}
+.map-text h2{font-size:var(--t-display);line-height:1.05}
+.map-text p{margin-top:20px;color:var(--soft)}
+.map-text p b{color:var(--ink)}
+.map-key{margin-top:28px;display:grid;gap:10px;font-size:var(--t-small);font-weight:750}
+.map-key .ramp{display:flex;gap:2px}
+.map-key .ramp span{flex:1;padding-top:16px;border-top:14px solid;font-size:12px;color:var(--soft)}
+.map-key .frame{display:inline-flex;align-items:center;gap:10px}
+.map-key .frame i{width:22px;height:14px;border:2.5px solid var(--ink);background:var(--paper-2)}
+.map-key .frame i.thin{border:1.5px dashed var(--ink)}
+.map-fig{grid-column:6/13;position:relative}
+.map-fig svg{display:block;width:100%;height:auto;max-height:min(760px,86vh)}
+.map-fig path{vector-effect:non-scaling-stroke}
+.map-fig .v{stroke:var(--paper);stroke-width:.6;fill:var(--paper-2)}
+.map-fig .v.c1{fill:#79b3a9}.map-fig .v.c2{fill:#2f8a7f}.map-fig .v.c3{fill:#0b5c55}
+.map-fig .v:hover,.map-fig .v.on{stroke:var(--ink);stroke-width:1.6}
+.map-fig .ds{fill:none;stroke:var(--paper);stroke-width:2.4;pointer-events:none}
+.map-fig .o{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linejoin:round;pointer-events:none}
+.map-fig .o2{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-dasharray:3 2;stroke-linejoin:round;pointer-events:none}
+.map-fig .dl{fill:var(--ink);font-size:7.5px;font-weight:800;paint-order:stroke;stroke:var(--paper);stroke-width:1.6px;stroke-linejoin:round;pointer-events:none}
+.map-fig figcaption{margin-top:12px;color:var(--soft);font-size:var(--t-small)}
+.map-fig .tip{transform:translate(-50%,calc(-100% - 10px))}
+details.tbl{margin-top:24px}
+details.tbl summary{cursor:pointer;font-weight:800;font-size:var(--t-small)}
+details.tbl table{margin-top:12px;width:100%;border-collapse:collapse;font-size:var(--t-small)}
+details.tbl th,details.tbl td{padding:5px 6px;border-bottom:1px solid #d3dbd7;text-align:left}
+details.tbl td.n{text-align:right;font-variant-numeric:tabular-nums}
+details.tbl:not([open]) table{display:none}
+@media print{details.tbl::details-content{content-visibility:visible;display:block}details.tbl summary{display:none}details.tbl:not([open]) table,details.tbl table{display:table}}
+.map-fig .v.b1{fill:#0b5c55}.map-fig .v.b2{fill:#4a9a8f}.map-fig .v.b3{fill:#dce5e1}.map-fig .v.b0{fill:#f4f6f2}
+.map-fig.city .dl{font-size:12px}
+.map-key .it{display:inline-flex;align-items:center;gap:8px}
+.map-key .sw.s3{background:#dce5e1}
+.map-key .sw.s0{background:#f4f6f2;box-shadow:inset 0 0 0 1.5px #9aa7a3}
+
+.key{margin:18px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;font-size:var(--t-small);font-weight:750}
+.key .it{display:inline-flex;align-items:center;gap:8px}
+.sw{display:inline-block;width:14px;height:14px;border-radius:3px}
+.sw.s1{background:#0b5c55}.sw.s2{background:#4a9a8f}.sw.s3{background:#c2d3ce}
+.legend{margin:28px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;color:var(--soft);font-size:var(--t-small)}
+.legend span.it{min-width:0}
+
+/* twelve: the printed roll, tilted and cut by the section edge */
+.twelve{background:var(--paper-2);padding-top:var(--gap);overflow:hidden}
+.roll{width:min(980px,100%);margin:0 auto;background:var(--paper);padding:clamp(28px,5vw,60px) clamp(22px,5vw,60px) clamp(64px,7vw,96px);transform:rotate(-1.2deg);transform-origin:50% 0}
+.roll h2{text-align:center;font-size:var(--t-head);line-height:1.25}
+.roll figure{margin-top:30px}
+.roll img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.names{margin-top:34px;text-align:center;font-size:clamp(1.15rem,2vw,1.4rem);line-height:1.9;font-weight:650}
+.names .ln{display:block}
+.names strong{background:var(--ink);color:var(--paper);padding:0 .3em}
+.roll-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px 44px;margin-top:40px}
+.roll-cols h3{font-size:var(--t-body);font-weight:800}
+.roll-cols p{margin-top:8px}
+.roll-note{margin-top:36px;padding-top:22px;border-top:4px dotted #b6c1bd;text-align:center;color:var(--soft)}
+
+/* unranked: the total and its receipt */
+.unranked{background:var(--ground);color:var(--on-dark);padding-block:var(--gap)}
+.unranked-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;min-height:min(640px,72vh)}
+.unranked-left{grid-column:1/7;display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.unranked-left h2{font-size:var(--t-display);line-height:1.05}
+.unranked-left p{margin-top:20px;color:var(--on-dark-soft);max-width:30em}
+.total{font-size:var(--t-giant);font-weight:800;line-height:.8;letter-spacing:-.04em;color:var(--mark)}
+.total-cap{margin-top:14px;font-weight:700}
+.receipt{grid-column:8/13;align-self:start;background:var(--paper);color:var(--ink);padding:30px 28px 54px;clip-path:polygon(0 0, 100% 0, 100% calc(100% - 18px), 100.000% calc(100% - 18px), 95.455% 100%, 90.909% calc(100% - 18px), 86.364% 100%, 81.818% calc(100% - 18px), 77.273% 100%, 72.727% calc(100% - 18px), 68.182% 100%, 63.636% calc(100% - 18px), 59.091% 100%, 54.545% calc(100% - 18px), 50.000% 100%, 45.455% calc(100% - 18px), 40.909% 100%, 36.364% calc(100% - 18px), 31.818% 100%, 27.273% calc(100% - 18px), 22.727% 100%, 18.182% calc(100% - 18px), 13.636% 100%, 9.091% calc(100% - 18px), 4.545% 100%, 0.000% calc(100% - 18px))}
+.receipt h3{font-size:var(--t-body);font-weight:800}
+.receipt .row.result{margin:24px -28px 0;padding:12px 28px}
+.receipt .after{margin-top:22px;color:var(--soft);font-size:var(--t-small)}
+
+/* listed: one photograph opens to the full width */
+.listed{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--ground);overflow:hidden}
+.listed img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.62) saturate(.85);transform:scale(var(--ls,1.06))}
+.stub{position:relative;margin:var(--m) var(--m) var(--m) max(var(--m),calc((100% - 1240px)/2 + var(--m)));width:min(560px,calc(100% - 2*var(--m)));background:var(--paper);padding:clamp(24px,3.5vw,40px);border-top:6px dotted var(--soft)}
+.stub h2{font-size:var(--t-head);line-height:1.25}
+.stub p{margin-top:16px}
+.stub small{display:block;margin-top:18px;color:var(--soft);font-size:var(--t-small)}
+
+/* use: what the city can do */
+.use{background:var(--paper);padding-block:var(--gap)}
+.use-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.use-grid h2{grid-column:1/5;font-size:var(--t-display);line-height:1.05}
+.use-grid ol{grid-column:6/13;padding-left:1.6em;display:grid;gap:44px}
+.use-grid li{padding-left:.4em;font-size:var(--t-body)}
+.use-grid li h3{font-size:var(--t-head);line-height:1.3;margin-bottom:8px}
+.use-grid li p{max-width:none}
+.use-grid li::marker{color:var(--accent-ink);font-weight:800}
+
+/* faq: answers as reading text */
+.faq{background:var(--paper-2);padding-block:var(--gap)}
+.faq-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px}
+.faq-grid h2{grid-column:1/4;font-size:var(--t-head);line-height:1.25}
+.faq-text{grid-column:5/13;columns:2;column-gap:56px}
+.faq-text p{margin-bottom:22px;break-inside:avoid}
+.faq-text b{font-weight:800}
+
+/* footer: the back of the card */
+.foot{background:var(--ground);padding-block:clamp(80px,9vw,140px) 0}
+.back{position:relative;background:var(--paper);padding:clamp(32px,5vw,64px) clamp(22px,5vw,64px) 28px;display:grid;grid-template-columns:1fr 1fr;gap:40px 56px}
+.back::before{content:"";position:absolute;left:0;right:0;top:-24px;height:25px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='25'%3E%3Cpath d='M0 25 A50 25 0 0 1 100 25 Z' fill='%23f4f6f2'/%3E%3C/svg%3E") repeat-x;background-size:100px 25px}
+.back h2{font-size:var(--t-head);line-height:1.25}
+.back .msg{margin-top:14px;max-width:34em}
+.addr{position:relative;display:grid;gap:12px;align-content:start;padding-top:8px;padding-right:110px}
+.addr a{font-weight:750}
+.stamp{position:absolute;top:0;right:0;width:88px;padding:6px;background:var(--paper-2)}
+.stamp img{aspect-ratio:3/4;object-fit:cover}
+.imprint{grid-column:1/-1;display:grid;gap:6px;color:var(--soft);font-size:var(--t-small);padding-top:28px;border-top:4px dotted #b6c1bd}
+.imprint p{max-width:46em}
+
+/* motion: entrances are added only when the script runs */
+.js [data-rise]{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:calc(var(--i,0)*75ms)}
+.js [data-rise].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+.js [data-rise]{opacity:1;transform:none;transition:none}
+.hero-photo,.permit,.listed img{transform:none!important}
+.btn,.toplist li,.plot .bar{transition:none}
+}
+@media (max-width:820px){
+.map-text,.map-fig{grid-column:1/-1}.map-fig{order:2}
+.intro-top h2,.intro-top p,.intro-photo figure,.intro-photo .aside,.how-text,.slip,.unranked-left,.receipt,.use-grid h2,.use-grid ol,.faq-grid h2,.faq-text{grid-column:1/-1}
+.intro-photo .aside{order:2}
+.slip,.receipt{margin-top:32px}
+.faq-text{columns:1}
+.toplist{columns:1}
+.roll-cols{grid-template-columns:1fr}
+.back{grid-template-columns:1fr}
+.unranked-grid{min-height:0}
+}
+@media (max-width:640px){
+.faq-text p,.unranked-left p,.intro-top p,.how-text p{text-wrap:pretty}
+.row{flex-wrap:wrap;gap:2px 10px}
+.row .dots{display:none}
+.row span:last-child{flex-basis:100%;text-align:left}
+.row.result span:last-child{flex-basis:auto}
+.toplist{columns:2;column-gap:14px}
+.toplist li{display:grid;grid-template-columns:1fr;row-gap:0;padding:5px 0}
+.toplist .k{margin-left:0;justify-self:start;margin-top:2px}
+.hero{height:150vh}
+.permit h1{font-size:clamp(2.1rem,9vw,2.6rem)}
+.fields li{grid-template-columns:1fr;gap:2px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:32px 20px}
+.addr{padding-right:80px}
+.stamp{width:64px}
+}
+@media print{
+html,body,.how,.live,.unranked,.foot,.listed{background:#fff;color:var(--ink)}
+.hero{height:auto}.hero-stage{position:static;height:auto}.hero-photo,.listed img{display:none}
+.permit,.roll{transform:none}.slip,.receipt{clip-path:none}
+.js [data-rise]{opacity:1;transform:none}
+.how-text p,.how figcaption,.unranked-left p{color:var(--soft)}
+.total{color:var(--accent-ink)}
+section,.permit,.sheet,.roll,.back{break-inside:avoid}
+}
+/* walk: one 里, step by step */
+.walk{background:var(--paper);padding-block:var(--gap)}
+.walk-top{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:end}
+.walk-top h2{grid-column:1/7;font-size:var(--t-display);line-height:1.05}
+.walk-top p{grid-column:7/13}
+.steps{list-style:none;margin:clamp(56px,7vw,96px) 0 0;padding:0;display:grid;gap:clamp(72px,8vw,120px)}
+.step{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start}
+.say{grid-column:1/6;position:sticky;top:24px}
+.say h3{font-size:var(--t-head);line-height:1.2}
+.say p{margin-top:14px}
+.show{grid-column:6/13;margin-left:16px;background:#fff;padding:clamp(20px,3vw,36px)}
+.tiles{display:flex;flex-wrap:wrap;gap:4px}
+.tl{width:18px;height:24px;padding:0;border:0;border-radius:2px;background:#cdd6d2;cursor:pointer;transition:transform .15s var(--ease)}
+.tiles.big .tl{width:26px;height:34px}
+.tl:hover{transform:translateY(-3px)}
+.tl:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.tl[aria-pressed=true]{outline:3px solid var(--ink);outline-offset:2px}
+.tl.m{border-bottom:6px solid #e0a53b}
+.t0{background:#c2d3ce}.t1{background:#79b3a9}.t2{background:#2f8a7f}.t3{background:var(--accent-ink)}
+.pile-cap{font-weight:800;margin-bottom:10px}
+.pile-cap b{font-size:var(--t-head);color:var(--accent-ink);margin-right:4px}
+.out{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:14px}
+.out li{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:baseline;padding-top:14px;border-top:4px solid var(--paper-2)}
+.why b{display:block;font-size:var(--t-body)}
+.why span{display:block;color:var(--soft);font-size:var(--t-small)}
+.cnt{font-size:var(--t-head);font-weight:800;line-height:1}
+.out .tiles{grid-column:1/-1}
+.detail{margin-top:22px;padding:12px 14px;background:var(--paper-2);font-size:var(--t-small);font-weight:700;min-height:3.2em}
+.eras{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:end}
+.era{display:grid;gap:10px}
+.unit,.mk{margin-top:14px;color:var(--soft);font-size:var(--t-small);font-weight:700}
+.mk{display:flex;align-items:center;gap:8px;margin-top:16px}
+.mk i{display:inline-block;width:18px;height:6px;background:#e0a53b}
+.def{padding-left:12px;border-left:4px solid var(--accent);font-size:var(--t-small);font-weight:700}
+.scores{margin-top:18px}
+.scores .row{margin-top:12px;align-items:flex-end}
+.scores .row small{display:block;color:var(--soft);font-size:var(--t-small)}
+.scores .row b{font-size:var(--t-body);color:var(--ink)}
+.sw{flex:0 0 14px;width:14px;height:14px;border-radius:2px;align-self:center}
+.tl.k{background:var(--ink)}
+.era h4{font-size:var(--t-small);font-weight:800;margin:0}
+.stack{display:flex;flex-wrap:wrap-reverse;gap:3px;align-content:flex-start;min-height:72px}
+.b{display:block;width:14px;height:14px;border-radius:2px}
+.sum{margin-top:26px;padding:14px 18px;background:var(--ink);color:var(--paper);font-weight:800;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px}
+.sum b{font-size:var(--t-head);color:var(--mark)}
+.sum .nw{font-weight:650;color:var(--on-dark-soft);font-size:var(--t-small)}
+.ledger .row{margin-top:14px;align-items:flex-end}
+.ledger .row:first-child{margin-top:0}
+.ledger .row span:first-child{font-weight:750}
+.ledger .row small{display:block;color:var(--soft);font-size:var(--t-small);font-weight:500}
+.ledger .row b{font-size:var(--t-head);line-height:1.1;color:var(--ink)}
+.ledger .row.result{margin:24px calc(-1 * clamp(20px,3vw,36px)) 0;padding:14px clamp(20px,3vw,36px)}
+.ledger .row.result b{color:var(--mark)}
+.city{margin-top:30px}
+.strip{display:block;width:100%;height:auto;overflow:visible}
+.strip .dots circle{fill:#b9c6c1}
+.strip .med{stroke:var(--soft);stroke-width:2;stroke-dasharray:4 4}
+.strip .cut{stroke:var(--ink);stroke-width:3}
+.strip .cut2{stroke:#4a9a8f;stroke-width:3}
+.strip .me{fill:var(--accent);stroke:#fff;stroke-width:3}
+.strip .tk{font-size:12px;fill:var(--soft);font-variant-numeric:tabular-nums}
+.city figcaption{display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:700}
+.city figcaption i{display:inline-block;vertical-align:middle;margin-right:6px}
+.kme{width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.kcut{width:3px;height:14px;background:var(--ink)}
+.kcut2{width:3px;height:14px;background:#4a9a8f}
+.kmed{width:0;height:14px;border-left:2px dashed var(--soft)}
+.hits{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:22px}
+.hits b{font-size:var(--t-head);line-height:1.1;color:var(--accent-ink)}
+.hits span{font-weight:750}
+.rerun .row b{font-size:var(--t-body)}
+.rerun .row small{display:block;color:var(--soft);font-size:var(--t-small);font-weight:500}
+.rerun .row.result{margin:24px calc(-1 * clamp(20px,3vw,36px)) 0;padding:14px clamp(20px,3vw,36px)}
+.rerun .row.result b{color:var(--mark)}
+.liq{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;align-items:start;background:#fff;padding:clamp(20px,3vw,36px)}
+.liq-photo{grid-column:1/7;position:sticky;top:24px}
+.liq-photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.liq-text{grid-column:7/13}
+.liq-text h3{font-size:var(--t-head);line-height:1.2}
+.liq-text h4{margin:28px 0 0;font-size:var(--t-body);font-weight:800}
+.liq-text p{margin-top:12px}
+.liq-rows{margin-top:14px}
+.liq-rows .row{margin-top:8px}
+.liq-rows .row b{font-size:var(--t-body)}
+.liq-rows .row.result{margin:18px calc(-1 * clamp(20px,3vw,36px)) 0;padding:12px clamp(20px,3vw,36px)}
+.liq-rows .row.result b{color:var(--mark)}
+.liq-text .src{color:var(--soft);font-size:var(--t-small)}
+.walk-end{margin-top:clamp(72px,8vw,120px);display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px 24px;padding:clamp(24px,4vw,48px);background:var(--accent-ink);color:var(--on-dark)}
+.walk-end h3{grid-column:1/6;font-size:var(--t-head);line-height:1.2}
+.walk-end p{grid-column:6/13;max-width:30em}
+.walk-end p+p{grid-column:6/13}
+@media (max-width:860px){
+.walk-top h2,.walk-top p,.say,.show,.walk-end h3,.walk-end p,.walk-end p+p{grid-column:1/-1}
+.say{position:static}
+.show{margin-left:0}
+.eras{gap:10px}
+.b{width:10px;height:10px}
+.show{padding:18px}
+.ledger .row.result,.rerun .row.result,.liq-rows .row.result{margin-inline:-18px;padding-inline:18px}
+.liq{padding:18px}
+.liq-photo,.liq-text{grid-column:1/-1}
+.liq-photo{position:static}
+.walk .row{flex-wrap:nowrap;gap:8px}
+.walk .row .dots{display:block;min-width:12px}
+}
+@media (prefers-reduced-motion:reduce){.tl{transition:none}}
+
+/* Chinese text carries <wbr> between phrases (build.py); keep-all holds each phrase together */
+body{word-break:keep-all;overflow-wrap:break-word}
+h1,h2,h3{word-break:keep-all}
+.num{white-space:nowrap}
+/* short labels stay on one line wherever the layout has room: no caption cap, a wider slip, earlier stacking */
+.facts span{max-width:none}
+@media (min-width:1101px){.slip{grid-column:6/13}}
+@media (max-width:1100px){.how-text,.slip,.unranked-left,.receipt{grid-column:1/-1}.slip,.receipt{margin-top:32px}}
+figcaption{text-wrap:balance}
+/* walkthrough of one building: class bars and the rerun histogram */
+.pbars{display:grid;gap:12px;margin-top:14px}
+.pb{display:grid;grid-template-columns:5.5rem minmax(0,1fr) max-content;align-items:center;gap:12px}
+.pb .lb{font-weight:750}
+.pb .tr{display:block;height:28px;background:var(--paper-2);border-radius:0 4px 4px 0}
+.pb .tr i{display:block;height:100%;background:#9fb8b1;border-radius:0 4px 4px 0}
+.pb.me .tr i{background:var(--accent-ink)}
+.pb b{text-align:right;font-size:var(--t-head);line-height:1;font-variant-numeric:tabular-nums}
+.rerun-h{display:block;width:100%;height:auto;overflow:visible}
+.rerun-h .base{stroke:#9aa9a4;stroke-width:1.5}
+.rerun-h rect.in1{fill:var(--accent-ink)}.rerun-h rect.in2{fill:#4a9a8f}
+.rerun-h .cut{stroke:var(--ink);stroke-width:3}.rerun-h .cut2{stroke:#4a9a8f;stroke-width:3}
+.rerun-h .me{fill:var(--accent);stroke:#fff;stroke-width:3}
+.rerun-h .tk,.rerun-h .ll{font-size:13px;fill:var(--soft);font-weight:700;font-variant-numeric:tabular-nums}
+.rerun-h .ll{fill:var(--ink)}
+@media (max-width:600px){.rerun-h .tk{font-size:24px}.rerun-h .ll{display:none}.rerun-h .me{r:11px}}
+/* groups: four lines on the sheet */
+.groups{list-style:none;margin:30px auto 0;padding:0;max-width:640px;display:grid;gap:0}
+.groups li{display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:baseline;padding:16px 0;border-top:4px dotted #b6c1bd}
+.groups li:first-child{border-top:0}
+.groups h3{font-size:var(--t-body);font-weight:800}
+.groups p{grid-column:1/-1;color:var(--soft)}
+.groups .cnt{grid-row:1;grid-column:2;text-align:right;font-size:var(--t-head);font-weight:800;line-height:1.05;font-variant-numeric:tabular-nums}
+.groups .cnt small{display:block;color:var(--soft);font-size:var(--t-small);font-weight:650}
+.groups li.lead{margin:6px -18px;padding:16px 18px;background:var(--ink);color:var(--paper);border-top:0}
+.groups li.lead p,.groups li.lead .cnt small{color:var(--on-dark-soft)}
+.groups li.lead .cnt{color:var(--mark)}
+.groups li.lead+li{border-top:0}
+.groups li.sub{padding-left:22px}
+.where{margin-top:34px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.where div{padding-top:12px;border-top:6px solid var(--accent-ink)}
+.where b{display:block;font-size:var(--t-head);font-weight:800;line-height:1.1;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.where span{display:block;margin-top:4px;font-weight:750}
+.top-li{margin-top:30px;text-align:center;color:var(--soft);font-size:var(--t-small);font-weight:700}
+.top-li .nw{color:var(--ink);font-size:var(--t-body);font-weight:750}
+.stub .pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+.stub .pair div{padding:12px 14px;background:var(--paper-2)}
+.stub .pair b{display:block;font-size:var(--t-head);font-weight:800;line-height:1.1;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.stub .pair span{display:block;margin-top:4px;font-size:var(--t-small);font-weight:700}
+.total.wide{font-size:clamp(4.5rem,13vw,10rem);line-height:.9;white-space:nowrap}
+.total.wide+.total-cap{margin-top:22px}
+/* three kinds of first priority */
+.types{margin-top:44px}
+.types figcaption{font-weight:800;font-size:var(--t-body)}
+.types .sub{margin-top:4px;color:var(--soft);font-size:var(--t-small);font-weight:650}
+table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--t-small);line-height:1.45}
+.kinds thead th{padding:0 10px 8px;color:var(--soft);font-weight:750;text-align:left;border-bottom:2px solid var(--ink)}
+.kinds th[scope=row]{padding:14px 10px 14px 0;font-size:var(--t-body);font-weight:800;line-height:1.35;text-align:left;vertical-align:top}
+.kinds td{padding:14px 10px;vertical-align:top;font-variant-numeric:tabular-nums}
+.kinds thead th,.kinds td b,.kinds .nw{white-space:nowrap}
+.kinds th[scope=row]{width:21%}.kinds td:last-child{width:25%}
+.kinds tbody tr+tr>*{border-top:1px solid #d3dbd7}
+.kinds td b{display:block;font-size:var(--t-body);font-weight:800}
+.kinds td small{display:block;color:var(--soft)}
+.kinds .tk{display:inline-grid;place-items:center;width:1.6em;height:1.6em;margin-right:8px;border-radius:4px;background:var(--accent-ink);color:#fff;font-size:var(--t-small);vertical-align:.1em}
+.types .after{max-width:46em;margin-top:16px;color:var(--soft);font-size:var(--t-small);line-height:1.6}
+/* route waffle */
+.wcard{margin-top:14px;max-width:560px;padding:18px 20px 16px;background:var(--paper);color:var(--ink);border-radius:6px}
+.waffle{display:grid;grid-template-columns:repeat(35,minmax(0,1fr));gap:2px}
+.waffle i{aspect-ratio:1;border-radius:2px;background:#00897b}
+.waffle i.a{background:#d9622b}
+.waffle i.b{background:transparent;box-shadow:inset 0 0 0 2px #d9622b}
+.wcard .w-key{color:var(--ink);display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:var(--t-small);font-weight:750}
+.w-key .it{display:inline-flex;align-items:center;gap:8px}
+.w-key i{display:inline-block;width:14px;height:14px;border-radius:2px;background:#00897b}
+.w-key i.a{background:#d9622b}.w-key i.b{background:transparent;box-shadow:inset 0 0 0 2px #d9622b}
+@media (max-width:820px){.where{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.kinds thead{display:none}.kinds,.kinds tbody,.kinds tr,.kinds th,.kinds td{display:block}.kinds tbody tr+tr>*{border-top:0}.kinds tbody tr+tr{border-top:1px solid #d3dbd7}.kinds tr{padding:14px 0}.kinds th[scope=row]{padding:0 0 6px}.kinds td{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;padding:3px 0}.kinds td::before{content:attr(data-label);color:var(--soft);font-weight:700}.kinds td b,.kinds td small{display:inline;margin-right:6px}.kinds th[scope=row],.kinds td:last-child{width:auto}.waffle{grid-template-columns:repeat(25,minmax(0,1fr))}}
+@media (max-width:640px){.groups li.lead{margin-inline:-12px;padding-inline:12px}.groups li.sub{padding-left:12px}.stub .pair{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero" id="top" aria-labelledby="title">
+<div class="hero-stage">
+<img class="hero-photo" src="assets/old-apartment-on-da-an-road-and.jpg" width="1600" height="1067" alt="臺北大安路與信義路口一棟外牆斑駁的老公寓" fetchpriority="high">
+<article class="permit">
+<h1 id="title" data-report-identity><span class="nw">哪些老房子，</span><span class="nw">該先做耐震健檢？</span></h1>
+<p class="thesis" data-report-thesis>照市府<wbr>題目<wbr>指定<wbr>的五類<wbr>資料，<wbr>一棟<wbr>一棟評，<wbr>排出<wbr>該先做健檢<wbr>的老房子，<wbr>也說清楚<wbr>每一棟<wbr>可以<wbr>走哪條路。</p>
+<ul class="fields">
+<li><b>範圍</b><span>民國<wbr> 85<wbr> 年以前<wbr>領照、<wbr>屋齡<wbr> 30<wbr> 年以上<wbr>的老房子</span></li>
+<li><b>五類資料</b><span>屋齡、<wbr>結構、<wbr>土壤<wbr>液化、<wbr>狹小巷弄<wbr>救災、<wbr>高齡人口</span></li>
+<li><b>依據</b><span>使用<wbr>執照、<wbr>消防局<wbr>清冊、<wbr>液化<wbr>潛勢圖、<wbr>最小<wbr>統計區人口</span></li>
+</ul>
+<div class="permit-foot">
+<small>資料<wbr>更新・⁠2026-<wbr>10-⁠22</small>
+<a class="btn" href="#first">看該<wbr>先健檢的大樓</a>
+<a class="link" href="#how">先看怎麼評</a>
+</div>
+</article>
+</div>
+</section>
+
+<section class="intro" id="why" aria-labelledby="why-h">
+<div class="wrap">
+<div class="intro-top">
+<h2 id="why-h" data-rise><span class="nw">五類資料，</span><span class="nw">一棟一棟評</span></h2>
+<p data-rise style="--i:1">市府<wbr>的題目要<wbr>整合<wbr>屋齡、<wbr>建築<wbr>結構、<wbr>高齡<wbr>人口、<wbr>土壤<wbr>液化<wbr>和狹小巷弄<wbr>救災<wbr>困難，<wbr>排出<wbr>老屋<wbr>健檢<wbr>和公辦<wbr>都更的先後。<wbr>這一頁排<wbr>的是<wbr>健檢：<wbr>哪幾棟先做。</p>
+</div>
+<ul class="facts">
+<li data-rise><b class="num">42,⁠054 棟</b><span>屋齡 30<wbr> 年以上<wbr>的老房子</span></li>
+<li data-rise style="--i:1"><b class="num">5 類</b><span>市府<wbr>題目<wbr>指定<wbr>的資料，<wbr>接到每一棟</span></li>
+<li data-rise style="--i:2"><b class="num">3,⁠600 次</b><span>換不同假設<wbr>重算，<wbr>每一棟取<wbr>中間的分數</span></li>
+<li data-rise style="--i:3"><b class="num">38,⁠345 棟</b><span>7 層以下，<wbr>每一棟<wbr>都有<wbr>優先分數</span></li>
+</ul>
+<div class="intro-photo">
+<p class="aside" data-rise>老房子<wbr>這麼多，<wbr>健檢<wbr>從哪一棟開始？</p>
+<figure data-rise style="--i:1">
+<img src="assets/xiyuan-road-section-1-wanhua-district-taipei.jpg" width="1600" height="1067" alt="萬華區西園路一段，路旁是招牌密集的老舊樓房" loading="lazy" decoding="async">
+<figcaption>萬華區<wbr>西園路<wbr>一段，<wbr>招牌<wbr>密集<wbr>的老舊<wbr>樓房（⁠2009 年）。</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<section class="how" id="how" aria-labelledby="how-h">
+<div class="wrap how-grid">
+<div class="how-text">
+<h2 id="how-h" data-rise><span class="nw">優先分數，</span><span class="nw">怎麼算出來</span></h2>
+<p data-rise style="--i:1">這一頁<wbr>的核心<wbr>是每一棟<wbr>老屋<wbr>的優先<wbr>分數；<wbr>第一優先，<wbr>就是<wbr>分數<wbr>最高<wbr>的 1%。<wbr>先從<wbr>約 7 萬張歷史<wbr>使用<wbr>執照裡，<wbr>找出<wbr>屋齡 30<wbr> 年以上、<wbr>門牌<wbr>對得上、<wbr>未查到<wbr>後續<wbr>重蓋<wbr>使照<wbr>的紀錄。<wbr>再連結五類<wbr>資料；⁠現存<wbr>建築<wbr>仍要<wbr>現場確認。</p>
+<p data-rise style="--i:2">年代、<wbr>樓層<wbr>與材料<wbr>來自<wbr>使照；⁠液化圖<wbr>和消防<wbr>清冊透過<wbr>門牌<wbr>連結。<wbr>同一張<wbr>使照<wbr>可能<wbr>有幾棟，<wbr>它們<wbr>共用<wbr>資料。<wbr>高齡<wbr>人口用<wbr>內政部<wbr>的最小<wbr>統計區，<wbr>一區<wbr>約兩百多人；<wbr>這是<wbr>周邊<wbr>人口，<wbr>不是<wbr>每棟<wbr>住戶的年齡。</p>
+<p data-rise style="--i:3">有些<wbr>事沒辦法<wbr>確定：<wbr>國家<wbr>模型<wbr>有幾種<wbr>算法、<wbr>有些<wbr>房子<wbr>不確定<wbr>是哪一版<wbr>規範<wbr>設計的、<wbr>巷弄<wbr>和液化<wbr>該加多少<wbr>是政策<wbr>選擇。<wbr>所以<wbr>不只算<wbr>一次，<wbr>而是<wbr>換假設<wbr>重算<wbr> 3,⁠600 次，<wbr>每一棟取<wbr>中間<wbr>的那個分數。</p>
+<figure data-rise style="--i:3">
+<img src="assets/te-chang-new-world-collapsed-19990929.jpg" width="1600" height="1047" alt="1999 年 921 地震後，一棟大樓的低樓層倒塌，瓦礫堆在路邊" loading="lazy" decoding="async">
+<figcaption>1999 年<wbr> 921 <wbr>地震後，<wbr>低樓層<wbr>倒塌<wbr>的大樓。<wbr>設計<wbr>年代<wbr>和一樓<wbr>的牆，<wbr>都和這種<wbr>倒塌有關。</figcaption>
+</figure>
+</div>
+<div class="slip" data-rise style="--i:1">
+<h3>每一棟看什麼</h3>
+<div class="row"><span>設計<wbr>年代、<wbr>樓層、⁠材料</span><span class="dots"></span><span>每一棟</span></div>
+<div class="row"><span>土壤液化潛勢</span><span class="dots"></span><span>門牌所在區域</span></div>
+<div class="row"><span>門牌<wbr>是否<wbr>在列管<wbr>狹小巷道</span><span class="dots"></span><span>每一棟</span></div>
+<div class="row"><span>門牌<wbr>在消防<wbr>通道<wbr>清冊<wbr>的巷弄上</span><span class="dots"></span><span>每一棟</span></div>
+<div class="row"><span>65<wbr> 歲以上<wbr>人口比例</span><span class="dots"></span><span>街廓</span></div>
+<h3>怎麼算</h3>
+<div class="row"><span>1. 受損<wbr>機會<wbr> × 長者<wbr>比例，<wbr>巷弄<wbr>難救、<wbr>液化再加成</span><span class="dots"></span><span>一棟<wbr>一個分數</span></div>
+<div class="row"><span>2. 換算法、<wbr>年代、<wbr>加成高低</span><span class="dots"></span><span>重算<wbr> 3,⁠600 次</span></div>
+<div class="row result"><span>3. 每一棟<wbr>取 3,⁠600<wbr> 個分數<wbr>的中間值</span><span class="dots"></span><span>優先分數</span></div>
+<div class="row"><span>分數<wbr>前 1%，<wbr>約 385 棟</span><span class="dots"></span><span>第一優先</span></div>
+<div class="row"><span>分數<wbr>前 1% 到 10%</span><span class="dots"></span><span>第二波</span></div>
+<p class="def" style="margin-top:14px">受損<wbr>機會<wbr>用國震<wbr>中心<wbr>的方法，<wbr>指地震時<wbr>中度<wbr>以上<wbr>受損。<wbr>優先<wbr>分數<wbr>以一般<wbr>老屋<wbr>為 100。⁠1%<wbr> 和 10%<wbr> 是政策<wbr>選擇，<wbr>後面<wbr>可以自己拉。</p>
+</div>
+<p class="note" style="grid-column:1/-1;margin-top:24px">液化圖<wbr>描述<wbr>區域<wbr>潛勢，<wbr>不能<wbr>診斷<wbr>地基。<wbr>同一使<wbr>照有<wbr>多個<wbr>門牌時，<wbr>這裡<wbr>取各點加成<wbr>的平均，<wbr>平均值不<wbr>等於<wbr>單一基地<wbr>的中潛勢。<wbr>查不到<wbr>的位置<wbr>不加成，<wbr>也不<wbr>代表<wbr>低潛勢。<wbr>消防<wbr>清冊<wbr>未列到<wbr>的門牌，<wbr>同樣<wbr>不能<wbr>視為<wbr>救援暢通。<a href="../topics/issue-6-building-resilience.html#liquefaction-audit">資料<wbr>與覆蓋查核</a>。</p>
+</div>
+</section>
+
+<section class="walk" id="walk" aria-labelledby="walk-h">
+<div class="wrap">
+<header class="walk-top">
+<h2 id="walk-h" data-rise><span class="nw">一棟老屋，</span><span class="nw">算一遍</span></h2>
+<p data-rise style="--i:1">挑第一優先<wbr>裡分數<wbr>在中間<wbr>的一張<wbr>使照：<wbr>中正區<wbr>一張民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的 4 層鋼筋混凝土<wbr>公寓<wbr>使照，<wbr>一次<wbr>蓋了 1 棟，<wbr>1 棟<wbr>的分數<wbr>相同。<wbr>為了<wbr>不指認出<wbr>是哪幾棟，<wbr>只寫<wbr>行政區；⁠同區<wbr>同樣<wbr>條件<wbr>的有 309 筆使照。</p>
+</header>
+<ol class="steps">
+<li class="step">
+<div class="say">
+<h3><span class="nw">先看房子本身</span></h3>
+<p>國震<wbr>中心<wbr>的全國<wbr>模型，<wbr>依構造、<wbr>樓層<wbr>和設計<wbr>年代，<wbr>估同類<wbr>房子<wbr>遇到<wbr>設計<wbr>地震時，<wbr>每 100 <wbr>棟約<wbr>有幾棟會<wbr>中度<wbr>以上<wbr>受損。<wbr>這是<wbr>比較用<wbr>的數字，<wbr>不是<wbr>這一棟的預測。</p>
+<p>這張<wbr>使照屬於<wbr>民國<wbr> 63<wbr> 年以前。<wbr>設計<wbr>年代可<wbr>歸入<wbr>同一規範<wbr>時期；<wbr>仍比較<wbr>不同<wbr>模型<wbr>實作<wbr>與政策<wbr>加成。<wbr>模型<wbr>對 4 到 7 層有較大<wbr>的受損<wbr>估計，<wbr>這項<wbr>差異<wbr>未經臺灣<wbr>母體<wbr>資料<wbr>驗證，<wbr>因此<wbr>另外取消它<wbr>做壓力測試。</p>
+<p class="def">中度<wbr>受損：<wbr>多數<wbr>梁柱<wbr>出現<wbr>裂縫，<wbr>部分<wbr>混凝土<wbr>剝落。<wbr>要修補，<wbr>但還不是倒塌。</p>
+</div>
+<div class="show">
+<p class="unit">遇到<wbr>設計<wbr>地震，<wbr>每 100 <wbr>棟約幾棟<wbr>中度<wbr>以上受損</p>
+<div class="pbars" data-ui><div class="pb me"><span class="lb">這一棟</span><span class="tr"><i style="width:81.3%"></i></span><b class="num">16.3</b></div><div class="pb"><span class="lb">一般老屋</span><span class="tr"><i style="width:59.0%"></i></span><b class="num">11.8</b></div></div>
+<p class="unit">模型<wbr>有四種<wbr>算法，<wbr>這一棟落在<wbr> 11.⁠5 到<wbr> 16.⁠3；<wbr>這裡<wbr>先用<wbr>第一種，<wbr>第三步會<wbr>全部換著算。</p>
+</div>
+</li>
+<li class="step">
+<div class="say">
+<h3><span class="nw">再乘上住的人</span><span class="nw">和地點</span></h3>
+<p>受損<wbr>機會<wbr>乘上長者<wbr>比例，<wbr>再看<wbr>救援<wbr>和地面。<wbr>長者<wbr>比例用<wbr>房子<wbr>所在<wbr>街廓<wbr>的統計：<wbr>內政部<wbr>的最小<wbr>統計區，<wbr>一區<wbr>約兩百多人。</p>
+<p>門牌<wbr>在消防局<wbr>清冊<wbr>列管<wbr>的巷弄上，<wbr>或地面<wbr>可能<wbr>液化，<wbr>就往上加。<wbr>加多少<wbr>沒有<wbr>標準<wbr>答案，<wbr>這裡<wbr>先用 25%。</p>
+</div>
+<div class="show">
+<div class="ledger">
+<div class="row"><span>受損機會</span><span class="dots"></span><b class="num">16.3</b></div>
+<div class="row"><span>× 65<wbr> 歲以上的比例<small>所在<wbr>街廓<wbr>的統計，<wbr>一般<wbr>老屋 23.⁠8%</small></span><span class="dots"></span><b class="num">27.1%</b></div>
+<div class="row"><span>× 救援不易<small>門牌<wbr>在清冊<wbr>列管<wbr>的巷弄上</small></span><span class="dots"></span><b class="num">1.25</b></div>
+<div class="row"><span>× 土壤液化<small>門牌<wbr>平均<wbr>加成：<wbr>1 + 25% × 1.⁠0</small></span><span class="dots"></span><b class="num">1.250</b></div>
+<div class="row result"><span>這一棟的數字</span><span class="dots"></span><b class="num">6.9</b></div>
+<div class="row"><span>一般<wbr>老屋的數字<small>3 萬 8 千棟照<wbr>同樣算，<wbr>取中間那棟</small></span><span class="dots"></span><b class="num">2.8</b></div>
+<div class="row result"><span>÷ 一般<wbr>老屋 × 100</span><span class="dots"></span><b class="num">248 分</b></div>
+</div>
+<p class="unit">一般<wbr>老屋<wbr>是 100 分，<wbr>這張<wbr>使照約是它的<wbr> 2.⁠5 倍。<wbr>這只是<wbr>其中<wbr>一次計算。</p>
+</div>
+</li>
+<li class="step">
+<div class="say">
+<h3><span class="nw">換條件重算 3,600 次，</span><span class="nw">取中間的分數</span></h3>
+<p>上面<wbr>每一步<wbr>都有<wbr>選擇：<wbr>模型<wbr>用哪一種<wbr>算法，<wbr>救援<wbr>和液化<wbr>加 0%、<wbr>25%<wbr> 還是<wbr> 50%；<wbr>設計年代<wbr>說不準<wbr>的房子，<wbr>也換著算。</p>
+<p>每換<wbr>一次，<wbr>全部<wbr>老屋<wbr>都重算，<wbr>再除以<wbr>那一次<wbr>的一般<wbr>老屋。<wbr>這張<wbr>使照<wbr>得到<wbr> 3,⁠600<wbr> 個分數，<wbr>取中間<wbr>那個，<wbr>就是<wbr>它的<wbr>優先分數。</p>
+</div>
+<div class="show rerun">
+<p class="hits"><b class="num">245.4</b><span>這張<wbr>使照<wbr>的優先<wbr>分數，<wbr>一般<wbr>老屋<wbr>是 100</span></p>
+<figure class="city">
+<svg class="rerun-h" viewBox="0 0 640 230" role="img" aria-label="這一棟 3,600 次重算的分數分佈，中間值 245.4"><line class="base" x1="30" x2="628" y1="202" y2="202"/><rect class="in2" x="64.2" y="45.9" width="14.6" height="156.1" rx="2"/><rect class="in2" x="80.8" y="188.4" width="14.6" height="13.6" rx="2"/><rect class="in2" x="147.3" y="34.0" width="14.6" height="168.0" rx="2"/><rect class="in2" x="163.9" y="200.3" width="14.6" height="1.7" rx="2"/><rect class="in2" x="197.1" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="213.7" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="230.3" y="95.9" width="14.6" height="106.1" rx="2"/><rect class="in1" x="246.9" y="138.4" width="14.6" height="63.6" rx="2"/><rect class="in1" x="296.8" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="313.4" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="330.0" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="346.6" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="396.4" y="174.0" width="14.6" height="28.0" rx="2"/><rect class="in1" x="413.1" y="60.3" width="14.6" height="141.7" rx="2"/><rect class="in1" x="462.9" y="42.5" width="14.6" height="159.5" rx="2"/><rect class="in1" x="479.5" y="191.8" width="14.6" height="10.2" rx="2"/><rect class="in1" x="579.2" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="595.8" y="117.2" width="14.6" height="84.8" rx="2"/><line class="cut2" x1="34.0" x2="34.0" y1="24" y2="202"/><text class="ll" x="38.0" y="20" text-anchor="start">前 10%：161</text><line class="cut" x1="259.6" x2="259.6" y1="24" y2="202"/><text class="ll" x="263.6" y="20" text-anchor="start">前 1%：229</text><circle class="me" cx="313.7" cy="202" r="7"/><text class="tk" x="162.9" y="222" text-anchor="middle">200</text><text class="tk" x="329.0" y="222" text-anchor="middle">250</text><text class="tk" x="495.1" y="222" text-anchor="middle">300</text></svg>
+<figcaption><span class="nw"><i class="kme"></i>中間值 245.4</span><span class="nw"><i class="kcut"></i>前 1%（第一優先）229</span><span class="nw"><i class="kcut2"></i>前 10%（第二波）161</span><span class="nw">每一格是 5 分，高度是次數</span></figcaption>
+</figure>
+<p class="unit">3,⁠600<wbr> 次從 172 到<wbr> 333 分，<wbr>100%<wbr> 在第二波<wbr>分數線<wbr>以上，<wbr>56%<wbr> 在第一優先<wbr>分數線<wbr>以上；<wbr>這是<wbr>輸入<wbr>變化，<wbr>不是<wbr>現場<wbr>驗證。<wbr>就算<wbr>把 4 到 7 層和 1 到 3 層算成<wbr>同分，<wbr>分數<wbr>是 262，<wbr>仍在前 1%。</p>
+</div>
+</li>
+</ol>
+<div class="walk-end">
+<h3><span class="nw">所以，第一優先</span><span class="nw">就是分數的前 1%</span></h3>
+<p>38,⁠345 棟<wbr>老屋<wbr>都照這樣<wbr>算出<wbr>分數，<wbr>由高到<wbr>低排，<wbr>數到全部<wbr>的 1%，<wbr>線落在<wbr> 229 分。<wbr>這張<wbr>使照<wbr> 245 分，<wbr>在線<wbr>的右邊，<wbr>所以<wbr> 1 棟都列在第一優先；⁠161 到<wbr> 229<wbr> 分是第二波。</p>
+<p>1% 和 10%<wbr> 是政策<wbr>選擇，<wbr>不是<wbr>安全<wbr>門檻，<wbr>後面<wbr>可以<wbr>自己拉線。</p>
+</div>
+</div>
+</section>
+
+
+<section class="live" id="groups" aria-labelledby="groups-h">
+<div class="wrap">
+<div class="sheet" data-rise>
+<h2 id="groups-h">每一棟，<wbr>一個<wbr>優先分數</h2>
+<p class="note">一般<wbr>老屋<wbr>是 100，<wbr>分數<wbr>越高越該<wbr>先查。<wbr>8 層以上<wbr>的 3,⁠709 棟<wbr>沒有<wbr>分數，⁠另外看。</p>
+<figure class="dist">
+<figcaption class="cap" id="dist-cap">38,⁠345 棟<wbr>老屋<wbr>的優先分數</figcaption>
+<div class="plot" id="plot"><svg id="hist" role="img" aria-labelledby="dist-cap"></svg><div class="tip" id="tip" hidden></div></div>
+</figure>
+<p class="key"><span class="it"><i class="sw s1"></i>第一優先：⁠前 1%</span><span class="it"><i class="sw s2"></i>第二波：<wbr>前 1% 到 10%</span><span class="it"><i class="sw s3"></i>其他</span></p>
+<div class="pick" data-ui>
+<label for="pickr">如果<wbr>市府<wbr>能先查前 <b id="pickx">1%</b> 的老屋</label>
+<input type="range" id="pickr" min="0" max="19" step="1" value="1" aria-describedby="pickout">
+<p id="pickout" aria-live="polite"></p>
+</div>
+<ol class="groups">
+<li class="lead"><h3>第一優先</h3><p>前 1%，<wbr>分數<wbr> 229 以上</p><span class="cnt">385 棟</span></li>
+<li class="sub"><h3>其中四、<wbr>五層公寓</h3><p>不在<wbr>主動<wbr>初評的範圍</p><span class="cnt">236 棟</span></li>
+<li><h3>第二波</h3><p>前 1%<wbr> 到 10%，<wbr>分數<wbr>在 161 到<wbr> 229 之間</p><span class="cnt">3,⁠467 棟</span></li>
+<li><h3>其他</h3><p>分數<wbr>不到 161</p><span class="cnt">34,⁠493 棟</span></li>
+</ol>
+<p class="legend"><span class="it">同一張<wbr>使照<wbr>的幾棟<wbr>同時<wbr>設計、<wbr>同時蓋，<wbr>分數相同</span><span class="it">1% 和 10%<wbr> 兩條線<wbr>是政策選擇</span></p>
+</div>
+</div>
+</section>
+
+<section class="twelve" id="first" aria-labelledby="first-h">
+<div class="wrap">
+<article class="roll" data-rise>
+<h2 id="first-h"><span class="nw">第一優先：約 385 棟、</span><span class="nw">2,582 戶</span></h2>
+<div class="where"><div><b>163</b><span>大安區</span></div><div><b>88</b><span>中山區</span></div><div><b>51</b><span>萬華區</span></div><div><b>83</b><span>其他 4 區</span></div></div>
+<p class="top-li">第一優先<wbr>有 10<wbr> 棟以上的里：<span class="nw">中正幸福里、</span><span class="nw">大同建明里、</span><span class="nw">中山康樂里、</span><span class="nw">中山民安里、</span><span class="nw">中山興亞里、</span><span class="nw">大安昌隆里、</span><span class="nw">大安正聲里、</span><span class="nw">大安民炤里、</span><span class="nw">萬華西門里、</span><span class="nw">萬華青山里</span></p>
+<div class="roll-cols">
+<div><h3>共同點：<wbr>早年<wbr>設計、⁠長輩多</h3><p>全部<wbr>是民國<wbr> 71<wbr> 年以前<wbr>設計<wbr>的 4 到 7 層房子，<wbr>93%<wbr> 是民國<wbr> 63<wbr> 年以前（⁠或<wbr>可能是）；⁠除<wbr> 2 棟<wbr>加強<wbr>磚造，<wbr>都是<wbr>鋼筋混凝土。<wbr>所在<wbr>街廓<wbr>的長者<wbr>比例<wbr>都在<wbr> 25%<wbr> 以上，<wbr>平均<wbr> 36%，<wbr>其他<wbr>老屋是 23%。</p></div>
+<div><h3>分散<wbr>在 62 個里</h3><p>大安、<wbr>中山<wbr>最多。<wbr>到現場<wbr>勘查時，<wbr>可以<wbr>依區<wbr>排路線，<wbr>一次看一批。</p></div>
+</div>
+<figure class="types">
+<figcaption>第一優先，⁠有三種</figcaption>
+<p class="sub">選出<wbr>第一優先後，<wbr>再依<wbr>資料<wbr>特徵<wbr>分成<wbr>三組：<wbr>先看<wbr>門牌<wbr>是否<wbr>對上消防<wbr>清冊，<wbr>其餘<wbr>按液化<wbr>加成分組。<wbr>這是<wbr>認識<wbr>入選<wbr>建築<wbr>的方式，<wbr>不是<wbr>另一輪<wbr>篩選，<wbr>也不<wbr>代表<wbr>哪個<wbr>因素<wbr>單獨<wbr>造成入選。</p>
+<table class="kinds">
+<thead><tr><th scope="col">哪一種</th><th scope="col">棟數</th><th scope="col">集中在</th><th scope="col">樓層</th><th scope="col">長者比例</th><th scope="col">九成假設下入選</th><th scope="col">現場<wbr>可以多看</th></tr></thead>
+<tbody><tr><th scope="row"><span class="tk">A</span>門牌<wbr>對上消防清冊</th><td data-label="棟數"><span><b>105 棟</b><small>664 戶</small></span></td><td data-label="集中在"><span><span class="nw">中正 25</span><br><span class="nw">大同 24</span></span></td><td data-label="樓層"><span><span class="nw">四、五層 97</span><br><span class="nw">6–7 層 8</span></span></td><td data-label="長者比例">32%</td><td data-label="九成假設下入選">5 棟</td><td data-label="現場可以多看"><span>救災<wbr>車進不<wbr>進得去：<wbr>巷寬、<wbr>巷口<wbr>和出入口</span></td></tr><tr><th scope="row"><span class="tk">B</span>液化<wbr>加成較高</th><td data-label="棟數"><span><b>149 棟</b><small>1,⁠060 戶</small></span></td><td data-label="集中在"><span><span class="nw">中山 70</span><br><span class="nw">大安 50</span></span></td><td data-label="樓層"><span><span class="nw">四、五層 84</span><br><span class="nw">6–7 層 65</span></span></td><td data-label="長者比例">36%</td><td data-label="九成假設下入選">32 棟</td><td data-label="現場可以多看"><span>區域<wbr>潛勢<wbr>較高：<wbr>請專業<wbr>人員<wbr>查地盤、<wbr>地基與一樓</span></td></tr><tr><th scope="row"><span class="tk">C</span>其餘：<wbr>長者<wbr>比例最高</th><td data-label="棟數"><span><b>131 棟</b><small>858 戶</small></span></td><td data-label="集中在"><span><span class="nw">大安 94</span><br><span class="nw">萬華 16</span></span></td><td data-label="樓層"><span><span class="nw">四、五層 55</span><br><span class="nw">6–7 層 76</span></span></td><td data-label="長者比例">39%</td><td data-label="九成假設下入選">57 棟</td><td data-label="現場可以多看"><span>住的人：<wbr>確認長輩<wbr>需求，<wbr>再查<wbr>組織<wbr>與初評條件</span></td></tr></tbody>
+</table>
+<p class="after">「⁠九成假設<wbr>下入選」<wbr>指 3,⁠600<wbr> 次重算中，<wbr>至少<wbr>九成都在<wbr>前 1%，<wbr>合計<wbr> 94 棟。<wbr>這只<wbr>檢查<wbr>列出<wbr>的輸入<wbr>假設，<wbr>沒有<wbr>重新<wbr>抽樣<wbr>建築<wbr>紀錄。<wbr>C 組<wbr>多半是<wbr> 6–⁠7 層，<wbr>仍須查組織<wbr>與適用<wbr>條件，<wbr>才能<wbr>確認<wbr>初評路徑。</p>
+</figure>
+<p class="roll-note">把 4 到 7 層房子<wbr>的受損<wbr>機會<wbr>改用<wbr> 1 到 3 層的數字<wbr>重算，<wbr>385 <wbr>棟裡仍有<wbr> 332 <wbr>棟留在<wbr>前 1%。<wbr>這是<wbr>壓力<wbr>測試，<wbr>不是<wbr>實際<wbr>震損<wbr>或選案<wbr>效益的驗證。</p>
+<p class="roll-note">另外<wbr>固定<wbr>其他<wbr>條件，<wbr>只把<wbr>查不到<wbr>液化<wbr>資料<wbr>的位置<wbr>設為<wbr>最高<wbr>加成，<wbr>現行<wbr> 385<wbr> 棟仍有<wbr> 384 <wbr>棟入選；⁠該<wbr>情境<wbr>因同分<wbr>等規則<wbr>共選 <wbr>388 棟。<wbr>這只<wbr>測一種<wbr>共同<wbr>假設，<wbr>不能<wbr>保證<wbr>所有<wbr>缺資料<wbr>情形<wbr>下名單<wbr>都相近；⁠本頁<wbr>沿用<wbr>現行<wbr>分數與名單。<a href="../topics/issue-6-building-resilience.html#missing-liquefaction">完整<wbr>測試與限制</a>。</p>
+</article>
+</div>
+</section>
+
+<section class="map-sec" id="map" aria-labelledby="map-h">
+<div class="wrap map-grid">
+<div class="map-text">
+<h2 id="map-h" data-rise><span class="nw">第一優先，</span><span class="nw">在哪些里</span></h2>
+<p data-rise style="--i:1">顏色<wbr>越深，<wbr>這個<wbr>里的第一優先<wbr>建築<wbr>越多。<wbr>里只彙整單<wbr>棟結果，<wbr>方便<wbr>安排<wbr>調查路線；⁠同一優先<wbr>段內不排名次。</p>
+<p data-rise style="--i:2">共有<wbr> 385 棟，<wbr>分布<wbr>在 62<wbr> 個里。<wbr>地圖<wbr>顯示<wbr>彙整<wbr>棟數，<wbr>不公開<wbr>個別<wbr>建築的位置。</p>
+<div class="map-key" data-rise style="--i:3">
+<div>第一優先<wbr>的大樓（⁠棟）</div>
+<div class="ramp"><span style="border-color:var(--paper-2)">0</span><span style="border-color:#79b3a9">1–9</span><span style="border-color:#2f8a7f">10–29</span><span style="border-color:#0b5c55">30 以上</span></div>
+
+</div>
+<div class="tbl"><h3>各里彙整棟數</h3><table><thead><tr><th scope="col">里</th><th scope="col">第一優先（⁠棟）</th></tr></thead><tbody><tr><td>中正三愛里</td><td class="n">3</td></tr><tr><td>中正南門里</td><td class="n">2</td></tr><tr><td>中正幸市里</td><td class="n">5</td></tr><tr><td>中正幸福里</td><td class="n">11</td></tr><tr><td>中正文北里</td><td class="n">1</td></tr><tr><td>中正梅花里</td><td class="n">2</td></tr><tr><td>中正網溪里</td><td class="n">1</td></tr><tr><td>中正螢圃里</td><td class="n">7</td></tr><tr><td>中正黎明里</td><td class="n">4</td></tr><tr><td>大同大有里</td><td class="n">2</td></tr><tr><td>大同延平里</td><td class="n">1</td></tr><tr><td>大同建明里</td><td class="n">15</td></tr><tr><td>大同建泰里</td><td class="n">2</td></tr><tr><td>大同揚雅里</td><td class="n">3</td></tr><tr><td>大同朝陽里</td><td class="n">2</td></tr><tr><td>大同民權里</td><td class="n">1</td></tr><tr><td>大同永樂里</td><td class="n">4</td></tr><tr><td>中山中央里</td><td class="n">1</td></tr><tr><td>中山中山里</td><td class="n">9</td></tr><tr><td>中山中庄里</td><td class="n">4</td></tr><tr><td>中山力行里</td><td class="n">5</td></tr><tr><td>中山康樂里</td><td class="n">10</td></tr><tr><td>中山復華里</td><td class="n">2</td></tr><tr><td>中山新生里</td><td class="n">1</td></tr><tr><td>中山晴光里</td><td class="n">3</td></tr><tr><td>中山朱園里</td><td class="n">1</td></tr><tr><td>中山正得里</td><td class="n">5</td></tr><tr><td>中山正義里</td><td class="n">3</td></tr><tr><td>中山民安里</td><td class="n">21</td></tr><tr><td>中山聚盛里</td><td class="n">6</td></tr><tr><td>中山聚葉里</td><td class="n">2</td></tr><tr><td>中山興亞里</td><td class="n">10</td></tr><tr><td>中山集英里</td><td class="n">5</td></tr><tr><td>松山吉祥里</td><td class="n">1</td></tr><tr><td>松山復盛里</td><td class="n">1</td></tr><tr><td>松山新聚里</td><td class="n">1</td></tr><tr><td>松山民有里</td><td class="n">3</td></tr><tr><td>松山民福里</td><td class="n">4</td></tr><tr><td>大安仁愛里</td><td class="n">1</td></tr><tr><td>大安古莊里</td><td class="n">1</td></tr><tr><td>大安學府里</td><td class="n">4</td></tr><tr><td>大安昌隆里</td><td class="n">111</td></tr><tr><td>大安正聲里</td><td class="n">15</td></tr><tr><td>大安民炤里</td><td class="n">20</td></tr><tr><td>大安民輝里</td><td class="n">5</td></tr><tr><td>大安義村里</td><td class="n">2</td></tr><tr><td>大安誠安里</td><td class="n">1</td></tr><tr><td>大安龍圖里</td><td class="n">1</td></tr><tr><td>大安龍坡里</td><td class="n">1</td></tr><tr><td>大安龍陣里</td><td class="n">1</td></tr><tr><td>萬華富民里</td><td class="n">2</td></tr><tr><td>萬華新起里</td><td class="n">7</td></tr><tr><td>萬華福音里</td><td class="n">2</td></tr><tr><td>萬華糖廍里</td><td class="n">6</td></tr><tr><td>萬華菜園里</td><td class="n">1</td></tr><tr><td>萬華萬壽里</td><td class="n">6</td></tr><tr><td>萬華西門里</td><td class="n">11</td></tr><tr><td>萬華青山里</td><td class="n">16</td></tr><tr><td>士林仁勇里</td><td class="n">3</td></tr><tr><td>士林天祿里</td><td class="n">1</td></tr><tr><td>士林福德里</td><td class="n">2</td></tr><tr><td>士林舊佳里</td><td class="n">1</td></tr></tbody></table></div>
+</div>
+<figure class="map-fig" data-rise style="--i:1">
+<svg id="mapsvg" viewBox="78 282 261 370" role="img" aria-labelledby="map-cap"><path class="v" d="M323.2 421.6l3.6 3.1l2.7 6.8l0.9 5.3l-0.2 4.4l-2.2 7.3l-5.4 9.4l0 2.7l-3.4 1.2l-12.8 2l-0.6 -4.3l1 -0.1l-0.3 -2.4l1.9 -0.5l-0.4 -2.3l2.3 -4.3l8.3 -3l0.5 -2.5l-0.6 -1.9l-5 -0.2l-3.7 0.8l-1.6 -1.6l-27.7 -1l-0.3 -4.5l-6.4 -0.3l-0.2 1.3l-5.9 -0.1l-0.1 1.7l-4.2 -0.3l1.4 -2.3l8.8 -3.8l0.7 -8.3l11.6 2.7l12.3 6.4l4.7 0.8l2.8 -1l15.9 -10.9z" data-l="松山莊敬里" data-n="0" data-b="0"/><path class="v" d="M296.3 468.5l3.1 -0.4l0.6 8.9l-18.1 1.7l-1.9 -11.6l16 -1.7z" data-l="松山東榮里" data-n="0" data-b="0"/><path class="v" d="M304.3 464.1l1.7 18.8l-5.4 0.4l-1.2 -15.2l-3.1 0.4l-0.3 -3.1z" data-l="松山三民里" data-n="0" data-b="0"/><path class="v" d="M319.2 461.8l1.4 8.8l0.8 4.6l-1.6 0.1l-4.7 -5.4l-3.5 1.7l-1.2 -3.7l-0.5 -4.6z" data-l="松山新益里" data-n="0" data-b="0"/><path class="v" d="M309.9 463.3l2.7 12.6l-7.3 0.7l-1 -12.5z" data-l="松山富錦里" data-n="0" data-b="0"/><path class="v" d="M322.6 460.6l4.2 12.9l2.1 11.4l-0.9 9.3l1.2 3.5l-3.5 2.8l-3.3 -19.1l-9.2 0.8l-1.6 -10.6l3.5 -1.7l4.7 5.4l1.6 -0.1l-2.2 -13.4z" data-l="松山新東里" data-n="0" data-b="0"/><path class="v" d="M312.6 475.9l0.6 6.3l-7.2 0.7l-0.7 -6.3z" data-l="松山富泰里" data-n="0" data-b="0"/><path class="v" d="M300 477l0.6 6.3l-17.6 1.7l-1.1 -6.3z" data-l="松山介壽里" data-n="0" data-b="0"/><path class="v" d="M280.2 436l0.3 4.5l27.7 1l1.6 1.6l3.7 -0.8l4.9 0.2l0.4 4l-8.5 3.4l-2.3 4.3l0.4 2.3l-1.9 0.5l0.3 2.4l-1 0.1l0.6 4.3l-26.4 3.3l1.9 11.6l-6.6 0.6l0 5.6l-4 -1.1l-7.4 3l0 -6.3l5.2 -12l0 -2.8l-9.1 -7.1l-0.9 -1.8l-10.5 -6.8l-7.3 -4l-6.3 -0.8l-1 -1.6l0 -5.6l33.6 0.6l0.1 -1.7l5.9 0.1l0.2 -1.3z" data-l="松山精忠里" data-n="0" data-b="0"/><path class="v" d="M306.7 491.5l-0.1 8.6l-18.4 -0.4l-2.3 -6.4z" data-l="松山東光里" data-n="0" data-b="0"/><path class="v" d="M296.2 483.8l0.8 8.2l-21.9 2.2l0.4 -9.1z" data-l="松山龍田里" data-n="0" data-b="0"/><path class="v" d="M281.9 478.7l1.1 6.3l-7.7 -0.1l0 -5.6z" data-l="松山東昌里" data-n="0" data-b="0"/><path class="v" d="M285.9 493.3l2.3 6.4l-13.8 -0.2l0.3 -5.3z" data-l="松山東勢里" data-n="0" data-b="0"/><path class="v" d="M272.1 483.8l3.4 1.3l-1.1 14.4l-10.5 -0.2l0 -12.5z" data-l="松山中華里" data-n="0" data-b="0"/><path class="v c1" d="M250.4 466.7l10.5 0.1l8.2 1.7l-5.2 12l-13.6 -0.1z" data-l="松山民有里" data-n="3" data-b="0"/><path class="v c1" d="M250.6 451.6l8.5 5.2l0.9 1.8l7.4 5.4l1.7 1.7l0 2.8l-8.2 -1.7l-10.5 -0.1z" data-l="松山民福里" data-n="4" data-b="0"/><path class="v" d="M352.9 495.1l0.2 5.3l-0.9 2.6l1.1 2.9l-25.6 0.1l-5.2 0.7l3.2 -6.2l3.5 -2.8l3.9 1.1l10.6 -1.5z" data-l="松山慈祐里" data-n="0" data-b="0"/><path class="v" d="M323.8 490.3l1.9 10.2l-19.1 -0.4l0.1 -8.6z" data-l="松山安平里" data-n="0" data-b="0"/><path class="v" d="M322.4 481.4l1.4 8.9l-12 0.9l-0.8 -8.7z" data-l="松山鵬程里" data-n="0" data-b="0"/><path class="v" d="M311 482.5l0.8 8.7l-14.8 0.8l-0.8 -8.2z" data-l="松山自強里" data-n="0" data-b="0"/><path class="v c1" d="M289.6 499.7l17.4 0.4l2.8 7.9l-20.3 2.3z" data-l="松山吉祥里" data-n="1" data-b="0"/><path class="v c1" d="M307 500.1l15.4 0.3l3.3 0.1l-3.2 6.2l-10.2 3l-0.9 -1.9l-1.6 0.2z" data-l="松山新聚里" data-n="1" data-b="0"/><path class="v c1" d="M312.2 509.5l-19.4 8.8l-3.5 1.3l0.2 -9.3l21.9 -2.5z" data-l="松山復盛里" data-n="1" data-b="0"/><path class="v" d="M250.2 490.3l13.7 0.5l0 19.7l-5.9 0l-8.4 1.9z" data-l="松山中正里" data-n="0" data-b="0"/><path class="v" d="M258 510.5l-0.3 9.2l-8.3 1l0.2 -8.3z" data-l="松山中崙里" data-n="0" data-b="0"/><path class="v" d="M263.9 499.3l17.5 0.3l-2.4 10.9l-15.1 0z" data-l="松山美仁里" data-n="0" data-b="0"/><path class="v" d="M279 510.5l-0.9 7.3l0.5 4.3l-4.5 -0.3l0.2 -11.3z" data-l="松山吉仁里" data-n="0" data-b="0"/><path class="v" d="M274.3 510.5l-0.2 11.3l-10.2 -1.3l0 -10z" data-l="松山敦化里" data-n="0" data-b="0"/><path class="v" d="M281.6 510.8l1.3 10.4l-4.3 0.9l-0.5 -5.1l0.9 -6.5z" data-l="松山復源里" data-n="0" data-b="0"/><path class="v" d="M289.5 510.3l-0.2 9.3l-6.4 1.6l-1.3 -10.4z" data-l="松山復建里" data-n="0" data-b="0"/><path class="v" d="M281.6 499.6l8 0.1l-0.1 10.6l-5.6 0.7l-4.9 -0.5z" data-l="松山復勢里" data-n="0" data-b="0"/><path class="v" d="M258 510.5l5.9 0l0 10l-6.2 -0.8z" data-l="松山福成里" data-n="0" data-b="0"/><path class="v" d="M250.3 480.4l13.6 0.1l0 10.3l-13.7 -0.5z" data-l="松山松基里" data-n="0" data-b="0"/><path class="v" d="M320 538.9l-0.3 19.6l-25 -0.4l2.8 -5.2l-8.9 1.4l0.1 -2.6l3.9 -0.6l-0.4 -2.1l1.4 -0.8l4.3 0.1l-0.5 1.8l1.3 0.7l6.7 -12z" data-l="信義西村里" data-n="0" data-b="0"/><path class="v" d="M288.9 543.3l10.7 0.5l-0.1 1.5l-1.6 3l-4.3 -0.1l-1.4 0.8l0.4 2.1l-3.9 0.6z" data-l="信義正和里" data-n="0" data-b="0"/><path class="v" d="M289.1 532l19.5 0.4l-9.9 18.4l-1.3 -0.7l0 -1l2.2 -5.3l-10.8 -0.5z" data-l="信義興隆里" data-n="0" data-b="0"/><path class="v" d="M297.5 552.9l-9 16.6l-0.1 0l0.2 -15.2z" data-l="信義中興里" data-n="0" data-b="0"/><path class="v" d="M322.4 507l-13.8 25.4l-19.6 -0.4l0.2 -12.4l16.9 -7.6z" data-l="信義新仁里" data-n="0" data-b="0"/><path class="v" d="M317.7 524.5l3 2.6l2.3 0.2l2 2.8l0.3 2.7l-1.2 1.7l0 4.5l-18.7 -0.2l7.1 -13.5l2.5 0.4z" data-l="信義興雅里" data-n="0" data-b="0"/><path class="v" d="M316.4 518.1l8.9 0.2l-0.3 11.8l-2 -2.8l-2.3 -0.2l-2.6 -1.7l-0.4 -1.1l-2.3 1.3l-2.9 -0.3z" data-l="信義敦厚里" data-n="0" data-b="0"/><path class="v" d="M325.3 532.8l21.7 0.5l-0.1 3.9l-2.7 2.2l-1 -1.2l-7.3 1.2l-2 1.2l-0.9 0l0.1 -1.4l-9 -0.2l0 -4.5z" data-l="信義廣居里" data-n="0" data-b="0"/><path class="v" d="M343.2 538.2l1 1.2l-5.5 4.5l5.5 6.8l-10.1 7.5l-14.4 0.3l0.3 -19.6l13.1 0.3l-0.1 1.4l0.9 0l2 -1.2z" data-l="信義安康里" data-n="0" data-b="0"/><path class="v" d="M325.3 518.3l5.1 0.1l-0.2 8.5l-3.7 0.7l-1.5 1.2z" data-l="信義六藝里" data-n="0" data-b="0"/><path class="v" d="M322.5 506.7l9.7 -0.6l0 7.1l-6.9 5.1l-8.9 -0.2z" data-l="信義雅祥里" data-n="0" data-b="0"/><path class="v" d="M338.4 509.3l-0.8 4.7l2 0.9l0.6 3.7l-14.9 -0.3z" data-l="信義五常里" data-n="0" data-b="0"/><path class="v" d="M330.5 518.4l9.7 0.2l-0.2 6.8l-9.7 -0.3z" data-l="信義五全里" data-n="0" data-b="0"/><path class="v" d="M353 505.8l0.1 4.3l1.9 2.4l0.3 6.4l-8.5 -0.1l0 -12.9z" data-l="信義永吉里" data-n="0" data-b="0"/><path class="v" d="M330.3 525.1l16.6 0.5l0 3.6l-7 0.7l-7.2 -0.6l-1.4 -1l0.1 -1.3l-1.2 0z" data-l="信義長春里" data-n="0" data-b="0"/><path class="v" d="M346.8 505.9l0 12.9l-6.6 -0.2l-0.6 -3.7l-2 -0.9l0.8 -4.7l-6.2 3.9l0 -7.1z" data-l="信義四育里" data-n="0" data-b="0"/><path class="v" d="M340.2 518.6l6.6 0.2l0.1 6.8l-6.9 -0.2z" data-l="信義四維里" data-n="0" data-b="0"/><path class="v" d="M346.8 518.8l8.5 0.1l3.5 3.6l-4.9 6.2l-6.9 4.6z" data-l="信義永春里" data-n="0" data-b="0"/><path class="v" d="M326.5 527.6l4.9 -0.6l-0.1 1.3l1.4 1l7.2 0.6l7 -0.7l0.1 4.1l-21.7 -0.5l-0.3 -4z" data-l="信義富台里" data-n="0" data-b="0"/><path class="v" d="M347 537.2l1.8 10.4l-4.6 3.1l-5.5 -6.8z" data-l="信義國業里" data-n="0" data-b="0"/><path class="v" d="M357.9 545.7l2.9 0.6l2.7 5.1l0.6 5.1l-1.9 6.8l0.7 3l2.4 1.3l2.7 5.5l-3.9 5.2l-2.3 6.2l-1.4 -0.4l-2 0.7l-0.4 -1.2l-13.7 -4.5l4.9 -5.9l0 -3.5l-2.5 -4.2l-2.6 -0.7l2.2 -5.9l0.2 -4l4.7 -3.1l0.3 -1l-1.9 -1.4l-0.8 -1.8l2.3 0l6.4 -2.7z" data-l="信義松隆里" data-n="0" data-b="0"/><path class="v" d="M348.9 548.1l2.6 2.7l-0.3 1l-4.7 3.1l-0.2 4l-2.2 5.4l2.6 1.2l1.1 2.5l1.3 0.8l0.1 4.4l-1.6 2.4l-5.1 -6.5l-2.1 -1l-0.1 -2.8l-2.7 0l0.1 -9.2l9.5 -7.9z" data-l="信義松友里" data-n="0" data-b="0"/><path class="v" d="M356.7 527.2l-1.5 6.9l-4.4 3.6l0.6 4.9l-0.6 4.7l-2 0.3l-1.8 -14.3l3.9 -2.2l5.5 -5z" data-l="信義松光里" data-n="0" data-b="0"/><path class="v" d="M363.1 533.5l4.7 8.2l0.4 9.5l2.1 6.7l0.9 8.5l0.9 2.5l4.3 4.4l-3.6 3.6l-0.7 2.6l-2.7 4l-5.8 1.5l-1.8 -0.5l2.3 -6.2l3.9 -5.2l-2.7 -5.5l-2.4 -1.3l-0.7 -3l1.9 -6.8l-0.6 -5.1l-2.7 -5.1l-2.6 -0.1l-0.7 -1.3l6.6 -2.8l-3.3 -7.6z" data-l="信義中坡里" data-n="0" data-b="0"/><path class="v" d="M367.7 530.1l4.8 0.7l1.3 5.9l0.7 -0.2l1.1 3.1l2.9 2.5l1.7 2.6l0.9 8.9l6.8 9.1l-1.6 4.1l-2.9 0.9l-7 5.6l-4.3 -4.4l-0.9 -2.5l-0.9 -8.5l-2.1 -6.7l-0.4 -9.5l-4.7 -8.2l3.7 -1.6z" data-l="信義中行里" data-n="0" data-b="0"/><path class="v" d="M358.8 522.5l8.8 7.6l0.1 0.8l-13.4 6.3l-0.6 -1.3l1.5 -1.8l1.5 -6.9l-0.3 -1.1z" data-l="信義大道里" data-n="0" data-b="0"/><path class="v" d="M360.8 534.5l3.3 7.6l-13.3 5.2l0.4 -10.2l2.5 -1.2l0.6 1.3z" data-l="信義大仁里" data-n="0" data-b="0"/><path class="v" d="M297.4 558.1l14 0.3l-0.3 10.6l-6.1 5.8l-6.6 -8.6l1.3 -0.9l0 -1.1l-3.2 -0.6z" data-l="信義景新里" data-n="0" data-b="0"/><path class="v" d="M315.2 578.3l1.3 1.4l-1 0.6l0.7 1l-0.7 1l3.7 3.1l1 -0.3l4.8 2.1l-6.9 11.8l-5.9 7.1l-8.2 -4.5l-0.7 -1.5l-2.2 -0.2l-1.8 -1.8l7.3 -2.8l3.5 -2.7l0.9 -2.1l-0.6 -2l0.5 -1.8l-1.8 -0.2l0.5 -0.3l-1.8 -1.9l0.7 -3.9l0.7 -0.8l4.4 -0.2l0.1 -1.2z" data-l="信義惠安里" data-n="0" data-b="0"/><path class="v" d="M319.7 558.5l0.4 19.4l1.8 3.8l-4.4 2.2l-2.2 -2l0.9 -0.6l-0.7 -1l1 -0.6l-1.3 -1.4l-1.5 -0.1l-0.1 1.2l-4.7 0.5l-3.9 -5.1l6.1 -5.8l0.3 -10.6z" data-l="信義三張里" data-n="0" data-b="0"/><path class="v" d="M337.7 556.1l-0.1 9.2l2.7 0l0.1 2.8l2.1 1l5.1 6.5l-3.3 3.5l-3.5 -1.3l-7.8 -0.5l-3.5 1.2l-2.5 2.8l-1.3 -1.2l-3.8 1.6l-1.8 -3.8l-0.4 -19.4l11.9 0.2l3.2 -0.8z" data-l="信義三犁里" data-n="0" data-b="0"/><path class="v" d="M333 577.3l7.8 0.5l17.2 5.8l0.4 1.2l2 -0.7l3.2 0.9l5.8 -1.5l-5.4 18.9l-5 2.1l-5.1 4.4l-4.8 5.7l-1.1 3.5l-5 -1.1l-3.3 -3.9l-3.9 -9.9l-1.2 -1.1l0.9 -3.3l-0.2 -2.8l-3.9 -4.5l-5.3 -4.9l-1.7 0.7l-4.2 -2.2l-1 0.3l-1.7 -1.5l8.2 -3.8l1.3 1.2l2.5 -2.8z" data-l="信義六合里" data-n="0" data-b="0"/><path class="v" d="M326.5 586.9l8.8 9.1l0.2 2.8l-0.9 3.3l1.2 1.1l3.9 9.9l3.3 3.9l-3.4 3.3l-5.4 -0.1l-2.5 -1.1l-0.5 0.7l-7.1 -1.8l-6.7 -3.6l-2.6 -5.3l-2.6 -3l5.9 -7.1l6.5 -11.6z" data-l="信義泰和里" data-n="0" data-b="0"/><path class="v" d="M297.2 558.1l-0.7 5.5l3.2 0.6l0 1.1l-1.3 0.9l1.8 2.3l-4.5 3.3l-1.2 -1.1l-1.2 2.2l-3.8 -2l1.1 -2.1l-1.3 -0.7l5.4 -10z" data-l="信義景聯里" data-n="0" data-b="0"/><path class="v" d="M300.4 568.8l4.6 6l-9.1 8.1l-2.7 0.7l-6.2 -1.5l-0.4 -0.5l4.3 -4.4l-0.3 -5.6l2.7 1.3l1.2 -2.2l1.2 1.1z" data-l="信義景勤里" data-n="0" data-b="0"/><path class="v" d="M305 574.8l3.9 5.1l-1.1 4.4l1.8 1.9l-0.5 0.3l1.8 0.2l-0.4 5l-1.1 1.8l-2.8 1.8l-7.3 2.8l1.3 -4.5l-2.6 -3.5l0.7 -0.6l-2.1 -2.6l0.2 -2.8l-0.9 -1.2z" data-l="信義雙和里" data-n="0" data-b="0"/><path class="v" d="M289.3 568.1l1.3 0.7l-1.1 2.1l1.1 0.7l0.3 5.6l-4 4.1l-1.1 -0.3l0.7 -1.7l-1.8 -2l-0.2 -1.7z" data-l="信義嘉興里" data-n="0" data-b="0"/><path class="v" d="M284.7 575.6l0 1.7l1.8 2l-0.7 1.7l1.2 1.1l6.2 1.5l2.2 -0.9l1.4 1.4l-0.2 2.8l4 6.7l-1.3 4.5l-0.5 -3.4l-2.6 -1.3l-1 -1.8l-3.1 -2.8l-4.1 -0.4l-5.7 -2.6l-7.4 -0.6z" data-l="信義黎順里" data-n="0" data-b="0"/><path class="v" d="M275 585.4l7.3 0.4l5.7 2.6l4.1 0.4l1.5 4.3l-1 -0.1l-6.3 3.9z" data-l="信義黎平里" data-n="0" data-b="0"/><path class="v" d="M292.9 589.9l2.3 1.7l1 1.8l2.6 1.3l1.7 5.5l-0.1 1.4l-2.5 0.7l-0.1 1.4l-1.5 0.3l0.5 0.9l-1.3 0.7l-0.8 -2l-1.6 0.3l-6.8 -7l6.3 -3.9l1 0.1z" data-l="信義黎忠里" data-n="0" data-b="0"/><path class="v" d="M301.1 599.9l2.2 0.2l0.7 1.5l8.2 4.5l2.6 3l2.6 5.3l6.7 3.6l7.1 1.8l-1.3 5.2l-5 3.2l-1.8 3l-7.7 4.5l-2.1 0.6l-1.9 -5.9l-4.9 -4.2l-0.8 -6.4l-1.8 -1.1l-5.8 -7.4l-1.6 -3.7l-3.4 -3.7l1.6 -0.3l0.8 2l1.3 -0.7l-0.5 -0.9l1.5 -0.3l0.1 -1.4l2.5 -0.7l-0.4 -2.7z" data-l="信義黎安里" data-n="0" data-b="0"/><path class="v" d="M255.8 542.8l8.1 0.2l-0.1 14.5l-8.2 -0.2z" data-l="大安德安里" data-n="0" data-b="0"/><path class="v" d="M249 542.7l6.8 0.1l-0.2 14.5l-6.7 -0.1z" data-l="大安仁慈里" data-n="0" data-b="0"/><path class="v" d="M232.4 542.4l16.6 0.3l-0.1 14.5l-16.7 -0.4z" data-l="大安和安里" data-n="0" data-b="0"/><path class="v c2" d="M217.8 542.2l14.6 0.2l-0.2 14.4l-14.7 -0.2z" data-l="大安民炤里" data-n="20" data-b="0"/><path class="v c1" d="M249.2 531.1l14.7 0.3l0 11.6l-14.9 -0.3z" data-l="大安仁愛里" data-n="1" data-b="0"/><path class="v c1" d="M230.1 531l19.1 0.1l-0.2 11.6l-16.6 -0.3l-0.2 -5.2z" data-l="大安義村里" data-n="2" data-b="0"/><path class="v c1" d="M218.1 519.1l10.6 2.2l0.8 8l2.7 7.9l0.2 5.2l-14.6 -0.2z" data-l="大安民輝里" data-n="5" data-b="0"/><path class="v c3" d="M228.7 521.3l11.8 0.3l-0.1 9.4l-10.3 0l-1.4 -6.7z" data-l="大安昌隆里" data-n="111" data-b="0"/><path class="v c1" d="M249.4 521l-0.2 10.1l-8.8 -0.1l0.1 -9.4z" data-l="大安誠安里" data-n="1" data-b="0"/><path class="v" d="M257.7 519.7l6.2 0.8l0 10.9l-14.7 -0.3l0.2 -10.4z" data-l="大安光武里" data-n="0" data-b="0"/><path class="v c1" d="M214.4 579.5l9.5 0.9l-1.3 11.4l-4.3 0.2l-3.5 1.8l-1.5 -1.8z" data-l="大安龍坡里" data-n="1" data-b="0"/><path class="v" d="M205.6 578.7l8.8 0.8l-0.8 9.6l-8 -1z" data-l="大安龍泉里" data-n="0" data-b="0"/><path class="v" d="M205.6 588.1l8 1l-0.3 2.9l1.5 1.8l-7 6.6l-4.4 -4.5l1.6 -2.7z" data-l="大安古風里" data-n="0" data-b="0"/><path class="v c1" d="M188.5 577.4l17.1 1.3l-0.4 13.9l-1.8 3.3l-7.2 -6.8z" data-l="大安古莊里" data-n="1" data-b="0"/><path class="v" d="M220.5 565.9l3.6 11.3l-0.2 3.2l-12.9 -1.2l0.7 -10.5z" data-l="大安龍安里" data-n="0" data-b="0"/><path class="v" d="M200 567.3l11.7 1.4l-0.7 10.5l-12.9 -1.2z" data-l="大安錦安里" data-n="0" data-b="0"/><path class="v" d="M209.9 556l7.6 0.3l3 9.6l-8.8 2.8l-3.2 -0.1l-0.1 -4.7z" data-l="大安福住里" data-n="0" data-b="0"/><path class="v" d="M202 554.8l7.7 1.2l-1.3 7.9l0.1 4.7l-8.5 -1.3z" data-l="大安永康里" data-n="0" data-b="0"/><path class="v" d="M194.2 550.8l7.8 4l-1.2 7.8l-12.3 -2l4.9 -9.6z" data-l="大安光明里" data-n="0" data-b="0"/><path class="v" d="M188.5 560.6l12.3 2l-1.5 8.9l-12.4 -2.1z" data-l="大安錦泰里" data-n="0" data-b="0"/><path class="v" d="M186.9 569.4l12.4 2.1l-1.2 6.5l-9.6 -0.6l-2.4 -3.6z" data-l="大安錦華里" data-n="0" data-b="0"/><path class="v c1" d="M232.2 556.8l16.7 0.4l-0.2 9.7l-8.6 7.7l0.1 -10.4l-3.4 0l0 1l-4.6 -0.1z" data-l="大安龍圖里" data-n="1" data-b="0"/><path class="v" d="M240.2 564.2l-0.1 11.7l-5.8 -3.4l-2.2 0.7l0.1 -8.1l4.6 0.1l0 -1z" data-l="大安新龍里" data-n="0" data-b="0"/><path class="v c1" d="M248.7 566.9l-0.3 11.8l-10.5 -1.1l1.2 -1.7l1 0l0 -1.3l1.9 -2.2z" data-l="大安龍陣里" data-n="1" data-b="0"/><path class="v" d="M249.9 564.4l13.8 0.2l0.1 9.1l-15.3 -1l0.2 -6.4z" data-l="大安龍雲里" data-n="0" data-b="0"/><path class="v" d="M234.3 572.5l4.8 3.4l-1.2 1.7l0.6 0.3l9.9 0.8l-0.1 5.2l-16.4 -2.3l0.2 -8.4z" data-l="大安龍生里" data-n="0" data-b="0"/><path class="v" d="M248.9 557.2l14.9 0.3l-0.1 7.1l-13.8 -0.2l-1.2 1.9z" data-l="大安住安里" data-n="0" data-b="0"/><path class="v" d="M263.8 557.5l10.5 0.2l-0.1 8.4l-7.4 7.8l-3 -0.2z" data-l="大安義安里" data-n="0" data-b="0"/><path class="v" d="M279.5 557.8l9.1 0.1l-0.2 11.6l-9 -2.5z" data-l="大安通化里" data-n="0" data-b="0"/><path class="v" d="M274.3 557.7l5.2 0.1l-0.1 9.2l-1.8 6.7l-4.2 -1.1l-2.9 0.9l-1 -2.7l4.7 -4.7z" data-l="大安通安里" data-n="0" data-b="0"/><path class="v" d="M279.4 567l9 2.5l-3.9 6.1l-6.9 -1.9z" data-l="大安臨江里" data-n="0" data-b="0"/><path class="v" d="M273.4 572.6l11.1 3l-9.5 9.8l-4.5 -11.9z" data-l="大安法治里" data-n="0" data-b="0"/><path class="v" d="M269.5 570.8l5.2 14.6l-11.1 -0.6l0.2 -11.1l3 0.2z" data-l="大安全安里" data-n="0" data-b="0"/><path class="v" d="M248.5 572.7l5.4 0.4l-1.3 0.6l0 1.4l-1.6 -0.1l-0.1 5.7l2.6 0l0 0.7l4.5 0.2l0.4 -8.2l5.4 0.3l-0.2 11.1l-15.3 -0.9z" data-l="大安群賢里" data-n="0" data-b="0"/><path class="v" d="M252.6 573.7l5.8 -0.3l-0.4 8.2l-7.1 -0.9l0.1 -5.7l1.6 0.1z" data-l="大安群英里" data-n="0" data-b="0"/><path class="v" d="M257.9 584.5l16.7 0.9l0.1 0l-12 11.7l-3.3 -4.6l-1.7 -4.4z" data-l="大安虎嘯里" data-n="0" data-b="0"/><path class="v" d="M248.3 583.9l9.6 0.6l-0.2 3.6l1.7 4.4l3.3 4.6l-5.1 4.9l-5.1 -5.4l-4.2 -1.3z" data-l="大安臥龍里" data-n="0" data-b="0"/><path class="v" d="M238.4 582.5l9.9 1.4l0 11.4l-11.2 -0.2l-3.1 -1.6l3.6 -5z" data-l="大安龍淵里" data-n="0" data-b="0"/><path class="v" d="M217.5 556.6l14.7 0.2l-0.3 24.8l6 0.9l-0.3 6l-3.6 5l-2.3 -1.9l-9.1 0.2l1.5 -14.6z" data-l="大安龍門里" data-n="0" data-b="0"/><path class="v" d="M222.6 591.8l-3.1 17l-1.9 1.8l-9.8 -10.2l8.3 -7.5l3 -1z" data-l="大安大學里" data-n="0" data-b="0"/><path class="v" d="M274.7 585.4l6.3 6.1l-3 4.4l-5.4 4.2l-2.8 4.7l-2.9 0.7l-2.4 3.3l-6.9 -6.8z" data-l="大安芳和里" data-n="0" data-b="0"/><path class="v" d="M275 598.1l5.4 4.9l-1.5 0.2l-1.5 1.7l10.3 19.2l-3.5 1.3l-15.6 -13.9l-4.1 -2.7l2.4 -3.3l2.9 -0.7l4.1 -6z" data-l="大安黎元里" data-n="0" data-b="0"/><path class="v" d="M281 591.5l5.3 5.4l1.6 13.4l2.1 4.2l-1 1.9l2.1 7l-1 0.7l-2.4 0l-10.3 -19.2l1.5 -1.7l1.5 -0.2l-5.4 -4.9l3 -2.2z" data-l="大安黎孝里" data-n="0" data-b="0"/><path class="v" d="M286.4 597l9.6 10l2.1 4.3l5.8 7.4l1.8 1.1l0.8 6.4l4.9 4.2l1.9 5.9l-4.1 1.2l-4.4 -1l-5.5 -6.3l-2.5 -0.9l-5.7 -5.9l-2.1 -7l1 -1.9l-2.1 -4.2z" data-l="大安黎和里" data-n="0" data-b="0"/><path class="v" d="M264 520.5l11.7 1.5l-0.1 9.7l-11.7 -0.3z" data-l="大安建安里" data-n="0" data-b="0"/><path class="v" d="M263.9 531.4l11.7 0.3l-0.1 11.6l-11.6 -0.3z" data-l="大安建倫里" data-n="0" data-b="0"/><path class="v" d="M263.9 543l6.9 0.2l3.7 4.9l-0.2 9.6l-10.5 -0.2z" data-l="大安敦安里" data-n="0" data-b="0"/><path class="v c2" d="M280 531.7l9 0.3l-0.2 11.3l-6 0z" data-l="大安正聲里" data-n="15" data-b="0"/><path class="v" d="M270.8 543.2l9.1 0.1l-0.2 7.4l1.9 2.4l-1 0.7l4.7 2.8l0 1.2l-11 -0.1l0.2 -9.6z" data-l="大安敦煌里" data-n="0" data-b="0"/><path class="v" d="M289.2 519.8l-0.2 12.2l-9 -0.3l-2.3 -9.6z" data-l="大安華聲里" data-n="0" data-b="0"/><path class="v" d="M275.7 522l2 0.1l5.1 21.2l-7.3 0z" data-l="大安車層里" data-n="0" data-b="0"/><path class="v" d="M279.9 543.3l8.9 0l-0.2 14.6l-3.3 -0.1l0 -1.2l-4.7 -2.8l1 -0.7l-1.9 -2.4z" data-l="大安光信里" data-n="0" data-b="0"/><path class="v c1" d="M231.7 591.6l5.4 3.5l11.9 0.2l3.1 1.1l12.4 12.4l4.1 2.7l15.6 13.9l-1.6 0.3l-2.2 4.4l-4.7 4l-1.2 0l-3.4 -2.9l-3 -0.2l-3.7 0.4l-6.4 4l-5.6 2.1l-3.1 -2.4l-6.6 1.5l-6.5 -1.5l-3.3 0.5l-2.1 -7.9l-3.2 -6.3l-10 -10.8l1.9 -1.8l3.1 -17z" data-l="大安學府里" data-n="4" data-b="0"/><path class="v" d="M194 507.6l15.3 3.9l8.7 7.6l-25 -7.4z" data-l="中山正守里" data-n="0" data-b="0"/><path class="v c1" d="M196.4 498.4l6.5 0l2.2 7.1l4.2 6l-15.3 -3.9z" data-l="中山正義里" data-n="3" data-b="0"/><path class="v c1" d="M196.3 498.4l-3.3 13.3l-9.9 -0.6l5.2 -13.1z" data-l="中山正得里" data-n="5" data-b="0"/><path class="v c2" d="M189 480l-0.7 18l-0.8 3l-4.4 10.1l-6 -1l2.4 -2.5l1.8 -4.5l1.3 -22.2z" data-l="中山民安里" data-n="21" data-b="0"/><path class="v c2" d="M188.6 489.3l13.9 0.2l0.4 8.9l-14.6 -0.4z" data-l="中山康樂里" data-n="10" data-b="0"/><path class="v c1" d="M189 480l13.6 -0.2l-0.1 9.7l-13.9 -0.2z" data-l="中山中山里" data-n="9" data-b="0"/><path class="v c1" d="M189.3 472.5l13.3 0.1l0 7.2l-13.6 0.2z" data-l="中山聚盛里" data-n="6" data-b="0"/><path class="v c1" d="M179.6 446.7l9.3 0.2l-1.7 10.5l2.1 13l-0.3 9.6l-6.4 0.9l-0.1 -6.7l-3.9 -10.4l-0.7 -4.3z" data-l="中山集英里" data-n="5" data-b="0"/><path class="v c1" d="M188.4 464.7l14.5 0.5l-0.3 7.4l-13.3 -0.1z" data-l="中山聚葉里" data-n="2" data-b="0"/><path class="v" d="M187.2 458.2l15.7 0l0 7l-14.5 -0.5z" data-l="中山恆安里" data-n="0" data-b="0"/><path class="v c1" d="M187.7 452.2l15.2 0.4l0 5.6l-15.7 0z" data-l="中山晴光里" data-n="3" data-b="0"/><path class="v" d="M187.8 419.5l4.8 4.9l3.6 7.4l3.5 1.6l3.2 4.3l0 14.9l-15.2 -0.4l1.2 -5.3l-9.3 -0.2l2.4 -14.5l4.2 -9.8z" data-l="中山圓山里" data-n="0" data-b="0"/><path class="v" d="M237.7 372.5l1.2 2.4l4.9 1.2l2.8 2l3.4 5.4l-0.3 13l1.3 0.6l0.3 6.1l-0.8 18.2l-42.7 -1.3l-3 1.8l-1.2 2.2l0.4 5.4l-1.1 2.4l-3.7 1.5l-2.1 -0.8l-1.5 -1.6l-0.7 -2.7l1.6 -0.4l0.8 -1.9l-4.2 -15.3l-0.2 -3l0.9 -2l1.8 -1.4l1.3 1.9l2.4 -1l1.2 -1.2l-0.2 -1.3l5.7 -6.5l0.9 0.5l4.8 -1.9l5.3 -8.4l3.5 -1.8l5.6 -6.2l6.9 -4.8z" data-l="中山劍潭里" data-n="0" data-b="0"/><path class="v" d="M242 369.7l2.5 3.2l5 0.4l2.7 4.3l7.5 -1l3.9 -1.9l1.1 14.3l0.9 1.9l-0.6 1.9l2 1.1l-2.3 3.3l-2.6 10.4l-2.9 3l-8.1 0.5l-0.1 -14l-1.3 -0.6l0.3 -13l-3.4 -5.4l-2.8 -2l-4.9 -1.2l-1.3 -2.7l2.5 -0.4l0.6 -1.7z" data-l="中山大直里" data-n="0" data-b="0"/><path class="v" d="M272.2 391.6l12.5 3.9l0 30.7l-17.5 -3.3l0.2 -4.4l3 -0.4l1.8 -1.8l1 -2.6l-0.3 -2.7l-1.4 -4.1l-9 -0.5l3 -11l4.1 -3.1z" data-l="中山成功里" data-n="0" data-b="0"/><path class="v" d="M262.5 406.4l9 0.5l1.5 4.6l0.2 2.2l-1 2.6l-1.8 1.8l-3 0.4l-0.2 4.4l-16.7 -1.5l0 -10.3l8.7 -0.5z" data-l="中山永安里" data-n="0" data-b="0"/><path class="v" d="M219.1 420.2l31.4 1.2l22.6 2.2l1.2 0.3l-0.5 7.9l-2.7 1.9l-6.3 2.3l-1.5 2.3l-29.2 -0.6l-0.1 5.9l0.6 1.3l8.1 1.6l7.9 4.7l0 1.7l-4.9 -3.8l-3.4 -1.3l-23.5 -0.3z" data-l="中山大佳里" data-n="0" data-b="0"/><path class="v" d="M210.9 447.4l7.9 0.1l0 10.8l-8.4 0z" data-l="中山新喜里" data-n="0" data-b="0"/><path class="v" d="M219.1 420.2l-0.3 27.3l-7.9 -0.1l-0.5 10.9l-7.5 -0.1l0.3 -19.8l-3.5 -5l2.3 -0.7l1.6 -1.8l0 -6.8l1.2 -2.2l2.1 -1.5z" data-l="中山新庄里" data-n="0" data-b="0"/><path class="v" d="M202.9 458.2l15.9 0.1l-0.2 7.3l-15.7 -0.4z" data-l="中山新福里" data-n="0" data-b="0"/><path class="v" d="M218.6 465.6l11 0.2l-0.2 14.5l-10.9 -0.5z" data-l="中山松江里" data-n="0" data-b="0"/><path class="v c1" d="M202.9 465.2l15.7 0.4l0 6.7l-16 0.3z" data-l="中山新生里" data-n="1" data-b="0"/><path class="v c1" d="M202.6 472.6l16 -0.3l-0.1 7.5l-15.9 0z" data-l="中山中庄里" data-n="4" data-b="0"/><path class="v" d="M218.8 447.5l9.6 8.9l1.3 3.4l-0.1 6l-11 -0.2z" data-l="中山行政里" data-n="0" data-b="0"/><path class="v" d="M233.3 447.7l7.7 0.1l-0.3 18.1l-11.1 -0.1l0.1 -6l3.6 -0.1z" data-l="中山行仁里" data-n="0" data-b="0"/><path class="v" d="M218.8 447.5l14.5 0.2l0 12l-3.6 0.1l-2 -4.3z" data-l="中山行孝里" data-n="0" data-b="0"/><path class="v" d="M241 447.8l4.7 1.3l4.9 3.8l-0.2 13l-9.7 0z" data-l="中山下埤里" data-n="0" data-b="0"/><path class="v" d="M229.6 465.8l20.8 0.1l0 6.8l-20.9 -0.2z" data-l="中山江寧里" data-n="0" data-b="0"/><path class="v" d="M229.5 472.5l20.9 0.2l-0.1 7.7l-20.9 -0.1z" data-l="中山江山里" data-n="0" data-b="0"/><path class="v" d="M218.5 479.8l-0.3 18.7l-8.4 -0.1l0.3 -18.6z" data-l="中山中吉里" data-n="0" data-b="0"/><path class="v" d="M202.6 479.8l7.5 0l-0.3 18.6l-6.9 0z" data-l="中山中原里" data-n="0" data-b="0"/><path class="v c2" d="M202.9 498.4l15.3 0.1l-0.2 20.6l-8.7 -7.6l-4.2 -6z" data-l="中山興亞里" data-n="10" data-b="0"/><path class="v c1" d="M218.5 479.8l10.9 0.5l-0.3 18.3l-10.9 -0.1z" data-l="中山中央里" data-n="1" data-b="0"/><path class="v" d="M229.4 480.3l15 0.2l0 9.7l-15.2 -0.3z" data-l="中山朱馥里" data-n="0" data-b="0"/><path class="v" d="M250.3 480.4l-0.1 9.9l-5.8 -0.1l0 -9.7z" data-l="中山龍洲里" data-n="0" data-b="0"/><path class="v c1" d="M218.2 498.5l10.9 0.1l-0.4 18.6l-2.9 1.3l-2.1 2l-5.7 -1.4z" data-l="中山朱園里" data-n="1" data-b="0"/><path class="v" d="M249.6 512.4l-0.2 8.3l-6.3 0.9l-19.4 -1.1l4.1 -3z" data-l="中山埤頭里" data-n="0" data-b="0"/><path class="v" d="M228.9 509.9l20.9 0.4l-0.2 2.1l-20.9 4.8z" data-l="中山朱崙里" data-n="0" data-b="0"/><path class="v c1" d="M229.1 498.6l20.9 0.4l-0.2 11.3l-20.9 -0.4z" data-l="中山力行里" data-n="5" data-b="0"/><path class="v c1" d="M229.2 489.9l21 0.4l-0.2 8.7l-20.9 -0.4z" data-l="中山復華里" data-n="2" data-b="0"/><path class="v" d="M293.2 394.2l5 1.9l4.5 11.1l5.4 6.7l17 5.3l2.1 1.7l4.1 5.9l-3.1 1.1l-2.4 -4.6l-1.8 -1.5l-1.7 -0.2l-16.6 11.2l-4.1 1l-3.4 -0.8l-8.8 -5.1l-4.7 -1.7l0 -30.7l4.3 0.7l2.2 -1.6z" data-l="中山金泰里" data-n="0" data-b="0"/><path class="v" d="M272.7 371.1l0.3 2.2l3.5 5.8l4.2 3.9l6.6 2l-1.1 3.9l2.6 4.5l0 2.5l-2.9 0l-13.4 -4.2l-2.3 0.3l-3.2 1.9l-2 -1.1l0.6 -1.9l-0.9 -1.9l-1.1 -14.3l1.7 -1.9l5.1 0.2z" data-l="中山北安里" data-n="0" data-b="0"/><path class="v" d="M220.2 613.2l7.4 8.2l2.8 5.4l-3.9 0.9l-11 7.3l-3.8 -3.6l-4.4 -0.8l-4.9 -2.2l7.4 -7.9l6.6 -5.6l0.9 0.6z" data-l="中正水源里" data-n="0" data-b="0"/><path class="v" d="M206.1 607l10.3 7.9l-6.6 5.6l-7.4 7.9l-3.9 -2.7l-4.4 -6.2l8.8 -9.9z" data-l="中正富水里" data-n="0" data-b="0"/><path class="v" d="M207.8 600.4l12 12.5l-2.5 2.6l-14.1 -10.7z" data-l="中正文盛里" data-n="0" data-b="0"/><path class="v" d="M203.5 596l4.3 4.4l-4.6 4.4l2.9 2.2l-12 12.5l-7.5 -11.6l-3.7 -4.1l5.5 -5.5l8.6 -1.9l5.3 0.7z" data-l="中正林興里" data-n="0" data-b="0"/><path class="v" d="M186.1 586.6l10.9 9.8l-8.6 1.9l-5.5 5.5l-2.7 -2.3l2 -5.6l0.3 -3.3z" data-l="中正河堤里" data-n="0" data-b="0"/><path class="v" d="M190.9 581l5.3 8.1l7.2 6.8l-0.5 0.9l-5.9 -0.4l-10.9 -9.8l2.4 -3.6z" data-l="中正頂東里" data-n="0" data-b="0"/><path class="v c1" d="M172.1 587.1l13.1 0.8l-2.7 4.7l-0.3 3.3l-2 5.6l-9.6 -4.4l1.6 -6.4z" data-l="中正網溪里" data-n="1" data-b="0"/><path class="v" d="M188.2 577.3l2.7 3.7l-2.4 2l-2.4 3.6l-7.7 -3l-0.1 -4.4z" data-l="中正板溪里" data-n="0" data-b="0"/><path class="v c1" d="M169.5 576.6l8.8 2.6l0.1 4.4l6.7 2.3l1 0.7l-0.9 1.3l-13.1 -0.8z" data-l="中正螢圃里" data-n="7" data-b="0"/><path class="v" d="M166.1 575.6l3.4 1l2.6 10.5l0.1 3.6l-1.6 6.4l-11.1 -3.1l-0.6 -7.2z" data-l="中正螢雪里" data-n="0" data-b="0"/><path class="v" d="M158.3 571.1l7.6 4.5l-2.1 4.3l-4.9 6.9l-6 -1.9l2.7 -8.8z" data-l="中正永功里" data-n="0" data-b="0"/><path class="v" d="M148.4 571.4l2.8 3.4l3.9 2.6l-2.2 7.5l-3.1 -1l-5.6 -5.6z" data-l="中正永昌里" data-n="0" data-b="0"/><path class="v" d="M147.7 564.9l10.6 6.2l-3.2 6.3l-5.6 -4.5l-5.1 -6.9l1.4 0.5z" data-l="中正龍興里" data-n="0" data-b="0"/><path class="v" d="M144 566.1l4.4 5.2l-4.2 7l-8.5 -10.1z" data-l="中正忠勤里" data-n="0" data-b="0"/><path class="v" d="M138.9 557.4l6.8 6.3l2 1.2l-1.9 1.6l-1.8 -0.4l-8.3 2.1l0 -4.3z" data-l="中正廈安里" data-n="0" data-b="0"/><path class="v" d="M146.8 546.7l-2.2 14.3l-0.8 0.9l-4.9 -4.5l4.6 -12.2z" data-l="中正愛國里" data-n="0" data-b="0"/><path class="v c1" d="M146.9 546.7l12.5 4.9l5.8 10.5l-14.8 4.2l-6.6 -4.4l0.8 -0.9z" data-l="中正南門里" data-n="2" data-b="0"/><path class="v" d="M165.2 562.1l4.3 14.5l-3.6 -1l-15.5 -9.3z" data-l="中正龍光里" data-n="0" data-b="0"/><path class="v" d="M178.5 563l7 10.3l3 4.1l-10.2 1.8l-8.8 -2.6l-1.8 -7.9l3.2 -0.8z" data-l="中正南福里" data-n="0" data-b="0"/><path class="v" d="M159.4 551.6l12 0.8l7.1 10.6l-7.6 4.9l-3.2 0.8l-2.5 -6.6z" data-l="中正龍福里" data-n="0" data-b="0"/><path class="v" d="M171.4 552.4l17.1 8.2l-2.3 13.5z" data-l="中正新營里" data-n="0" data-b="0"/><path class="v" d="M161.5 529.3l-0.7 7.6l13.7 2.8l-3.1 12.7l-12 -0.8l-4.8 -1.4l-11.5 -5.5l4 -14.7z" data-l="中正建國里" data-n="0" data-b="0"/><path class="v" d="M161.9 506.9l-0.4 22.4l-14.4 0.7l4.6 -17.2l4.9 -3.5l1.5 -3.8z" data-l="中正光復里" data-n="0" data-b="0"/><path class="v c1" d="M162.1 506.9l11.4 3l4.9 0l4.7 1.2l-3.1 7.6l-5.5 21l-13.7 -2.8z" data-l="中正黎明里" data-n="4" data-b="0"/><path class="v c1" d="M183.1 511.1l13.2 1.2l21.8 6.8l-0.1 10l-38 -10.4z" data-l="中正梅花里" data-n="2" data-b="0"/><path class="v c2" d="M180 518.7l29.4 7.8l-2 7.2l-29.4 -7.6z" data-l="中正幸福里" data-n="11" data-b="0"/><path class="v c1" d="M209.4 526.5l8.6 2.6l-0.2 13.1l-9.8 -0.2l0.1 -3.4l0.8 -0.1l1 -4.1l-2.5 -0.7z" data-l="中正幸市里" data-n="5" data-b="0"/><path class="v" d="M178 526.1l20.6 5.4l-4.9 18.7l-5.2 10.4l-17.1 -8.2z" data-l="中正東門里" data-n="0" data-b="0"/><path class="v c1" d="M198.7 531.5l11.2 2.9l-1 4.1l-0.8 0.1l-0.1 3.4l-1.3 4l-11 -2.9z" data-l="中正文北里" data-n="1" data-b="0"/><path class="v" d="M195.7 543.1l11 2.9l-1.9 2.9l-1.5 6.1l-9.9 -4.2z" data-l="中正文祥里" data-n="0" data-b="0"/><path class="v c1" d="M208 542l9.8 0.2l-0.3 14.1l-14.2 -1.3l1.5 -6.1z" data-l="中正三愛里" data-n="3" data-b="0"/><path class="v" d="M141.5 492.4l6.9 2.1l4.6 0.3l0.4 4l4.2 -0.2l0.5 6.9l-1.5 3.8l-2.4 1l-4.8 0.2l-7.7 -2.1l-4.8 -2.5l3 -7.2z" data-l="大同玉泉里" data-n="0" data-b="0"/><path class="v c2" d="M163.5 500l4.4 1.2l13 3.2l-1.5 3.5l-2.3 2.2l-3.6 -0.2l-11.6 -3z" data-l="大同建明里" data-n="15" data-b="0"/><path class="v" d="M165.8 491.9l0.7 1l3.2 0.8l-1.8 7.5l-4.4 -1.2l-1.6 6.9l-3.8 -1.4l-0.5 -6.9l3.8 -2.6l-0.3 -3.4z" data-l="大同建功里" data-n="0" data-b="0"/><path class="v c1" d="M169.7 493.7l12.1 2.9l-0.9 7.8l-13 -3.2z" data-l="大同建泰里" data-n="2" data-b="0"/><path class="v c1" d="M156.7 483.2l0.9 15.4l-4.2 0.2l-0.4 -4l-4.6 -0.3l-6.9 -2.1l0.3 -5.4l-0.9 -3.2z" data-l="大同永樂里" data-n="4" data-b="0"/><path class="v c1" d="M163 483.2l1.9 9l-3.8 0.4l0.3 3.4l-3.8 2.6l-0.9 -15.4z" data-l="大同朝陽里" data-n="2" data-b="0"/><path class="v" d="M175.6 481.9l0.1 8.2l-1.3 4.8l-9.5 -2.7l-1.9 -9z" data-l="大同星明里" data-n="0" data-b="0"/><path class="v" d="M182.6 480.9l-0.8 15.7l-7.4 -1.7l1.3 -4.8l-0.1 -8.2z" data-l="大同光能里" data-n="0" data-b="0"/><path class="v c1" d="M155.9 471.6l0.8 11.6l-15.8 0.6l-1.9 -5.6l0.4 -5.7z" data-l="大同大有里" data-n="2" data-b="0"/><path class="v c1" d="M162.3 471.1l0.7 12.1l-6.3 0l-0.8 -11.6z" data-l="大同延平里" data-n="1" data-b="0"/><path class="v" d="M181.9 472.4l0.7 8.5l-19.6 2.3l-0.4 -7.2l11.6 -3.1z" data-l="大同雙連里" data-n="0" data-b="0"/><path class="v" d="M142.5 462.2l13.2 2.3l6.6 -0.3l0 6.9l-22.9 1.4z" data-l="大同南芳里" data-n="0" data-b="0"/><path class="v c1" d="M162.3 464.2l16.6 0.3l3 7.9l-7.7 0.5l-11.6 3.1z" data-l="大同民權里" data-n="1" data-b="0"/><path class="v" d="M153.2 455.1l-0.1 4l2.1 -0.1l0.5 5.5l-13.7 -2.4l1.1 -6.5z" data-l="大同景星里" data-n="0" data-b="0"/><path class="v" d="M153.2 455.1l9.5 0l-0.1 3.5l4.6 1.1l-1.5 4.5l-10 0.3l-0.5 -5.5l-2.1 0.1z" data-l="大同隆和里" data-n="0" data-b="0"/><path class="v" d="M178.4 454.5l-0.5 5l1 5l-13.2 -0.3l1.5 -4.5l-4.6 -1.1l0.1 -3.5z" data-l="大同蓬萊里" data-n="0" data-b="0"/><path class="v" d="M143.6 446.1l10.9 0.1l0.5 8.8l-11.9 0.6z" data-l="大同國順里" data-n="0" data-b="0"/><path class="v" d="M162.8 440.4l-0.1 14.7l-7.7 -0.1l-0.5 -8.8l4 0.1l0 -5.8z" data-l="大同國慶里" data-n="0" data-b="0"/><path class="v c1" d="M162.8 446.5l6 0.1l0.5 8.4l-6.6 0.1z" data-l="大同揚雅里" data-n="3" data-b="0"/><path class="v" d="M168.9 446.6l10.7 0.1l-0.9 7.8l-9.4 0.5z" data-l="大同斯文里" data-n="0" data-b="0"/><path class="v" d="M142.7 435l20.2 0.7l-0.1 4.7l-4.3 0.1l0 5.8l-15.1 -0.2z" data-l="大同鄰江里" data-n="0" data-b="0"/><path class="v" d="M162.9 435.7l18.1 0.5l-1.4 10.5l-16.8 -0.2z" data-l="大同至聖里" data-n="0" data-b="0"/><path class="v" d="M161.4 410.7l1.8 6.6l-0.3 18.4l-20.7 -0.7l-1.8 -8.8l-3.7 -9.7l10.1 -0.9l1.7 -1l7.5 -0.9z" data-l="大同老師里" data-n="0" data-b="0"/><path class="v" d="M163.7 412.4l6.1 -2.7l6.4 4.2l11.6 5.6l-5.1 11.1l-9.8 -3.2l-9.9 0.3l0.2 -10.4l-2.3 -8.8l1.2 -0.5z" data-l="大同重慶里" data-n="0" data-b="0"/><path class="v" d="M172.9 427.4l9.8 3.2l-1.7 5.6l-18.1 -0.5l0.1 -8z" data-l="大同保安里" data-n="0" data-b="0"/><path class="v" d="M136.9 505.9l4.8 2.5l7.7 2.1l4.8 -0.2l-2.9 3.2l-1.9 6.9l-20 -5.1z" data-l="萬華福星里" data-n="0" data-b="0"/><path class="v c1" d="M129.4 515.3l20 5.1l-1.5 6.1l-23.7 -5.9z" data-l="萬華萬壽里" data-n="6" data-b="0"/><path class="v c2" d="M131.8 522.6l16.1 3.9l-0.8 3.5l-1.5 -0.6l-2 2.6l-13.4 -0.6z" data-l="萬華西門里" data-n="11" data-b="0"/><path class="v c1" d="M146.7 529.7l-2.1 9.3l-15.2 -2.5l0.8 -5.1l13.4 0.6l2 -2.6z" data-l="萬華新起里" data-n="7" data-b="0"/><path class="v c1" d="M124.5 520.7l7.3 1.9l-2.4 13.9l-11.5 0.1l-12.9 -8.9l6.2 -0.3z" data-l="萬華菜園里" data-n="1" data-b="0"/><path class="v c2" d="M92.4 528.3l12.6 -0.6l12.9 8.9l5.4 -0.2l-1.6 15.2l-14.1 -0.3l7.7 -9.6z" data-l="萬華青山里" data-n="16" data-b="0"/><path class="v c1" d="M129.4 536.5l-2.2 15.2l-5.5 -0.1l1.6 -15.2z" data-l="萬華富民里" data-n="2" data-b="0"/><path class="v c1" d="M129.4 536.5l6.3 1l-2.7 14.4l-5.8 -0.2z" data-l="萬華福音里" data-n="2" data-b="0"/><path class="v" d="M135.7 537.5l8.9 1.5l-2.2 10.1l-4.8 -1.4l-3.8 -0.1z" data-l="萬華仁德里" data-n="0" data-b="0"/><path class="v" d="M133.8 547.6l8.6 1.5l-3.5 8.3l-1.6 -1.5l-11.1 3l-8.3 -0.5l3.8 -6.8l11.3 0.3z" data-l="萬華富福里" data-n="0" data-b="0"/><path class="v" d="M138.9 557.4l-3.2 6.5l0 4.3l-10.5 1.9l0 -11.1l12.1 -3.1z" data-l="萬華頂碩里" data-n="0" data-b="0"/><path class="v" d="M117.9 558.4l7.3 0.6l0 11.1l-9.1 0.5l-5 2z" data-l="萬華雙園里" data-n="0" data-b="0"/><path class="v" d="M135.7 568.2l1.9 2.4l-3.6 2.7l0.3 0.9l-4.2 0.7l-1.1 -5.3z" data-l="萬華新忠里" data-n="0" data-b="0"/><path class="v" d="M137.6 570.7l6.6 7.6l-1.8 2.3l-7.8 2.7l-3 -8.4l2.7 -0.7l-0.3 -0.9z" data-l="萬華新和里" data-n="0" data-b="0"/><path class="v c1" d="M107.7 551.3l6.9 0.1l7.1 0.2l-3.8 6.8l-5.1 1.1l-3.9 3.2l-3.1 -0.7l0.8 -4l-2.9 -2z" data-l="萬華糖廍里" data-n="6" data-b="0"/><path class="v" d="M117.9 558.4l-6.8 14.2l-1.1 -0.6l-8.2 1.2l-1.9 -1.4l11.7 -11.5l3 -1.5z" data-l="萬華和平里" data-n="0" data-b="0"/><path class="v" d="M103.7 556l2.9 2l-0.8 4l3.1 0.7l-11.5 11.3l-4 2.2l-1.2 -3.4l0.7 -3.1z" data-l="萬華綠堤里" data-n="0" data-b="0"/><path class="v" d="M107.6 551.3l-14.7 18.4l-0.7 3.1l1.2 3.4l-5.3 1.3l-2.2 -2.5l-5.3 -11.3l-3.8 -12z" data-l="萬華華江里" data-n="0" data-b="0"/><path class="v" d="M92.4 528.3l22.9 13.4l-7.7 9.6l-30.8 0.4l1 -6.5l3.1 -5.6l10.7 -10.9z" data-l="萬華柳鄉里" data-n="0" data-b="0"/><path class="v" d="M125.2 570.1l-0.1 9.7l-1.7 0l-8.6 3.8l-4.4 -9.9l0.7 -1.1l5 -2z" data-l="萬華日善里" data-n="0" data-b="0"/><path class="v" d="M129 569.6l1.1 5.3l1.4 -0.4l2.5 7.3l-8.9 1l0.1 -12.7z" data-l="萬華新安里" data-n="0" data-b="0"/><path class="v" d="M110.4 573.7l5.3 12.2l-5 2.3l-4.9 -10z" data-l="萬華忠德里" data-n="0" data-b="0"/><path class="v" d="M109.3 584.7l2.2 6.4l-7.3 1.1l-13.6 5.1l0.5 -3.4l10.1 -3.5z" data-l="萬華孝德里" data-n="0" data-b="0"/><path class="v" d="M100.1 572.1l1.7 1.1l8.2 -1.2l1.1 0.6l-13.6 13.3l-6.1 2.4l-3.2 -7.6l-0.1 -3.2l5.3 -1.3z" data-l="萬華和德里" data-n="0" data-b="0"/><path class="v" d="M105.8 578.2l3.5 6.5l-8.1 5.7l-10.1 3.5l0.3 -5.6l6.1 -2.4z" data-l="萬華錦德里" data-n="0" data-b="0"/><path class="v" d="M125.1 579.8l-0.6 6.7l-4.4 8.3l-5.3 -11.2l8.6 -3.8z" data-l="萬華全德里" data-n="0" data-b="0"/><path class="v" d="M115.8 585.9l4.3 8.9l-1.2 2l-2.2 -1.3l-4 -0.1l-2 -7.2z" data-l="萬華保德里" data-n="0" data-b="0"/><path class="v" d="M111.5 591.1l1.2 4.3l-21.7 6.7l-0.4 -4.8l13.6 -5.1z" data-l="萬華銘德里" data-n="0" data-b="0"/><path class="v" d="M112.6 595.9l-0.6 2.4l-4 6.1l-16.8 5.9l-0.2 -8.2z" data-l="萬華榮德里" data-n="0" data-b="0"/><path class="v" d="M128.8 582.6l-0.3 10.8l-4.2 2.8l-4.2 -1.4l3.8 -6.7l1.2 -5.3z" data-l="萬華壽德里" data-n="0" data-b="0"/><path class="v" d="M120.1 594.8l3.6 1.2l0.5 2.3l3.2 4.4l0.7 -0.5l1.3 1.4l-1 0.6l6.2 8l-9.8 12.8l-8.5 6.1l-5.5 2.2l0.7 -23.2z" data-l="萬華興德里" data-n="0" data-b="0"/><path class="v" d="M115.7 595.5l3.2 1.3l-7.4 13.3l-0.7 23.2l-6.5 0.4l-1.3 -1l-6.9 -10.4l-2.1 -1l-2.3 -7l-0.5 -4l16.8 -5.9l4 -6.1l0.7 -2.9z" data-l="萬華華中里" data-n="0" data-b="0"/><path class="v" d="M131.4 593.3l-0.3 2.6l9.8 8.3l-6.3 8l-6.2 -8l1 -0.6l-1.3 -1.4l-0.7 0.5l-3.9 -5.9l0.2 -0.8l4.8 -2.6z" data-l="萬華日祥里" data-n="0" data-b="0"/><path class="v" d="M134.4 583l-2.3 3.3l-0.7 7l-2.9 0.1l0.3 -10.8l5.2 -0.8z" data-l="萬華忠貞里" data-n="0" data-b="0"/><path class="v" d="M144.2 578.3l5.8 5.7l-2.3 2.5l-5.3 -5.9z" data-l="萬華凌霄里" data-n="0" data-b="0"/><path class="v" d="M142.4 580.6l5.3 5.9l2.3 -2.5l9.3 3l0.2 7l-4.7 -0.1l-4.9 1.5l-9 8.8l-9.8 -8.3l0.9 -9.3l2.6 -3.3z" data-l="萬華騰雲里" data-n="0" data-b="0"/><path class="v" d="M245.8 684.6l5.1 1.2l-5.4 10.6l-0.1 3.5l-6.8 0.9l-0.7 -5.9l3.5 -10.3z" data-l="文山景行里" data-n="0" data-b="0"/><path class="v" d="M260.7 673.6l6.2 4l2.6 4.4l-3.3 3.1l-4 0.8l-2.3 1.7l-5.6 2.1l-4.3 5.6l-1.3 0.5l-3.3 4.1l0.1 -3.5l3.4 -5.7l3 -7.6l0.6 -5.5l4.5 -1z" data-l="文山景東里" data-n="0" data-b="0"/><path class="v" d="M225.7 675.9l13.1 10.5l1.8 0.7l-2.8 8.6l0.8 5.1l-4.7 -0.8l-3.8 -2.2l-0.8 -3.2l1.4 -7.8l-2.5 -6.1l-3.7 -3.6z" data-l="文山景美里" data-n="0" data-b="0"/><path class="v" d="M212.3 668.9l10.8 0.1l19.1 11.6l-1.6 6.5l-15.3 -11.2l-3 8.4l-7 7.9l0.1 -3.6l-1.1 -2.9l1.2 -2.3l-0.1 -2.7l-3.5 -11.1z" data-l="文山景慶里" data-n="0" data-b="0"/><path class="v" d="M238.6 663.4l3.6 10.9l0 6.3l-19.1 -11.6l-11.3 -0.4l1.1 -4.2l9.3 1l7.8 2.8l1.2 -2.1z" data-l="文山景仁里" data-n="0" data-b="0"/><path class="v" d="M252 667.1l0.4 13.1l-1.5 5.6l-4 -1.2l-5.5 0l0.8 -9.5l0.9 -0.1l5.2 -5.9l1.8 0.4z" data-l="文山景華里" data-n="0" data-b="0"/><path class="v" d="M244.6 656l5 6.3l2.4 4.8l-1.9 2.4l-1.7 -0.5l-2.1 1.6l-3.2 4.4l-0.9 0.1l-3.6 -11.7l1.1 -0.4l4.3 -6.5z" data-l="文山萬有里" data-n="0" data-b="0"/><path class="v" d="M239.1 649.1l2.3 1.5l3.2 5.4l-2.1 2.1l-2.8 4.9l-1.1 0.4l-2.4 -6.2l-1.2 -6l0.4 -2.7z" data-l="文山萬祥里" data-n="0" data-b="0"/><path class="v" d="M229.6 652.9l4.4 0.9l1.2 -0.3l3.4 9.9l-7.4 2.7l-1.2 2.1l-2.6 -1.2l2.4 -10.7z" data-l="文山萬隆里" data-n="0" data-b="0"/><path class="v" d="M230.5 626.9l2.2 8.4l3.1 6.6l-0.6 11.6l-1.2 0.3l-3.2 -1.2l-1.2 0.3l-0.9 -5.5l-2.1 -0.2l2.2 -6l-6.9 0l-0.9 0.9l-1.2 -0.4l-2.3 0.8l-0.6 -4.3l-1.4 -3.2l11 -7.3z" data-l="文山萬年里" data-n="0" data-b="0"/><path class="v" d="M228.8 641.2l-2.2 6l2.1 0.2l1.1 8.9l-2.4 10.7l-5.2 -1.6l-9.3 -1l2 -5.9l6.4 -6.2l-3.8 -9.8l2.3 -0.8l1.2 0.4l0.9 -0.9z" data-l="文山萬和里" data-n="0" data-b="0"/><path class="v" d="M236.6 635.2l6.1 1.4l6.6 -1.5l2.6 2.3l1.8 -0.7l0.7 8.6l0.7 1l-10.1 9.6l-4.5 -6.3l-5.1 -1.1l0.2 -7.7l-2.7 -5.2z" data-l="文山萬盛里" data-n="0" data-b="0"/><path class="v" d="M251.9 649.3l1.9 3.1l4.3 2.3l0.6 3.3l2.9 4.7l-2.9 2.1l-6.7 2.1l-2.4 -4.6l-5 -6.3z" data-l="文山興豐里" data-n="0" data-b="0"/><path class="v" d="M298.8 653.2l1 2.4l1 0.4l-0.4 1.7l3.9 2.2l-1 3.2l2.8 3l2.2 5.4l0.1 1.6l-1.7 1.5l-3.9 -2.2l-6.3 1.6l-1.1 -3.6l-4.9 -5.1l-9.7 -5.8l2.8 -5l3.7 1l-0.2 1.4l2.1 0.5l0.5 -0.9l1.1 0.5l3.2 -2.4l1.9 -0.7l0.6 0.7z" data-l="文山興光里" data-n="0" data-b="0"/><path class="v" d="M303.1 672.6l3.6 2l-2.7 6.2l-4.5 3.9l-0.7 2.2l-5.5 3.1l-0.6 -3.9l3.8 -12.1z" data-l="文山興家里" data-n="0" data-b="0"/><path class="v" d="M280.8 659.5l9.7 5.8l4.9 5.1l1 3l-3.7 14.5l-5.7 1.9l-5.6 0.5l-3.3 -3.2l-0.4 -2.5l-2.3 -0.6l-2.9 -2.9l0.8 -9.6l4 -4.7z" data-l="文山興得里" data-n="0" data-b="0"/><path class="v" d="M272.5 656.4l8.3 3.1l-3.5 7.3l-4 4.7l-0.2 1.7l-2.1 0l-0.5 -2.6l1.3 -2.7l-0.8 -4.1l-2.1 -1l-0.3 -1.1l3.3 -2.5l-1.4 -1.9z" data-l="文山興業里" data-n="0" data-b="0"/><path class="v" d="M270.5 657.3l1.4 1.9l-3.3 2.5l0.3 1.1l2.1 1l0.8 4.4l-1.3 3.5l0.5 1.5l2.1 0l-0.2 3.8l-0.4 4.1l-3 0.9l-2.6 -4.4l-6.2 -4l0.9 -3.9l-1.7 -5.5l4.5 -3.7l3 -1z" data-l="文山興安里" data-n="0" data-b="0"/><path class="v" d="M260.1 664.7l1.5 5l-1 3.8l-3.6 3.1l-4.5 1l-0.5 -10.7z" data-l="文山興福里" data-n="0" data-b="0"/><path class="v" d="M269 631l3.6 1l2.3 2.2l0.7 2.9l-0.1 9.7l1.9 5.1l-0.3 1l-3.6 -1.6l-0.6 0.3l3.1 2.5l-1.1 3.1l-2.3 -0.8l-2.9 -3.3l-5.9 -2.9l-0.7 -2.4l-1.7 -1.4l-1.7 -0.4l-3.6 1l-1.7 -1.7l-0.7 -8.6l4.3 -1.3l6.4 -4z" data-l="文山興旺里" data-n="0" data-b="0"/><path class="v" d="M284.2 625.4l7.7 10l0.3 5.1l-3.7 4.7l-7.7 14.3l-5.9 -2.3l1.1 -3.1l-3.1 -2.5l0.6 -0.3l3.6 1.6l0.3 -1l-1.9 -5.1l0.1 -9.7l-0.7 -2.9l2.8 -1.2l2.7 -2.9l2.2 -4.4z" data-l="文山興泰里" data-n="0" data-b="0"/><path class="v" d="M291.1 623.4l5.7 5.9l2.5 0.9l5.5 6.3l5.9 2.1l-2.6 3.5l1 1.4l-1.4 1.2l1.6 0.3l0.9 1.6l-5.8 4.4l-2.9 0.7l-0.8 1.4l0.1 2.9l-1 -0.4l-1.1 -2.4l-2.2 1.4l-0.6 -0.7l-1.9 0.7l-3.2 2.4l-1.1 -0.5l-0.5 0.9l-2.1 -0.5l0.2 -1.4l-3.7 -1l5.2 -9.8l3.1 -3l0.4 -4.8l-0.7 -2l-7.4 -9.5l2 -1.2l3.9 -0.1z" data-l="文山興昌里" data-n="0" data-b="0"/><path class="v" d="M252.9 691.8l2.5 1.7l8.8 0.8l1.4 1.2l1.9 6.3l0.8 -0.1l1.5 1.6l1 2.6l-0.7 2.6l-5 4.8l-5.5 1.5l-2.3 -0.1l-3.6 -1.1l-1.8 -2l-0.8 -2.7l1.8 -5.9l-0.6 -2l-1.5 -1.8l-5.2 0.6z" data-l="文山試院里" data-n="0" data-b="0"/><path class="v" d="M272.5 681.1l3.2 3.1l2 0.4l0.4 2.5l3.3 3.2l6.6 -0.7l0.2 1.7l-1.4 1.7l0.1 2.2l5.2 -0.3l0.1 2.6l-2.4 0.1l1.5 2.8l0.9 4.7l-6.2 0.5l-4.6 -1.7l-2.9 0.9l-1.1 -0.8l-1.4 1l-3.6 -3.2l-2.1 0.5l-0.5 1l-1.5 -1.6l-0.8 0.1l-2.8 -7.3l-8.7 -0.9l-3.3 -1.9l3.1 -3.1l4.1 -1l2.3 -1.7l4 -0.8l2.9 -3z" data-l="文山華興里" data-n="0" data-b="0"/><path class="v" d="M292.7 687.9l4.2 9.6l8.6 -1l2.2 0.9l-0.9 2.1l2.7 0.4l0.5 3.1l-17.8 2.1l-0.9 -4.7l-1.5 -2.8l2.4 -0.1l-0.1 -2.6l-2.1 0.6l-0.3 -0.9l-2.5 1l-0.5 -2.4l1.5 -1.9l-0.2 -1.7l1.9 -1.2z" data-l="文山明義里" data-n="0" data-b="0"/><path class="v" d="M304.4 681.2l2.9 2.7l2.2 5.4l-1 0.5l0.3 5.2l-3.8 1.7l-8.1 0.8l-3.6 -7.5l5.5 -3.1l0.7 -2.2l4 -3.5z" data-l="文山明興里" data-n="0" data-b="0"/><path class="v" d="M306.7 674.6l5.6 1.1l1.2 1l3.8 -0.9l5.3 2.6l2.8 3.7l1.6 6.2l1.3 -0.1l-0.6 3l-6.8 5.7l0.2 5.6l-0.6 0.9l-10.5 -0.4l-0.5 -3.1l-2.7 -0.4l0.9 -2.1l-2.2 -0.9l3.3 -1.5l-0.3 -5.2l1 -0.5l-2.2 -5.4l-3.3 -3.1z" data-l="文山木柵里" data-n="0" data-b="0"/><path class="v" d="M330.9 688.2l1 2.9l-3.9 4.2l4.4 6.7l-0.1 2.8l-1.9 3.1l0.4 8.8l-1.1 1.7l-3.1 -1.1l-3.9 1l-1.1 -2.8l-1.7 0.5l-0.9 -2.5l4.1 -1.7l-0.7 -1.7l-5.5 -1.5l4.2 -6.1l-0.2 -5.6l6.8 -5.7l0.6 -3z" data-l="文山木新里" data-n="0" data-b="0"/><path class="v" d="M317.1 708.7l5.3 1.4l0.7 1.7l-11.3 4.4l-7.9 2.2l-2.5 -7.6l10.3 -1.8l4.2 1z" data-l="文山順興里" data-n="0" data-b="0"/><path class="v" d="M281.9 704.1l4.1 1.5l13.2 -1.4l2.2 6.6l-10.3 1.9l-7.4 2.4l-5.5 -0.3l0.8 -5.4l-3 -4.4l1.4 -1l1.1 0.8z" data-l="文山樟林里" data-n="0" data-b="0"/><path class="v" d="M295.1 720.6l0.6 2.1l-1.5 0.5l1 1.1l-1.2 -0.2l-3.6 3.1l-1.4 5.9l-3.1 3.4l-3 -0.4l-3.9 -2l-2.1 -8.2z" data-l="文山樟新里" data-n="0" data-b="0"/><path class="v" d="M319 713.5l0.9 2.5l1.7 -0.5l1.1 2.8l-3.9 2.2l-8.3 -0.2l-11.4 6.8l-4.9 -3.9l1.5 -0.5l-0.6 -2.1l16.7 -4.4z" data-l="文山樟腳里" data-n="0" data-b="0"/><path class="v" d="M330.5 652.3l0 3.6l5 8.6l-1.5 -0.3l-0.8 4.3l-1.3 2.4l-4.6 1.5l0.2 3.6l3.8 3l-1.1 5.8l0.7 3.4l-3.9 0.1l-1.6 -6.2l-1.6 -2.8l-2.5 -1.5l-0.5 -1.8l0.4 -2.1l3.4 -2.6l1.4 -2.7l-3.5 -3.2l-1.3 -5.2l-5 -4.5l0.9 -0.9l-0.3 -1.6l1.5 -0.5l9.5 0.6z" data-l="文山萬芳里" data-n="0" data-b="0"/><path class="v" d="M397.9 612.7l4.8 2.8l1.4 3.9l-3 4.2l-1.8 8.7l-0.7 6.7l0.9 2.6l0.2 8.7l-2.2 7.2l0.4 6.2l-2.4 3.7l-0.1 2.2l-1.1 1.7l-2.1 1.1l-3.1 -1.1l-5.6 -5.8l-4.3 -2.9l-5.3 -9.4l-3 -0.5l-13.5 8.9l-3.2 0.8l-5.5 -1l-6.4 3.7l-2.4 2.3l0.3 3.8l-5.6 4l-3.3 3.8l-3.5 -2.6l-0.8 -2.1l0.3 -1.9l4.6 -1.5l1.3 -2.4l0.8 -4.3l1.5 0.3l-5 -8.6l-1.1 -7.4l-4.8 -1.8l-4.9 -0.2l-3.9 -2.6l-1.6 -4.5l-2.2 0.1l-3.5 -2l6.9 -1.8l7.7 -4.5l1.8 -3l5.3 -3.6l1.5 -5.5l2.5 1.1l5.4 0.1l3.1 -3.4l5.3 1.2l5.2 4.2l2.3 0.9l1 -0.8l4.4 -0.2l3.2 -1.8l12 -1l5.8 -1.4l4.1 -1.4l1.2 -1.8l5.1 0.9l2 -2.1z" data-l="文山博嘉里" data-n="0" data-b="0"/><path class="v" d="M403.1 647.3l6.6 5.5l3.1 6.4l-0.2 7.5l-2.2 2.3l-0.3 3.8l-2.4 1.7l-1.2 2.5l-1.4 -0.5l-1.5 -2.4l-3.7 -1.6l-4.6 0.7l-2.8 4.1l-2.3 10.8l-1.8 0l-3 -1.8l-0.4 0.5l-0.2 2.8l-1.2 1l0.5 1.8l-1 4.5l-1.5 -1.2l-1.7 -6.3l-2 -1.1l-1 2.7l-2.6 1.7l-6.4 -2.4l-3.1 -0.2l-3.4 0.6l-2 1.6l-6.7 -0.3l-5.7 3l-4.3 4.7l0.5 1.3l6.3 1.8l3.1 2.5l1 2.2l-6.1 1.1l-4.9 -0.4l-10.5 8.5l-1.3 0l-0.4 -8.8l1.9 -3.1l0.1 -2.8l-4.4 -6.7l3.9 -4.2l-1.8 -4.9l0.5 -5.5l4 -5.5l5.6 -4l-0.3 -3.8l1.9 -2l6.9 -4l5.5 1l3.2 -0.8l10.7 -6.6l0.6 -1.3l2.2 -1l2.1 0.1l2.3 2.3l2.7 5.9l2.4 2.9l3.1 1.6l5.6 5.8l3.1 1.1l2.1 -1.1l1.1 -1.7l0.1 -2.2l2.4 -3.7l-0.4 -6.2l2.3 -9.5z" data-l="文山萬興里" data-n="0" data-b="0"/><path class="v" d="M353.6 707.5l1.5 1.9l1.2 0l1.8 1.8l3.6 0.5l15 6.4l7.9 6.7l9.2 5l3.5 3.3l1.7 -0.4l1.7 1l10 -2.3l2.3 3.5l9.6 3.8l3.9 3.5l8.4 -0.4l1.6 -1l3.2 0.6l0.9 1.1l3.5 -1.2l2.3 2.2l3.5 1.6l2.7 -0.4l5.5 5.8l9.8 4.4l1.2 2.6l-1.3 2.4l0.4 4.6l-4.4 1.3l-3.6 -2.2l-5.5 4.2l-3.8 -0.8l-2.8 1.4l-1.8 2l-4.6 1.2l-6.2 6.1l-8.7 0.3l-2.6 1.7l-2.7 0.6l-5.3 4.1l-9 -0.9l-3.4 2.4l-3.2 -2.1l-3.6 -1.1l-4.3 -8.4l-4.1 0.9l-2.6 -2.1l-6.6 3.9l-2.1 -1l-6.6 1.6l-3.1 -4.1l-7 -0.8l-4 -1.6l-6.3 -4.1l2.3 -8.2l0.7 -6.1l-2.4 -8.1l-2.7 -15.9l-5.5 -5.7l-13 -4.6l1.1 -1.7l1.3 0l10.5 -8.5l4.9 0.4z" data-l="文山指南里" data-n="0" data-b="0"/><path class="v" d="M327.4 717.4l15.3 5.6l5.5 5.7l2.7 15.9l2.4 8.1l-0.7 6.1l-2.3 8.2l-3.6 0.3l-8.1 -1.1l0.3 2.5l-0.9 2.4l-5.2 4.2l-6.1 -1.5l-4.5 1.2l-7.4 0.4l-1.4 -1.2l-2.2 0.8l-2.2 -1.8l-8.5 0l-7.9 -11.5l-2.6 -11.4l-4.4 -4.2l-2.7 -10l3 0.4l2 -1.5l2.5 -7.8l3.6 -3.1l4.3 2.7l1.7 0.1l10.5 -6.6l1.6 -0.4l6 0.9l5.9 -3.3z" data-l="文山老泉里" data-n="0" data-b="0"/><path class="v" d="M314 702.9l6.5 0.5l-4.6 6.6l-4.2 -1l-10.3 1.8l-2.2 -6.6z" data-l="文山忠順里" data-n="0" data-b="0"/><path class="v" d="M310.7 638.6l1.3 0.9l2.2 -0.1l1.6 4.5l3.9 2.6l4.9 0.2l4.5 1.4l0.8 1.4l0.6 2.8l-1.3 0.7l-9 -0.5l-3.5 1l0.4 1.3l-0.8 1.3l4.5 3.6l1.4 2.7l0.3 3l3.5 3.2l-1.4 2.7l-3.4 2.6l0.1 3.9l-4 -2l-3.8 0.9l-1.2 -1l-3.4 0l-2.2 -1.1l1.7 -1.5l-0.1 -1.6l-2.2 -5.4l-2.8 -3l1 -3.2l-3.9 -2.2l0.3 -4.6l0.8 -1.4l2.9 -0.7l5.5 -3.6l-0.2 -2.1l-2 -0.6l1.4 -1.2l-1 -1.4z" data-l="文山萬美里" data-n="0" data-b="0"/><path class="v" d="M399.3 672.3l4.3 1.8l1.5 2.4l1.4 0.5l-0.6 1.8l0.9 2.7l2.7 2.3l-0.9 3.8l2 1.7l6.3 2.5l-0.5 4.5l0.8 1l-0.6 2.2l-3.7 2.1l-1.9 2.8l2.4 19.1l-0.8 2.3l-3 2.8l1.1 2.8l-10 2.3l-1.7 -1l-1.7 0.4l-3.5 -3.3l-9.2 -5l-7.9 -6.7l-15 -6.4l-3.6 -0.5l-1.8 -1.8l-1.2 0l-2.5 -4.1l-3.3 -2.7l-6.1 -1.6l-0.5 -1.3l4.3 -4.7l5.7 -3l6.7 0.3l2 -1.6l3.4 -0.6l3.1 0.2l6.4 2.4l2.6 -1.7l1 -2.7l2 1.1l1.7 6.3l1.5 1.2l1 -4.5l-0.5 -1.8l1.2 -1l0.2 -2.8l0.4 -0.5l3 1.8l1.8 0l2.3 -10.8l2.8 -4.1z" data-l="文山政大里" data-n="0" data-b="0"/><path class="v" d="M294.1 712.2l2.4 8.1l-19.6 5.6l-0.1 -4.3l1.4 -6.8l5.5 0.3z" data-l="文山樟文里" data-n="0" data-b="0"/><path class="v" d="M260.9 646.2l2.2 1.6l0.4 2.2l6.2 3.1l2.9 3.3l-8.2 4.1l-2.8 2.2l-2.9 -4.7l-0.6 -3.3l-4.3 -2.3l-1.9 -3.1l3.2 -3l1 0.7l1.8 -0.8z" data-l="文山興邦里" data-n="0" data-b="0"/><path class="v" d="M301.4 710.8l2.5 7.6l-7.4 1.9l-2.4 -8.1z" data-l="文山樟樹里" data-n="0" data-b="0"/><path class="v" d="M435 471.8l1.6 4.3l1.9 -0.9l0.8 6.9l9.4 5.2l2.4 0.6l3.1 -0.6l-0.1 0.7l-1.2 0.1l0.4 2.4l-24.2 3.7l-4.6 -19.8z" data-l="南港南港里" data-n="0" data-b="0"/><path class="v" d="M455.1 487.4l0.6 0.8l-0.4 5.5l0.9 2.6l-1.1 6.2l0.7 4.7l-8.9 0.1l-1.1 2l-0.1 2.6l-3.1 1.8l0.4 6.1l-0.6 1.2l-5.6 1.5l-1.6 4.6l0 13.6l-1.4 -0.1l-6.9 2.8l-5.6 1l-3.6 1.6l-6.1 -16l-0.2 -15.8l3.1 -7.3l6.1 -3.5l6.8 1.3l3.8 -0.7l0.4 -1.1l-6.2 -4.9l-0.6 -3.1l28.5 -4.4l-0.4 -2.4z" data-l="南港中南里" data-n="0" data-b="0"/><path class="v" d="M455.1 487.4l11.2 1.5l3.6 -0.5l1 2.9l-1.5 2.8l-1.1 -0.3l-5.7 2.7l-4.9 4.8l-0.4 5.5l-1.5 0.4l-0.7 -4.7l1.1 -6.2l-0.9 -2.6l0.4 -5.5z" data-l="南港新富里" data-n="0" data-b="0"/><path class="v" d="M451.2 458.1l12.2 4.5l5.6 4.4l3.5 4.2l2.4 5.9l4.5 7.2l0.2 2.8l-2.1 0.8l-4.3 -4.2l-3 -1l-1.9 1.7l1.6 4l-3.6 0.5l-12.1 -1.6l-4.2 0.4l-10.7 -5.6l-0.8 -6.9l-1.9 0.9l-1.6 -4.3l3 -1.5l2.9 -2.9l5.8 -8.6z" data-l="南港三重里" data-n="0" data-b="0"/><path class="v" d="M425.7 479.2l1.2 5.8l-4.4 0.3l-6.4 4l-3.3 0.5l-2.8 -0.6l-1.8 1.4l-3.4 0.7l-9.4 -1.3l-0.6 -1.1l17 -7.5l5.4 -1.4z" data-l="南港東新里" data-n="0" data-b="0"/><path class="v" d="M424.8 494.9l0.6 3.1l6.2 4.9l-0.4 1.1l-3.8 0.7l-6.1 -1.4l-2.6 0.9l-4.2 2.7l-3.1 7.3l0.2 15.8l6.1 16l-6.3 4l-8 3.6l-3.3 -10.2l-3.9 -6.8l-1.3 -9.2l-2.2 -5.8l-0.8 -0.2l1.3 -2.4l-1.9 -0.3l0.6 -1.3l-0.8 -1.8l-2.7 1.3l-6.1 -1.6l-1.4 -4.7l3.7 -2.3l-0.3 -3.2l8.9 -2.3l-0.7 -2.2z" data-l="南港新光里" data-n="0" data-b="0"/><path class="v" d="M426.9 485l2.2 9.2l-31.6 5.2l-2.1 -9.4l10.3 1.2l3 -0.8l1.3 -1.2l2.8 0.6l3.6 -0.6l6.4 -4z" data-l="南港東明里" data-n="0" data-b="0"/><path class="v" d="M387.7 475.6l7.7 14.4l2.1 9.7l-18.7 3.3l-3.5 -14.3l-1.1 -0.8z" data-l="南港西新里" data-n="0" data-b="0"/><path class="v" d="M374.4 488.1l0.9 0.6l1.8 5.9l1.7 8.4l-18.3 3.3l-3.4 1.4l-3.9 0.2l0.1 -2.4l-1.1 -2.5l1 -3.7l-0.3 -4.2l12.1 -2.8z" data-l="南港玉成里" data-n="0" data-b="0"/><path class="v" d="M393.2 502.8l-21.3 5.6l-2.9 1.5l-4.2 3.4l-6 9.2l-3.6 -3.8l-0.2 -6.2l-1.9 -2.4l0.1 -2.2l39.3 -7.3z" data-l="南港合成里" data-n="0" data-b="0"/><path class="v" d="M377.6 515l3.5 0l7.3 1.9l2.7 -1.3l0.8 1.8l-0.6 1.3l1.9 0.4l-1.3 2.3l0.8 0.2l2.2 5.8l1.2 8.5l-5.8 -1.6l-1.8 1.3l-2.2 -3.9l-2 0l-0.6 2.8l1.4 1.1l1.5 4.1l-1.1 3.8l-2.2 -0.8l-0.8 -3.2l-8.7 -11l-1.5 -3.5l0.5 -3.2l-3 -5.1z" data-l="南港成福里" data-n="0" data-b="0"/><path class="v" d="M368 510.9l4.8 3.6l0.4 1.2l-3.4 1l1.1 1.9l-5.4 2.9l-0.5 -0.7l-3.7 4.2l-2.5 -2.5l6 -9.2z" data-l="南港萬福里" data-n="0" data-b="0"/><path class="v" d="M370.9 518.6l1.9 3.2l-0.3 3.8l2.4 4.6l-6.4 0.4l-7.2 -5.6l3.7 -4.2l0.5 0.7z" data-l="南港鴻福里" data-n="0" data-b="0"/><path class="v" d="M374.9 530.2l7.6 9.3l0.8 3.2l2.2 0.8l0.7 4.7l2.6 3l3.2 0.9l0.4 1.2l5 4.3l-6.3 2.3l-3.3 3.7l-0.6 -2.5l-6.1 -7.5l-1.1 -9.4l-4.4 -4.6l-1.1 -3.1l-0.7 0.2l-1.3 -6z" data-l="南港百福里" data-n="0" data-b="0"/><path class="v" d="M384.5 505.5l0.1 2.8l-3.9 3.1l1.6 3.9l-4.8 -0.3l-4.3 0.7l-0.4 -1.2l-5.1 -3.8l4.2 -2.3z" data-l="南港聯成里" data-n="0" data-b="0"/><path class="v" d="M466.1 525.2l6.4 8.8l4.5 2.3l5.2 6l4.2 -0.4l3.7 2l5.2 1.5l1.4 1.5l0.7 3.7l6.8 -2.2l2.6 0.1l1.7 2.9l2.2 -0.6l2.3 1.7l6.5 2.2l5.8 5.4l6.3 2.3l3.5 2.5l1.2 0l1.5 2.2l4.5 1l2 1.9l-0.1 2l0.7 0.7l3.6 -2l2.3 2.2l2.1 -0.6l2.1 1.5l3.5 -0.4l1.1 -1.3l2.2 1.8l1.8 0.3l2.7 -1.4l2 0.5l0.8 1l4.8 -1.6l2.4 -2.9l8.9 -5l6.8 0.8l4.8 2l3.1 -1.2l-3.1 6.7l1.6 5.5l-1.2 4.2l-1.5 1.4l-1 3.4l-3.5 1.4l-6.2 -2l-7 -0.5l-1.7 1l-4.4 -1.8l-1.5 0.5l-5.1 -2.3l-6.2 1.6l-4.6 -0.3l-3.9 3.5l-6.5 3.8l-1.2 -0.6l-3.1 -5.2l-5.6 -3.1l-3.1 1.1l-3.1 2.3l-7 -0.8l-2.4 -1l-5.3 2.7l-0.2 -2.5l-3.1 -0.9l-6.3 -4.2l-4.3 3.2l-1.7 4.4l0 3.2l-3.6 7l-1.3 1l-4.6 0.5l-2.2 2.9l-8.5 4.3l-7.6 -3.5l-3.4 0.9l-5.6 -1l-3.2 -3.7l-1.2 -0.2l13.7 -21.1l-1 -5.9l-2.9 -7.7l-0.7 -9.8l-3 -5.5l-0.4 -9.2l0.8 -5l-2.2 -5.8z" data-l="南港舊莊里" data-n="0" data-b="0"/><path class="v" d="M457.4 507l0.5 3l8.1 15l-5.2 4.3l2.2 5.8l-0.8 6.1l-5.1 -1.7l-10.3 1.1l-1.9 -0.5l-2.2 0.8l-7.5 -0.2l0.3 -15.2l1.6 -3.4l5.3 -1.1l0.3 -7.6l3 -1.5l0.4 -3.4l1.4 -1.5l5.7 0.6z" data-l="南港中研里" data-n="0" data-b="0"/><path class="v" d="M457.1 539.5l5.1 1.7l0.4 8.1l3 5.5l0.7 9.8l2.9 7.7l1 5.9l-13.7 21.1l-7.2 1.7l-1.9 -1.4l-1.8 0.3l-2.4 -1.2l-3 -0.1l-2.7 -3.2l-1.5 1.4l-1.5 3.4l-11.7 1.1l-3.1 7.2l-0.4 4.1l-1.7 1.7l-2.6 -0.5l-2.3 1.1l-8.5 0l-1.1 1.3l-6.2 -3.5l-2.6 0.9l-2 2.1l-5.1 -0.9l-1.2 1.8l-4.1 1.4l-5.8 1.4l-12 1l-3.2 1.8l-4.4 0.2l-1.3 0.8l-7.2 -5.1l1.1 -3.5l4.8 -5.7l5.1 -4.4l5 -2.1l3.8 -11.9l0.7 -5.4l3.6 -5.6l0.7 -2.6l4.5 -4.8l6.1 -4.4l2.9 -0.9l0.9 -2.5l3.9 -4.4l5.7 -1.8l7.9 -5.6l6.7 -2.5l7.3 -4.7l8.2 -1.9l6.9 -2.8l8.9 0.3l2.2 -0.8l1.9 0.5z" data-l="南港九如里" data-n="0" data-b="0"/><path class="v" d="M385.9 531.5l2.5 4l1.1 0l0.8 -1.2l5.8 1.6l0.6 2.4l3.4 5.1l3.3 10.2l-6 4l-5 -4.3l-0.4 -1.2l-3.2 -0.9l-2.6 -3l-0.7 -4.7l1.1 -3.8l-1.5 -4.1l-1.4 -1.4l0.5 -2.4z" data-l="南港仁福里" data-n="0" data-b="0"/><path class="v" d="M396.2 472.5l11.2 3.5l17.1 -1.6l1.2 4.8l-8.5 0.8l-5.4 1.4l-17 7.5l-7.1 -13.3l3.8 -2.4z" data-l="南港重陽里" data-n="0" data-b="0"/><path class="v" d="M325.5 389.6l-1.2 11.3l-2.8 0.2l-0.1 2.3l5.1 1.8l-5.9 12.3l-12.5 -3.6l3.1 -11.4l-0.1 -12.7z" data-l="內湖西湖里" data-n="0" data-b="0"/><path class="v" d="M291.4 351.1l2.8 1.8l2.1 -0.5l4.5 0.9l-1.5 5.8l4.2 3.1l-0.7 0.7l-4.5 0l0 1.3l2.7 0.9l0.2 1l-4.1 0.6l-1.5 3.7l3.1 0.4l0.9 1l-3.9 1.6l3.2 0l0.1 3.6l-1.2 0.1l-0.1 1.1l0.2 4.2l1.1 2.6l-1.5 3l1.3 1.9l3.7 -1.1l8.6 1l0.1 12.7l-3.3 11.3l-5.2 -6.6l-4.5 -11.1l-5.1 -1.9l-4.1 2l-0.2 -2.8l-2.6 -4.5l1.1 -3.9l-6.6 -2l-4.2 -3.9l-3.5 -5.8l-0.2 -2.5l3.8 0.2l2.7 -1l0.5 -3.7l4.6 -2.5l1.6 -4.7l2.6 -0.7l1.1 -4.3z" data-l="內湖西康里" data-n="0" data-b="0"/><path class="v" d="M315.1 349.7l9.6 14.6l4.3 2.9l-1.3 3.6l-1.9 18.7l-14.3 0.4l-9 -1.1l-3.7 1.1l-1.3 -2.1l1.5 -2.8l-1.1 -2.6l-0.2 -4.2l0.1 -1.1l1.2 -0.1l-0.1 -3.6l-3.2 0l3.9 -1.6l-0.9 -1l-3.1 -0.4l1.5 -3.7l4.1 -0.6l-0.2 -1l-2.7 -0.9l0 -1.3l4.5 0l0.7 -0.7l-4.2 -3.1l1.5 -5.8l8.9 -3.2z" data-l="內湖西安里" data-n="0" data-b="0"/><path class="v" d="M326.5 405.2l25 9.4l0 1.5l-1.9 1l1 1.4l-2.5 2.3l-0.2 2.2l-3.9 2.2l6.3 4.3l-14.7 4.6l-5.6 0.3l-1.8 -6.5l3.1 -1.2l-4.8 -6.6l-6.2 -2.3z" data-l="內湖港墘里" data-n="0" data-b="0"/><path class="v" d="M333.4 398.7l14.1 4.3l-0.3 3l-3.6 5.7l-6.8 -2.8l1.3 -4.3l-5.7 -1.7z" data-l="內湖港都里" data-n="0" data-b="0"/><path class="v" d="M351.6 377.7l1.9 3.8l1 10.6l-1.8 5.5l0.1 2.6l1.5 3.6l1.7 0l7.1 10.8l-12.5 -0.1l-7 -2.8l3.8 -6.2l0 -8.2l2.4 -1.6l-2.6 -7.1l0 -9.7l2.9 -1.5z" data-l="內湖港富里" data-n="0" data-b="0"/><path class="v" d="M329.4 367.4l5.4 1.7l4.3 4.5l4.9 2l3.2 3.3l0 9.7l2.6 7.1l-2.4 1.6l0.1 5.7l-18.1 -5.5l2.5 -5.5l-6.1 -2.5l0 -0.9l1.9 -17.8z" data-l="內湖港華里" data-n="0" data-b="0"/><path class="v" d="M385.2 392.8l8 2.1l2.9 1.5l-8.1 6.6l-4.4 4.8l-2.3 -9.3l-2.7 -4.4z" data-l="內湖內湖里" data-n="0" data-b="0"/><path class="v" d="M355.4 383.8l3.1 2.4l0.2 -2l2.6 4.6l4.5 2.7l3.8 0.7l3.4 -3.6l4.9 4.4l3.2 5.2l2.5 9.6l-3.9 4.2l-2.2 -4l-0.8 -0.2l-2.5 3.7l-1.9 -2.1l-1.6 -0.3l-4.3 2l-2.8 -0.8l-2.4 1l-5.2 -7.5l-1.7 0l-1.8 -5.2l2 -5.8l-1 -10.8l1 -0.8z" data-l="內湖湖濱里" data-n="0" data-b="0"/><path class="v" d="M388 403l5.5 7.9l-3.4 1.6l0.2 2.3l-1.8 2.5l0 3.8l1.1 3.9l-4.4 2.7l-3.7 -2.3l0.7 -4.1l-2.5 -9.3z" data-l="內湖紫星里" data-n="0" data-b="0"/><path class="v" d="M405.4 330.4l2.9 2.6l-0.8 2.1l4.3 0.4l0.9 6l7.3 11.1l-0.2 5.8l5.2 -0.9l5.5 3.4l4.4 0.4l9.3 3.2l-0.5 5l1 3.3l-0.9 3.2l1.1 3.6l-3.4 5.5l-0.9 3.4l0 2.4l3.1 9.4l-1.9 5.5l-2.9 3l-3.3 1.8l-0.8 4.5l-1.1 1.2l-3.3 0.2l0.3 -8.8l-3.2 -5.9l-2.5 -1.4l-5.8 -1.2l-3.1 -1.9l-1.3 -6.2l-2 1.3l-1.1 -4.3l-3.5 0.1l-0.2 -1.9l-4.9 -1.4l-1.7 0.7l-1.2 1.8l-4.2 -8.5l0.1 -2.8l-1.6 -2.7l0 -2.3l-9 -4l-3.3 -4.5l0.3 -4.3l14.9 3.4l-1.3 -2.2l-3 -1.8l0.7 -2.7l-0.7 -2.2l3.9 -3.5l5 -14.7z" data-l="內湖大湖里" data-n="0" data-b="0"/><path class="v" d="M396.8 386.1l3.4 1.3l2.3 7.8l-6.4 1.2l-2.3 -1.3l-9.2 -2.5l-6 1.5l-1.2 -1.5l2.9 -4.9l5.2 2.5l5.4 0.8l2.1 -1.3l1.8 -3.1z" data-l="內湖金龍里" data-n="0" data-b="0"/><path class="v" d="M333.6 325.6l8.9 -0.4l1.6 2.9l5.4 2.7l-0.3 3.4l0.9 2.9l2.6 -1.4l0.6 4.6l3 4.5l2.9 1.7l4.6 0.3l-7.1 9.2l0.5 3.3l-2.2 2.1l-0.7 2.1l-2.2 1.7l-0.2 3.7l1.3 1.3l2 -0.1l5.3 -5.1l3.8 4l2.4 -0.8l1.4 2.2l-0.5 1.6l2.4 -0.1l4.1 8.1l-0.2 2l6.4 5.7l-2.9 4.9l-4.4 -4l-3.8 3.7l-6.2 -2.2l-2.4 -2.1l-1.9 -3.8l-0.2 2l-3.1 -2.4l-0.6 -2.7l-1.3 0.9l-2.3 -4.8l-4 1.7l-3.2 -3.3l-4.9 -2l-4.3 -4.5l-8.1 -3l-2 -1.8l-7.3 -12.5l-2.3 -2.1l2 -5.2l3.4 -5.7l1.4 -5.6l2.7 -3.5l6.8 -1.9z" data-l="內湖金瑞里" data-n="0" data-b="0"/><path class="v" d="M391.2 298.9l1.4 1.7l1.9 -0.7l2.7 2.1l-0.5 2.1l2.4 3.4l0.3 3.1l3.1 6l5.6 2.9l-2.5 4.5l-0.5 6.3l-3.1 4.3l-4.4 13.6l-2.4 3.4l-2.1 1.2l0.7 2.2l-0.7 2.7l3 1.8l1.3 2.2l-14.9 -3.4l-0.6 1.1l0.6 4.1l3 3.6l9 4l0 2.3l1.6 2.7l-0.1 2.8l4.2 8.5l-4.5 -1.3l-1.7 1.3l-1 2.3l-2.1 1.3l-5.4 -0.8l-6 -2.8l-2.7 -2.2l-2.9 -3.2l0.2 -2l-4.1 -8.1l-2.4 0l0.5 -1.5l-1.4 -2.2l-2.4 0.8l-3.8 -4l-5.3 5.1l-2.9 -0.6l-0.7 -1.7l0.2 -2.2l2.5 -2.1l0.7 -2.1l2.2 -2.1l-0.5 -3.3l7.1 -9.2l-4.6 -0.3l-2.9 -1.7l-3 -4.5l-0.6 -4.6l-2.6 1.4l-0.9 -4.2l0.3 -2.1l3.7 -6l4.7 0.4l4.9 -2.5l1.8 -2.1l2.7 -0.8l8.3 -16.9l3.6 -0.2l1.3 -0.9l1.3 1.9z" data-l="內湖碧山里" data-n="0" data-b="0"/><path class="v" d="M397.3 409.1l0.5 1.2l-1.1 0.7l2 0.7l0.3 0.9l2 -1.2l0.2 1l1.5 -0.3l0.4 -2.1l0.7 -0.1l0.5 1.8l3.3 -1.5l2.2 0.6l1.9 2.5l5.8 1.7l-2 7.8l-1.9 0.2l-11.5 -2.6l-5.8 3.1l-2.2 -0.3l-2.3 1.9l-2.2 -0.1l-1.3 -6l0.6 -3l1.4 -1.2l-0.2 -2.3z" data-l="內湖紫雲里" data-n="0" data-b="0"/><path class="v" d="M402.5 395.2l7 9.8l5.5 2.6l2.5 7.4l-5.8 -1.7l-1.9 -2.5l-2.2 -0.6l-3.3 1.5l-0.5 -1.8l-0.7 0.1l-0.4 2.1l-1.5 0.3l-0.2 -1l-1.3 1.3l-3 -1.7l1.1 -0.7l-0.5 -1.2l-3.8 1.8l-5.5 -7.9l8.1 -6.6z" data-l="內湖清白里" data-n="0" data-b="0"/><path class="v" d="M427.6 431.1l8.4 3.9l6.5 4.6l-2.8 4l-4.5 -3.4l-2.1 1.4l-3 -0.8l-1.2 0.5l-2.4 1.4l-5.8 7l-1.2 -0.4l-0.2 -4.4l-1.1 -1.1l7.2 -11.5z" data-l="內湖葫洲里" data-n="0" data-b="0"/><path class="v" d="M377.2 407.8l2.5 4.2l2.4 8.6l-0.6 4.8l-8.1 2.1l-3.8 3.3l-5.9 0.4l0.2 -16.7l-0.8 0.1l-1.9 -3.3l2.4 -1l2.8 0.8l4.3 -2l1.6 0.3l1.9 2.1l2.1 -3.5z" data-l="內湖紫陽里" data-n="0" data-b="0"/><path class="v" d="M363.9 414.5l-0.2 16.7l-2.1 0.3l-1.1 -5.7l-3.2 0.6l-0.4 -1.2l-1.6 0.6l-0.9 -2.2l-0.8 0.4l-1.1 -2l-1.3 0.4l-0.5 -1l-2.8 1.6l0.2 -2.2l2.5 -2.3l-1 -1.4l1.9 -1l0 -1.5z" data-l="內湖瑞陽里" data-n="0" data-b="0"/><path class="v" d="M351.1 422.3l1.4 -0.3l1.1 2l0.8 -0.4l0.9 2.2l1.6 -0.6l0.4 1.2l3.2 -0.6l1.1 5.7l-7.6 1.7l-3.7 -3.7l-6.3 -4.3l6.7 -3.8z" data-l="內湖瑞光里" data-n="0" data-b="0"/><path class="v" d="M444.9 444.5l6.7 0.5l8.7 2.4l1.5 4.6l-0.2 4.2l-3 -2.4l-2 6.1l-5.4 -1.8l-2.7 0l-2.2 1.1l-2 3.6l-2.4 -3.8l-0.3 -5.1z" data-l="內湖五分里" data-n="0" data-b="0"/><path class="v" d="M457.8 431.1l3.3 2.7l0.2 4.7l3.7 0.2l-2.5 7.5l-1.8 1.1l-7.2 -1.8l2.6 -5.4l-1.8 -6.7l0.3 -5.1l-1.2 -1.8l1.3 -0.3z" data-l="內湖東湖里" data-n="0" data-b="0"/><path class="v" d="M461.5 429l0.9 1l6.9 0.5l0.2 2.2l1.7 2.2l0.8 6.5l-0.2 0.7l-1.3 0l-2.2 2.8l-1.9 0.1l-0.3 1.2l-2.9 2.1l-2.3 0l-0.6 -0.9l2.2 -1.2l2.5 -7.5l-3.7 -0.2l-0.2 -4.7l-3.3 -2.7z" data-l="內湖樂康里" data-n="0" data-b="0"/><path class="v" d="M408.1 319.5l8.3 0.6l6.9 3.2l4.5 0.2l1.3 1l3.5 0.6l6.9 5l4.3 1.6l4.7 0.2l5.4 2.2l5.8 8.7l11.8 8.8l1.9 3.1l3.2 1.2l6 -0.4l2.1 2.3l0.4 1.4l-2.5 2.4l-0.8 4.5l3.6 7l-0.9 3l6.4 7.7l1.2 5l-3.1 5.9l1.4 3.8l-1.5 3.2l-4.2 1.1l-5 5.3l-0.4 1.2l1.1 2.6l-1.8 1.4l0.1 1.4l1.3 0.3l2 -2.1l-0.4 2.6l-1.3 1.5l-3.5 1.3l-0.1 3.7l-1.2 4l-3.4 -0.4l-2.8 4.9l-3.2 -0.2l-2.7 -17.5l1 -6.5l-3 -7.1l1.4 -5.7l-0.9 -15.5l-3.1 1.7l-4.8 0.1l-1.6 -0.6l-2.7 -3l-4.6 -0.3l-1.2 -0.9l0.8 -2.2l-1 -3.3l0.5 -5l-0.7 -0.7l-8.6 -2.5l-4.4 -0.4l-5.5 -3.4l-5.2 0.9l0.2 -5.8l-7.3 -11.1l-0.9 -6l-4.3 -0.4l0.6 -2.6l-3 -2.2l0.5 -6.3z" data-l="內湖內溝里" data-n="0" data-b="0"/><path class="v" d="M368.7 465.5l3.9 7.1l-6 3.7l2.3 4.8l1.8 -0.8l3.5 7.6l-9.2 4.4l-9.3 2.1l-1.4 -5l-2.5 0.7l-1.4 -4.3l-3.5 -5.7l7.9 -4.2l8.9 -7.6l2.7 -3.9z" data-l="內湖週美里" data-n="0" data-b="0"/><path class="v" d="M346.9 480.1l3.5 5.7l1.4 4.3l2.5 -0.7l1.4 5l-17.5 3.9l-6.3 0.5l-2.7 -1.1l-1.1 -2.7l0.2 -3.1l8.8 -6.3z" data-l="內湖行善里" data-n="0" data-b="0"/><path class="v" d="M419.5 449.3l2.8 1.1l1.9 3.3l-0.7 2.4l2.5 1.9l-25.7 4.1l1.1 2.1l-0.2 1.6l-1.2 0l1 5.1l-1 2.6l-5.4 -1l-4.3 1.3l-16.1 14.1l-3.5 -7.6l-1.8 0.8l-2.3 -4.8l6 -3.7l-3.9 -7.1l-2.3 -1.1l2.6 -6.4l0 -6.5l14.3 5.9l1.4 -1.5l0.5 -4.9l12.9 5.3l10.9 -4.3l8.3 2.9z" data-l="內湖石潭里" data-n="0" data-b="0"/><path class="v" d="M381.5 425.4l-0.7 10.9l3.3 8.2l-1.5 12.7l-7.7 -3.1l0.3 -9.9l-9.9 0.8l-11.3 -11.8l8.7 -1.9l6.9 -0.5l3.8 -3.3z" data-l="內湖湖興里" data-n="0" data-b="0"/><path class="v" d="M350.4 429.6l14.9 15.4l9.9 -0.8l-0.3 9.9l-5.9 -2.6l-0.7 8.6l-4.6 8.2l-8.9 7.6l-17.7 9.7l-8.8 6.3l0.6 -4.2l-0.3 -5.4l-1.8 -8.8l-3.8 -10.8l-0.5 -3.9l6.4 -12.5l1.3 -5.1l-0.2 -6.8l5.6 -0.3z" data-l="內湖湖元里" data-n="0" data-b="0"/><path class="v" d="M452.7 425.8l1.9 2.5l-0.3 5.1l1.6 7.2l-2.4 4.9l-8.6 -1l-0.7 -2.9l4.3 -3.4l0.6 0.7l0.9 -0.7l-1.1 -0.3l0.6 -11.9z" data-l="內湖安湖里" data-n="0" data-b="0"/><path class="v" d="M403.4 385.1l4.6 1.2l0.2 1.9l3.6 -0.1l1 4.3l2 -1.3l1.3 6.2l3.9 2.2l5.5 1l2.3 1.6l2.8 5.3l-0.2 7.3l-6.6 1.4l-1.3 -1.7l-5 0.6l-2.5 -7.4l-5.5 -2.6l-7 -9.8l-2.3 -7.8l1.2 -1.8z" data-l="內湖秀湖里" data-n="0" data-b="0"/><path class="v" d="M444.2 375.4l1.4 0.7l4.1 0.1l2.7 3l1.6 0.6l4.8 -0.1l3.1 -1.7l0.9 15.5l-1.4 5.7l3 7.1l-1 6.5l2.7 17.5l-3.7 -0.3l-1 -1l-3.6 2.1l-3.1 -4.9l0.1 -1.9l-2.4 -4.8l-8.4 -3.5l-3 2.6l-6.1 -3.8l0.7 -4.2l3.3 -1.8l2.9 -3l1.9 -5.5l-3.1 -9.4l0 -2.4l0.9 -3.4l3.4 -5.5z" data-l="內湖安泰里" data-n="0" data-b="0"/><path class="v" d="M422.5 414.4l1.3 1.7l6.6 -1.4l0 1.8l3.3 -0.2l1.2 -1.5l6.1 3.8l-0.1 2.8l-1.7 3.5l-2.8 3l-0.9 6.9l-7.3 -3.6l-1.7 0.1l-8.3 12.5l-9.7 -9.9l0.2 -2.2l-3.2 1.3l-0.1 -2.5l-4.8 0.5l-3.1 -8l4.6 -2.6l13 2.6l2.4 -8z" data-l="內湖金湖里" data-n="0" data-b="0"/><path class="v" d="M444 416l8.4 3.5l2.4 4.8l-0.1 1.9l-5.2 -0.2l-0.2 7l-3 0l-0.1 0.9l-2.6 0.1l-0.6 0.8l-3.4 -3.6l-3.2 0.6l-0.2 -3l4.7 -7.4l0.1 -2.8z" data-l="內湖康寧里" data-n="0" data-b="0"/><path class="v" d="M439.5 431.2l3.5 3.6l0.6 -0.8l2.6 -0.1l0.1 -0.9l3 0l-0.4 4.9l1.1 0.3l-0.9 0.7l-0.6 -0.7l-4.3 3.4l-2.3 -2.5l-6.4 -4.3l0.9 -3z" data-l="內湖明湖里" data-n="0" data-b="0"/><path class="v" d="M441.5 456.2l0.8 3.9l2 2.7l-5.5 6.8l-5.1 2.8l-11.2 2.4l-15.1 1.2l-7.4 -2.5l1 -2.6l-1 -5.1l1.2 0l0.2 -1.6l-1.1 -2.1z" data-l="內湖蘆洲里" data-n="0" data-b="0"/><path class="v" d="M325.5 389.5l6.4 2.5l-2.5 5.5l4 1.2l-0.9 4.3l5.6 1.7l-1.3 4.2l-15.4 -5.5l0.1 -2.3l2.8 -0.2z" data-l="內湖麗山里" data-n="0" data-b="0"/><path class="v" d="M397.5 423.3l3.1 7.7l4.8 -0.5l0.1 2.5l3.2 -1.3l-0.2 2.2l10.8 11l0.5 3.7l-2.5 6.3l-8.3 -2.9l-10.9 4.3l-12.9 -5.3l-0.5 4.9l-1.4 1.5l-0.7 -0.2l1.5 -12.7l-3.3 -8.2l0.7 -10.9l3.7 2.3l3.7 -2.8l2.7 0.3l2.5 -2l1.4 0.6z" data-l="內湖寶湖里" data-n="0" data-b="0"/><path class="v" d="M442.8 439.9l1.7 2.3l0.4 3.6l-3 6.7l-0.4 3.3l-15.5 2.2l-2.5 -1.9l0.7 -2.4l-1.9 -3.3l-1.6 -0.7l5.8 -7l3.6 -1.9l2.1 1l3 -1.6l4.5 3.4z" data-l="內湖南湖里" data-n="0" data-b="0"/><path class="v c1" d="M197.6 371.6l1.9 3l1.9 6.6l-0.9 3.8l-4.1 6.2l-1.5 -7.8l1.3 -4.5l-5.2 -1.6l1.4 -1.4l-0.6 -0.6l1.3 -2.5z" data-l="士林仁勇里" data-n="3" data-b="0"/><path class="v" d="M192.1 375.6l-1.1 1.7l5.2 1.6l-1.3 4.5l1.9 8.8l-0.9 5l-5.1 0.3l-1.4 -6.6l-4.3 -8.3z" data-l="士林義信里" data-n="0" data-b="0"/><path class="v" d="M229.8 347.2l7.2 5.5l7.4 1.9l2.7 4.3l1.7 1.2l2.9 -0.1l6.5 3.6l3.8 0.1l0.3 1.8l2.8 0.2l1.4 2.6l-1.2 4.5l-1.5 1.8l-4.1 2l-7.5 1l-2.7 -4.3l-5 -0.4l-2.5 -3.2l-1.3 0.4l-0.7 1.7l-7 1.8l-6.9 4.8l-5.6 6.2l-3.2 1.5l-5.6 8.7l-4.8 1.9l-0.9 -0.5l-5.7 6.5l0 1.6l-3.4 1.9l-1.7 -2.4l0.9 -3.2l0.3 -9.4l4.3 -6.6l0.7 -4.2l-1.8 -5.4l0.8 -0.3l-4.1 -12.2l19.4 -4.3l11.1 -8.1z" data-l="士林福林里" data-n="0" data-b="0"/><path class="v c1" d="M196.3 362.5l4.1 12.2l-0.8 0.3l-2 -3.5l-4.5 1.3l-3 4.6l-5 5.2l-8.6 -11.3l8.1 -5.7z" data-l="士林福德里" data-n="2" data-b="0"/><path class="v" d="M222.3 344.6l3.2 0.3l4 1.9l-2.7 3.3l-11.1 8.1l-12.6 2.6l-3.5 -13.7l4.1 -0.6l4.1 2.2l8 -3.6l4.4 0.3z" data-l="士林福志里" data-n="0" data-b="0"/><path class="v c1" d="M196.5 346.4l1.4 1.3l1.7 -0.6l3.5 13.7l-9.4 2.4l-3 -12.1z" data-l="士林舊佳里" data-n="1" data-b="0"/><path class="v" d="M172 349.5l7.1 0.8l5.3 2.8l2.8 -0.3l3.5 -1.7l3 12.1l-9.1 2.4l-8.1 5.7l-9.1 -12.1l-4.1 0.8l-2.7 -7.1z" data-l="士林福佳里" data-n="0" data-b="0"/><path class="v" d="M160.6 353l2.7 7l4.1 -0.8l17.7 23.4l-2.1 1.3l-15.5 -2.8l-3.8 -0.3l-1.4 1l-0.4 -4.8l-2.1 -4.9l-7.3 -8.7l-4.2 -2.9l5.6 -4.8z" data-l="士林後港里" data-n="0" data-b="0"/><path class="v" d="M163.7 380.8l16.5 2.5l-1.5 11.2l-6 -0.8l0 0.9l-9.4 0.3l-1 -13.1z" data-l="士林福中里" data-n="0" data-b="0"/><path class="v" d="M185.1 382.6l4.3 8.3l1.2 6.2l-6.2 1.7l-2.5 1.7l-0.5 -5.5l-2.7 -0.5l1.5 -11.2l2.8 0.6z" data-l="士林前港里" data-n="0" data-b="0"/><path class="v" d="M172.6 393.7l8.8 1.3l0.5 5.5l-2.7 2.3l-0.3 -3.1l-7.5 0.5l-6.1 2.7l-1.9 -3.6l-0.1 -4.4l9.4 -0.3z" data-l="士林百齡里" data-n="0" data-b="0"/><path class="v" d="M190.7 397.1l5.2 0.1l0.2 1.4l-0.5 5.7l-2 1.7l-0.6 3.3l-5.5 -1.2l0.3 -0.8l-8.6 -4.2l5.2 -4.3z" data-l="士林承德里" data-n="0" data-b="0"/><path class="v" d="M178.9 399.7l0.3 3.4l8.6 4.2l-1.1 2.4l-8.2 -3.9l-3 2.4l-5.7 1.6l-4.5 -6.9l6.1 -2.7z" data-l="士林福華里" data-n="0" data-b="0"/><path class="v" d="M178.5 405.8l8.2 3.9l0.8 -1.6l5.5 1.2l4.2 16.1l-1.2 2.9l-0.9 0.3l-4.1 -6.3l-3.8 -3.2l-11 -5.2l-6.4 -4.1l5.7 -1.6z" data-l="士林明勝里" data-n="0" data-b="0"/><path class="v" d="M163.2 397.8l0.8 3l5.7 8.9l-6 2.7l-1.6 -4.4l-1.2 0.5l0.5 2.2l-5.8 3.1l-3.5 -13.8l4.6 -1.4z" data-l="士林福順里" data-n="0" data-b="0"/><path class="v" d="M146.3 402.1l6.2 0.2l3.1 11.5l-7.1 0.8l-1.7 1l-10.1 0.9l-3.6 -9.8z" data-l="士林富光里" data-n="0" data-b="0"/><path class="v" d="M149.7 389.5l2.8 12.8l-6.6 -0.2l-12.8 4.6l-5.2 -10.2z" data-l="士林葫蘆里" data-n="0" data-b="0"/><path class="v" d="M162.3 381.8l0.9 16l-11.1 2.2l-2.4 -10.5l3.9 -1.2z" data-l="士林葫東里" data-n="0" data-b="0"/><path class="v" d="M145.6 360.4l3.8 0.3l5.1 4.8l5.3 6.6l2.1 4.9l0.4 4.8l-10.9 7.5l-1.7 0.2l-1.3 -4l-2.8 -4.5l2.7 -6.5l-0.8 -8.3l-2.8 -3.4z" data-l="士林社子里" data-n="0" data-b="0"/><path class="v" d="M126.8 377.5l7.4 3.7l9.8 -0.3l3.7 3.3l2 5.3l-21.8 7l-5.4 -8.6l-3.4 -3.6z" data-l="士林社新里" data-n="0" data-b="0"/><path class="v" d="M141.2 359.1l4.4 1.3l-0.9 2.4l3 4.6l0.6 7.1l-2.7 6.4l0.4 1.5l-2.7 -1.8l-5 0.4l-0.9 -6.3l0.5 -2.5l1.5 0.3z" data-l="士林社園里" data-n="0" data-b="0"/><path class="v" d="M125.1 358.2l16.1 0.9l-1.8 13.4l-1.5 -0.3l-0.5 2.5l0.9 6.3l-5.2 0l-6.3 -3.5l-7.7 6.8l-9.4 -8.9l7.1 -8.5l2 -0.7l4.6 0.7z" data-l="士林永倫里" data-n="0" data-b="0"/><path class="v" d="M92.3 299.5l3 0.3l4.8 1.8l9.7 7.3l2.9 6.5l1.1 4.6l1.1 32.3l1.1 1.5l9 4.4l-1.6 8.7l-4.6 -0.7l-2 0.7l-7.1 8.5l-10.4 -9.4l-8.1 -8.8l-8.1 -5.5l-5.6 -2.2l6.5 -8l2.3 -5.1l3.1 -0.6l17.2 -7.9l-3.3 -4.3l-17.8 -1l-1.2 -1.9l-0.4 -2.8l-1.3 -0.8l-8.1 0.8l-7.1 -0.4l-5.8 1.1l-7.3 -7.1l-2.1 0.4l7.3 -3l26.3 -8.3z" data-l="士林福安里" data-n="0" data-b="0"/><path class="v" d="M10.8 297.1l6.8 6.8l10.3 7.3l4.9 2.3l10.7 0.9l10.8 -2.9l7.3 7.1l5.8 -1.1l7.1 0.4l8.1 -0.8l1.3 0.8l0.4 2.8l1.2 1.9l17.8 1l3.3 4.3l-17.2 7.9l-3.1 0.6l-2.3 5.1l-6.5 8l-8.5 -4.3l-8.3 -1.7l-35 -0.9l-7.2 -3l-6.3 -3.7l-9.1 -7.3l-2.7 -3.1l-0.3 -4.6l2.3 -7.6z" data-l="士林富洲里" data-n="0" data-b="0"/><path class="v" d="M226.4 320.3l3.2 3.6l-0.5 3.6l7 13.2l1.7 1.4l-0.3 2.9l-4.1 3.6l0 0.9l-4.1 -3l-3.8 -1.6l-8.6 0.4l0.4 -2.7l2.1 0.3l-0.6 -6.8l-1.9 -2.2l-4.6 -1l0.3 -3.7l3.2 -2.6l0.9 -3.7l4.9 0.5l0.8 -1.5z" data-l="士林岩山里" data-n="0" data-b="0"/><path class="v" d="M212.6 329.2l-0.3 3.7l4.4 0.9l1.8 1.7l0.7 7.7l-1.9 -0.6l-0.4 2.7l-2.4 0.3l-6.2 3.1l-4.6 -2.2l-4.1 0.6l-5.5 -12.3l6.9 -1.4l4.7 -3.3l5.2 0.1z" data-l="士林名山里" data-n="0" data-b="0"/><path class="v" d="M194.3 327.1l0 8.7l5.3 11.3l-1.7 0.6l-1.4 -1.3l-1.2 0.3l-3.3 3.8l-1.3 0.6l-4.2 -18.5l3.3 -3.1z" data-l="士林德行里" data-n="0" data-b="0"/><path class="v" d="M186.5 332.6l4.2 18.5l-3.5 1.7l-2.8 0.3l-5.3 -2.8l-7.6 -0.8l2.2 -3.4l-0.3 -2.8l2.7 -6.8l2.1 -1.2l1 1.9z" data-l="士林德華里" data-n="0" data-b="0"/><path class="v" d="M220.7 316.7l-1.5 2.6l-0.7 3.9l-1.8 -0.3l-0.7 3.3l-2.3 2.4l-2.8 1.6l-5.2 -0.1l2.9 -4.4l1.2 -4.7z" data-l="士林聖山里" data-n="0" data-b="0"/><path class="v" d="M209.7 321.4l-1.4 5l-3 4.1l-4.3 2.9l-6.9 1.4l0.2 -7.7z" data-l="士林忠誠里" data-n="0" data-b="0"/><path class="v" d="M254.1 285.7l1.6 0.8l0.3 1.2l10.1 -0.2l0.7 1l2.2 6.8l-0.1 2.7l-3.4 10.9l-15.4 6l-6.3 12.4l-2.7 1.7l-2 5.4l-2.4 0.3l-2.1 2.7l-5.5 -9.9l0.6 -3.3l-2.3 -3.4l-1.9 -0.4l-3.1 1.5l-0.8 1.5l-3.1 -0.2l0.7 -3.9l1.5 -2.6l2.8 -0.5l-1.6 -9.3l8 -2l0.7 10l6.8 -1.3l1.4 0.8l0.9 -1.3l0 -4.3l3.8 0.7l9.9 -13.4l1.6 -5.6z" data-l="士林芝山里" data-n="0" data-b="0"/><path class="v" d="M245 242.3l2.4 2.8l1.3 -0.2l5.9 10.6l11.5 32l-10.1 0.2l-0.3 -1.2l-1.8 -0.8l1.1 4.8l-1.6 5.6l-8.4 11.9l-2.1 1.6l-3.2 -0.8l0 4.3l-0.9 1.3l-1.4 -0.8l-6.8 1.3l-0.7 -10l5.2 -1.5l-0.7 -13.3l5.7 -4.7l2.8 -5.5l-3 -4.6l0.1 -7.1l-0.7 -2.1l-3.3 1.4l-0.6 -0.7l1.7 -10l8 -15.4z" data-l="士林東山里" data-n="0" data-b="0"/><path class="v" d="M234.4 290.1l0.7 13.3l-13.2 3.5l1.6 9.3l-17.4 6.3l2.8 -13.7l3 -0.5l8.6 -12.8l1.7 -5.1z" data-l="士林三玉里" data-n="0" data-b="0"/><path class="v" d="M208.9 308.8l-2.8 13.7l-11.8 4.6l2 -14l1 -2.5z" data-l="士林蘭雅里" data-n="0" data-b="0"/><path class="v" d="M196.1 304l1.3 0.7l1.5 2.5l-2.6 5.6l-2 14.3l-15.1 10.1l-1 -1.9l2.1 -1.7l3.6 -7.8l-0.4 -6.4l3.7 -1.8l1 -4.6l7 -1.7l1.7 -4.3z" data-l="士林蘭興里" data-n="0" data-b="0"/><path class="v" d="M209 289.9l13.2 0.5l-1.7 5.1l-6.5 9.5l-6.2 -3.1l-3.1 -6.2z" data-l="士林天福里" data-n="0" data-b="0"/><path class="v c1" d="M204.7 295.7l3.1 6.2l6.2 3.1l-2.1 3.3l-14.6 2.3z" data-l="士林天祿里" data-n="1" data-b="0"/><path class="v" d="M191.7 288.8l17.5 0.8l-5.2 7.2l-5.1 10.4l-1.5 -2.5l-1.7 -0.7l-1 -2.7l-0.3 -4.7l-3.9 -3.5l-0.1 -1.5z" data-l="士林天壽里" data-n="0" data-b="0"/><path class="v" d="M227.4 266.1l-1 1.5l0.6 2.8l1.8 3l6.7 0.8l0.1 13.3l-1.2 2.6l-12.5 0.3l-1.5 -4.1l-2.3 -1.7l-1.2 -2.5l3.2 -8.4l0.3 -3.4l-1 -2.6l2.1 -1.5l5.1 -1.5z" data-l="士林天和里" data-n="0" data-b="0"/><path class="v" d="M219.4 267.7l1 2.6l-0.3 3.4l-3.3 8.1l1.3 2.8l2.3 1.7l1.5 4.1l-8.2 0.3l-4.7 -0.8l1.3 -1.8l6.3 -18.6z" data-l="士林天山里" data-n="0" data-b="0"/><path class="v" d="M198.3 274l1.2 3.3l2.2 0.4l1.9 -1.2l9.6 3.2l-4 9.9l-17.6 -0.8l2.1 -4.6l2.8 -2.1l-0.3 -3z" data-l="士林天玉里" data-n="0" data-b="0"/><path class="v" d="M244 213.5l0 3.3l2.2 2.8l1 3.8l-2 0l-0.6 2.7l-2.4 1.8l-8.4 2.3l-1.9 2.9l-2.4 0.8l-0.7 1.4l7.6 1.2l8.7 4.9l-8 15.4l-1.7 10l0.6 0.7l3 -1.5l0.9 1.3l0 8l3 3.9l-1.3 2.2l0.1 1.6l-3.6 4.3l-3.7 2.8l1.2 -2.6l-0.1 -13.3l-6.7 -0.8l-1.8 -3l-0.6 -2.8l0.9 -1l-0.2 -2l-5.6 1.6l-4.9 3.3l-3.4 10.2l-9.6 -3.2l-1.9 1.2l-2.2 -0.4l-1.2 -3.3l0.5 -0.8l5.7 -0.8l2.8 -1.5l0.9 -6.3l3.4 -1.7l0.9 -2l0.2 -2.8l-1.8 -11.7l1.2 -2.9l-0.4 -2.7l-2.1 -1.8l0.6 -4.7l2.1 -3.8l0.9 -0.8l1.8 0.4l3.2 -1l0.8 -2l2.7 -1l1 -2.2l4.5 0l2.1 -1.9l5.7 -2.2l0.8 -2.4l1.4 -1.1l3.7 1z" data-l="士林天母里" data-n="0" data-b="0"/><path class="v" d="M284.8 294.7l-0.6 7.8l1.5 3.1l-3.5 3.8l-1.2 2.6l0 2.4l-3.1 3.2l-4.2 6.3l-10.6 11.4l-10.6 3.6l-0.9 1.1l0.2 9.2l-1.1 1.5l-3.8 1.8l-9 -3.1l-2.8 -2l2.4 -2.4l0.3 -2.9l-1.7 -1.4l-1.5 -3.3l2.1 -2.7l2.4 -0.3l2 -5.4l2.7 -1.7l6.3 -12.4l15.4 -6l1.5 -5l3.8 0.4l5.4 -4.5l1.4 -0.2l3.6 1.2l1.1 -3.5z" data-l="士林永福里" data-n="0" data-b="0"/><path class="v" d="M290 216.2l1.3 1.8l-0.1 3l2.7 1.8l2.8 10.5l9.5 5.1l3.5 7.9l5.7 2.2l-2.7 3.9l-1.2 4.7l-1.8 1.8l4 8l3.2 3.7l-3.9 2.9l-1.2 5.2l-3.2 0.4l-1.3 9.4l-13.5 10.3l-7.4 7.7l-2.1 -3.3l-0.2 -3l0.8 -6.1l-0.4 -1.6l1.1 -1.7l0.6 -3.5l-0.8 -11.9l2 -2.3l-3.2 -3.8l6.8 -2.8l1.3 -2.4l0.8 -4.6l-0.3 -6.7l3.5 -8.9l-3.1 -8.9l-2 -2.7l-12.7 -4.8l1.1 -2.7l1.8 0l3.8 -2.8l0.7 -4l2.1 -1.6z" data-l="士林公館里" data-n="0" data-b="0"/><path class="v" d="M278.5 227.5l3.8 2l8.9 2.8l2 2.7l3.1 8.9l-3.5 8.9l0.3 6.7l-0.8 4.6l-2.3 3.1l-5.8 2l3.2 3.9l-2 2.3l0.8 11.9l-0.6 3.5l-1.1 1.7l0.3 2.2l-2.5 2.6l-1.1 3.5l-3.6 -1.2l-1.4 0.2l-5.4 4.5l-2.1 -0.1l-1.7 -0.3l1.9 -5.9l-1.2 -7.6l-11.6 -30.4l1.8 1l4.3 -1.2l1.9 3.3l2.4 0l2.2 1l0.6 -0.5l-1 -5.7l6 -3.9l-2.8 -12.2l2 -8.5l3.6 -4.7z" data-l="士林新安里" data-n="0" data-b="0"/><path class="v" d="M284.5 173.3l-0.8 4.9l-8.4 11.6l-4.1 7.6l-0.8 4.2l-0.5 5.7l4.5 3.1l1.6 2.4l-1.8 6.3l4.3 8.4l-5 5.8l-1.8 6.4l0.7 7.3l1.9 7l-6 3.9l1 5.7l-0.6 0.5l-5.1 -1.3l-1.4 -3l-4.9 1.1l-1.2 -0.9l-5.9 -13l-1.5 -2.1l-1.3 0.2l-2.4 -2.3l0 -1.5l-8.6 -4.8l-7.5 -0.9l-0.1 -1.1l3.1 -1.4l2.6 -3.3l7.7 -1.9l2.4 -1.8l0.6 -2.7l2 0l-1 -3.8l-2.2 -2.8l0 -3.5l2.7 0.5l1.7 1.7l5.3 0.7l1 -3l5.1 -2.8l2.8 -4.3l-0.5 -2.5l1.7 -2.6l-0.5 -4.2l1 -6.1l1.5 -1.9l0.2 -3.2l1.3 -0.5l6.9 -8l1.1 -3l6.3 -1.9z" data-l="士林陽明里" data-n="0" data-b="0"/><path class="v" d="M353.7 46.4l6.2 1.1l2 1.3l-2.1 1.9l-0.9 2.8l3.1 3.5l-0.4 1.6l1 4l-0.6 2.4l0.7 2.1l-2.9 0.7l0.1 3l-2.1 1.5l-1.2 2.3l0 1.9l2.6 4.6l-0.7 2.1l-2.5 1.1l-2.2 4.8l1.5 2.8l-0.3 1.5l2.6 2l0.1 2.6l3.1 4.5l0.6 2.2l-1.4 1.3l-0.3 3.5l-3.3 4.8l-12.4 11.5l-1 9.6l-5.5 0.7l1 9.9l-0.5 2.2l-2.2 2.4l1 7.2l-3.5 2.7l-3.8 7.3l1.5 9.2l0.5 0.7l4.4 0.8l3.7 10.5l-3.6 4.8l1.5 7l-3 2.5l-0.8 1.7l1.4 24.8l-2.6 4.5l-5.7 6.5l-0.5 2.5l-5.5 4.1l-0.4 3.2l-3 0.8l0.6 3.4l-1.2 1.9l0.2 1.9l-0.9 1.5l-2.3 1.4l3.6 7.6l-0.5 1.5l-3.2 -3.7l-4 -8l1.8 -1.8l1.2 -4.7l2.7 -3.9l-5.7 -2.2l-3.5 -7.9l-9.5 -5.1l-2.8 -10.5l-2.7 -1.8l0.1 -3l-1.8 -2.2l-3.6 2.2l-0.7 4l-3.8 2.8l-1.8 0l-1.1 2.7l-4.3 -8.4l1.8 -6.3l-1.6 -2.4l-4.5 -3.1l0.5 -5.7l0.8 -4.2l4.1 -7.6l8.4 -11.6l0.8 -4.9l-2.9 -1.1l-6.3 1.9l5.1 -13.1l3.7 -4.7l5.3 -1.6l3.1 -2.7l3.2 -0.9l1.8 -3l-0.4 -4.4l6 -17.1l-0.6 -2.3l-2.7 -3.8l-2.5 -5.6l-0.5 -4.7l4.7 -7.9l4.1 -1.8l2 0.1l2.1 -2.3l1.8 -4.8l-0.2 -2.9l1.1 -1.4l2.1 -0.8l0.2 -3.6l2.3 -1.8l-0.3 -3.2l-1 -0.9l-0.1 -1.3l1.8 -2l-2.6 -3.2l-0.7 -4.9l2.1 -2.8l2 -0.6l1.1 -1.7l7.5 -4.1l1.8 -4.7l2.5 -0.9l1.2 -2.3l3.5 -1.7l2.7 0.2l0.7 -2.3l3.7 0l1.8 1.8l4.1 1.9l2 -3z" data-l="士林菁山里" data-n="0" data-b="0"/><path class="v" d="M343.1 135.8l5.2 4.3l10.3 0.5l2.2 -1.2l1.1 2.4l2.5 0.7l4.6 3.7l4 0.9l1.3 1.2l2.4 -0.4l3.2 -1.9l1.8 10.4l3.7 8.6l-0.6 2.1l0.8 3.5l-0.7 2.4l-2.3 1.6l-1.1 4.1l-7.5 7.3l-1.5 2.6l-0.6 9.9l-7.5 19.9l-1 7.7l-5.7 2.3l3.3 10.3l-4.9 11.3l-0.5 9l-1.8 5.5l-0.7 1.3l-4.6 2.5l-3.6 0.9l-4.4 6.1l-1.7 7.4l-3.2 0.2l-1.7 2.9l-9.1 2.9l-3.3 -11.5l-4.6 -6.6l0.5 -1.5l-3.6 -7.6l2.3 -1.4l0.9 -1.5l-0.2 -1.9l1.2 -1.9l-0.6 -3.4l3 -0.8l0.4 -3.2l5.5 -4.1l0.5 -2.5l5.7 -6.5l2.6 -4.5l-1.4 -24.8l0.8 -1.7l3 -2.5l-1.5 -7l3.6 -4.8l-3.7 -10.5l-4.4 -0.8l-0.5 -0.7l-1.5 -9.2l3.8 -7.3l3.5 -2.7l-1 -7.2l2.2 -2.4l0.5 -2.2l-1 -9.9z" data-l="士林平等里" data-n="0" data-b="0"/><path class="v" d="M378.7 181l0.7 1.4l5.7 3.5l3.7 0.7l1.9 1.6l1 7l3.8 4.7l2.2 5.7l-0.6 4.2l3.3 2.7l3.6 4.8l0.6 2.3l6.1 2.9l3.3 4.6l5 2.7l2 2.7l1.6 -0.7l1.1 -1.8l1.9 0.7l-3.2 7l0.9 5.7l-0.8 5.9l9.3 2l-0.9 3.3l-7.2 7.5l-1.6 2.7l-2.7 1.4l-2.1 -2.2l-3 0.5l-2.6 13.2l-2.7 4.8l-1.3 -0.3l-1.4 1l-4.3 11.1l0.4 1.2l-3.6 5.3l-1.6 1.2l-2.7 -2.1l-1.9 0.7l-1.6 -1.7l-9.2 4.8l-1.3 -1.9l-1.3 0.9l-3.6 0.2l-8.3 16.9l-2.7 0.8l-1.8 2.1l-4.9 2.5l-4.7 -0.4l-3.3 5.6l-0.9 0.5l-4.9 -2.8l-1.6 -2.9l-7.5 0.4l-1.9 -8.2l-2.5 -2.2l-7.9 -1.6l-7.4 -6.2l-4.5 0.1l-7.1 1.7l-3.3 1.9l-3.5 -2.2l-5.4 0.5l-4.6 -2.5l-0.5 -0.4l7.4 -7.7l13.5 -10.3l1.3 -9.4l3.2 -0.4l1.2 -5.2l3.9 -2.9l4.6 6.6l3.5 11.5l8.9 -2.9l1.7 -2.9l3.2 -0.2l1.7 -7.4l4.4 -6.1l3.6 -0.9l4.6 -2.5l2.2 -4.9l0.8 -10.9l4.9 -11.3l-3.3 -10.3l5.7 -2.3l1 -7.7l7.5 -19.9l0.6 -9.9z" data-l="士林溪山里" data-n="0" data-b="0"/><path class="v" d="M315.3 307.4l7.4 6.2l7.9 1.6l2.5 2.2l1.9 8.2l-1.4 0l-3.3 2.7l-5.9 1.6l-2.5 3.3l-1.4 5.6l-3.4 5.7l-1.8 5.1l-5.6 0.5l-8.9 3.2l-5.9 -7.5l0.6 -4.1l-4.3 -13.4l1.1 -1.2l-0.9 -7.3l0.8 -4.3l-0.7 -2.9l-3.1 0l2.6 -3.7l4.5 -0.4l4.9 2.6l3.3 -1.9l7.1 -1.7z" data-l="士林翠山里" data-n="0" data-b="0"/><path class="v" d="M285.7 305.6l5.3 3.3l-2.6 3.7l3.1 0l0.7 2.9l-0.8 4.3l0.9 7.3l-1.1 1.2l4.3 13.4l-0.6 4.1l5.9 7.5l-4.5 -0.9l-2.1 0.5l-2.7 -1.9l-1.8 3.1l-1.1 4.3l-2.6 0.7l-2.5 5.7l-3.7 1.5l-0.5 3.7l-2.7 1l-3.8 -0.2l-2.4 2.2l-5.1 -0.2l1.2 -4.5l-1.4 -2.6l-2.8 -0.2l-0.3 -1.8l-3.8 -0.1l-6.5 -3.6l-2.9 0.1l-1.7 -1.2l-2.7 -4.3l-7.4 -1.9l-2.5 -1.6l-1.1 -2.5l1.7 -1.2l2.8 2l9 3.1l3.8 -1.8l1.1 -1.5l-0.2 -9.2l0.9 -1.1l10.6 -3.6l10.6 -11.4l4.2 -6.3l2.6 -2.4l1.7 -5.8z" data-l="士林臨溪里" data-n="0" data-b="0"/><path class="v" d="M159.1 317.9l11.4 10.4l5.1 -5.7l0.9 -2.6l1.4 -1.4l5.5 8.5l-3.4 7l-3.5 2l-1 1.5l-2.1 5.7l0.3 2.8l-1.6 3l-14.6 5.1l-1.5 -7.9l-3.3 -4l-4.8 -1.9l-2.3 -2l-2.3 -5.6l-4.1 -5.1l-0.2 -1.5l4.3 -6.5l3.7 2l4.2 0l4.2 -1.4z" data-l="北投建民里" data-n="0" data-b="0"/><path class="v" d="M165 314.1l1.8 4.3l7.5 5.8l-3.8 4.1l-12.8 -11.8z" data-l="北投文林里" data-n="0" data-b="0"/><path class="v" d="M173.4 311.6l4.5 7l-3.6 5.6l-7.5 -5.8l-1.8 -4.3z" data-l="北投石牌里" data-n="0" data-b="0"/><path class="v" d="M157.8 303.4l7.2 10.7l-6.2 1.7l-1.1 0.7l1.1 1.1l-1.4 1.2l-6.2 2.9l-4.2 0l-3.5 -1.5l-0.1 -1l1.4 -0.8l-2.1 -3.8l-6.5 -4.8l2.5 -2l2.3 1.6l6.4 -2.9l1.9 1.9z" data-l="北投福興里" data-n="0" data-b="0"/><path class="v" d="M165.8 299.5l7.6 12.1l-8.4 2.5l-7.2 -10.7z" data-l="北投榮光里" data-n="0" data-b="0"/><path class="v" d="M185.5 287l6.1 1.8l-1.1 4.3l3.9 3.5l0.3 4.7l2.2 5.7l-1.9 4.6l-6.8 1.4l-1 4.6l-3.7 1.8l0.4 5.7l-0.5 2l-5.5 -8.5l4.2 -4.1l3.5 -7l0.8 -3.5l-0.9 -0.2l-0.3 -4.1l-4.8 -1l0.8 -3.9l5.4 -2.9l-2.7 -4.2z" data-l="北投榮華里" data-n="0" data-b="0"/><path class="v" d="M173.4 299.4l0.6 1.3l3.4 0.7l-0.1 1l2.3 0.4l-1 6l6 1.1l-2.8 5.1l-3.9 3.6l-9.6 -15.2l2.9 -4.4z" data-l="北投裕民里" data-n="0" data-b="0"/><path class="v" d="M184.2 288.1l2.4 3.8l-5.4 2.9l-0.8 3.9l4.8 1l0.3 4.1l0.9 0.2l-1.8 5.9l-6 -1.1l1 -6l-2.3 -0.4l0.1 -1l-3.4 -0.7l-0.6 -1.3l-2.2 -0.4l-2.9 4.4l-2.5 -3.9l2 -1.2l2.6 -6l5.9 -3.8l4.8 0.4z" data-l="北投振華里" data-n="0" data-b="0"/><path class="v" d="M204.1 208.8l1.1 5.2l2.2 2.3l1.5 3.6l-1.2 1.4l0.4 4.6l-1.5 3l2.6 1.6l-1.4 2.1l1.9 0.4l0.7 1l-0.8 5.4l2.1 1.4l0.4 2.7l-1.2 2.9l1.7 14.1l-1 2.4l-3.4 1.7l-0.2 3l-3 0l-2.7 1.1l-2.3 -0.9l-6 7l-2.6 -3.2l-9.3 -7.8l-4 -6.5l2.9 -3.5l0.8 -7.9l1.7 -2.1l1.4 -5.1l2 -1.4l-1.1 -3.5l4.5 -8l3.5 -4.7l2.8 -0.6l-0.3 -2.2l1.3 -1.9l0.8 0.3l-0.1 1.2l2.6 0.1l1.2 -3.4l-3 -5.6z" data-l="北投永和里" data-n="0" data-b="0"/><path class="v" d="M178.1 257.3l4 6.5l9.3 7.8l2.6 3.2l6 -7l2.3 0.9l2.7 -1.1l3 0l-0.5 3.1l-1.6 1.1l-7.1 1.4l-2.6 5.9l0.3 3l-2.8 2.1l-2.1 4.6l-6.1 -1.8l-4 1.8l-4.6 -0.4l-5.2 -3.5l0.8 -1.9l0.1 -8.8l-1.4 -4.5l-3.8 -3.9z" data-l="北投永欣里" data-n="0" data-b="0"/><path class="v" d="M158.1 287.6l13.4 1.5l1.7 -1.4l3.7 0.7l-6.5 3.9l-2.6 6l-2 1.2z" data-l="北投永明里" data-n="0" data-b="0"/><path class="v" d="M167.4 265.8l3.8 3.9l1.4 4.5l-0.1 8.8l-0.8 1.9l5.2 3.5l-3.7 -0.7l-1.7 1.4l-13.4 -1.5l-5.5 -3.1l-18.1 -3.6l-3.9 -1.8l0.4 -2.8l1 -0.3l24.2 -3.4l6.8 -2.8z" data-l="北投東華里" data-n="0" data-b="0"/><path class="v" d="M149.6 288.8l4.3 2.1l6.6 1.6l0.6 -0.5l4.7 7.5l-8 3.9l-1.6 -3.9l-5.7 0.2l-0.3 -5.6l-3.5 -5.1z" data-l="北投吉利里" data-n="0" data-b="0"/><path class="v" d="M156.2 299.5l1.6 3.9l-8.5 5l-1.9 -1.9l-6.4 2.9l-2.3 -1.6l-2.5 2l6.5 4.8l2.1 3.8l-1.5 1.3l-2.2 -1.1l-4.7 2.1l-5.8 -3.6l-7.2 -3.2l5.1 -4.6l3.4 -7.2l6 2.7l2.7 -0.6l4.1 -3l3.5 -1.4z" data-l="北投吉慶里" data-n="0" data-b="0"/><path class="v" d="M146.7 289l3.5 5.1l0.3 5.6l-4.2 0.7l-4.9 -11.2z" data-l="北投尊賢里" data-n="0" data-b="0"/><path class="v" d="M141.5 289.5l4.8 10.9l-6.8 4.3l-2.9 -0.1l-4.7 -2.5l-3.4 7.2l-5.1 4.6l-8.1 0.6l0.5 -7.7l-2 -1.8l9.7 -2.7l1.1 -1l0.1 -1.4l3.5 -1.9l5.8 -5l-1.1 -1l1.1 -0.9z" data-l="北投立賢里" data-n="0" data-b="0"/><path class="v" d="M137.7 281.5l17.3 3.9l3.1 2.2l3 4.4l-0.6 0.5l-6.6 -1.6l-4.4 -2.2l-8.1 0.5l-7.4 1.9l-1.1 0.9l1.1 1l-5.8 5l-3.5 1.9l0 1.2l-0.4 0.6l-0.7 -11.3l1.3 -3.2l0.1 -2.9l5.2 5l1.6 -3.4l1.8 -1.4l0.9 0.7l0.5 -1.2l1.5 0.8z" data-l="北投立農里" data-n="0" data-b="0"/><path class="v" d="M125 260.2l2.3 13.4l3.6 -1.7l0.6 0.6l-0.9 6.6l7.1 2.4l-1.2 3.3l-1.5 -0.8l-0.5 1.2l-0.9 -0.7l-1.2 0.9l-2.2 3.9l-5.2 -5l-0.1 2.9l-1.3 3.2l0.8 10.4l-0.7 1.4l-5.7 1.2l-9.6 3.9l-10 -6.6l-4.4 -1.1l-4.9 0.1l-29.6 9.2l-7.6 3.1l-3.1 -7.4l-2 -14.4l0.4 -5.5l3.1 -12.6l10.4 -2.6l1.9 0.8l17.7 -4.4l4.2 -1.9l0.7 0.8l6.6 0.4l5.6 -1l8.6 -2.9l5.4 0.6l0.1 1l1.8 0.4z" data-l="北投八仙里" data-n="0" data-b="0"/><path class="v" d="M115.2 305.6l0.6 2.7l-0.5 6.2l8.4 -0.5l12.7 6.7l4.1 -2l2.3 0.4l0.4 1.2l-3.9 5.1l-0.1 2.3l4.1 5.1l1 3.7l2 2.7l6.4 3.1l3.3 4l1.5 7.9l-4.5 2l-4.2 4l-1.7 0.6l-7.5 -1.9l-13.8 -0.5l-10.5 -5.1l-1.1 -7l0.5 -14.6l-0.9 -11.7l-2.7 -8.7l-2.7 -4l6 -2z" data-l="北投洲美里" data-n="0" data-b="0"/><path class="v" d="M185.8 233.8l1.1 3.5l-2 1.4l-1.4 5.1l-1.7 2.1l-0.8 7.9l-5.2 5.7l-10 8.2l-4.8 3.2l-4.8 1.7l-25.2 3.7l0.2 -8.5l1.3 -4.2l-0.7 -7.5l1.8 -3.1l1.9 -1.3l0.1 -2.1l1.3 0.5l1.6 -0.8l0.1 0.8l1.8 -1.7l2.2 -0.5l7.3 -8.1l25.3 -0.3l8.6 -3.4z" data-l="北投奇岩里" data-n="0" data-b="0"/><path class="v" d="M130.1 243.3l3.1 2.1l2.5 4.3l-0.1 1.5l-3.8 4.9l0.7 7.5l-1.3 4.2l0 3.6l-3.9 2.2l-2.3 -13.4l1.1 -1.9l-0.6 -4.1l0.8 -6.3l1.5 0.9z" data-l="北投清江里" data-n="0" data-b="0"/><path class="v" d="M130.1 243.3l-2.3 5.5l-1.5 -0.9l-0.8 6.3l0.6 4.1l-1.1 1.9l-11.7 3.1l-1.8 -0.4l-0.1 -1l-5.4 -0.6l-5.8 2l0 -1.5l5.3 -2l0.3 -1.5l6.5 -2.1l1.9 -1.7l7.4 -2l-4.1 -5l2.6 -2.2l4.8 -1.9l2 0l1.2 -1.2z" data-l="北投中央里" data-n="0" data-b="0"/><path class="v" d="M128 230.9l0.5 3.5l0.9 0.9l0.8 -1.6l1.2 0.1l1.7 -1.1l3.8 0.6l1.2 -0.3l0.6 -1.5l1 1l1.6 -0.1l0.3 1.4l-0.6 1.4l-4.5 0.8l-3.7 4.8l-3.7 0.1l-1.8 2.1l-8.3 -6.4l-4.6 -2.4l3.6 -2.7z" data-l="北投長安里" data-n="0" data-b="0"/><path class="v" d="M114.4 234.2l12.9 8.8l-7.2 2.3l-2.6 2.2l4.1 5l-7.4 2l-1.9 1.7l-6.5 2.1l-0.3 1.5l-5.3 2l0 1.5l4.3 -1.4l-2.4 0.9l-5.1 1.5l-5.2 0.9l-6.7 -0.4l-0.2 -1.3l3 -0.4l5.5 -9.5l0.9 -3l1.8 -0.4l0 -4.1l11.6 -3.9l2.9 -0.3z" data-l="北投大同里" data-n="0" data-b="0"/><path class="v" d="M153.4 231.4l0.7 1.4l-1.2 1l-1.8 -0.5l-4.5 0.9l-1.4 2.2l4.7 3.4l-7.3 8.1l-2.2 0.5l-1.8 1.7l-0.1 -0.8l-1.6 0.8l-1.3 -0.5l-2.4 -4.2l-5.1 -3.2l1 -1.3l3.7 -0.1l3.7 -4.8l4.5 -0.8l0.9 -1.8l6.2 -0.9l1.5 -1.1l1.6 0.9z" data-l="北投溫泉里" data-n="0" data-b="0"/><path class="v" d="M194.9 207.5l4.2 1.5l2.9 6.4l-1.6 3.1l-2.1 -0.6l0.1 -1.2l-1.1 -0.1l-1 1.7l0.3 2.2l-2.8 0.6l-10 15l-8.6 3.4l-25.3 0.3l-4.7 -3.5l1.9 -2.5l5.8 0l1.2 -1l-0.6 -1.3l-2.8 0.8l-1.1 -0.9l-1.5 1.1l-2.1 -0.2l-4.4 1.4l-0.3 -1.3l-1.6 0.1l-1.1 -0.9l0.3 -2.1l1.6 0.1l-0.8 -3.8l3.9 -2.1l4.7 -1.3l0.6 -4.3l6.5 -0.2l8.4 -3l3.8 1.7l1.8 -2l9.2 -3.7l2.6 0.1l2.7 -1.4z" data-l="北投林泉里" data-n="0" data-b="0"/><path class="v" d="M173 204.4l2.2 -0.2l0.1 1.4l2.3 1.1l5.4 1.3l0.6 1.8l-13.7 4.6l-2.3 2.2l-3.8 -1.7l-8.4 3l-6.5 0.2l-0.6 4.3l-4.7 1.3l-3.9 2.1l0.8 3.8l-1.6 -0.1l-0.8 3.5l-5 -0.3l-1.7 1.1l-1.2 -0.1l-0.5 1.6l-1 -0.3l-0.1 -3.3l-2 -3.4l4.2 -7l3.7 0l2.8 -1.1l1.1 -2.4l4.2 -2.7l4 1.6l8.3 -0.5l0.7 -1.4l1.6 -0.7l17.1 -6l0 -1.8z" data-l="北投中心里" data-n="0" data-b="0"/><path class="v" d="M120.2 217.4l7.9 8.1l-1.6 3.5l1.5 1.8l-10 0.7l-0.1 -2.1l2 -3.3z" data-l="北投中庸里" data-n="0" data-b="0"/><path class="v" d="M137.2 197.1l6.3 0.1l0.7 10.1l-2.4 2.1l0.5 4.1l-0.6 0.1l0 2l-3.3 2.2l-1.1 2.4l-2.8 1.1l-3.7 0l-2.7 4.2l-7.3 -8.2l7.8 -8.8l0.9 -0.8l1.4 0.7l5.6 -7.3z" data-l="北投開明里" data-n="0" data-b="0"/><path class="v" d="M120.9 200.3l3 0.5l7.4 6.9l-0.4 0.7l-1.4 -0.7l-0.9 0.8l-7.4 8.8l-1 0.1l-2.9 -2.7l-3.9 -1.2l-2.2 -2.3l-0.2 -3.5l-0.9 -1.6l5.8 2.2l2.5 -5.5z" data-l="北投中和里" data-n="0" data-b="0"/><path class="v" d="M103.5 204.7l6.6 1.3l1 2.1l0.1 3.1l2.2 2.3l4.8 1.9l2.1 2.2l-0.1 2.5l-5 -0.1l0.7 -2l-4.1 -1.3l0.6 -2.8l-6.6 -2.1l1 -2.7l-5.9 -2.2l0.8 -1.7z" data-l="北投智仁里" data-n="0" data-b="0"/><path class="v" d="M104.5 154.9l4.4 9.8l5.2 6.5l0.2 14.6l-2.5 11.3l9.9 -0.6l3.6 0.4l0.7 0.9l-0.4 2.4l-4.7 0.1l-2.5 2.5l-2.5 5.5l-7.7 -2.9l-5.4 -0.7l-1.9 1.4l1.4 -7l-2.6 -4.4l-2.5 0.6l-2.1 -0.9l-6.3 -3.3l-4.4 -3.7l2.2 -1.8l0.3 -4.7l8.8 -13.7l3.5 -7.8l2.3 -3z" data-l="北投秀山里" data-n="0" data-b="0"/><path class="v" d="M100.9 206.9l5.9 2.2l-0.8 2.8l6.4 2l-0.6 2.8l4.1 1.3l-0.7 2l5 0.1l-0.3 6l-2 3.3l0.1 2.1l-3.6 2.7l-16.5 -7.6l-0.1 -0.9l-4.6 -3.8l0 -3l6.6 -7.6z" data-l="北投文化里" data-n="0" data-b="0"/><path class="v" d="M97.7 226.5l16.7 7.7l-3.8 7.7l-2.9 0.3l-11.6 3.9l0 4.1l-1.8 0.4l-0.9 3l-5.5 9.5l-3.4 0.9l-0.9 -8.4l-1.9 -4.6l4.6 -5.1l-2.4 -3.8l0.4 -14.8z" data-l="北投豐年里" data-n="0" data-b="0"/><path class="v" d="M84.8 187.9l4 3.2l6.3 3.3l2.1 0.9l2.5 -0.6l2.6 3.9l-1.8 11.2l-7.4 9.6l0.3 3.1l4.4 3.2l-0.1 0.8l-13.2 0.7l0.8 -5l-1.3 -3.7l-2.7 2.2l1.7 -3.8l-3.5 -4.6l-3.3 -1.4l-3.6 0.6l-10.2 -7.3l7.5 -7.5l4 -7.6l2.6 -1.4z" data-l="北投稻香里" data-n="0" data-b="0"/><path class="v" d="M62.7 204.4l9.9 7.1l3.6 -0.6l2.8 0.9l4 5.1l-1.7 3.8l2.7 -2.2l1.3 3.7l-1 5.1l-0.4 14.8l2.4 3.8l-2.1 1.7l-2.3 3.4l-2.8 -2.4l-3.6 3.3l-3.1 -3.9l-5 -2.8l-3.9 -6.9l-1.3 -1l-0.6 -2.8l-0.9 -0.2l0.7 -1.1l2.5 -0.2l0.3 -0.9l-2.3 -0.6l-4.6 -3.3l-3.8 -13.7l1.6 -1.6l0.7 -3.2z" data-l="北投桃源里" data-n="0" data-b="0"/><path class="v" d="M53.5 214.5l4 14.1l6.7 3.5l-0.3 0.9l-2.5 0.2l-0.7 1.1l0.9 0.2l0.6 2.8l3.9 4.9l0.8 2.4l6.3 4.1l2.3 3.2l3.7 -3.3l3.3 3.7l1.1 3.3l0.9 8.7l-21.9 6l-1.9 -0.8l-10.4 2.6l-0.9 4.5l-26.1 -2.4l-2.9 -2l1.4 -0.6l-0.7 -1.4l0.4 -3.4l-1.2 -5.6l3.7 -12.5l7.8 -9.1l1.8 -3.8l8 -5.9l3.6 -7.1l5.2 -4.5z" data-l="北投一德里" data-n="0" data-b="0"/><path class="v" d="M21 272.5l4 2.2l24.4 1.9l-2.2 8.1l-0.4 5.5l2 14.4l3.4 7.3l-8.7 2.5l-10.7 -0.9l-4.9 -2.3l-10.3 -7.3l-6.4 -6.2l-5 -18.6l-1.6 -3.2l7.3 -0.3l1.2 -1.8z" data-l="北投關渡里" data-n="0" data-b="0"/><path class="v" d="M176.7 136.7l4.3 2.5l7.6 7.3l3 -1.8l5.5 -1l18.1 7.8l2.6 8.1l-0.5 4.1l3.3 3.4l0.8 2.3l-3.4 3.4l-0.7 5.2l-2 3.4l1.5 4.2l-1.9 5.5l0.2 2.5l-3 1.8l-2 3.2l1.6 1.9l-3.2 1.7l-1.6 4.3l-2.8 2.3l-4.3 0.3l-5.9 -1.7l-10.3 2.4l-0.6 -1.8l-5.4 -1.3l-2.3 -1.1l-0.1 -1.4l-1.4 -0.1l-0.8 0.3l1.3 1.9l0 1.8l-17.1 6l-1.6 0.7l-0.7 1.4l-8.3 0.5l-2.7 -1.6l-2.2 0.5l0 -2l0.6 -0.1l-0.5 -4.1l2.4 -2.1l-0.7 -10.1l2.2 -6.1l-2.3 -4.4l-3.8 -3l8.3 -8.7l7 -3.3l2.5 -3.2l10.8 -5.1l-1.2 -2.6l0.6 -3.2l1.3 -1.4l1.8 -4.3l-1.3 -4.9l6.1 -5.6z" data-l="北投泉源里" data-n="0" data-b="0"/><path class="v" d="M215.2 151.8l24.8 7.3l13.4 14.9l21.9 -4.4l1.6 0.5l-2.4 6.6l-7.2 8.4l-1.3 0.5l-0.2 3.2l-1.5 1.9l-1 6.1l0.5 4.2l-1.7 2.6l0.5 2.5l-2.8 4.3l-5.1 2.8l-1 3l-5.3 -0.7l-1.7 -1.7l-2.1 -0.6l-1.2 0.4l-2.5 3.7l-3.7 -1l-1.4 1.1l-0.8 2.4l-5.7 2.2l-2.1 1.9l-4.5 0l-1 2.2l-2.4 0.7l-1.4 2.5l-2.9 0.8l-2.1 -0.3l-2.5 4.2l-0.7 -1l-1.9 -0.4l1.4 -2.1l-2.6 -1.6l1.5 -3l-0.4 -4.6l1.2 -1.4l-1.5 -3.6l-2.2 -2.3l-0.1 -3.2l-1 -2l2.8 -2.3l1.6 -4.3l3.2 -1.7l-1.6 -1.9l2 -3.2l3 -1.8l-0.2 -2.5l1.9 -5.5l-1.5 -4.2l2 -3.4l0.7 -5.2l3.3 -3l-0.7 -2.7l-3.3 -3.4l0.5 -4.1z" data-l="北投湖山里" data-n="0" data-b="0"/><path class="v" d="M129.5 116.9l6.5 0l1.5 1.7l-0.1 2.9l1.2 2.2l3.8 -0.2l3 2.3l6.6 3.1l2.6 0l3.8 -4.3l3.2 -0.6l11.8 3.2l3.5 1.6l0.6 1.3l-2 11.3l-6.2 6l1.4 4.5l-1.8 4.3l-1.3 1.4l-0.6 3.2l1.2 2.6l-10.8 5.1l-2.5 3.2l-7 3.3l-8.3 8.7l3.8 3l2.1 3.2l0.1 2.2l-2.1 5.1l-6.3 -0.1l-0.7 4l-5.2 6.6l-7.6 -7.1l2.3 -1l-0.3 -2.5l-4 -0.6l-9.9 0.6l2.5 -11.3l-0.2 -14.6l-5.2 -6.5l-4.6 -10.3l5.8 -5l5.1 -2.7l3.5 -3.7l3.8 -10.5l5 -3.5l-0.6 -5.9l2.5 -3.1l0.6 -1.6z" data-l="北投大屯里" data-n="0" data-b="0"/><path class="v" d="M291.3 0.1l10.1 2.4l2.3 11.1l2.6 3.4l1.7 6.2l0.3 2.6l-0.8 2.8l3.4 4.1l6.4 2.4l2 1.8l3.1 0.5l2.6 2.7l-0.2 3.2l2.7 3.1l3.8 1.3l7.2 -1.9l1.5 0.8l-1.1 0.3l-0.4 2l-2.7 -0.2l-3.5 1.7l-1.2 2.3l-2.5 0.9l-1.8 4.7l-10.6 6.4l-2.3 3.2l0.9 4.5l2.6 3.2l-1.8 2l0.1 1.3l1 0.9l0.3 3.2l-2.3 1.8l-0.2 3.6l-2.1 0.8l-1.1 1.4l0.2 2.9l-1.8 4.8l-2.1 2.3l-2 -0.1l-4.1 1.8l-4.7 7.9l0.5 4.7l2.5 5.6l2.7 3.8l0.6 2.3l-6 17.1l0.4 4.4l-1.1 2.2l-3.9 1.7l-3.1 2.7l-4 0.8l-2.4 1.7l-2.6 3.8l-3.5 9.1l-1.6 -0.5l-21.9 4.4l-13.4 -14.9l-24.8 -7.3l-18.1 -8.1l-5.5 1l-3.3 1.6l-7.3 -7.1l-4.3 -2.5l0.8 -6.6l-0.6 -1.3l1.8 0.6l1 -0.5l3.2 -6.4l0.5 -4.2l3.3 -5.6l-0.6 -4.8l-1 -1.9l0.9 -3.9l-1.6 -3.9l12.1 -12.1l4.5 -0.9l4.9 0.7l5.5 -2l6.3 0.2l3.7 -3l3.2 -6.8l4 -1.1l3 0.5l5.4 -0.6l2.7 -1.1l3 -3.8l2 -1.2l-0.3 -7.2l1.5 -8l4.1 -5.6l3.2 -2.1l1.4 -2.4l3.2 -0.2l1.9 -3l2.5 -0.5l5 3.2l3.3 -2l2.1 -3.3l0 -6.4l-3 -3.4l0.2 -4.5l4.2 -2.7l0.7 -2.9l2.7 -3.4l1.9 -7.1l5.4 -0.8l4.2 -3.4z" data-l="北投湖田里" data-n="0" data-b="0"/><path class="ds" d="M387.9 563.4l-0.7 -2.3l-6.1 -7.5l-0.9 -8.9l-1.7 -2.6l-2.9 -2.5l-1.1 -3.1l-0.7 0.2l-1.3 -5.9l-3.8 -0.1l-2 -1.2l-11.5 -10.8l-0.2 -6.2l-1.9 -2.4l0.2 -4.6l-1.1 -2.5l1 -3.7l-0.3 -4.2l12.1 -2.8l7.1 -3.1l5 -3.3l11.7 -11.1l4.4 -2.2l4.7 0.3l9.5 3.1l15.1 -1.2l10.9 -2.2l4.6 -2.3l2.4 -2.3l6.3 -9.2l3.3 -0.8l12.6 4.2l5.2 3.7l4.7 5.3l2.4 5.9l5 8.2l-0.3 1.8l-2 0.8l-5.1 -4.7l-3.2 -0.4l-1 2.6l2.5 5l-0.3 2.3l-1.1 1.4l-1.1 -0.3l-5.7 2.7l-4.9 4.8l-0.6 4.5l0.8 4.2l7.5 14.3l7.1 9.7l4.5 2.3l5.2 6l4.2 -0.4l3.7 2l5.2 1.5l1.4 1.5l0.7 3.7l6.8 -2.2l2.6 0.1l1.7 2.9l2.2 -0.6l2.3 1.7l6.5 2.2l5.8 5.4l6.3 2.3l3.5 2.5l1.2 0l1.5 2.2l4.5 1l2 1.9l-0.1 2l0.7 0.7l3.6 -2l2.3 2.2l2.1 -0.6l2.1 1.5l3.5 -0.4l1.1 -1.3l2.2 1.8l1.8 0.3l2.7 -1.4l2 0.5l0.8 1l4.8 -1.6l2.4 -2.9l8.9 -5l6.8 0.8l4.8 2l3.2 -1.1l-3.2 6.6l1.6 5.5l-1.2 4.2l-1.5 1.4l-1 3.4l-3.5 1.4l-6.2 -2l-7 -0.5l-1.7 1l-4.4 -1.8l-1.5 0.5l-5.1 -2.3l-6.2 1.6l-5 -0.2l-8.2 6.7l-2.3 0.5l-3.8 -5.8l-5.6 -3.1l-3.1 1.1l-3.1 2.3l-7 -0.8l-2.4 -1l-5.3 2.7l-0.2 -2.5l-3.1 -0.9l-6.3 -4.2l-2.5 1.3l-1.9 2.2l-1.6 4.1l0 3.2l-3.8 7.2l-2.5 1.3l-3.2 0l-2.2 2.9l-5.5 2.3l-2.7 2l-2.3 -0.3l-5.6 -3.2l-3.4 0.9l-5.3 -0.9l-4.2 -4.1l-7.7 1.8l-1.9 -1.4l-1.6 0.3l-2.6 -1.2l-2.6 0.1l-3.1 -3.4l-1.5 1.4l-1.5 3.4l-11.7 1.1l-3.1 7.2l-0.4 4.1l-1.2 1.6l-3.1 -0.4l-2.3 1.1l-8.5 0l-1.1 1.3l-6.2 -3.5l-2.6 0.9l-2 2.1l-5.1 -0.9l-1.2 1.8l-9.7 2.8l-12.2 1l-3.2 1.8l-4.4 0.2l-1 0.8l-2.3 -0.9l-5.2 -4.2l1.1 -3.5l4.8 -5.7l5.1 -4.4l5 -2.1l3.8 -11.9l0.7 -5.4l3.6 -5.6l0.7 -2.6l4.5 -4.8l6.1 -4.4l2.6 -0.7z"/><path class="ds" d="M365 492.3l-31.2 6.5l-3.5 -0.4l-1.5 -1.3l-0.8 -2.9l0.9 -5.9l-0.3 -6l-1.8 -8.8l-3.8 -10.8l-0.5 -3.9l5.5 -10.3l1.5 -4.5l0.9 -7.2l-2.2 -8.9l3.1 -1.2l-4.1 -5.8l-2.1 -1.7l-17.5 -5.7l-4.9 -6.3l-4.7 -11.3l-4.9 -1.7l-4.1 2l-0.2 -2.8l-2.6 -4.5l1.1 -3.9l-6.6 -2l-4.2 -3.9l-3.5 -5.8l-0.3 -2.3l3.9 0l2.7 -1l0.5 -3.7l3.7 -1.5l2.5 -5.7l2.6 -0.7l1.1 -4.3l1.8 -3.1l2.7 1.9l2.1 -0.5l4.6 0.9l8.8 -3.2l5.6 -0.5l1.8 -5.1l3.4 -5.7l1.4 -5.6l2.7 -3.5l6.8 -1.9l2.2 -2.2l8.1 -0.5l1.1 0.3l1.3 2.7l5.5 2.7l3.6 -6l4.7 0.4l4.9 -2.5l1.8 -2.1l2.7 -0.8l8.3 -16.9l3.6 -0.2l1.3 -0.9l1.3 1.9l9.4 -4.8l1.4 1.7l1.9 -0.7l2.7 2.1l-0.5 2.1l2.4 3.4l0.5 3.5l2.9 5.6l2.5 1.9l2.1 0l1.8 1.5l1.3 -0.5l6.2 0.6l6.9 3.2l4.5 0.2l1.3 1l3.5 0.6l6.9 5l4.3 1.6l4.7 0.2l5.4 2.2l5.8 8.7l11.8 8.8l1.9 3.1l3.2 1.2l6.5 -0.3l2 3.6l-2.5 2.4l-0.8 4.5l3.6 7l-0.9 3l6 6.6l1.6 6.1l-3 5.1l1.3 4.6l-1.5 3.2l-4.2 1.1l-5 5.3l-0.4 1.2l1.1 2.6l-1.8 1.4l0.1 1.4l1.3 0.3l2 -2.1l-0.4 2.6l-1.3 1.5l-3.5 1.3l-0.1 4.1l-1.4 3.9l-3.2 -0.7l-2.7 4.8l0.1 2.3l1.7 2.2l0.7 7.2l-1.4 0l-1.9 2.6l-2.2 0.3l-0.3 1.2l-2.5 1.9l-2.8 0.2l1 3.7l-0.1 4l-0.8 0.1l-1.5 -2.3l-0.8 0l-2 6.1l-5.4 -1.8l-3.8 0.3l-6.5 9l-2.9 2.9l-4.6 2.3l-7.8 1.6l-18.2 1.8l-11.2 -3.5l-4.7 0.7l-4.3 2.8l-10.1 9.9l-5 3.3z"/><path class="ds" d="M226.6 521.1l-30.3 -8.8l-19.2 -2.2l3.6 -4.9l1 -5.7l1 -24.5l-4.1 -11.2l-0.7 -4.3l4.1 -27.3l5.8 -12.7l3.2 2.8l4.1 6.3l1.8 -1.1l0.3 -2.1l-4.1 -14.7l-0.2 -3l1 -2.2l1.7 -1.2l1.3 1.9l2.4 -1l1.2 -1.2l-0.2 -1.3l5.7 -6.5l0.9 0.5l4.8 -1.9l5.6 -8.7l3.2 -1.5l5.6 -6.2l6.9 -4.8l7 -1.8l0.7 -1.7l1.3 -0.4l2.5 3.2l5 0.4l2.7 4.3l7.5 -1l4.1 -2l1.5 -1.8l5.1 0.2l2.3 -2l0.3 2.3l3.5 5.8l4.2 3.9l6.6 2l-1.1 3.9l2.6 4.5l0.2 2.8l4.1 -2l4.9 1.7l4.7 11.3l4.9 6.3l17.5 5.7l2.1 1.7l4.1 5.9l-3.1 1.1l-2.4 -4.6l-1.8 -1.5l-1.7 -0.2l-16.6 11.2l-4.1 1l-3.4 -0.8l-12.3 -6.4l-11.5 -2.7l-0.8 8.3l-8.8 3.8l-1.5 2.3l-29.2 -0.6l-0.1 5.9l0.6 1.3l8.1 1.6l7.9 4.7l-1.2 69.5l-6.3 0.9z"/><path class="ds" d="M180 601.4l-6.7 -3.4l-13.8 -4l-0.2 -7l-9.5 -3.1l-14.1 -15.7l0 -4.3l5.3 -10.9l1.9 -5.7l0.1 -2.8l8.3 -31l2.9 -3.2l2.4 -1l1.5 -3.8l15.4 4.4l4.9 0l3.9 1.2l14 1.2l21.8 6.8l-0.6 37.2l-15.7 -1.5l-8.3 -4l-4.9 9.3l-2.5 13.7l10.1 15.3l29.7 30.2l4.5 7.5l-3.9 0.9l-11 7.3l-3.8 -3.6l-8 -2.3l-5.4 -3.6l-12.3 -18.3z"/><path class="ds" d="M156.3 509.5l-2.1 0.8l-4.8 0.2l-7.7 -2.1l-4.8 -2.5l4.5 -12.2l0.4 -7.5l-2.4 -6.5l-0.5 -3.7l4 -17.1l0.6 -16.8l-2.6 -14.4l-4.2 -11.2l10.1 -0.9l1.7 -1l7.5 -0.9l5.4 -3l-0.5 -2.2l1.2 -0.5l1.6 4.4l6.1 -2.7l6.4 4.2l11.6 5.6l-6.2 13.9l-3.7 25.4l0.7 5l4.1 11.2l-1 24.5l-1 5.7l-3.6 4.9l-5.3 -0.6l-13.7 -4z"/><path class="ds" d="M192.9 407.7l4.3 17.7l-0.3 2.1l-1.7 1.2l-4.2 -6.4l-4.4 -3.6l-10.4 -4.8l-6.4 -4.2l-6.1 2.7l-1.6 -4.4l-1.2 0.5l0.5 2.2l-5.4 3l-7.5 0.9l-1.7 1l-10.1 0.9l-1.9 -6.1l-4.4 -9.8l-7.9 -12.7l-23.2 -21.9l-8.6 -9.2l-7.6 -5.1l-14.4 -6.6l-8 -1.6l-34.1 -0.7l-8.1 -3.2l-6.3 -3.7l-11.7 -10.1l-0.4 -4.9l3.1 -9.5l7.6 -14.3l4.2 4.7l12.9 9.4l4.9 2.3l4.7 0.8l9.5 -0.5l12.5 -4.9l26.3 -8.3l5.6 -1.1l3.9 0.3l4.8 1.8l8.6 5.9l4 7.9l1.7 10.3l-0.1 22.6l0.6 4l1.1 1.5l9.8 4.6l13.8 0.5l7.5 1.9l1.7 -0.6l5.6 -4.8l17.7 -6.3l1.6 -3l-0.3 -2.8l2.1 -5.7l1 -1.5l3.5 -2l3.9 -8.3l-0.4 -6.4l3.7 -1.8l1 -4.6l6.8 -1.4l1.5 -2.9l0.4 -1.7l-2.2 -5.7l-0.1 -4.3l-3.8 -3.4l-0.4 -2l3.1 -7.1l3 -2.4l-0.3 -3l2.2 -5.4l2 -1.1l5 -0.5l1.9 -1.2l0.9 -6.3l3.4 -1.7l0.9 -2l0.2 -2.8l-1.8 -11.7l1.2 -2.9l-0.4 -2.7l-2.1 -1.8l0.6 -4.7l1.8 -3.4l1.2 -1.2l1.8 0.4l3.2 -1l0.8 -2l2.7 -1l1 -2.2l4.5 0l2.1 -1.9l5.7 -2.2l0.8 -2.4l1.4 -1.1l3.7 1l2.9 -3.9l2.9 0.4l1.7 1.7l5.3 0.7l1 -3l5.4 -3.1l2.6 -4.5l-0.6 -2l1.7 -2.6l-0.5 -4.2l1 -6.1l1.5 -1.9l0.2 -3.2l1.3 -0.5l7.5 -8.9l0.6 -3.1l6.8 -15l2.6 -2.3l4.6 -1.1l3.1 -2.7l3.2 -0.9l1.7 -2.5l-0.3 -4.9l6 -17.1l-0.6 -2.3l-2.7 -3.8l-2.5 -5.6l-0.5 -4.7l4.7 -7.9l4.1 -1.8l2 0.1l2.1 -2.3l1.8 -4.8l-0.2 -2.9l1.1 -1.4l2.1 -0.8l0.2 -3.6l2.3 -1.8l-0.3 -3.2l-1 -0.9l-0.1 -1.3l1.8 -2l-2.6 -3.2l-0.7 -4.9l2.1 -2.8l2 -0.6l1.1 -1.7l7.5 -4.1l1.8 -4.7l2.5 -0.9l1.2 -2.3l3.5 -1.7l2.7 0.2l0.7 -2.3l3.7 0l1.8 1.8l4.1 1.9l1.6 -2.6l2.3 -1.3l7.2 1.1l2 1.3l-2.1 1.9l-0.9 2.8l3.1 3.5l-0.2 4.1l0.9 2l-0.7 1.9l0.7 1.7l-2.9 1.1l0.1 3l-2.1 1.5l-1.2 2.3l0 1.9l2.6 4.6l-0.7 2.1l-2.5 1.1l-2.2 4.8l1.5 2.8l-0.3 1.5l2.6 2l0.1 2.6l3.1 4.5l0.6 2.2l-1.4 1.3l-0.3 3.5l-3.3 4.8l-12.4 11.5l-0.9 10l5.2 4.3l10.3 0.5l2.2 -1.2l1.1 2.4l2.5 0.7l4.6 3.7l4 0.9l1.3 1.2l2.4 -0.4l3.2 -1.9l1.8 10.4l3.7 8.6l-0.6 2.1l0.8 3.5l-0.7 2.4l-2.3 1.6l-1.1 4.1l-2.9 3l6.5 4.2l3.7 0.7l1.9 1.6l1 7l3.8 4.7l2.2 5.7l-0.6 4.2l3.3 2.7l3.6 4.8l0.6 2.3l6.1 2.9l3.3 4.6l5 2.7l2 2.7l1.6 -0.7l1.1 -1.8l1.9 0.7l-3.2 7l0.9 5.7l-0.8 5.9l9.2 1.9l-0.7 3.2l-9.5 10.8l-2.1 1l-2.1 -2.2l-3 0.5l-2.6 13.2l-2.7 4.8l-1.3 -0.3l-1.4 1l-4.3 11.1l0.4 1.2l-4.3 6.2l-0.9 0.3l-2.7 -2.1l-1.9 0.7l-1.6 -1.7l-9.2 4.8l-1.3 -1.9l-1.3 0.9l-3.6 0.2l-8.3 16.9l-2.7 0.8l-1.8 2.1l-4.9 2.5l-4.7 -0.4l-3.6 6l-5.5 -2.7l-1.3 -2.7l-1.1 -0.3l-8.1 0.5l-2.2 2.2l-6.8 1.9l-2.7 3.5l-1.4 5.6l-3.4 5.7l-1.8 5.1l-5.6 0.5l-8.8 3.2l-4.6 -0.9l-2.1 0.5l-2.7 -1.9l-1.8 3.1l-1.1 4.3l-2.6 0.7l-2.5 5.7l-3.4 1.2l-0.8 4l-0.7 0.6l-5.8 0.2l-2.4 2.2l-5.1 -0.2l-1.5 1.8l-4.1 2l-7.5 1l-2.7 -4.3l-5 -0.4l-2.5 -3.2l-1.3 0.4l-0.7 1.7l-7 1.8l-6.9 4.8l-5.6 6.2l-3.2 1.5l-5.6 8.7l-4.8 1.9l-0.9 -0.5l-5.7 6.5l0.2 1.3l-1.2 1.2l-2.4 1l-1.3 -1.9l-1.7 1.2z"/><path class="ds" d="M227.6 621.4l-31.4 -32.3l-10.1 -15.5l2.5 -13.5l4.9 -9.3l8.3 4l15.7 1.5l0.6 -37.2l7.7 1.9l5.5 0.4l11.8 0.2l14.1 -2l21.1 2.5l10.9 -2.5l-0.8 49.9l-2.7 4.8l-10.8 10.9l21.6 22.4l1.6 3.7l5.8 7.4l1.8 1.1l0.8 6.4l4.9 4.2l1.9 5.9l-4.1 1.2l-4.4 -1l-5.5 -6.3l-2.5 -0.9l-5.7 -5.9l-8.4 2.2l-2.3 4.5l-4.7 4l-1.2 0l-3.4 -2.9l-3 -0.2l-3.7 0.4l-6.4 4l-5.6 2.1l-3.1 -2.4l-6.6 1.5l-6.5 -1.5l-3.2 0.6l-2.2 -8z"/><path class="ds" d="M110.8 633.3l-5.1 0.5l-2.3 -0.7l-6.7 -9.9l-2.7 -1.9l-2.3 -7l-0.7 -5.9l-0.4 -11.8l1.1 -7.4l-3.5 -8.5l-0.3 -3.6l-2 -2.1l-5.3 -11.3l-3 -8.5l-0.8 -5.7l1 -4.3l3.1 -5.6l10.7 -10.9l7.1 -1.1l11 0.2l3.2 -1.2l10.5 -5.5l4.1 -3.2l9.4 -12l4.8 2.5l7.7 2.1l4.8 -0.2l-2.9 3.2l-8.3 31l-0.1 2.8l-1.9 5.7l-5.3 10.9l0 4.3l14.1 15.7l9.5 3.1l0.2 7l-4.7 -0.1l-5.9 2.2l-9.8 10.1l-14.1 18.6l-8.7 6.3z"/><path class="ds" d="M342.7 616.9l-3.1 3.4l-5.4 -0.1l-2.5 -1.1l-1.8 5.9l-5 3.2l-1.8 3l-3.1 2.1l-6.7 3l-1.9 -5.9l-4.9 -4.2l-0.8 -6.4l-1.8 -1.1l-5.8 -7.4l-1.6 -3.7l-21.6 -22.4l10.8 -10.9l2.7 -4.8l0.8 -49.9l16.9 -7.6l17.7 -5.5l29.5 -0.6l-0.2 4.2l1.9 2.4l0.4 6.7l11.3 10.3l2 1.2l3.8 0.1l1.3 5.9l0.7 -0.2l1.1 3.1l2.9 2.5l1.7 2.6l0.9 8.9l6.8 9.1l-1.6 4.1l-2.9 0.9l-6.1 4.4l-4.5 4.8l-0.7 2.6l-3.6 5.6l-0.7 5.4l-3.8 11.9l-5 2.1l-5.1 4.4l-4.8 5.7l-1.1 3.5z"/><path class="ds" d="M277 522.1l-19.8 -2.5l-7.8 1.1l1.2 -69.5l-9.3 -5.2l-6.3 -0.8l-1 -1.6l0 -5.6l29.3 0.3l1.5 -2.3l8.8 -3.8l0.8 -8.3l11.5 2.7l12.3 6.4l4.7 0.8l5.4 -2.6l13.3 -9.3l2.4 -0.1l2.1 1.9l1.7 3.2l2.6 9.9l-1.5 9.5l-6.4 12.5l0.5 3.9l3.8 10.8l1.8 8.8l-0.3 13.7l1.5 2.2l3.3 0.6l10.6 -1.5l9.2 -2.2l0.3 4.2l-1 3.7l1.1 2.9l-25.6 0.1l-5.4 0.8l-16.2 5.2l-15.4 7.1l-10.1 2.7z"/><path class="ds" d="M269.8 703.7l1 1.9l-0.5 2.7l-5.2 5l-5.5 1.5l-5.9 -1.2l-2.5 -3.5l1.7 -7.1l-1.8 -3.7l-13.5 1.6l-3.7 -0.9l-3.7 -2l-0.9 -3.4l1.5 -5.7l-0.2 -2.6l-2.4 -5.6l-3 -3.1l-2.9 6.7l-7 7.9l0.1 -3.6l-1.1 -2.9l1.2 -2.3l-0.1 -2.7l-3.6 -12.1l2.8 -9.5l5.3 -4.8l1.5 -2.7l-3.7 -7.5l-0.7 -5.4l-1.5 -3.7l11 -7.3l3.9 -0.9l2.6 8.9l3.2 -0.6l6.5 1.5l6.6 -1.5l3.1 2.4l5.6 -2.1l6.4 -4l3.7 -0.4l3 0.2l3.9 3l2.5 -1.1l2.9 -3l2.3 -4.5l8.4 -2.2l5.7 5.9l2.5 0.9l5.5 6.3l4.9 0.9l7.1 -2.3l6.3 -3.9l1.8 -3l5.3 -3.6l1.5 -5.5l2.5 1.1l5.4 0.1l3.1 -3.4l5.3 1.2l5.2 4.2l2.3 0.9l1 -0.8l4.4 -0.2l3.2 -1.8l12 -1l5.8 -1.4l4.1 -1.4l1.2 -1.8l5.1 0.9l2 -2.1l3.6 -0.9l4.8 2.8l1.4 3.9l-3 4.2l-1.8 8.7l-0.7 6.7l0.9 2.6l-0.1 5.7l0.8 0.7l2.6 -0.8l2.3 1.3l4.9 4.6l2.8 6.1l-0.2 7.5l-2.2 2.3l-0.3 3.8l-2.8 2.1l-1.4 3.9l1.1 3l2.5 1.7l-0.9 4.1l2 1.7l6.4 2.8l-0.6 4.2l0.8 1l-0.6 2.2l-3.7 2.1l-1.9 2.8l2.4 19.1l-0.8 2.3l-3 2.6l0.5 1.9l2.9 4.6l9.6 3.8l3.9 3.5l8.4 -0.4l1.6 -1l3.2 0.6l0.9 1.1l3.5 -1.2l2.3 2.2l3.5 1.6l2.9 -0.4l5.3 5.8l9.8 4.4l1.2 2.6l-1.3 2.4l0.7 4l-0.5 0.8l-4.2 1.1l-3.6 -2.2l-5.5 4.2l-3.8 -0.8l-2.8 1.4l-1.8 2l-4.6 1.2l-6.2 6.1l-8.7 0.3l-2.6 1.7l-2.7 0.6l-5.3 4.1l-9 -0.9l-3.4 2.4l-3.2 -2.1l-3.6 -1.1l-4.3 -8.4l-4.1 0.9l-2.6 -2.1l-6.6 3.9l-2.1 -1l-6.7 1.5l-2.8 -3.9l-10.3 -2l-7.2 -4.6l-3.6 0.3l-8.1 -1.1l0.3 2.5l-0.9 2.4l-5.2 4.2l-6.1 -1.5l-4.5 1.2l-7.4 0.4l-1.4 -1.2l-2.2 0.8l-2.2 -1.8l-8.5 0l-7.9 -11.5l-2.6 -11.4l-4.4 -4.2l-2.7 -10.2l-2.8 -0.8l-1.6 -1.9l-1.4 -5.1l-0.4 -5.4l2.3 -13.3l-5.5 -7.1l-3.2 0z"/><path class="ds" d="M172.1 349.1l-19.1 7.1l-4.2 4l-1.7 0.6l-7.5 -1.9l-13.8 -0.5l-10.5 -5.1l-1.1 -7l0.2 -20.6l-1.7 -10.3l-4 -7.9l-10.3 -6.8l-4.4 -1.1l-4.9 0.1l-29.6 9.2l-12.5 4.9l-5.5 0.6l-7.7 -0.6l-8.1 -4.2l-10.7 -7.8l-3.8 -4.1l-5 -18.6l-1.6 -3.2l7.3 -0.3l1.2 -1.8l8.7 -2.2l-0.7 -1.4l0.4 -3.4l-1.2 -5.6l4 -13l7.5 -8.6l1.8 -3.8l8 -5.9l2.6 -5.9l10.8 -10.8l0.8 -3.5l11.7 -10.1l2.4 -2.9l3.4 -7l3.2 -2l7.4 0.1l2.6 -2l0.4 -4.9l8.8 -13.7l4.7 -9.6l6.6 -4.9l2.8 -3.1l5.4 -2.9l3.5 -3.7l3.8 -10.5l5 -3.5l-0.6 -5.9l2.7 -3.7l-0.1 -2.5l6.5 0l1.5 1.7l-0.1 2.9l1.2 2.2l3.8 -0.2l3 2.3l6.6 3.1l2.6 0l3.8 -4.3l2.6 -0.7l18.4 5.4l3.5 -6.8l0.5 -4.2l3.4 -6.1l-0.7 -4.3l-1 -1.9l0.9 -3.9l-1.6 -3l0.2 -1.2l11.9 -11.8l4.5 -0.9l4.9 0.7l5.5 -2l6.3 0.2l3.7 -3l3.2 -6.8l2.9 -1l4.1 0.4l7.9 -1.5l3.2 -4l2 -1.2l-0.3 -7.2l1.5 -8l4.1 -5.6l3.2 -2.1l1.4 -2.4l3.2 -0.2l1.9 -3l2.5 -0.5l5 3.2l3.3 -2l2.1 -3.3l0 -6.4l-3 -3.4l0.2 -4.5l4.2 -2.7l0.7 -2.9l2.7 -3.4l1.9 -7.1l5.4 -0.8l6.6 -4.6l9.5 1.8l2.9 11.7l2.6 3.4l1.7 6.2l0.3 2.6l-0.8 2.8l3.4 4.1l6.4 2.4l2 1.8l3.1 0.5l2.6 2.7l-0.2 3.2l2.7 3.1l3.8 1.3l7.2 -1.9l1.5 0.8l-1.1 0.3l-0.4 2l-2.7 -0.2l-3.5 1.7l-1.2 2.3l-2.5 0.9l-1.8 4.7l-10.6 6.4l-2.3 3.2l0.9 4.5l2.6 3.2l-1.8 2l0.1 1.3l1 0.9l0.3 3.2l-2.3 1.8l-0.2 3.6l-2.1 0.8l-1.1 1.4l0.2 2.9l-1.8 4.8l-2.1 2.3l-2 -0.1l-4.1 1.8l-4.7 7.9l0.5 4.7l2.5 5.6l2.7 3.8l0.6 2.3l-6 17.1l0.4 4.4l-1.1 2.2l-3.9 1.7l-3.1 2.7l-4.6 1.1l-2.6 2.3l-6.8 15l-0.6 3.1l-7.5 8.9l-1.3 0.5l-0.2 3.2l-1.5 1.9l-1 6.1l0.5 4.2l-1.7 2.6l0.5 2.5l-2.8 4.3l-5.1 2.8l-1 3l-5.3 -0.7l-1.7 -1.7l-2.5 -0.6l-3.3 4.1l-3.7 -1l-1.4 1.1l-0.8 2.4l-5.7 2.2l-2.1 1.9l-4.5 0l-1 2.2l-2.7 1l-0.8 2l-3.2 1l-1.8 -0.4l-0.9 0.8l-2.1 3.8l-0.6 4.7l2.1 1.8l0.4 2.7l-1.2 2.9l1.8 11.7l-0.2 2.8l-0.9 2l-3.4 1.7l-0.9 6.3l-1.9 1.2l-5 0.5l-2 1.1l-2.2 5.4l0.3 3l-3 2.4l-3.1 7.1l0.4 2l3.8 3.4l0.1 4.3l2.2 5.7l-1.4 3.9l-1.7 1.1l-5.6 1l-1 4.6l-3.7 1.8l0.4 6.4l-3.9 8.3l-3.5 2l-1 1.5l-2.1 5.7l0.3 2.8z"/><text class="dl" x="210" y="446" text-anchor="middle">中山</text><text class="dl" x="162" y="570" text-anchor="middle">中正</text><text class="dl" x="160" y="459" text-anchor="middle">大同</text><text class="dl" x="235" y="578" text-anchor="middle">大安</text><text class="dl" x="110" y="570" text-anchor="middle">萬華</text><text class="dl" x="288" y="471" text-anchor="middle">松山</text></svg>
+<div class="tip" id="mtip" hidden></div>
+<figcaption id="map-cap">臺北市<wbr>中心<wbr>一帶；⁠範圍<wbr>涵蓋有<wbr>第一優先<wbr>建築<wbr>的里。<wbr>點或滑過<wbr>一個里，<wbr>看它的<wbr>數字。<wbr>村里界：<wbr>內政部<wbr>國土測繪中心。</figcaption>
+</figure>
+</div>
+</section>
+
+<section class="unranked" id="route" aria-labelledby="route-h">
+<div class="wrap unranked-grid">
+<div class="unranked-left">
+<div>
+<h2 id="route-h" data-rise><span class="nw">每一棟，</span><span class="nw">走哪條路</span></h2>
+<p data-rise style="--i:1">排出<wbr>先後<wbr>之後，<wbr>還要<wbr>看市府<wbr>手上<wbr>有哪條路<wbr>走得到<wbr>這一棟。⁠四、<wbr>五層<wbr>公寓<wbr>不到<wbr> 6 層，<wbr>主動<wbr>初評收<wbr>不到。<wbr>市府<wbr> 2016 年<wbr>曾規劃派<wbr>專業<wbr>人員，<wbr>到液化<wbr>潛勢高<wbr>的地區<wbr>和救災<wbr>道路<wbr>沿線<wbr>勘查 30<wbr> 年以上<wbr>的房子，<wbr>不需要<wbr>住戶<wbr>過半同意。</p>
+</div>
+<div data-rise style="--i:2">
+<p class="total-cap">第一優先<wbr> 385 棟，<wbr>一格一棟</p>
+<div class="wcard">
+<div class="waffle" role="img" aria-label="第一優先 385 棟：四、五層公寓 236 棟，6–7 層有管委會 68 棟，6–7 層未查到管委會 81 棟"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="a"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i><i class="b"></i></div>
+<p class="w-key"><span class="it"><i></i>四、⁠五層<wbr>公寓 236</span><span class="it"><i class="a"></i>6–⁠7 層<wbr>有管委會 68</span><span class="it"><i class="b"></i>6–⁠7 層<wbr>未查到<wbr>管委會 81</span></p>
+</div>
+</div>
+</div>
+<div class="receipt" data-rise style="--i:1">
+<h3>第一優先，<wbr>可以走的路</h3>
+<div class="row"><span>四、⁠五層<wbr>公寓：<wbr>勘查、⁠補助</span><span class="dots"></span><span class="num">236 棟</span></div>
+<div class="row"><span>6–⁠7 層<wbr>有管委會：<wbr>邀請初評</span><span class="dots"></span><span class="num">68 棟</span></div>
+<div class="row"><span>6–⁠7 層<wbr>未查到<wbr>管委會：⁠先確認</span><span class="dots"></span><span class="num">81 棟</span></div>
+<div class="row result"><span>合計</span><span class="dots"></span><span class="num">385 棟</span></div>
+<p class="after">勘查<wbr>指市府<wbr>派專業<wbr>人員<wbr>到現場看；<wbr>補助<wbr>指危<wbr>老結構<wbr>評估<wbr>補助，<wbr>由屋主<wbr>申請。<wbr>未查到<wbr>管委會<wbr>的 81<wbr> 棟中，<wbr>68<wbr> 棟在市府<wbr>「⁠可輔導<wbr>成立」<wbr>清冊上，<wbr>其餘<wbr> 13 棟<wbr>兩份<wbr>清冊<wbr>都沒有，<wbr>要先確認<wbr>有沒有<wbr>管理<wbr>組織。<wbr>另外，<wbr>第一優先<wbr>有 13<wbr> 棟在市府<wbr>劃定<wbr>的更新<wbr>地區裡，<wbr>也可以<wbr>放進<wbr>公辦<wbr>都更的評估。</p>
+</div>
+</div>
+</section>
+
+<section class="unranked" id="era" aria-labelledby="era-h">
+<div class="wrap unranked-grid">
+<div class="unranked-left">
+<div>
+<h2 id="era-h" data-rise>全是<wbr>早年<wbr>設計，<wbr>證據<wbr>站得住嗎</h2>
+<p data-rise style="--i:1">第一優先<wbr>全部<wbr>是民國<wbr> 71<wbr> 年以前<wbr>設計。<wbr>這有<wbr>臺灣<wbr>的震災<wbr>證據<wbr>支持：<wbr>921 <wbr>地震時，<wbr>南投縣<wbr>的鋼筋混凝土<wbr>房子，<wbr>越晚蓋<wbr>的越少<wbr>受損。<wbr>國震<wbr>中心<wbr>自己<wbr>的初步<wbr>評估<wbr>公式，<wbr>也用民國<wbr> 63<wbr> 年和 71 <wbr>年分年代。</p>
+<p data-rise style="--i:2">但證據<wbr>不是<wbr>一面倒。<wbr>2016<wbr> 年美濃<wbr>地震時，<wbr>臺南玉井民國<wbr> 63<wbr> 年以前<wbr>的房子，<wbr>被貼紅單<wbr>的比例<wbr>反而<wbr>比 64<wbr>–⁠71<wbr> 年低；<wbr>報告<wbr>推測<wbr>是很多<wbr>最老<wbr>的房子<wbr>已經<wbr>改建<wbr>或修補過。</p>
+</div>
+<div data-rise style="--i:3">
+<p class="total wide num" aria-hidden="true">32→21</p>
+<p class="total-cap">921<wbr> 南投縣<wbr>鋼筋混凝土<wbr>住戶<wbr>的受損<wbr>比例（%），<wbr>從最早到<wbr>最晚的年代</p>
+</div>
+</div>
+<div class="receipt" data-rise style="--i:1">
+<h3>921<wbr> 南投縣，<wbr>鋼筋混凝土住戶<wbr>受損比例</h3>
+<div class="row"><span>1974<wbr> 年以前興建</span><span class="dots"></span><span class="num">32.1%</span></div>
+<div class="row"><span>1975<wbr>–⁠1982 年</span><span class="dots"></span><span class="num">28.8%</span></div>
+<div class="row"><span>1983<wbr>–⁠1989 年</span><span class="dots"></span><span class="num">22.4%</span></div>
+<div class="row"><span>1990<wbr>–⁠1996 年</span><span class="dots"></span><span class="num">20.7%</span></div>
+<div class="row result"><span>越晚蓋，<wbr>越少受損</span><span class="dots"></span><span>4 段都是</span></div>
+<p class="after">受損<wbr>指全倒或半倒，<wbr>以住戶計。<wbr>資料：<wbr>內政部<wbr>建築<wbr>研究所<wbr> 2001 年<wbr>《⁠九二一大<wbr>地震<wbr>建築<wbr>震害特性<wbr>分析與統計》。</p>
+</div>
+</div>
+</section>
+
+<section class="listed" id="ground" aria-labelledby="ground-h">
+<img src="assets/2015-05-02-apartment-buildings-in-taipei.jpg" width="1600" height="1060" alt="臺北街邊加裝鐵窗的老公寓，一樓整排是店面" loading="lazy" decoding="async">
+<div class="stub" data-rise>
+<h2 id="ground-h">到現場，<wbr>先看一樓</h2>
+<p>國震<wbr>中心<wbr>在美濃<wbr>和花蓮<wbr>地震<wbr>後逐棟<wbr>調查，<wbr>記錄<wbr>一樓<wbr>的牆是否<wbr>中斷。<wbr>一樓<wbr>整面<wbr>開放、<wbr>上面<wbr>幾層<wbr>都有牆，<wbr>大地震時<wbr>一樓<wbr>最容易先壞。</p>
+<div class="pair">
+<div><b class="num">67%</b><span>一樓<wbr>牆面<wbr>中斷，<wbr>中度<wbr>以上<wbr>受損（⁠美濃，<wbr>60 棟民宅）</span></div>
+<div><b class="num">23%</b><span>一樓<wbr>牆面<wbr>完整，<wbr>中度<wbr>以上<wbr>受損（⁠美濃，<wbr>35 棟民宅）</span></div>
+</div>
+<p>使照看不出<wbr>這件事：<wbr>在同一批<wbr>調查裡，<wbr>使照上的一樓<wbr>高度<wbr>和用途分<wbr>不出<wbr>受損<wbr>多寡。<wbr>但站在<wbr>街上<wbr>就看得到。</p>
+<small>這兩次<wbr>調查挑<wbr>的是<wbr>受損<wbr>地區<wbr>的房子，<wbr>比例<wbr>只能<wbr>在樣本<wbr>內比較。<wbr>用街上<wbr>看一樓來<wbr>排先後，<wbr>還沒有<wbr>驗證過。<wbr>照片：<wbr>一樓<wbr>是店面<wbr>的臺北老<wbr>公寓<wbr>（⁠2015 年）。</small>
+</div>
+</section>
+
+<section class="unranked" id="tall" aria-labelledby="tall-h">
+<div class="wrap unranked-grid">
+<div class="unranked-left">
+<div>
+<h2 id="tall-h" data-rise><span class="nw">8 層以上的</span><span class="nw">大樓另外看</span></h2>
+<p data-rise style="--i:1">我們<wbr>採用<wbr>的國震<wbr>中心<wbr>分類<wbr>只算<wbr>到 7 層，<wbr>所以<wbr> 8 層以上<wbr>的 3,⁠709<wbr> 棟不給分數，<wbr>只依<wbr>設計年代<wbr>列出。<wbr>它們<wbr>多半<wbr>已經<wbr>報備<wbr>管委會，<wbr>是主動<wbr>初評<wbr>最容易直接<wbr>邀請的對象。</p>
+</div>
+<div data-rise style="--i:2">
+<p class="total wide num" aria-hidden="true">183</p>
+<p class="total-cap">棟是民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的 8 層以上大樓</p>
+</div>
+</div>
+<div class="receipt" data-rise style="--i:1">
+<h3>8 層以上<wbr>的老大樓，<wbr>依設計年代</h3>
+<div class="row"><span>民國<wbr> 63 年以前</span><span class="dots"></span><span class="num">183</span></div><div class="row"><span>民國<wbr> 64–⁠71 年</span><span class="dots"></span><span class="num">1,163</span></div><div class="row"><span>民國<wbr> 71–⁠86 年</span><span class="dots"></span><span class="num">2,242</span></div><div class="row"><span>跨在民國 71 年</span><span class="dots"></span><span class="num">121</span></div>
+<div class="row result"><span>合計</span><span class="dots"></span><span class="num">3,⁠709 棟</span></div>
+<p class="after">民國<wbr> 63<wbr> 年以前<wbr>設計、<wbr>又已報備<wbr>管委會<wbr>的有 84 棟。</p>
+</div>
+</div>
+</section>
+
+<section class="use" id="use" aria-labelledby="use-h">
+<div class="wrap use-grid">
+<h2 id="use-h" data-rise><span class="nw">市府可以</span><span class="nw">怎麼用</span></h2>
+<ol>
+<li data-rise><h3>先確認<wbr>第一優先還在</h3><p>這 385<wbr> 棟是否<wbr>還在、<wbr>是否<wbr>做過評估，<wbr>市府<wbr>自己<wbr>的資料查得到。</p></li>
+<li data-rise style="--i:1"><h3>公寓：<wbr>分區<wbr>派人勘查</h3><p>236<wbr> 棟是四、<wbr>五層<wbr>公寓。<wbr>依區<wbr>排路線<wbr>勘查，<wbr>順便<wbr>看一樓，<wbr>再說明<wbr>危老<wbr>結構<wbr>評估補助。</p></li>
+<li data-rise style="--i:2"><h3>大樓：<wbr>邀請<wbr>主動初評</h3><p>今年<wbr>計畫<wbr> 50 件。<wbr>第一優先<wbr>和第二波裡，<wbr>已報備<wbr>管委會<wbr>的 6–⁠7 層<wbr>有 165 棟，<wbr>加上<wbr>早年<wbr>的 8 層以上<wbr>大樓，<wbr>都可以邀請。</p></li>
+<li data-rise style="--i:3"><h3>在更新<wbr>地區的：<wbr>放進<wbr>公辦<wbr>都更評估</h3><p>13<wbr> 棟第一優先<wbr>在市府<wbr>劃定<wbr>的更新地區裡。</p></li>
+<li data-rise style="--i:4"><h3>安全<wbr>與否，<wbr>要靠現場健檢</h3><p>柱子、<wbr>牆壁<wbr>和保養<wbr>狀況，<wbr>只有<wbr>專業<wbr>人員<wbr>到現場<wbr>才看得到。</p></li>
+</ol>
+</div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+<div class="wrap faq-grid">
+<h2 id="faq-h" data-rise>常見的疑問</h2>
+<div class="faq-text" data-rise style="--i:1">
+<p><b>會公開<wbr>是哪一棟嗎？</b>不會。<wbr>這一頁<wbr>只放區<wbr>和里<wbr>的數量。<wbr>逐棟<wbr>名單<wbr>有使用<wbr>執照<wbr>號碼，<wbr>只給<wbr>市府<wbr>內部確認用。</p>
+<p><b>「⁠受損」⁠指什麼？</b>國震<wbr>中心<wbr>方法<wbr>裡的中度<wbr>以上<wbr>損壞，<wbr>以設計<wbr>地震<wbr>計算，<wbr>不是<wbr>倒塌的機率。</p>
+<p><b>地圖<wbr>上的里代表什麼？</b>只是<wbr>把候選<wbr>建築<wbr>按位置<wbr>彙整，<wbr>方便<wbr>安排<wbr>訪查，<wbr>不另<wbr>替整個<wbr>里打分數。<wbr>相同<wbr>里內<wbr>的建築<wbr>仍可能<wbr>有不同條件。</p>
+<p><b>高齡<wbr>人口<wbr>細到哪裡？</b>內政部<wbr>的最小<wbr>統計區，<wbr>一區<wbr>約兩百多人，<wbr>資料<wbr>是 113 年<wbr> 12 月。<wbr>同一區<wbr>的房子<wbr>用同一個<wbr>數字，<wbr>等於<wbr>假設長輩平均<wbr>住在<wbr>區內各棟。</p>
+<p><b>一樓<wbr>店面、<wbr>騎樓<wbr>為什麼不算分？</b>在國震<wbr>中心<wbr>的調查裡，<wbr>使照上的一樓<wbr>高度<wbr>和用途分<wbr>不出<wbr>受損<wbr>多寡。<wbr>真正<wbr>有差的是<wbr>一樓<wbr>的牆，<wbr>要到<wbr>現場<wbr>才看得到。</p>
+<p><b>使用<wbr>執照<wbr>等於<wbr>現在<wbr>的房子嗎？</b>不完全是。<wbr>同一個<wbr>門牌<wbr>後來<wbr>重蓋<wbr>的已經<wbr>刪掉，<wbr>但有些<wbr>可能<wbr>已經<wbr>拆除。<wbr>門牌<wbr>對不上<wbr>的使照，<wbr>不在這一頁。</p>
+<p><b>這比<wbr>市府<wbr>現在<wbr>的選法好嗎？</b>還不知道。<wbr>市府<wbr>實際<wbr>邀請<wbr>或勘查<wbr>了哪些<wbr>房子<wbr>沒有<wbr>公開，<wbr>目前<wbr>沒辦法比較。</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="foot" aria-labelledby="foot-h">
+<div class="wrap">
+<div class="back">
+<div>
+<h2 id="foot-h">研究<wbr>展示草稿</h2>
+<p class="msg">市政 debug松<wbr>第六題。<wbr>計算<wbr>更新<wbr>至 2026-<wbr>10-<wbr>22；<wbr>完整<wbr>的方法、<wbr>數據<wbr>和限制，<wbr>都在<wbr>單棟<wbr>分析<wbr>的研究文件裡。</p>
+</div>
+<div class="addr">
+<a href="../topics/issue-6-building-rating.md">單棟<wbr>分析<wbr>研究文件</a>
+<a href="../topics/issue-6-building-resilience.html">老屋韌性<wbr>研究報告</a>
+<a href="#top">回到最上面</a>
+<span class="stamp"><img src="assets/old-apartment-on-da-an-road-and.jpg" width="1600" height="1067" alt="" loading="lazy" decoding="async"></span>
+</div>
+<div class="imprint">
+<p>資料<wbr>來源：<wbr>臺北市<wbr>歷史<wbr>使用<wbr>執照（⁠公開<wbr>整理版）；<wbr>臺北市<wbr>政府<wbr>消防局<wbr>搶救<wbr>不易狹小巷道<wbr>清冊<wbr>與消防<wbr>通道<wbr>清冊；<wbr>臺北市<wbr>土壤液化<wbr>潛勢圖；<wbr>內政部<wbr>統計處<wbr>最小<wbr>統計區<wbr>五歲<wbr>年齡組<wbr>人口<wbr>與最小<wbr>統計區圖；<wbr>臺北市<wbr>各里人口<wbr>年齡<wbr>統計；<wbr>臺北市<wbr>更新<wbr>地區<wbr>範圍圖；<wbr>臺北市<wbr>建築<wbr>管理<wbr>工程處<wbr>公寓<wbr>大廈<wbr>管理<wbr>組織<wbr>報備<wbr>資料<wbr>與可輔導<wbr>成立<wbr>公寓<wbr>大廈<wbr>管理<wbr>組織<wbr>清冊；<wbr>國家<wbr>地震<wbr>工程<wbr>研究<wbr>中心<wbr>美濃、<wbr>花蓮<wbr>地震<wbr>震損<wbr>建築<wbr>調查<wbr>資料<wbr>與全國<wbr>地震<wbr>損失<wbr>評估<wbr>方法；<wbr>內政部<wbr>建築<wbr>研究所<wbr>《⁠九二一大<wbr>地震<wbr>建築<wbr>震害特性<wbr>分析<wbr>與統計》<wbr>（⁠2001）。</p>
+<p>照片：<a href="https://commons.wikimedia.org/w/index.php?curid=38868311">Old apartment on Da'an Road and Xinyi Road intersection 20140407</a>，Daderot，CC0；<a href="https://commons.wikimedia.org/w/index.php?curid=6531480">Xiyuan Road Section 1, Wanhua District, Taipei 20090415</a>，AngMoKio，CC BY-SA 3.0；<a href="https://commons.wikimedia.org/wiki/File:Te-chang_New_World_collapsed_19990929.jpg">Te-chang New World collapsed 19990929</a>，David 75610，CC BY-SA 3.0；<a href="https://commons.wikimedia.org/w/index.php?curid=116137874">2015-05-02 apartment buildings in Taipei</a>，Sun Taro，CC BY-SA 2.0</p>
+</div>
+</div>
+</div>
+</footer>
+<script>
+(function(){
+var root=document.documentElement;root.classList.add('js');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var items=[].slice.call(document.querySelectorAll('[data-rise]'));
+function show(el){el.classList.add('in');}
+if('IntersectionObserver' in window&&!reduce){
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){show(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -8% 0px'});
+items.forEach(function(el){io.observe(el);});
+var sweep=function(){var vh=window.innerHeight;items.forEach(function(el){if(!el.classList.contains('in')&&el.getBoundingClientRect().top<vh){show(el);io.unobserve(el);}});};
+window.addEventListener('scroll',sweep,{passive:true});
+window.setTimeout(function(){items.forEach(show);},1500);
+}else{items.forEach(show);}
+var hero=document.querySelector('.hero'),photo=document.querySelector('.hero-photo'),card=document.querySelector('.permit');
+var listed=document.querySelector('.listed'),lphoto=listed&&listed.querySelector('img');
+function tick(){
+if(reduce)return;
+var h=hero.offsetHeight-window.innerHeight,p=Math.min(1,Math.max(0,window.scrollY/(h||1)));
+photo.style.setProperty('--ps',(1.08-.08*p).toFixed(4));
+card.style.setProperty('--cs',(1-.1*p).toFixed(4));
+if(lphoto){var r=listed.getBoundingClientRect(),q=Math.min(1,Math.max(0,1-(r.top+r.height)/(window.innerHeight+r.height)));lphoto.style.setProperty('--ls',(1.06-.06*q).toFixed(4));}
+}
+window.addEventListener('scroll',function(){window.requestAnimationFrame(tick);},{passive:true});tick();
+
+var SB=[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 112, 71, 71, 38, 28, 28, 17, 5, 1, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 962, 797, 599, 426, 265, 260, 158, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [903, 1937, 987, 1190, 2050, 2570, 2233, 2068, 2217, 2986, 3376, 3376, 2879, 2396, 1740, 1363, 222, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],CUTS=[[0.5, 250, 194, 95, 30], [1.0, 229, 385, 221, 62], [1.5, 218, 576, 348, 85], [2.0, 211, 769, 489, 100], [2.5, 205, 961, 624, 118], [3.0, 197, 1158, 792, 141], [3.5, 194, 1344, 923, 147], [4.0, 189, 1536, 1044, 159], [4.5, 185, 1728, 1171, 178], [5.0, 182, 1922, 1291, 185], [5.5, 180, 2110, 1382, 192], [6.0, 177, 2309, 1528, 205], [6.5, 175, 2496, 1634, 214], [7.0, 172, 2694, 1779, 222], [7.5, 170, 2883, 1899, 227], [8.0, 168, 3068, 2033, 232], [8.5, 166, 3263, 2166, 243], [9.0, 164, 3483, 2269, 249], [9.5, 163, 3657, 2384, 258], [10.0, 161, 3852, 2509, 263]],STEP=10,G=null,FILL=['#0b5c55','#4a9a8f','#c2d3ce'],LAB=['第一優先','第二波','其他'],SNS='http://www.w3.org/2000/svg';
+var svg=document.getElementById('hist'),plot=document.getElementById('plot'),tip=document.getElementById('tip');
+function el(n,a,t){var e=document.createElementNS(SNS,n);for(var k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;return e;}
+function fmt(n){return n.toLocaleString('en-US');}
+function draw(){
+if(plot.clientWidth<120)return;
+var nb=SB[0].length,w=plot.clientWidth,H=plot.clientHeight,l=46,r=6,top=26,bot=26,pw=w-l-r,ph=H-top-bot,bw=pw/nb,Y=1000*Math.ceil(Math.max.apply(null,SB[0].map(function(_,i){return SB[0][i]+SB[1][i]+SB[2][i];}))/1000),YT=[];for(var v=0;v<=Y;v+=1000)YT.push(v);
+var bar=Math.max(3,Math.min(24,bw-2));while(svg.firstChild)svg.removeChild(svg.firstChild);
+svg.setAttribute('viewBox','0 0 '+w+' '+H);
+YT.forEach(function(v){var y=top+ph-ph*v/Y;svg.appendChild(el('line',{'class':'grid',x1:l,x2:w-r,y1:y,y2:y}));svg.appendChild(el('text',{'class':'tick',x:l-6,y:y+4,'text-anchor':'end'},fmt(v)));});
+var cx=l+pw*100/(nb*STEP);
+svg.appendChild(el('line',{'class':'cutline',x1:cx,x2:cx,y1:top-6,y2:top+ph}));
+svg.appendChild(el('text',{'class':'cutlabel',x:cx,y:top-12,'text-anchor':'middle'},'一般老屋 100'));
+for(var i=0;i<nb;i++){(function(i){
+var x=l+i*bw+(bw-bar)/2,base=top+ph,tot=0;
+[2,1,0].forEach(function(k){var n=SB[k][i];if(!n)return;var bh=ph*n/Y,y=base-bh;
+svg.appendChild(el('rect',{'class':'bar',fill:FILL[k],x:x,y:y+(base<top+ph?1:0),width:bar,height:Math.max(1,bh-(base<top+ph?1:0))}));base=y;tot+=n;});
+var hit=el('rect',{'class':'hit',x:l+i*bw,y:top,width:bw,height:ph});
+hit.addEventListener('pointerenter',function(){if(!tot)return;tip.hidden=false;tip.style.left=Math.min(w-110,Math.max(110,l+i*bw+bw/2))+'px';tip.style.top=(base-8)+'px';
+tip.textContent=i*STEP+'–'+(i*STEP+STEP)+' 分：'+[0,1,2].filter(function(k){return SB[k][i];}).map(function(k){return LAB[k]+' '+fmt(SB[k][i]);}).join('、')+' 棟';});
+hit.addEventListener('pointerleave',function(){tip.hidden=true;});
+svg.appendChild(hit);})(i);}
+G={l:l,pw:pw,nb:nb,top:top,ph:ph,w:w};placePick();
+var XT=[],xs=w<480?100:50,xm=nb*STEP;for(var v=0;v<=xm;v+=xs)XT.push(v);XT.forEach(function(v){svg.appendChild(el('text',{'class':'tick',x:l+pw*v/xm,y:H-6,'text-anchor':v===0?'start':v+xs>xm?'end':'middle'},v));});
+}
+var pick=document.getElementById('pickr'),pickx=document.getElementById('pickx'),pickout=document.getElementById('pickout'),pl=null,pt=null;
+function placePick(){if(!G)return;var c=CUTS[+pick.value],x=G.l+G.pw*c[1]/(G.nb*STEP);
+if(!pl||!svg.contains(pl)){pl=el('line',{'class':'pickline'});pt=el('text',{'class':'picklabel'});svg.appendChild(pl);svg.appendChild(pt);}
+pl.setAttribute('x1',x);pl.setAttribute('x2',x);pl.setAttribute('y1',G.top+G.ph*.18);pl.setAttribute('y2',G.top+G.ph);
+pt.setAttribute('x',x-4);pt.setAttribute('y',G.top+G.ph*.18-6);pt.setAttribute('text-anchor','end');pt.textContent='前 '+c[0]+'%';}
+function pickShow(){var c=CUTS[+pick.value];pickx.textContent=c[0]+'%';
+pickout.textContent=c[1]+' 分以上：約 '+fmt(c[2])+' 棟，分散在 '+c[4]+' 個里';placePick();}
+pick.addEventListener('input',pickShow);
+var rt,lastW=0;function redraw(){window.clearTimeout(rt);rt=window.setTimeout(function(){if(plot.clientWidth!==lastW){lastW=plot.clientWidth;draw();}},120);}
+if('ResizeObserver' in window)new ResizeObserver(redraw).observe(plot);else window.addEventListener('resize',redraw);
+draw();pickShow();
+var BAND=['里的評估沒有排','里的評估：第一優先','里的評估：第二波','里的評估：其他'];
+var map=document.getElementById('mapsvg'),fig=map.parentNode,mtip=document.getElementById('mtip'),on=null;
+function mshow(e){var v=e.target.closest('.v');if(!v){return;}
+if(on)on.classList.remove('on');on=v;v.classList.add('on');
+mtip.hidden=false;mtip.textContent=v.dataset.l+'：第一優先 '+v.dataset.n+' 棟';
+var r=fig.getBoundingClientRect(),hw=mtip.offsetWidth/2,x=Math.min(r.width-hw,Math.max(hw,e.clientX-r.left));
+mtip.style.left=x+'px';mtip.style.top=(e.clientY-r.top)+'px';}
+map.addEventListener('pointermove',mshow);map.addEventListener('pointerdown',mshow);
+map.addEventListener('pointerleave',function(){mtip.hidden=true;if(on){on.classList.remove('on');on=null;}});
+})();
+</script>
+</body>
+</html>

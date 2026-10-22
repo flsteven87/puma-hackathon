@@ -43,14 +43,26 @@ and limitations.>
 ## 3. Current practice and baseline
 
 <Current rules and services, who already does the task, observed performance or bottleneck, and
-rival explanations that better information would not change.>
+rival explanations that better information would not change. Separate a documented process from
+observed difficulty; different programme totals are not a linked outcome cohort.>
 
 ## 4. Candidate workflows
 
 ### <ID> — <one decision for one user>
 
-<Required candidate record fields: problem and fit; user and decision; success and rejection;
-workflow; dependencies; claims; readiness; validation; adoption; presentation; next action.>
+<Lead with the current bounded workflow. Required candidate record fields: problem and fit; user
+and decision; success and rejection; workflow; dependencies; analysis contract; claims; finding to
+decision; readiness; validation; adoption; presentation; next action. Link detailed calculations in
+§5 rather than duplicate them. Supporting/deferred alternatives state their own disposition.>
+
+**Finding-to-decision synthesis:**
+
+| Source-backed finding | Bounded interpretation | Named next action/check and owner | Remaining gap / rejection | Presentation consequence |
+| --- | --- | --- | --- | --- |
+| <result and denominator; link to owning audit> | <what follows, without causal or prevalence overreach> | <conditional action, not an invented observed outcome> | <what would invalidate the claim; baseline benefit measured or unresolved> | <smallest form the evidence supports; not product selection> |
+
+<Separate the completed analytical steps from hypothetical case actions. Finding no consequential
+difference is a valid result: narrow or defer instead of choosing an interface to disguise missing evidence.>
 
 ## 5. Evidence and data audits
 
@@ -59,9 +71,28 @@ workflow; dependencies; claims; readiness; validation; adoption; presentation; n
 <Access, period and unit, licence or terms, fields, completeness checks, quality limits and the
 claim each source can and cannot support. Raw files, names and addresses stay outside Git.>
 
+### <Bounded analysis question>
+
+**Contract:** <link to the master's analysis protocol; population/inclusion rule, unit, denominator,
+as-of date, source versions/hashes, reference rule, necessary fields, transformations and
+acceptance/rejection. Record before the new experiment; label later refinements exploratory.>
+
+**Evidence:** <raw-to-used counts; blanks/duplicates/conflicts; calendar/units/chronology/meaning;
+key namespaces and relationship cardinality; exclusive result groups including unmatched/unknown;
+reconcile totals and inspect missingness in relevant strata. Match rigor to the decision.>
+
+**Uncertainty and reproduction:** <vary consequential assumptions/definitions, show changed and
+unchanged results, state lineage and independent-accuracy limits, document the reproducible
+calculation and required private inputs. Successful matching is not current real-world identity.>
+
+**Implication:** <link to §4 synthesis; bound generalization and distinguish descriptive findings,
+hypothesized decision usefulness and measured baseline gain. No new product is selected here.>
+
 ## 6. Readiness and integration
 
-<Issue-specific consequence only. Status stays in the canonical readiness record.>
+<Issue-specific consequence only. Status stays in the canonical readiness record. Distinguish
+reproduced task/calculation, bounded current identity, baseline decision gain, adoption and civic
+outcomes. Demonstration acceptance can complete while later effectiveness remains unverified.>
 
 ## 7. Next actions and open decisions
 
