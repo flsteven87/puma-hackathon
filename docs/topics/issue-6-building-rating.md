@@ -11,21 +11,20 @@
 
 ## 1. Decision
 
-**Evidence — the prompt (parent §1):** the city asks for a 危老耐震風險加權評級模型 that integrates building
+**Evidence — the prompt (parent §1):** the event organiser asks for a 危老耐震風險加權評級模型 that integrates building
 age, structure, older population, liquefaction potential and narrow-lane rescue difficulty, to order old-
 building health checks (老屋健檢) and public renewal (公辦都更). It sets no case limit and no programme
-eligibility.
+eligibility. The event is organised by 沈伯洋競選辦公室; this is independent research for a potential municipal decision, not a city commission.
 
-**Decision here:** which old buildings come first for a seismic health check, and which existing route
-can reach each one. This document is the primary inspection-priority report. Village totals summarize the candidates geographically; they do not supply a separate priority score.
+**Decision here:** which historical-permit candidates merit earlier professional investigation, and which follow-up route could reach them after current identity, previous assessment and applicable programme conditions are checked. This document is the primary inspection-priority report. Village totals summarize the candidates geographically; they do not supply a separate priority score.
 
 **What each factor resolves to:**
 
 | Factor in the prompt | Data | Finest level |
 | --- | --- | --- |
-| Age and structure | D03 permit: material, storeys, design era from the construction-permit date | Building |
-| Liquefaction | City liquefaction-potential class at the building's doorplates | Building |
-| Narrow-lane rescue | 搶救不易狹小巷道清冊, lanes with doorplate number ranges | Building |
+| Age and structure | D03 permit: material, storeys, design era from the construction-permit date | Permit record; shared by its represented buildings |
+| Liquefaction | Regional potential sampled at the permit's doorplates, averaged as an increment | Doorplate points; not a foundation diagnosis |
+| Narrow-lane rescue | 搶救不易狹小巷道清冊, lanes with doorplate number ranges | Listed-address relationship; not observed access |
 | Rescue access | 消防通道清冊, which names 里 and street stretches without numbers | Doorplates on the named stretch |
 | Older population | MOI 最小統計區 five-year age groups, 65+ share | Smallest statistical area (median 216 residents) |
 
@@ -34,7 +33,7 @@ can reach each one. This document is the primary inspection-priority report. Vil
 | Source | Use here | Limits |
 | --- | --- | --- |
 | D03 historical use permits (parent §5) | Material, storeys, 棟數, households (戶數), construction-permit date, doorplates | A permit is not a current building; ROC 51 is missing |
-| Signed Tgbs class model (parent §4) through the parent's cleaned record table | Chance of moderate or worse damage under the code design scenario, by class, storeys, design era and site zone | Up to 7 storeys; not collapse; no Taiwan validation of the order |
+| Signed Tgbs class model (parent §4) through the parent's cleaned record table | Research approximation of class damage probability under the code design scenario, by class, storeys, design era and site zone | Up to 7 storeys; not collapse; no Taiwan validation of the order |
 | MOI 最小統計區 five-year age groups, 113Y12M (data.gov.tw 18255) and area boundaries, 2015 (data.gov.tw 25128), OGDL v1 | 65+ share of the smallest statistical area holding the building's doorplate; below 50 residents the next level up (CODE1), then the 里 registry (parent §5) | Registered population, not building occupants; 2015 boundaries against 2024 counts; 0.24% of scored buildings fall back to the 里 share |
 | Fire Department F01 搶救不易狹小巷道清冊 (273-row original CSV, corroborated against the 1150730 PDF) and 消防通道清冊 (parent §5) | Rescue flag: a doorplate on a listed narrow lane, or on a street stretch the 消防通道清冊 names (community-participation entries excluded) | F01 dates differ by resource; only text-confirmed F01 scope is counted in the main scenario, possible scope is tested separately; unlisted is not confirmed access; 158 of 162 access entries placed, 18 of them partly |
 | City liquefaction-potential polygons (parent §5) | Value at the doorplates | Area estimate, not a site diagnosis; export class1/2/3=HIGH/MED/LOW now verified against the original renderer and all136 geometries. Missing source coverage is not low susceptibility |
@@ -75,16 +74,11 @@ at the finest adopted levels in §1, with F01 refreshed and decimal-rounding lin
 choices sized to inspection capacity; the lay page lets the reader move the line from 0.5% to 10%. Every
 record of one permit shares its score, because the permit carries no attributes per building.
 
-**Routes, after the order (feasibility, never risk):** walk-ups (under 6 storeys) can be reached by
-place-based professional reconnaissance (parent §3, M03) and the owner-applied 危老 assessment subsidy
-(M02). Buildings of 6 storeys or more with a registered organisation can be invited to the proactive
-initial assessment (M01, 50 planned cases in 2026); without one they need an organisation or city
-recognition first. Buildings inside a designated renewal-area piece also count toward the public-renewal
-order (parent §5, B).
+**Routes, after the order (feasibility, never risk):** first verify present building identity, previous assessments, organisation and applicable procedure. For walk-ups (under 6 storeys), the owner-applied 危老 assessment subsidy (M02) is a documented route; M03 is a 2016 reconnaissance precedent whose current force was not checked, not a present consent exemption or committed deployment. Six-storey-or-higher records with registered organisations are candidates for checking proactive initial-assessment eligibility (M01, 50 planned cases in 2026, not remaining slots); solicitation, consent and qualified assignment still follow the applicable procedure, and organisation/city-recognition status needs confirmation. A represented-building count is not a programme case count. Being inside a designated renewal-area piece is a geographic clue for B's separate area-scope and suitability review, not inherited public-renewal priority.
 
 ## 4. Results
 
-**Evidence — calculation 2026-10-22:** the same 25,225 historical permit records represent 42,054 buildings; 38,345 are scored and 3,709 taller buildings remain unscored. Every old score, band and member frequency was reproduced before changing the input. The current scenario uses confirmed F01 links plus the unchanged second fire-access list; ambiguous F01 links receive no additional rescue multiplier in this scenario, not a finding of good access.
+**Evidence — calculation 2026-10-22:** the same 25,225 historical permit records represent 42,054 buildings; 38,345 are scored and 3,709 taller buildings remain unscored. These are included historical records, not a complete present-day city inventory. The parent §5 coverage audit retains unlocated old permits separately; missingness is concentrated in older masonry and cannot be read as low geographic need. Every old score, band and member frequency was reproduced before changing the input. The current scenario uses confirmed F01 links plus the unchanged second fire-access list; ambiguous F01 links receive no additional rescue multiplier in this scenario, not a finding of good access.
 
 | Band | Permit records | Represented buildings | Score range | Walk-up buildings | Registered households |
 | --- | ---: | ---: | --- | ---: | ---: |
@@ -138,7 +132,7 @@ order (parent §5, B).
 - **Owner direction — independent optimisation (2026-10-22):** preserve the research question and independent criteria. The parent's method-admission plan examines stock identity, spatial demand, exposure/support, structural coverage and rescue/site mechanisms. Incorporate an input only after its source and decision-specific measurement checks pass; neither matching the city nor retaining this 385-building set is success. Current scores remain unchanged while these checks are pending.
 - **Done:** the main/possible first-priority disagreement (29 permits / 44 buildings) was traced to source text, the publisher's sub-alley listing convention and doorplate geometry; the main set stands.
 - **Done 2026-10-22:** the existing generated lay page now distinguishes regional potential, unknown coverage and multi-doorplate means; presents the bounded384/385 joint-stress finding beside unchanged385/332 results; uses descriptive groups and conditional assessment routes. Scores, map geometry and interactive capacity data are unchanged.
-- **Next:** prepare the existing public edition for owner-confirmed publication; national numerical replacement remains separate.
+- **Next:** review the corrected existing reading reports for owner-confirmed publication; numerical results remain unchanged. National numerical replacement remains separate.
 - **Separate follow-ups:** completed F05/care diagnostics have not adopted new inputs. F04 standard finest-geometry recovery, current-site/LTC identity, upstream tall/mixed taxonomy and soil-profile CRS remain explicit research questions.
 - **Owner decision:** final entry and public release; local research and report updates are complete.
 

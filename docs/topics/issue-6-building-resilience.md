@@ -269,7 +269,7 @@ is not automatic B selection, demolition, grant approval or construction readine
 | Required candidate field | A — inspection priority | B — public-renewal assessment priority |
 | --- | --- | --- |
 | User / trigger | Municipal inspection/planning reviewer allocating a stated survey or assessment round | City renewal reviewer deciding which bounded areas/cases warrant earlier suitability/feasibility work |
-| Decision unit / population | Declare either survey areas or verified programme candidate buildings; resolve the common-unit audit before choosing a computational pilot | Declared project/area boundaries; aggregate source evidence with denominators, without averaging away critical conditions |
+| Decision unit / population | Historical permit records share input fields/scores across their represented buildings; current identity and programme candidacy need separate verification | Declared project/area boundaries; aggregate source evidence with denominators, without averaging away critical conditions |
 | Baseline | M01/M03/M08 purpose-specific practice; the inspection selection order is not public. The disaster plan's 里 earthquake-risk grade (§3) is the city's related place-based grade, not its selection list | M04 suitability procedure and M05 area-planning precedent; a dated case M06/M07 is not the full comparison pool |
 | Inputs / workflow | Audited structure/code-era evidence, hazard, people/rescue context, known findings and eligibility; structure, older-resident, rescue-access and liquefaction terms combined as one loss-chain quantity with propagated uncertainty, plus unknowns → earlier survey / request evidence / programme referral | Risk/need profile plus public interest, project scope, alternatives and relevant legal/financial conditions → earlier feasibility review / request evidence / defer with reason |
 | Supported purpose | Allocate an earlier *investigation*; verified professional findings follow separately | Allocate earlier *assessment of intervention feasibility*; no automatic reconstruction decision |
@@ -1010,7 +1010,7 @@ The five-factor score uses permit material, floors and design era; 65+ share at 
 
 **Uncertainty:** all first-priority buildings have 4–7 storeys and design eras through ROC 71. Removing the national model's unvalidated mid-rise uplift keeps 332 of 385 in the top 1%; this is a stress test, not an ensemble member or validation. 94 buildings appear in the top 1% in at least 90% of the 3,600 combinations; those combinations vary inputs, not missing buildings or current survival. A stable calculated result is not proof of inspection gain.
 
-**Inference — action:** 236 first-priority buildings are walk-ups, so inspection outreach must reach them rather than only the ≥6-storey proactive programme. Of 149 six/seven-storey buildings, 68 have a registered organisation, 68 are on the list for organisation assistance and 13 have unknown status. Existing listed defects follow their own procedures. The public report shows only aggregates. Professional review must establish current identity and condition before individual action.
+**Inference — action:** 236 first-priority represented buildings are walk-ups. Their follow-up requires a route outside the ≥6-storey proactive programme: explain the owner-applied assessment subsidy and, if the city considers professional reconnaissance, first confirm the current procedure and responsible unit. The 2016 precedent does not establish a current programme or consent exemption. Of 149 six/seven-storey buildings, 68 have a registered organisation, 68 are on the list for organisation assistance and 13 have unknown status. Existing listed defects follow their own procedures. The public report shows only aggregates. Professional review must establish current identity, previous assessment, applicable programme conditions and condition before individual action. The published route groups are desk-research leads, not invitations already issued, verified eligibility or a committed deployment.
 
 ### Public-renewal assessment priority B — one research case (2026-10-21)
 
@@ -1019,8 +1019,7 @@ The five-factor score uses permit material, floors and design era; 65+ share at 
 Art. 5), or for which the reviewer should first request evidence, because of the seismic need of older
 residents. It does not select a project or predict willingness, feasibility or approval. Unit — a
 *piece*, one contiguous part of the city's two published renewal-area layers; a 7599 public-renewal
-site must lie inside one. Need is A's loss-chain quantity computed on the piece's own records, with A's
-members (band cuts below); A's 里 order is not reused. Feasibility facts are status lanes beside the need,
+site must lie inside one. Need is A's loss-chain quantity computed on the piece's own records, with this area's declared resampling/parameter combinations (band cuts below); the current building A order is not reused. Feasibility facts are status lanes beside the need,
 never subtractions from it. Development analysis after exposure: the records and constructs were seen
 while building A, and only the geometry's counts, areas and overlaps were inspected before the contract
 was written. The contract, with one reporting addition after the first run (a doorplate count per
@@ -1059,7 +1058,7 @@ than 50% willingness. Listing therefore keeps its own lane in B as in A.
 **Method:** on each piece, `E = S × O × (1 + δR) × (1 + λL)`. S is the 棟數-weighted class prior of the
 scored records with a doorplate inside the piece; O and R are the 棟數-weighted 65+ share and
 fire-list listing of those records' 里, area statistics carried to the piece; L is each record's own
-liquefaction value (high 1, medium 0.5). Members are A's: four structural worlds under the national
+liquefaction value (high 1, medium 0.5). This separately dated area comparison uses four structural worlds under the national
 model's class parameters, 400 record bootstraps inside each piece with an era draw, and δ, λ ∈ {0,
 0.25, 0.5}, giving 14,400 rankings, with A's uplift-off stress test beside them. Pieces of at least 2,000 m² with at least 10 scored records are ordered; P is the share of
 rankings placing a piece in the top tenth (3 of 30); bands use this case's P rule (band 1 P ≥ 0.95, band 2 0.5–0.95). They describe uncertainty across area rankings, not the building A inspection-budget cut. No automatic alignment of the two decisions is required. Lanes: below 2,000 m² (no 7599 site
@@ -1069,9 +1068,9 @@ listed building inside (575 or the listed-building procedure).
 | Result (469 pieces) | Value |
 | --- | --- |
 | Pieces that can hold a 7599 site (≥ 2,000 m²) | 366; the other 103 are smaller |
-| Ordered from public records | 30 of 366. Ordered pieces cover a median 5.1% of their doorplates with scored records |
+| Meet this research case's calculation rule | 30 of 366. Their scored records cover a median 5.1% of doorplates; this does not establish representative coverage or readiness for resource allocation |
 | Request evidence: too few records | 336 pieces with 51,747 doorplates; 122 have no scored record; the median such piece has 120 doorplates and 1 record |
-| Band 1, first priority for suitability assessment (1) | U313 松山區富泰里, in the 民生社區 designation: P ≈ 1.00, also in the uplift-off stress test; 13 scored records against 216 doorplates, 93% with a use permit before ROC 71 |
+| Band 1 in the admitted-record comparison (1 research case) | U313 松山區富泰里, in the 民生社區 designation: P ≈ 1.00, also in the uplift-off stress test; 13 scored records against 216 doorplates, 93% with a use permit before ROC 71 |
 | Band 2 (0) / band 3 (29) | None / 29 pieces, the nearest U120 中正區網溪里 (P 0.48; 0.65 in the stress test) and U290 松山區三民里 (民生社區, P 0.34); 9 of the 30 lie between P 0.05 and 0.95 |
 | 民生社區 designation (R115514) | 3 of its 109 pieces can be ordered; 106 lack records or area |
 | Existing projects | 99 pieces (68 of the 366) are at least half covered by an existing renewal project, 2 of them ordered |
@@ -1094,12 +1093,9 @@ listed building inside (575 or the listed-building procedure).
 | 9 Implementation route | 7599 possible (≥ 2,000 m²); no listed building, so not 575 | Open |
 | 10 Other | — | — |
 
-**Inference — finding to decision:** with public records, B can order only 30 of the 366 pieces that
-could hold a 7599 site, so for most of the designated renewal area the evidence-based first action is a
-data request, not an order. The request is concrete: building-level age, structure and floors for the
+**Inference — finding to decision:** only 30 of the 366 site-sized pieces meet this research case's calculation rule. The evidence supports checking coverage and requesting building/site evidence before deciding whether to begin a suitability assessment; it does not establish an operational order among renewal areas. The request is concrete: building-level age, structure and floors for the
 doorplates inside each piece, which the city's own tax registry already holds, and the area and
-ownership facts M04 needs. Where the records suffice, one piece in the newly designated 民生社區 stays
-in the priority set in nearly every ranking, also in the uplift-off stress test. This agrees with the city's own
+ownership facts M04 needs. Within the admitted records, one piece in the 民生社區 designation stays in the priority set in nearly every ranking, also in the uplift-off stress test. Its coverage and actual site boundary still need checking before a decision to start suitability assessment. This agrees with the city's own
 inclusion rule (pre-1974 seismic code), but both rest on building age, so the agreement is not
 independent support. B adds what that rule leaves out: older residents, rescue access, liquefaction,
 uncertainty and the separate suitability record. Its structural term rests on 13 records against 216
@@ -1783,7 +1779,7 @@ are later routes. Simulation cannot repair missing empirical validation or asser
 
 ## 7. Next actions and open decisions
 
-**Next executable action:** review the prepared public-edition copy and obtain action-time owner confirmation before its push. The existing generated building lay page now explains unknown/mixed doorplate inputs and regional-potential limits, includes the bounded384/385 joint-stress finding (388 after ties), and preserves current385/332 uplift-off results. Descriptive groups are not causal entry tests; input-frequency is not record-resampling robustness. No national source replacement is required for this bounded research demonstration.
+**Next executable action:** review the prepared public-edition copy and obtain action-time owner confirmation before its push. The existing generated building lay page now explains the event/independent-research attribution, permit-based population and omissions, research class approximation, conditional follow-up and separate B scope. It also preserves unknown/mixed doorplate limits, the bounded384/385 joint-stress finding (388 after ties), and current385/332 uplift-off results. Descriptive groups are not causal entry tests; input-frequency is not record-resampling robustness. No national source replacement is required for this bounded research demonstration.
 
 **Current sequence:** building-level inspection is primary. Explore finer, newer and broader original data before locking a case-audit scope; inspect source content, units, dates, access, reuse and decision relevance. Then predeclare the smallest join/integration experiment for an admitted source. Preserve the conditional 2026-10-22 numerical result until an admitted source experiment establishes a replacement. Village aggregation supports geographic explanation only; no independent village rerun is queued.
 
