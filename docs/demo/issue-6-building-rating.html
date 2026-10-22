@@ -381,6 +381,9 @@ section,.permit,.sheet,.roll,.back{break-inside:avoid}
 .walk .row .dots{display:block;min-width:12px}
 }
 @media (prefers-reduced-motion:reduce){.tl{transition:none}}
+/* short screens: let the opening card grow instead of clipping its links */
+@media (max-height:720px){.hero{height:auto}.hero-stage{position:relative;height:auto;min-height:100svh;overflow:visible}.permit,.hero-photo{transform:none}}
+@media (max-width:360px){.permit h1{font-size:2rem}}
 
 /* Chinese text carries <wbr> between phrases (build.py); keep-all holds each phrase together */
 body{word-break:keep-all;overflow-wrap:break-word}
@@ -825,7 +828,7 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <div class="wrap faq-grid">
 <h2 id="faq-h" data-rise>常見的疑問</h2>
 <div class="faq-text" data-rise style="--i:1">
-<p><b>會公開<wbr>是哪一棟嗎？</b>不會。<wbr>這一頁<wbr>只放區<wbr>和里<wbr>的數量。<wbr>逐棟<wbr>名單<wbr>有使用<wbr>執照<wbr>號碼，<wbr>只給<wbr>市府<wbr>內部確認用。</p>
+<p><b>會公開<wbr>是哪一棟嗎？</b>不會。<wbr>這一頁<wbr>只放區<wbr>和里<wbr>的數量。<wbr>逐棟<wbr>名單<wbr>含使用<wbr>執照<wbr>號碼，<wbr>只留在<wbr>研究<wbr>內部，⁠不公開。</p>
 <p><b>「⁠受損」⁠指什麼？</b>這份<wbr>研究估<wbr>的是<wbr>設計<wbr>地震下，<wbr>同類<wbr>建物<wbr>中度<wbr>以上<wbr>受損<wbr>的機會，<wbr>不是<wbr>個別<wbr>建物<wbr>倒塌的機率。</p>
 <p><b>地圖<wbr>上的里代表什麼？</b>只是<wbr>把候選<wbr>建築<wbr>按位置<wbr>彙整，<wbr>方便<wbr>安排<wbr>訪查，<wbr>不另<wbr>替整個<wbr>里打分數。<wbr>相同<wbr>里內<wbr>的建築<wbr>仍可能<wbr>有不同條件。</p>
 <p><b>高齡<wbr>人口<wbr>細到哪裡？</b>內政部<wbr>的最小<wbr>統計區，<wbr>一區<wbr>約兩百多人，<wbr>資料<wbr>是 113 年<wbr> 12 月。<wbr>同區<wbr>紀錄<wbr>共用<wbr>這個<wbr>年齡<wbr>比例；<wbr>每棟<wbr>實際<wbr>住多少人、<wbr>年齡<wbr>與行動<wbr>能力，<wbr>仍不知道。</p>
@@ -845,7 +848,7 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 </div>
 <div class="addr">
 <a href="../topics/issue-6-building-resilience.html">閱讀<wbr>完整<wbr>研究報告</a>
-<a href="../topics/issue-6-building-rating.md">計算<wbr>方法<wbr>與數據（⁠英文）</a>
+<a href="https://github.com/flsteven87/puma-hackathon/blob/main/docs/topics/issue-6-building-rating.md">計算<wbr>方法<wbr>與數據（⁠英文）</a>
 <a href="#top">回到最上面</a>
 </div>
 <div class="imprint">

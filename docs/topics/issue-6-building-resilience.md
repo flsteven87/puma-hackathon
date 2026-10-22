@@ -614,7 +614,7 @@ The original parser demonstrably omits 15 in a `13、14、15及16號` enumeratio
 
 Seven one-to-one permits themselves report multiple 棟. The 158 records report 172 棟 across their full permit scope, not 172 extant buildings inside the rectangle. Of these records, 142 belong to the adopted pool (125 scored, 17 tall/unscored); the remaining 16 are fully explained by existing supersession (10), ambiguous location (1), unsupported material (4) and missing floors (1). They are not 16 newly recovered candidates. The 251 footprint nonmatches can include newer stock, segmentation and unmatched historical addresses; they are not a count of omitted old buildings. Across the archive, 25,916 old new-build records remain outside accepted location scope, including ambiguous locations; they are retained nonspatially, never assigned to the rectangle. No citywide coverage percentage or structural-type-conflict rate is estimable from this sample: F05 has no comparable material/system field. [F05 source definition](https://docs.overturemaps.org/guides/buildings/); [licensing](https://docs.overturemaps.org/attribution/).
 
-**Evidence — municipal geometry fields and the first recovery boundary.** F04's live popup explicitly defines H as height in metres, BUILD_GE as entrance elevation and BUILD_RE as roof elevation. All 6,280 sampled H values equal roof minus entrance elevation, yet one is 18,347.31 m: arithmetic consistency is not plausible measurement. The uncompressed geometry route fails, but its documented Draco buffer succeeds. The [finest-geometry decoder below](#f04-municipal-finest-geometry-decoder-2026-10-22) subsequently completed the standard transform, feature-ID/attribute alignment and one nonduplicating finest cut for the fixed rectangle; no municipal polygon/permit join has been run. The topographic manual's roof-height/material division lines do not establish engineering building units; numeric Label prefixes were not verified as universal storey counts. The newest layer's derivative-publication rights and feature observation dates remain unresolved. [Actual layer](https://historygis.udd.gov.taipei/arcgis/rest/services/Hosted/LOD1_2025/SceneServer/layers/0?f=pjson); [topographic manual, printed pp7–8](https://www.historygis.udd.gov.taipei/urban/map/doc/臺北市仟分一地形圖讀圖手冊.pdf); [original I3S specification](https://github.com/Esri/i3s-spec/tree/master/docs/1.10).
+**Evidence — municipal geometry fields and the first recovery boundary.** F04's live popup explicitly defines H as height in metres, BUILD_GE as entrance elevation and BUILD_RE as roof elevation. All 6,280 sampled H values equal roof minus entrance elevation, yet one is 18,347.31 m: arithmetic consistency is not plausible measurement. The uncompressed geometry route fails, but its documented Draco buffer succeeds. The [finest-geometry decoder below](#f04-municipal-finest-geometry-decoder-2026-10-22) subsequently completed the standard transform, feature-ID/attribute alignment and one nonduplicating finest cut for the fixed rectangle and joins it to the old permits there. The topographic manual's roof-height/material division lines do not establish engineering building units; numeric Label prefixes were not verified as universal storey counts. The newest layer's derivative-publication rights and feature observation dates remain unresolved. [Actual layer](https://historygis.udd.gov.taipei/arcgis/rest/services/Hosted/LOD1_2025/SceneServer/layers/0?f=pjson); [topographic manual, printed pp7–8](https://www.historygis.udd.gov.taipei/urban/map/doc/臺北市仟分一地形圖讀圖手冊.pdf); [original I3S specification](https://github.com/Esri/i3s-spec/tree/master/docs/1.10).
 
 **Evidence — spatial demand has real numeric sources, with compatibility gates.** NCREE's [Taiwan ShakeMap](https://seaport.ncree.org/smap/) supplies actual archived PGA, PGV, SA0.3 and SA1.0 GeoTIFFs for event 113019 (2024-04-03 Hualien, ML7.2). Each is 741×434 cells in EPSG:4326; a fixed Taipei bounding box has 2,589 valid cells, not city-polygon membership. The publisher describes nominal 500 m surface event estimates conditioned by stations, with site treatment already included. PGA/PGV are three-component vector maxima; SA is RotD50. Damping, final revision and general redistribution rights were not established. Thus this is a source-feasible historical-event comparison, not a replacement for design demand, a future Shanchiao rupture or independent validation using shared stations. Do not add another generic site-amplification multiplier. [Original event raster](https://seaport.ncree.org/eq_data/ASCII/113019/TSHAKEMAP/TIF/4326GMI_SaH_030.tif).
 
@@ -1188,14 +1188,7 @@ validated dates or attributes. D01 and D02 share only 3 permit IDs; all three di
 address (one also in district) and their D01 names end in 管理負責人, so no organisation status is
 transferred, and the 5,486 nonmatches stay unmatched observations, not confirmed absence. A programme
 execution condition cannot be inferred from a loose join. The two official files alone reproduce this
-(the script checks their hashes and emits no names, addresses or permit IDs):
-
-```sh
-python3 scripts/issue6_feasibility.py \
-  --organisations /path/to/organisations.csv \
-  --unregistered /path/to/unregistered.pdf \
-  --archive-dir /path/to/community-permits
-```
+with a local script (not included here) that checks their hashes and emits no names, addresses or permit IDs.
 
 **Search limits:** GEM/GFZ routes stopped at aggregate summaries or unreleased output; NCREE's
 [TERA report landing page](https://www.ncree.niar.org.tw/accomplishment/technicalreports/page/12183)
@@ -1242,7 +1235,7 @@ queue, information bottleneck or selection gain follows. Reproduction: add `--an
 ### Exploratory composition and relationships (2026-10-16)
 
 **Method:** a descriptive profile of the same pinned D02/D03 bytes
-(`scripts/issue6_feasibility.py --profile`); permit records are the unit and recorded 戶數 is not
+(the same local script); permit records are the unit and recorded 戶數 is not
 current occupancy, owners or consent votes. Exploratory, not a preregistered or causal test.
 
 **Evidence:** 77.88% of D02 records have 6–7 floors and the recorded-unit median is 14 (interquartile
@@ -1835,7 +1828,7 @@ are later routes. Simulation cannot repair missing empirical validation or asser
 
 ## 7. Next actions and open decisions
 
-**Next executable action:** review the prepared public-edition copy and obtain action-time owner confirmation before its push. The existing generated building lay page now explains the event/independent-research attribution, permit-based population and omissions, research class approximation, conditional follow-up and separate B scope. It also preserves unknown/mixed doorplate limits, the bounded384/385 joint-stress finding (388 after ties), and current385/332 uplift-off results. Descriptive groups are not causal entry tests; input-frequency is not record-resampling robustness. No national source replacement is required for this bounded research demonstration.
+**Next research action:** confirm present building identity, previous assessments and the applicable procedure for the first priority, starting with the 74 represented buildings that carry a site-check prompt. The current result is 385 first-priority buildings with 332 retained uplift-off; the bounded joint missing-liquefaction stress retains 384/385 (388 after ties). Descriptive groups are not causal entry tests; input-frequency is not record-resampling robustness. No national source replacement is required for this bounded research demonstration.
 
 **Current sequence:** building-level inspection is primary. Explore finer, newer and broader original data before locking a case-audit scope; inspect source content, units, dates, access, reuse and decision relevance. Then predeclare the smallest join/integration experiment for an admitted source. Preserve the conditional 2026-10-22 numerical result until an admitted source experiment establishes a replacement. Village aggregation supports geographic explanation only; no independent village rerun is queued.
 
