@@ -6,21 +6,15 @@
 | Template | Topic document standard v1 |
 | Pain recorded | 2026-10-14; verbatim prompt record 13:59 Taipei and same-day bounded citizen sample |
 | Evidence cutoff | 2026-10-23 for rationale and zero-share source tracing; 2026-10-22 for the first-priority currentness desk pre-check, the F04 municipal finest-geometry decoder and permit join, five-track method deepening and building-first source discovery; 2026-10-22 for calculated building priority; 2026-10-21 for the public-renewal B case (renewal-area layers, M04, Urban Renewal Act §6–7, 7599 checklist, 575 plan, 民生社區 designation), the ABRI 2001 Nantou check and the city disaster plan's 里 earthquake-risk grade; 2026-10-20 for the method, shaking, cohort, implementation, village-join and Taiwan census checks and the full-denominator source search; 2026-10-13–16 for the earlier source and data audits, each at its own date |
-| Workflows | Primary: building-level priority for earlier professional inspection A. Public-renewal assessment B remains a limited area-level extension; no automatic transfer from A. One building score, first priority top 1% and second wave to top 10%, with uncertainty and a separate uplift-off stress test. |
+| Scope | One official question, five named factors. Building candidates use a declared score and top-share bands; renewal-area evidence is examined to state how far the same question can be answered. |
 | Reading mirror | [老屋韌性研究報告](issue-6-building-resilience.html) |
-| Demonstration | [哪些老房子，該先做耐震健檢？](../demo/issue-6-building-rating.html) — primary building-level explanation; aggregates only, not individual safety findings |
-| Building-level companion | [The five-factor rating at building level](issue-6-building-rating.md) and its lay page [哪些老房子，該先做耐震健檢？](../demo/issue-6-building-rating.html): the same method by building, with the route that can reach each one |
-| Open decisions | The general inspection research target remains; the present computed result is an older-neighbourhood-emphasis scenario. Its population/structural tradeoff and zero-share boundary must be resolved before general-purpose adoption (§7) |
+| Demonstration | [老屋健檢與都更研究](../demo/issue-6-building-rating.html) — primary building-level explanation; aggregates only, not individual safety findings |
+| Building-level companion | [The five-factor rating at building level](issue-6-building-rating.md) and its lay page [老屋健檢與都更研究](../demo/issue-6-building-rating.html): the same method by building, with the route that can reach each one |
+| Open decisions | The prompt leaves the weighting rule open. The present multiplication rule trades structural estimate against older-population share; its zero-share boundary and selection benefit remain unresolved (§7) |
 
-**Current research decision:** build a defensible municipal priority model for earlier inspection
-**A** and earlier public-renewal suitability assessment **B**. The owner-confirmed direction is
-engineering mechanisms, validated inference of missing inputs where possible, and testing against
-actual earthquake damage in Taiwan and suitable other regions. Population, rescue and policy
-criteria connect the structural result to the two city actions. Repairs, resident tools, tracking
-and 3D are paused exploratory notes. Research direction does not select the final entry,
-an algorithm or operational weights, or authorize new application work.
+**Current research objective:** answer the official issue-6 question: integrate its five named factors into a transparent weighted rating and examine what that rating can support for old-building inspection and public renewal. The prompt names both uses; it does not prescribe separate research projects, units, a multiplication rule or operational weights.
 
-**Documentation revision: 2026-10-23.** Rationale and zero-share audit distinguish the original general inspection objective from the currently demonstrated older-neighbourhood-emphasis scenario; numbers are unchanged. **2026-10-22:** Building-level inspection is primary; broader and finer source discovery precedes the case-audit scope. F01 mapping is complete as a conditional relationship table; source and parser effects are separated. The F01 scoring refresh is now current, using confirmed links with separate possible-scope and uplift-off tests. The main/possible first-priority disagreement was traced: none of the 22 possible-only entrants has a doorplate on its listed lane or stretch, so the confirmed-link set stands.
+**Current contribution:** a reproducible candidate calculation over historical-permit buildings, with factor explanations, Taiwan evidence checks, assumption tests and currentness checks. The public-renewal comparison exposes a coverage limit rather than establishing a project order. Neither a calibrated building-risk grade nor better selection than current practice has been demonstrated. The ten buildings with zero older-population share expose an unresolved consequence of the chosen multiplication rule; including older population itself follows the prompt.
 
 **Current source qualification:** the municipal export's class1=HIGH/class2=MED/class3=LOW meaning is now verified by its original service renderer and exhaustive136-feature geometry/class equivalence (§5 liquefaction audit). No category swap or score error was found. Regional susceptibility still does not establish foundation failure or individual safety; no-data and multi-point averaging remain explicit policy limitations. The national2026 source is examined separately, without numerical adoption.
 
@@ -30,8 +24,8 @@ once. Source evidence keeps its retrieval dates; no publisher, event rule or pro
 
 | Settled direction | Established evidence | Still unresolved |
 | --- | --- | --- |
-| Engineering-led A/B model; Taiwan damage data first (owner, 2026-10-20); foreign cohorts are reference only (owner, 2026-10-21) | Executable class approximation with 12 independent numerical checks; Yujing census reproduction of the official TELES class output; 921 Nantou households support RC above reinforced masonry within era; Taipei s1 relative class priors; building A bands with an uplift-off stress test retaining 332/385 first-priority buildings; one five-event foreign run as reference | The C1M uplift that drives the Taipei order, Taipei damage truth, non-random location and label exclusions, K-era parameters and finer lawful inputs |
-| Use the structural term only as a relative class ordering | An absolute 0.25 gate cannot act on population-level probabilities: no Taipei s1 class reaches it and Yujing official P(≥moderate) is below 1%; it missed nearly every Moderate+ case in the NCREE Meinong/Hualien series (foreign Nepal agrees) | Whether the ordering beats the simple rule; no Taiwan population test of mid-rise RC yet |
+| Five-factor rating for the official prompt; Taiwan evidence first, foreign cohorts reference only | Executable class approximation with 12 independent numerical checks; Yujing census reproduction of the official TELES class output; 921 Nantou households support RC above reinforced masonry within era; Taipei s1 relative class priors; building A bands with an uplift-off stress test retaining 332/385 first-priority buildings; one five-event foreign run as reference | The C1M uplift that drives the Taipei order, Taipei damage truth, non-random location and label exclusions, K-era parameters and finer lawful inputs |
+| Use the structural term only as a relative class ordering | The tested absolute 0.25 gate is unusable in the inspected design-shaking calculation: no Taipei s1 class reaches it and Yujing official P(≥moderate) is below 1%; it missed nearly every Moderate+ case in the NCREE Meinong/Hualien series (foreign Nepal agrees) | Whether the ordering beats the simple rule; no Taiwan population test of mid-rise RC yet |
 | Infer missing engineering inputs only with justified uncertainty | G21–G23 demonstrate foreign typology-inference/uncertainty methods | No independent Taipei lateral-system/ductility label set acquired; no fitted local proxy model |
 | Separate empirical, professional and policy meanings | Damage, IS/R/F, loss and municipal preferences answer different questions; structure and older-resident share are nearly independent across 里 (τ 0.01) | City weights, rate-versus-count choice, building-level records for B's renewal-area pieces, demonstrated predictive superiority or operational gain |
 
@@ -65,12 +59,10 @@ project merits earlier suitability work, including the evidence, assumptions, un
 
 > 台北面臨「人老＋屋老」的雙老困境。50 年以上老屋在 2025 年突破 20%，2035 年將破 50%，2045 年超過 65%，代表多數房屋是在 921 地震修正耐震法規之前興建。我們要如何整合屋齡、建築結構、高齡人口、土壤液化潛勢與狹小巷弄消防搶救困難圖資，建立「危老耐震風險加權評級模型」，讓市府科學化排出老屋健檢與公辦都更的優先順序？
 
-**Interpretation / settled research objective:** residents bear the consequences; the city makes
-the resource decision. The explicit research deliverable is a weighted evaluation model for
+**Interpretation / research objective:** residents bear the consequences; the intended user is the city arranging inspection and renewal priorities. The explicit research deliverable is a weighted evaluation model for
 inspection and public-renewal priorities. Its specification is fixed as the research target; its
 scientific validity and added value must still be tested. The organizer's age projections are
-attributed claims, not independently validated forecasts. The prompt does not establish that the
-city currently has no method, that all old buildings need demolition, or that one score serves both actions.
+attributed claims, not independently validated forecasts. The prompt does not establish that the city currently lacks a method or that the same numerical score is appropriate at both building and project scale.
 
 **Evidence — citizen voices, bounded public sample 2026-10-14 (paraphrased):** a Shilin owner of
 a roughly 60-year-old four-storey building describes upper-floor safety concerns and co-owner
@@ -252,36 +244,26 @@ remains unpublished. The building first-priority group spans five of the 13 high
 
 ## 4. Candidate workflows
 
-### Core model — two municipal decisions and one evidence chain
+<a id="core-model--two-municipal-decisions-and-one-evidence-chain"></a>
+### Research contract — from the official factors to testable results
 
-**Research design / hypothesis:** develop a transparent weighted seismic-risk evaluation model
-with purpose-specific outputs A and B. The simplest shape is a shared, versioned evidence registry
-and indicator dictionary, then separate decision rules and weight profiles for each action. The
-registry is a research specification here, not a new system or implemented service.
+**Research design / hypothesis:** the question specifies age, structure, older population, liquefaction and rescue difficulty. It leaves the combination and weights open. The current candidate rule combines a structural class estimate with older-population share and rescue/liquefaction multipliers. This is one testable rule, not a city-adopted objective or a demonstrated optimum. The building companion §3 owns the exact calculation and its unresolved exchanges.
 
-Common source evidence → unit/time/scope checks → eligibility/known-condition routing →
-indicator contributions and explicit weights → uncertainty/sensitivity → reviewer action and reason.
-A feeds inspection/survey priority; B uses an appropriately aggregated risk/need profile to inform
-project-area assessment together with separate suitability/feasibility evidence. A high A result
-is not automatic B selection, demolition, grant approval or construction readiness.
-
-| Required candidate field | A — inspection priority | B — public-renewal assessment priority |
+| Requirement in the question | Available evidence and research choice | Supported result and rejection boundary |
 | --- | --- | --- |
-| User / trigger | Municipal inspection/planning reviewer allocating a stated survey or assessment round | City renewal reviewer deciding which bounded areas/cases warrant earlier suitability/feasibility work |
-| Decision unit / population | Historical permit records share input fields/scores across their represented buildings; current identity and programme candidacy need separate verification | Declared project/area boundaries; aggregate source evidence with denominators, without averaging away critical conditions |
-| Baseline | M01/M03/M08 purpose-specific practice; the inspection selection order is not public. The disaster plan's 里 earthquake-risk grade (§3) is the city's related place-based grade, not its selection list | M04 suitability procedure and M05 area-planning precedent; a dated case M06/M07 is not the full comparison pool |
-| Inputs / workflow | Audited structure/code-era evidence, hazard, people/rescue context, known findings and eligibility; structure, older-resident, rescue-access and liquefaction terms combined as a declared policy index with mixed input/policy variation, plus unknowns → earlier survey / request evidence / programme referral | Risk/need profile plus public interest, project scope, alternatives and relevant legal/financial conditions → earlier feasibility review / request evidence / defer with reason |
-| Supported purpose | Allocate an earlier *investigation*; verified professional findings follow separately | Allocate earlier *assessment of intervention feasibility*; no automatic reconstruction decision |
-| Success / rejection | Reproduce contributions and show stable or explicitly unstable priorities; reject unsupported current-building scores, proxy substitution or a method with no defensible action distinction | Preserve the project-scale action and separate gates; reject direct copying of A's order, a repair-subsidy queue or an ungrounded feasibility penalty disguised as safety |
-| Difficult cases | Missing/contradictory age, mixed permit scopes, low-rise stock omitted by D02, unlocated records, known concern with low area population | Project with high need and difficult consent, multiple building scopes, incomplete land/finance evidence, partial upgrades or alternative interventions |
-| Readiness / evidence | Computed as development analysis: building-priority bands with geographic summaries (companion); no city-chosen objective or multipliers and no validated current ranking | One research case computed (§5 public-renewal B): designated renewal-area pieces, A's loss-chain need with its members, status lanes and one M04 record. Public records order 30 of 366 site-sized pieces; comparable project evidence remains unavailable |
-| Adoption / cost | CMO/planning owner, lawful records, professional review and actual capacity; cost/adoption unknown | UDD/URO/project-review owner; inter-agency data and professional/financial review; cost/adoption unknown |
-| Presentation | Named candidate unit, date, component reasons, multiplier provenance, uncertainty band and proposed investigation action | Project boundary, risk/need contribution, feasibility status and reason for earlier review, not guaranteed project acceptance |
+| Integrate the five factors | Historical permit age/material/storeys, area age counts, listed-address rescue relationships and regional liquefaction | Traceable inputs with explicit unit/time/coverage limits; do not treat area proxies as current building observations |
+| Construct a weighted rating | Class estimate × older share × contextual multipliers; selected assumptions and top-share bands | Reproducible relative indices, not calibrated damage grades. Zero older share suppresses positive structural estimates; the exchange must be justified before adoption |
+| Inform inspection order | 38,345 scored represented buildings; top 1% contains 385, no within-band ranks | Candidate reasons and follow-up checks; no demonstrated advantage over a simple rule or the city's actual selection |
+| Inform public-renewal order | Research comparison of designated-area pieces, with separate area inputs and admission rules | Only 30 of 366 site-sized pieces admitted, median doorplate coverage 5.1%; insufficient to order public-renewal projects |
+
+The city's inspection order is not public in the inspected sources. Its disaster-planning grade is not that order; missing public records do not establish deficient practice. Similarly, a designated area is not an actual renewal project. Scope, willingness, ownership, relocation and finance need their own evidence. Programme eligibility and organisation describe follow-up routes, not danger weights.
+
+**Success for this demonstration:** reproduce the calculation, expose why the factors change the result, show which assumptions matter, and return to each requirement in the original question. **Rejection:** unsupported current-building claims, a formula treated as validated merely because it runs, or a sparse area sample represented as a complete public-renewal order. Agency records and prospective comparisons remain operational-validation paths, not prerequisites for completing the hackathon demonstration.
 
 ### Scientific model paths — mechanisms, observations and hybrid methods
 
 **Owner decision / proposed architecture:** mechanisms provide the backbone; observed cases test
-it. The class-level structural chain now executes privately; municipal A/B remain research specifications, not implemented allocation services. Exposure literature uses bottom-up/top-down in
+it. The class-level structural chain now executes privately; the composite remains a research calculation, not an implemented allocation service. Exposure literature uses bottom-up/top-down in
 other ways, so those labels do not select an algorithm.
 
 | Layer | Input → supported output | Evidence and validation |
@@ -384,17 +366,7 @@ overlap, compensation and sensitivity require the same justification as nominal 
 or non-compensatory rules where addition is inappropriate. W01–W03/M05 supply principles, not a
 ready-made Taipei coefficient set.
 
-**Minimal B specification / hypothesis:** on a declared project boundary, report structural/hazard
-need, older-resident/rescue context and coverage, alongside a **separate** M04 suitability record
-(public interest, alternatives, willingness, relocation, finance and applicable required contents).
-Output: earlier suitability review / request specific evidence / defer with reason. Consent and
-financing difficulties are feasibility status, not reductions in structural need. Reference M04 and
-M05's area-planning purpose; M06/M07 do not supply a comparable project pool. Without comparable
-projects, labelled rule scenarios can test traceability only. Reject automatic A→B transfer,
-unsupported aggregation, invented approval probabilities or claimed superior selection.
-**Instantiated 2026-10-21** as one research case (§5 public-renewal B): the project boundary is a
-designated renewal-area piece, the need profile is A's declared policy index on the piece's own records,
-and the M04 record is kept for the band-1 piece with each content's evidence status.
+**Public-renewal requirement and its evidence limit:** a building candidate score cannot establish a project boundary or comparative project suitability. The dated area comparison in §5 uses designated renewal-area pieces and their own admitted records; it is a coverage-limited test of the original question, not an additional programme. M04's suitability evidence (public interest, alternatives, willingness, relocation, finance and applicable contents) remains necessary to interpret any actual project. Consent or financing difficulty is not a deduction from structural need. The 7599-based study universe does not cover every public-renewal route, and the known first case falls outside the inspected layer. Thus the comparison supports identifying evidence gaps, not ordering actual projects. It retains its separately dated inputs, bootstrap procedure and declared area bands; no building order is transferred to it.
 
 ### Synthesis — what the analysis changes about the proposal
 
@@ -424,7 +396,7 @@ validity. A failed predictive claim narrows the method/population; it does not r
 
 | Existing direction | Disposition and contribution | Bottleneck / stopping rule |
 | --- | --- | --- |
-| Municipal weighted model A/B | Core: indicator, weight and decision specification and validation; building A primary; B a limited area case | Local justification, contextual comparison with the city's own 里 grade, actual selection baseline and decision gain unresolved |
+| Five-factor weighted rating | Core: indicator choices, candidate calculation and evidence against the original requirements; renewal-area coverage remains limited | Local justification, contextual comparison with the city's own 里 grade, actual selection baseline and decision gain unresolved |
 | Municipal rules, the M05 planning precedent and the disaster plan's 里 grade | Core baseline (§3) | Different programmes/scales stay separate; current force of the historical plan not assumed |
 | Structural methods, code eras and hazard mechanisms | Core domain basis | Professional observations and local calibration cannot be manufactured |
 | Official starter datasets and D/B/V identity, dates, location and coverage | Core input audit (§5) | Current survival/scope and lawful coverage; historical permits are not current stock |
@@ -452,13 +424,13 @@ access, version or suitability.
 
 ### Priority rationale and zero-share audit (2026-10-23)
 
-**Question and scope:** can the current calculation's reasons be stated without implying a general inspection order, calibrated loss or validated policy weights? The original civic objective remains earlier professional investigation. The present result operationalizes a narrower preference for neighbourhoods with a higher registered older share; neither the city nor an effectiveness comparison has established that preference as the general allocation objective. The [building companion §3](issue-6-building-rating.md#3-method-contract-declared-before-the-run) owns the factor roles, product tradeoff, coefficients, normalization and scenario aggregation.
+**Question and scope:** can the current calculation's reasons be stated without implying a general inspection order, calibrated loss or validated policy weights? The original question explicitly includes older population. The researchers chose registered older share and direct multiplication; the question does not establish that exchange rate, and neither city adoption nor a comparative benefit has been demonstrated. The [building companion §3](issue-6-building-rating.md#3-method-contract-declared-before-the-run) owns the factor roles, product tradeoff, coefficients, normalization and scenario aggregation.
 
 **Evidence — frozen-source diagnostic:** the current 38,345-building computation was reproduced exactly at published score precision and band membership; the separate uplift-off run reproduced its bands and retained 332/385 current first-priority buildings. This confirms the computation, not the validity of the weights or a structural finding. The retained result still contains population and policy terms, so it cannot be used to validate the structural term in isolation. No input, score, candidate set or engineering model was changed.
 
 **Evidence — zero-share trace:** three permits representing ten scored buildings have O=0 and score=0. Each associated doorplate has exactly one match in the adopted 2015 smallest-area boundary file; the original MOI 113Y12M age table has at least 50 registered residents in each matched area and zero in the 65+ cells. This follows the declared minimum-population rule, not a missing-value substitution. Method: reread the original XML age cells, independently repeat point-in-polygon joins, and reconcile every affected scored row and represented-building count. Source: [MOI age dataset 18255](https://data.gov.tw/dataset/18255) and [boundary dataset 25128](https://data.gov.tw/dataset/25128), originally retrieved 2026-10-21, frozen bytes rechecked 2026-10-23. The zero is in registered area data; actual building occupants, movement needs and current structure remain unobserved. No individual location or identity is published.
 
-**Inference / disposition:** because O is a direct multiplier, the index can suppress positive structural need when the contextual older share is zero. It cannot be adopted as a complete general inspection order without resolving this purpose conflict. The result remains a disclosed research scenario, not a new high-age-only municipal programme. A floor or another combination would be a new policy rule requiring its own rationale; none is silently introduced. Low/zero scores cannot establish safety or grounds to withhold assessment. The class source, declared preference and empirically unvalidated multiplier strengths must be explained before the worked example, rather than inferred from a precise score.
+**Inference / disposition:** because O is a direct multiplier, the index can suppress positive structural need when the contextual older share is zero. Its zero-share suppression and exchange rate require a purpose-matched justification before operational adoption. The result remains a disclosed candidate-rule scenario. A floor or another combination would be a new policy rule requiring its own rationale; none is silently introduced. Low/zero scores cannot establish safety or grounds to withhold assessment. The class source, declared preference and empirically unvalidated multiplier strengths must be explained before the worked example, rather than inferred from a precise score.
 
 **Validation boundary:** the local exercise establishes traceability and mathematical behavior. Existing Taiwan material/era evidence supports parts of the structural rationale; the mid-rise uplift remains unvalidated, with its separate 332/385 stress result. General-method guidance W03 requires purpose-matched aggregation and does not supply the local coefficients. Neither the 3,600-setting frequency nor the number of candidates proves a better decision. Actual comparative selection benefit and a defensible general-purpose rule remain open; current-building checks can proceed independently within the documented research scope.
 
@@ -1129,7 +1101,7 @@ fire-list listing of those records' 里, area statistics carried to the piece; L
 liquefaction value (high 1, medium 0.5). This separately dated area comparison uses four structural worlds under the national
 model's class parameters, 400 record bootstraps inside each piece with an era draw, and δ, λ ∈ {0,
 0.25, 0.5}, giving 14,400 rankings, with A's uplift-off stress test beside them. Pieces of at least 2,000 m² with at least 10 scored records are ordered; P is the share of
-rankings placing a piece in the top tenth (3 of 30); bands use this case's P rule (band 1 P ≥ 0.95, band 2 0.5–0.95). They describe uncertainty across area rankings, not the building A inspection-budget cut. No automatic alignment of the two decisions is required. Lanes: below 2,000 m² (no 7599 site
+rankings placing a piece in the top tenth (3 of 30); bands use this case's P rule (band 1 P ≥ 0.95, band 2 0.5–0.95). They describe uncertainty across area rankings, not the building A inspection-budget cut. These area bands do not transfer to the building bands. Lanes: below 2,000 m² (no 7599 site
 fits); too few records (request evidence); at least half covered by an existing project; a B05/B06
 listed building inside (575 or the listed-building procedure).
 
