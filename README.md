@@ -6,14 +6,14 @@
 
 ## 從這裡開始
 
-1. **[展示頁：老屋健檢與都更研究](https://flsteven87.github.io/puma-hackathon/demo/issue-6-building-rating.html)** 給一般讀者，幾分鐘讀完。
+1. **[展示頁：老屋健檢與都更研究](https://flsteven87.github.io/puma-hackathon/demo/issue-6-building-rating.html)** 給一般讀者，從居民困難讀到分析結果與後續查核。
 2. **[研究報告](https://flsteven87.github.io/puma-hackathon/topics/issue-6-building-resilience.html)** 現行做法、方法、各項檢查與限制。
 3. **研究文件（英文）：** [完整證據與來源](docs/topics/issue-6-building-resilience.md)、[單棟計算方法](docs/topics/issue-6-building-rating.md)。
 
 ## 展示頁怎麼操作
 
-- **先看為什麼這樣排：** 每項資料回答什麼、乘法代表什麼取捨，以及證據支持到哪裡。
-- **拿一棟老屋，看理由怎麼進入分數：** 用一個算例追溯計算，不以入選證明方法有效。
+- **先看居民困難與選案需求：** 市府要做哪些判斷，需要哪些資訊。
+- **用一筆老屋紀錄串起分析：** 看不同尺度的資料如何接合、形成分數，再回到全體分布理解前 1% 候選；入選不代表方法已驗證有效。
 - **換一條線看看：** 拖動滑桿，從前 0.5% 拉到前 10%，看名單和分布的里數怎麼變。
 - **在哪些里、走哪條路：** 前 1% 候選的地圖、各里棟數，以及每一類房子接下來可以走的程序。
 
