@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light">
-<title>哪些老房子，該先做耐震健檢？</title>
+<title>老屋健檢與都更研究</title>
 <meta name="description" content="老屋健檢先查什麼？說明工程線索、高齡關懷與環境加成如何形成調查候選，以及算法仍待檢驗的取捨。">
 <style>
 :root{
@@ -561,63 +561,53 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 @media(max-width:850px){.pain-opening{grid-template-columns:minmax(0,1fr);gap:28px}.pain-route ol{grid-template-columns:minmax(0,1fr);gap:28px}.pain-route li+li:before{content:"↓";left:24px;top:-29px}.question-row{grid-template-columns:20px minmax(0,1fr);gap:8px 12px}.question-row h3{grid-column:1/-1}.data-routes dl>div{grid-template-columns:minmax(0,1fr);gap:10px}.why-heading{grid-template-columns:minmax(0,1fr)}}
 @media print{.data-routes dl>div{background:var(--paper-2);color:var(--ink)}.pain-route,.question-row{break-inside:avoid}}
 
+
+/* The official question leads the report; all text stays readable without a pinned scene. */
+.hero{height:auto;background:var(--paper);color:var(--ink)}
+.hero-stage{position:relative;height:auto;overflow:visible;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:40px;align-items:start;padding-block:64px}
+.permit{width:100%;padding:0;background:none;transform:none}
+.permit h1{font-size:clamp(30px,3.8vw,52px);line-height:1.2}
+.permit .thesis{font-size:20px;max-width:none;margin:20px 0 32px}
+.permit h2{font-size:24px;margin-bottom:16px}.official-prompt{margin:0;font-size:18px;line-height:1.85}
+.source-caption{font-size:16px;line-height:1.7;margin-top:20px;color:var(--soft)}
+.hero-view{margin:0}.hero-photo{position:static;height:600px;width:100%;object-fit:cover;filter:none;transform:none}.hero-view figcaption{font-size:16px;margin-top:12px;color:var(--soft)}
+.permit-foot{border:0;padding-top:0;justify-content:flex-start}.intro{padding-top:32px}.page-nav{border:0}
+.decision-split{margin-top:48px}.decision-split figcaption,.calculation-path figcaption{font-size:28px;font-weight:800;margin-bottom:24px}
+.decision-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.decision-columns>div{padding:28px;background:var(--paper-2)}.decision-columns>div:first-child{background:var(--ground);color:var(--on-dark)}.decision-columns h3{font-size:28px}.decision-columns p{margin:16px 0}.decision-columns strong{font-weight:650}
+.calculation-path{margin-top:64px}.calculation-path ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-left:24px;margin-bottom:20px}.calculation-path li{padding-right:12px}.calculation-path a{color:inherit}
+.live .facts{text-align:left;margin:0 0 36px}.live .note{max-width:none}.live h2{margin-top:32px}
+.currentness{grid-column:1/-1;max-width:100%;margin-bottom:40px}.currentness h2{font-size:var(--t-display);line-height:1.15;margin-bottom:32px}.currentness h3{font-size:var(--t-head)}.currentness p{max-width:45em;margin:18px 0}.currentness figure{max-width:760px;margin:28px 0}.currentness figcaption{font-size:18px;margin-bottom:16px;color:var(--on-dark)}.currentness .why-retention-bar{background:var(--paper-2)}.currentness .why-retention-bar span:first-child{background:var(--accent-ink)}.currentness .why-retention-bar span:last-child{background:#9fb8b1}
+.route-context{margin-top:32px}.route-context p{max-width:50em;font-size:16px}.answer-lede{font-size:20px;margin:24px 0 36px;max-width:42em}.answer-rows{display:grid;gap:28px}.answer-rows>div{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1fr) minmax(0,1fr);gap:28px;padding:28px;background:var(--paper-2)}.answer-rows h3{font-size:28px}.answer-next{margin-top:32px;max-width:48em}#answer .page-nav{margin:28px 0 0;padding:0}
+@media(max-width:900px){.hero-stage{grid-template-columns:minmax(0,1fr);padding-block:32px;gap:32px}.hero-photo{height:320px}.decision-columns{grid-template-columns:minmax(0,1fr)}.calculation-path ol{grid-template-columns:minmax(0,1fr);gap:18px}.answer-rows>div{grid-template-columns:minmax(0,1fr);gap:16px}.currentness h2{font-size:32px}.hero-view{max-width:100%}}
+@media print{.hero-stage{display:block}.hero-view{display:none}.decision-columns{display:block}.answer-rows>div{display:block}.currentness{break-inside:avoid}}
 </style>
 </head>
 <body>
 <main>
 <section class="hero" id="top" aria-labelledby="title">
-<div class="hero-stage">
-<img class="hero-photo" src="assets/old-apartment-on-da-an-road-and.jpg" width="1600" height="1067" alt="臺北大安路與信義路口一棟外牆斑駁的老公寓" fetchpriority="high">
+<div class="wrap hero-stage">
 <article class="permit">
-<h1 id="title" data-report-identity><span class="nw">哪些老房子，</span><span class="nw">該先做耐震健檢？</span></h1>
-<p class="thesis" data-report-thesis>健檢前，<wbr>先整理<wbr>值得<wbr>調查<wbr>的線索。<wbr>我們<wbr>結合<wbr>房屋<wbr>條件、<wbr>周邊長者<wbr>比例<wbr>與環境<wbr>資料，<wbr>提出<wbr> 385 棟<wbr>候選，<wbr>說明<wbr>為何<wbr>列入、<wbr>現場<wbr>要查什麼。<wbr>這份<wbr>排序<wbr>帶有<wbr>高齡<wbr>關懷<wbr>的設定，<wbr>仍待檢驗<wbr>是否<wbr>適合<wbr>一般<wbr>健檢選案。</p>
-<ul class="fields">
-<li><b>範圍</b><span>民國<wbr> 85<wbr> 年以前<wbr>領照、<wbr>能連結<wbr>資料<wbr>的歷史<wbr>使照紀錄</span></li>
-<li><b>研究問題</b><span>專業<wbr>調查前，<wbr>哪些<wbr>線索<wbr>能幫助<wbr>說明<wbr>先查誰、⁠查什麼？</span></li>
-</ul>
-<div class="permit-foot">
-<small>計算日期<wbr>・⁠2026-<wbr>10-⁠22</small>
-<a class="btn" href="#why">看調查理由</a>
-<a class="link" href="#first">看 385 棟候選</a>
-</div>
+<h1 id="title" data-report-identity>老屋<wbr>健檢<wbr>與都更研究</h1>
+<p class="thesis" data-report-thesis>從市政 debug松<wbr>第六題<wbr>出發，<wbr>研究<wbr>如何<wbr>安排<wbr>調查<wbr>與評估的先後。</p>
+<h2>黑客松原題</h2>
+<blockquote class="official-prompt">台北<wbr>面臨<wbr>「⁠人老＋屋老」<wbr>的雙老<wbr>困境。<wbr>50<wbr> 年以上<wbr>老屋<wbr>在 2025 <wbr>年突破<wbr> 20%，<wbr>2035<wbr> 年將破 50%，<wbr>2045<wbr> 年超過<wbr> 65%，<wbr>代表<wbr>多數<wbr>房屋<wbr>是在<wbr> 921 <wbr>地震<wbr>修正<wbr>耐震法規之前<wbr>興建。<wbr>我們<wbr>要如何<wbr>整合<wbr>屋齡、<wbr>建築<wbr>結構、<wbr>高齡<wbr>人口、<wbr>土壤<wbr>液化<wbr>潛勢<wbr>與狹小巷弄<wbr>消防<wbr>搶救<wbr>困難<wbr>圖資，<wbr>建立<wbr>「⁠危老<wbr>耐震風險<wbr>加權<wbr>評級<wbr>模型」，<wbr>讓市府<wbr>科學化<wbr>排出<wbr>老屋<wbr>健檢<wbr>與公辦<wbr>都更的優先順序？</blockquote>
+<p class="source-caption">主辦方：<wbr>沈伯洋<wbr>競選<wbr>辦公室。<wbr>原文記錄於<wbr> 2026-<wbr>10-<wbr>14，⁠10-<wbr>16 核對<wbr>相同；⁠其中<wbr>屋齡<wbr>比例<wbr>與預測<wbr>為主辦方陳述。<a href="https://puma.taipei/hackathon#issue-6" target="_blank" rel="noopener">查看官方題目</a></p>
+<div class="permit-foot"><a class="btn" href="#why">看我們<wbr>如何回答</a><a class="link" href="#first">看試算候選</a></div>
 </article>
-</div>
-</section>
+<figure class="hero-view"><img class="hero-photo" src="assets/old-apartment-on-da-an-road-and.jpg" width="1600" height="1067" alt="臺北大安路與信義路口的老公寓" fetchpriority="high"><figcaption>臺北大安路<wbr>與信義路口<wbr>的老公寓<wbr>（⁠2014 年）。</figcaption></figure>
+</div></section>
 
-<section class="intro" id="why" aria-labelledby="why-h">
-<div class="wrap">
-<nav class="page-nav" aria-label="本頁段落"><a href="#how">為什麼這樣排</a><a href="#walk">算一棟</a><a href="#groups">分數分布</a><a href="#first">第一優先</a><a href="#map">在哪些里</a><a href="#route">走哪條路</a><a href="#use">市府怎麼用</a><a href="#faq">常見疑問</a></nav>
-<div class="pain-opening">
-<div>
-<h2 id="why-h">住在老屋，<span class="nw">下一步呢？</span></h2>
-<p>居民<wbr>談到<wbr>安全<wbr>疑慮，<wbr>也遇到<wbr>重建<wbr>意見<wbr>不合、<wbr>需要<wbr>協調的困難。</p>
-<p>我們<wbr>先處理<wbr>調查前<wbr>的一段：<wbr>幫市府<wbr>整理<wbr>候選理由<wbr>與待查問題。</p>
-<p class="pain-source">來自<wbr>有限<wbr>的公開<wbr>居民<wbr>聲音，<wbr>不能<wbr>代表<wbr>所有住戶。<a href="../topics/issue-6-building-resilience.html#original-pain" target="_blank" rel="noopener">看原始痛點</a></p>
-</div>
-<figure>
-<img src="assets/xiyuan-road-section-1-wanhua-district-taipei.jpg" width="1600" height="1067" alt="萬華區西園路一段，路旁是招牌密集的老舊樓房" loading="lazy" decoding="async">
-<figcaption>萬華西園路<wbr>一段<wbr>（⁠2009 年）。</figcaption>
-</figure>
-</div>
-<figure class="pain-route" aria-labelledby="pain-route-cap">
-<figcaption id="pain-route-cap">從疑慮到<wbr>處理，<wbr>研究<wbr>先做哪一段？</figcaption>
-<ol>
-<li class="research-part"><strong>整理<wbr>調查理由</strong><span>本研究：<wbr>先查誰、⁠查什麼</span></li>
-<li><strong>專業調查</strong><span>核對<wbr>現況、<wbr>評估耐震</span></li>
-<li><strong>後續處理</strong><span>依結果<wbr>討論<wbr>補強或更新</span></li>
-</ol>
-<p>市府<wbr>已有<wbr>初評<wbr>與補助<wbr>程序；<wbr>取得<wbr>名單，<wbr>還沒有<wbr>解決<wbr>經費、<wbr>同意與協調。</p>
-</figure>
-<ul class="facts">
-<li data-rise><b class="num">42,⁠054 棟</b><span>納入<wbr>的歷史<wbr>棟數，<wbr>依使照記載</span></li>
-<li data-rise style="--i:1"><b class="num">38,⁠345 棟</b><span>其中<wbr> 7 層<wbr>以下，<wbr>算出<wbr>優先分數</span></li>
-<li data-rise style="--i:2"><b class="num">385 棟</b><span>第一優先：<wbr>分數<wbr>最高的 1%</span></li>
-<li data-rise style="--i:3"><b class="num">62 個里</b><span>第一優先<wbr>分布的範圍</span></li>
-</ul>
-<p class="pain-source">範圍<wbr>是能<wbr>連結<wbr>資料<wbr>的歷史<wbr>使照，<wbr>並非<wbr>全市<wbr>現存<wbr>老屋。<wbr>早年<wbr>磚造<wbr>較難定位；⁠未<wbr>納入<wbr>不代表需求低。<a href="../topics/issue-6-building-resilience.html#data-assessment" target="_blank" rel="noopener">看納入範圍</a>。</p>
-<p class="pain-source">題目來自<wbr>市政 debug松<wbr>第六題，<wbr>由沈伯洋<wbr>競選<wbr>辦公室<wbr>主辦；<wbr>研究<wbr>獨立<wbr>進行，<wbr>非市府委託。</p>
-</div>
-</section>
+<section class="intro" id="why" aria-labelledby="why-h"><div class="wrap">
+<nav class="page-nav" aria-label="本頁段落"><a href="#top">原題</a><a href="#why-h">如何拆題</a><a href="#how">資料與算法</a><a href="#first">試算結果</a><a href="#route">後續查核</a><a href="#answer">回答到哪裡</a><a href="#walk">完整算例</a></nav>
+<div class="pain-opening"><div><h2 id="why-h">兩個<wbr>決策，<wbr>分開回答</h2>
+<p>居民<wbr>擔心<wbr>老屋<wbr>安全，<wbr>也遇到<wbr>重建<wbr>意見<wbr>不合、<wbr>需要<wbr>市府<wbr>協調<wbr>的困難。<wbr>先調查<wbr>哪棟<wbr>房子，<wbr>和先評估<wbr>哪個<wbr>都更地區，<wbr>需要<wbr>不同的證據。</p>
+<p>我們<wbr>以健檢<wbr>前的候選<wbr>調查<wbr>為主，<wbr>另做都更區域<wbr>比較。<wbr>排序<wbr>能否<wbr>改善<wbr>實際<wbr>選案，<wbr>仍待驗證。</p>
+<p class="pain-source">居民<wbr>反映來自<wbr>有限公開樣本，<wbr>不能<wbr>代表<wbr>所有<wbr>住戶。<wbr>本研究<wbr>獨立<wbr>進行，<wbr>非市府委託。<a href="../topics/issue-6-building-resilience.html#original-pain" target="_blank" rel="noopener">看居民<wbr>反映<wbr>與題目來源</a></p></div>
+<figure><img src="assets/xiyuan-road-section-1-wanhua-district-taipei.jpg" width="1600" height="1067" alt="萬華西園路一段沿街的老樓房" loading="lazy"><figcaption>萬華西園路<wbr>一段<wbr>（⁠2009 年）。</figcaption></figure></div>
+<figure class="decision-split" aria-labelledby="decision-cap"><figcaption id="decision-cap">同一道題目，<wbr>兩種<wbr>市府行動</figcaption><div class="decision-columns">
+<div><h3>老屋健檢</h3><p>對象<wbr>是建築：<wbr>哪些<wbr>值得<wbr>較早調查？</p><p>公開<wbr>資料<wbr>整理<wbr>候選理由<wbr> → 核對<wbr>現況<wbr>與既有<wbr>評估<wbr> → 專業調查</p><strong>本頁主軸：<wbr>健檢<wbr>前的調查候選</strong></div>
+<div><h3>公辦<wbr>都更評估</h3><p>對象<wbr>是地區：<wbr>哪些<wbr>應先補資料或評估？</p><p>核對<wbr>範圍<wbr>與建物<wbr>資料<wbr> → 另查意願、<wbr>權屬、<wbr>安置<wbr>與財務<wbr> → 判斷適宜性</p><a href="#answer">看都更研究<wbr>的成果與限制</a></div></div>
+<p class="pain-source">市府<wbr>已有<wbr>初評<wbr>與補助<wbr>程序。<wbr>候選<wbr>名單<wbr>能提供<wbr>查核起點，<wbr>經費、<wbr>同意<wbr>與協調<wbr>仍須另外處理。</p></figure></div></section>
 
 <section class="how why-visual" id="how" aria-labelledby="how-h">
 <div class="wrap">
@@ -627,7 +617,7 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 </header>
 <figure class="question-map" aria-labelledby="inputs-caption">
 <figcaption id="inputs-caption">為什麼選<wbr>這些資料？</figcaption>
-<div class="question-row"><h3>房子<wbr>有什麼弱點？</h3><span aria-hidden="true">→</span><p><strong>使照：<wbr>年代、<wbr>樓層、⁠材料</strong><small>連到<wbr>工程<wbr>類別<wbr>估值；<wbr>看不到<wbr>今天<wbr>的牆柱與改建。</small></p></div>
+<div class="question-row"><h3>房子<wbr>有什麼弱點？</h3><span aria-hidden="true">→</span><p><strong>使照：<wbr>年代、<wbr>樓層、⁠材料</strong><small>依年代、<wbr>樓層<wbr>與材料<wbr>估算<wbr>同類<wbr>房屋<wbr>的受損<wbr>機會；<wbr>現況仍要查。</small></p></div>
 <div class="question-row"><h3>誰可能<wbr>需要支持？</h3><span aria-hidden="true">→</span><p><strong>最小<wbr>統計區：<wbr>長者比例</strong><small>提供<wbr>高齡<wbr>關懷線索；<wbr>不是<wbr>這棟<wbr>住戶<wbr>的年齡<wbr>或行動能力。</small></p></div>
 <div class="question-row"><h3>救援<wbr>可能卡在哪？</h3><span aria-hidden="true">→</span><p><strong>消防局：<wbr>巷弄、<wbr>通道清冊</strong><small>找列管路段；⁠實際<wbr>入口<wbr>與通行仍要查。</small></p></div>
 <div class="question-row"><h3>地盤<wbr>有哪些線索？</h3><span aria-hidden="true">→</span><p><strong>液化圖：<wbr>區域潛勢</strong><small>提醒<wbr>查基地<wbr>與基礎；<wbr>不能<wbr>代替<wbr>現場診斷。</small></p></div>
@@ -637,16 +627,16 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <figcaption id="data-routes-cap">找過<wbr>的資料，<wbr>不只這些</figcaption>
 <p>有的進試算，<wbr>有的另有<wbr>用途；<wbr>資料<wbr>越多，<wbr>不代表<wbr>排序越準。</p>
 <dl>
-<div><dt>進試算</dt><dd><strong>使照、<wbr>人口、<wbr>消防、⁠液化</strong><span>提供<wbr>可追溯<wbr>的候選線索。</span></dd></div>
+<div><dt>進試算</dt><dd><strong>使照、<wbr>人口、<wbr>消防、⁠液化</strong><span>用來<wbr>計算<wbr>候選分數。</span></dd></div>
 <div><dt>核對與後續</dt><dd><strong>建物<wbr>圖資、<wbr>管理<wbr>組織、<wbr>既有<wbr>評估紀錄</strong><span>核對<wbr>現況<wbr>與程序；<wbr>有些<wbr>仍待取得。</span></dd></div>
 <div><dt>檢驗方法</dt><dd><strong>臺灣<wbr>震災資料</strong><span>檢查<wbr>推論；⁠部分<wbr>案例<wbr>不能<wbr>代表全體。</span></dd></div>
-<div><dt>暫不算分</dt><dd><strong>照護<wbr>機構、<wbr>床位、<wbr>其他<wbr>震動圖資</strong><span>床位<wbr>不是<wbr>住民；⁠建物<wbr>對應<wbr>與震動<wbr>情境<wbr>還要核對。</span></dd></div>
+<div><dt>暫不算分</dt><dd><strong>照護<wbr>機構、<wbr>床位、<wbr>其他<wbr>震動圖資</strong><span>床位數<wbr>不是<wbr>實際<wbr>入住<wbr>人數；<wbr>建物<wbr>對應<wbr>與震動<wbr>情境<wbr>仍須核對。</span></dd></div>
 </dl>
-<p class="why-links"><a href="../topics/issue-6-building-resilience.html#source-discovery" target="_blank" rel="noopener">看查過<wbr>的來源與取捨</a></p>
+<p class="why-links"><a href="../topics/issue-6-building-resilience.html#source-discovery" target="_blank" rel="noopener">查看<wbr>來源<wbr>與採用理由</a></p>
 </figure>
-<div class="why-comparison">
+<figure class="calculation-path"><figcaption>資料<wbr>如何<wbr>變成分數</figcaption><ol><li>估算<wbr>同類<wbr>房屋<wbr>的受損機會</li><li>乘上<wbr>周邊長者<wbr>比例<wbr>與環境加成</li><li>比較<wbr>多組<wbr>設定，<wbr>取分數中位數</li></ol><p>這是<wbr>偏重<wbr>高齡<wbr>社區<wbr>的研究<wbr>設定；<wbr>加成<wbr>幅度<wbr>與相乘<wbr>方式<wbr>尚未<wbr>證明<wbr>適合<wbr>一般<wbr>健檢選案。<a href="#walk">看一棟<wbr>建築<wbr>的完整算例</a></p></figure><div class="why-comparison">
 <div class="why-chart-copy">
-<h3>怎麼<wbr>取捨，<wbr>還要檢驗</h3>
+<h3>為什麼相乘？</h3>
 <p>類別<wbr>受損估值<wbr> × 周邊長者<wbr>比例，<wbr>再乘<wbr>救援<wbr>與液化<wbr>加成。<wbr>較高<wbr>的長者<wbr>比例，<wbr>可能<wbr>抵銷<wbr>較低<wbr>的結構估值。</p>
 <p>加成<wbr>各試 0%、<wbr>25%、<wbr>50%，<wbr>尚未<wbr>校準。<wbr>兩項<wbr>各加 25%，<wbr>相乘會<wbr>增加<wbr> 56.⁠25%。</p>
 <p class="why-equation" aria-label="1.25 乘 1.25 等於 1.5625"><span>1.25 × 1.25</span><strong>= 1.5625</strong></p>
@@ -680,80 +670,42 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 </div>
 </section>
 
-<section class="walk" id="walk" aria-labelledby="walk-h">
-<div class="wrap">
-<header class="walk-top">
-<h2 id="walk-h" data-rise><span class="nw">一棟老屋，</span><span class="nw">怎麼算？</span></h2>
-<p data-rise style="--i:1">從第一優先挑<wbr>一棟<wbr>說明：<wbr>中正區<wbr>民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的 4 層鋼筋混凝土<wbr>公寓。<wbr>同區<wbr>同樣<wbr>條件<wbr>的使照<wbr>有 309 筆，<wbr>不指認<wbr>個別<wbr>建物；⁠入選<wbr>也不證明算法有效。</p>
-</header>
-<ol class="steps">
-<li class="step">
-<div class="say">
-<h3><span class="nw">第一步：</span><span class="nw">先看房子本身</span></h3>
-<p>按手冊，<wbr>以構造、<wbr>樓層<wbr>與年代<wbr>估算<wbr>中度<wbr>以上<wbr>受損<wbr>機會。<wbr>圖中<wbr>是設計<wbr>地震下<wbr>的類別<wbr>估值，<wbr>未驗證能<wbr>預測單棟。</p>
-<p>設計年代<wbr>沒有<wbr>疑問，<wbr>所以<wbr>只換算法<wbr>和政策<wbr>加成來<wbr>重算。<wbr>4–⁠7 層<wbr>的加重<wbr>尚未<wbr>用臺灣<wbr>資料<wbr>驗證，<wbr>後面<wbr>會取消<wbr>加重再算。</p>
-<p class="def">中度<wbr>受損：<wbr>多數<wbr>梁柱<wbr>出現<wbr>裂縫，<wbr>部分<wbr>混凝土<wbr>剝落。<wbr>要修補，<wbr>但還不是倒塌。</p>
+<section class="unranked light" id="era" aria-labelledby="era-h">
+<div class="wrap unranked-grid">
+<div class="unranked-left">
+<div>
+<h2 id="era-h" data-rise>年代<wbr>差異，<wbr>有什麼證據？</h2>
+<p data-rise style="--i:1">921 <wbr>地震<wbr>的南投縣<wbr>資料中，<wbr>較晚<wbr>興建<wbr>的鋼筋混凝土<wbr>住宅，<wbr>受損<wbr>戶數<wbr>比例<wbr>較低。<wbr>這支持<wbr>把年代納入<wbr>考量，<wbr>尚不足<wbr>以驗證<wbr>整份<wbr>候選<wbr>名單。<wbr>國震<wbr>中心<wbr>自己<wbr>的初步<wbr>評估<wbr>公式，<wbr>也用民國<wbr> 63<wbr> 年和 71 <wbr>年分年代。</p>
+<p data-rise style="--i:2">另一個<wbr>事件<wbr>的觀察<wbr>不同。<wbr>2016<wbr> 年美濃<wbr>地震時，<wbr>臺南玉井民國<wbr> 63<wbr> 年以前<wbr>的房子，<wbr>被貼紅單<wbr>的比例<wbr>反而<wbr>比 64<wbr>–⁠71<wbr> 年低；<wbr>報告<wbr>推測<wbr>是很多<wbr>最老<wbr>的房子<wbr>已經<wbr>改建<wbr>或修補過。</p>
 </div>
-<div class="show">
-<p class="unit">設計<wbr>地震下<wbr>的類別<wbr>模型值，<wbr>以每 100 棟說明</p>
-<div class="pbars" data-ui><div class="pb me"><span class="lb">此類建物</span><span class="tr"><i style="width:81.3%"></i></span><b class="num">16.3</b></div><div class="pb"><span class="lb">一般老屋</span><span class="tr"><i style="width:59.0%"></i></span><b class="num">11.8</b></div></div>
-<p class="unit">手冊<wbr>有四種<wbr>解讀，<wbr>這類<wbr>房子<wbr>的值落在<wbr> 11.⁠5 到<wbr> 16.⁠3；<wbr>這裡<wbr>先用<wbr>第一種，<wbr>第三步會<wbr>全部換著算。</p>
 </div>
-</li>
-<li class="step">
-<div class="say">
-<h3><span class="nw">第二步：</span><span class="nw">周邊人口與地點</span></h3>
-<p>乘上<wbr>周邊長者<wbr>比例，<wbr>再乘<wbr>環境<wbr>加成。<wbr>人口<wbr>來自<wbr>最小<wbr>統計區，<wbr>不能<wbr>當成<wbr>這棟<wbr>住戶的年齡。</p>
-<p>巷弄<wbr>與液化<wbr>加成<wbr>尚未<wbr>校準。<wbr>先用<wbr> 25%<wbr> 展示<wbr>算式，<wbr>再換<wbr>其他設定。</p>
-</div>
-<div class="show">
-<div class="ledger">
-<div class="row"><span>受損機會</span><span class="dots"></span><b class="num">16.3</b></div>
-<div class="row"><span>× 65<wbr> 歲以上的比例<small>所在<wbr>最小<wbr>統計區<wbr>的統計，<wbr>一般<wbr>老屋 23.⁠8%</small></span><span class="dots"></span><b class="num">27.1%</b></div>
-<div class="row"><span>× 救援不易<small>門牌<wbr>在清冊<wbr>列管<wbr>的巷弄上</small></span><span class="dots"></span><b class="num">1.25</b></div>
-<div class="row"><span>× 土壤液化<small>門牌<wbr>平均<wbr>加成：<wbr>1 + 25% × 1.⁠0</small></span><span class="dots"></span><b class="num">1.250</b></div>
-<div class="row result"><span>這一棟的數字</span><span class="dots"></span><b class="num">6.9</b></div>
-<div class="row"><span>一般<wbr>老屋的數字<small>3 萬 8 千棟照<wbr>同樣算，<wbr>取中間那棟</small></span><span class="dots"></span><b class="num">2.8</b></div>
-<div class="row result"><span>÷ 一般<wbr>老屋 × 100</span><span class="dots"></span><b class="num">248 分</b></div>
-</div>
-<p class="unit">一般<wbr>老屋<wbr>的指標<wbr>設為<wbr> 100，<wbr>這次<wbr>計算<wbr>的指標約<wbr>是它的<wbr> 2.⁠5 倍；<wbr>不是<wbr>危險<wbr>或受益倍數。</p>
-</div>
-</li>
-<li class="step">
-<div class="say">
-<h3><span class="nw">第三步：換設定重算，</span><span class="nw">取中間的分數</span></h3>
-<p>換手冊<wbr>解讀、<wbr>年代<wbr>與加成，<wbr>共算<wbr> 3,⁠600 組；<wbr>每組<wbr>都把居中<wbr>的指標<wbr>設為 100。</p>
-<p>取中間值，<wbr>是為了<wbr>不只<wbr>展示<wbr>一組<wbr>設定。<wbr>設定<wbr>範圍<wbr>與取中間值<wbr>仍是<wbr>研究<wbr>選擇，<wbr>重算<wbr>不等於<wbr>實證驗證。</p>
-</div>
-<div class="show rerun">
-<p class="hits"><b class="num">245.4</b><span>這一棟<wbr>的優先<wbr>分數，<wbr>一般<wbr>老屋<wbr>是 100</span></p>
-<figure class="city">
-<svg class="rerun-h" viewBox="0 0 640 230" role="img" aria-label="這一棟 3,600 次重算的分數分佈，中間值 245.4"><line class="base" x1="30" x2="628" y1="202" y2="202"/><rect class="in2" x="64.2" y="45.9" width="14.6" height="156.1" rx="2"/><rect class="in2" x="80.8" y="188.4" width="14.6" height="13.6" rx="2"/><rect class="in2" x="147.3" y="34.0" width="14.6" height="168.0" rx="2"/><rect class="in2" x="163.9" y="200.3" width="14.6" height="1.7" rx="2"/><rect class="in2" x="197.1" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="213.7" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="230.3" y="95.9" width="14.6" height="106.1" rx="2"/><rect class="in1" x="246.9" y="138.4" width="14.6" height="63.6" rx="2"/><rect class="in1" x="296.8" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="313.4" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="330.0" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="346.6" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="396.4" y="174.0" width="14.6" height="28.0" rx="2"/><rect class="in1" x="413.1" y="60.3" width="14.6" height="141.7" rx="2"/><rect class="in1" x="462.9" y="42.5" width="14.6" height="159.5" rx="2"/><rect class="in1" x="479.5" y="191.8" width="14.6" height="10.2" rx="2"/><rect class="in1" x="579.2" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="595.8" y="117.2" width="14.6" height="84.8" rx="2"/><line class="cut2" x1="34.0" x2="34.0" y1="24" y2="202"/><text class="ll" x="38.0" y="20" text-anchor="start">前 10%：161</text><line class="cut" x1="259.6" x2="259.6" y1="24" y2="202"/><text class="ll" x="263.6" y="20" text-anchor="start">前 1%：229</text><circle class="me" cx="313.7" cy="202" r="7"/><text class="tk" x="162.9" y="222" text-anchor="middle">200</text><text class="tk" x="329.0" y="222" text-anchor="middle">250</text><text class="tk" x="495.1" y="222" text-anchor="middle">300</text></svg>
-<figcaption><span class="nw"><i class="kme"></i>中間值 245.4</span><span class="nw"><i class="kcut"></i>前 1%（第一優先）229</span><span class="nw"><i class="kcut2"></i>前 10%（第二波）161</span><span class="nw">每一格是 5 分，高度是次數</span></figcaption>
-</figure>
-<p class="unit">3,⁠600<wbr> 次的分數<wbr>在 172 到<wbr> 333 <wbr>之間：<wbr>100%<wbr> 高於<wbr>圖上<wbr>第二波<wbr>的 161<wbr> 分線，<wbr>56%<wbr> 高於<wbr>第一優先<wbr>的 229<wbr> 分線。<wbr>兩條線<wbr>在每次<wbr>重算<wbr>時也會動，<wbr>所以<wbr>這不<wbr>等於<wbr>入選<wbr>比例；⁠它<wbr>只說明<wbr>分數<wbr>對假設<wbr>有多敏感，<wbr>不是<wbr>現場<wbr>驗證。<wbr>就算<wbr>把 4 到 7 層和 1 到 3 層算成<wbr>一樣，<wbr>分數<wbr>是 262，<wbr>仍在前 1%。</p>
-</div>
-</li>
-</ol>
-<div class="walk-end">
-<h3><span class="nw">所以，第一優先</span><span class="nw">就是分數的前 1%</span></h3>
-<p>38,⁠345 棟<wbr>老屋<wbr>都照這樣<wbr>算出<wbr>分數，<wbr>由高到<wbr>低排，<wbr>數到全部<wbr>的 1%，<wbr>線落在<wbr> 229 分。<wbr>這一棟 245 分，<wbr>在線<wbr>的右邊，<wbr>所以<wbr>列在第一優先；⁠161 到<wbr> 229<wbr> 分是第二波。</p>
-<p>1% 和 10%<wbr> 是示範<wbr>的調查<wbr>範圍，<wbr>沒有<wbr>按實際<wbr>名額<wbr>校準。<wbr>接下來<wbr>應核對<wbr>這棟<wbr>是否<wbr>仍在、<wbr>有沒有<wbr>評估<wbr>或補強，<wbr>再請<wbr>專業<wbr>人員<wbr>看一樓<wbr>牆柱、<wbr>出入口<wbr>與地盤；<wbr>發現<wbr>現況<wbr>不同，<wbr>就重新<wbr>判斷處置。</p>
+<div class="receipt" data-rise style="--i:1">
+<h3>921<wbr> 南投縣，<wbr>鋼筋混凝土住戶<wbr>受損比例</h3>
+<div class="row"><span>民國<wbr> 63<wbr> 年以前<wbr>（⁠1974 前）</span><span class="dots"></span><span class="num">32.1%</span></div>
+<div class="row"><span>民國<wbr> 64<wbr>–⁠71<wbr> 年（⁠1975–⁠82）</span><span class="dots"></span><span class="num">28.8%</span></div>
+<div class="row"><span>民國<wbr> 72<wbr>–⁠78<wbr> 年（⁠1983–⁠89）</span><span class="dots"></span><span class="num">22.4%</span></div>
+<div class="row"><span>民國<wbr> 79<wbr>–⁠85<wbr> 年（⁠1990–⁠96）</span><span class="dots"></span><span class="num">20.7%</span></div>
+<div class="row result"><span>越晚蓋，<wbr>越少受損</span><span class="dots"></span><span>4 段都是</span></div>
+<p class="after">受損<wbr>指全倒或半倒，<wbr>以住戶計。<wbr>資料：<wbr>內政部<wbr>建築<wbr>研究所<wbr> 2001 年<wbr>《⁠九二一大<wbr>地震<wbr>建築<wbr>震害特性<wbr>分析與統計》。</p>
 </div>
 </div>
 </section>
 
-
 <section class="live" id="groups" aria-labelledby="groups-h">
 <div class="wrap">
-<div class="sheet" data-rise>
-<h2 id="groups-h">每一棟，<wbr>一個<wbr>優先分數</h2>
-<p class="note">在這組<wbr>高齡<wbr>關懷<wbr>設定下，<wbr>分數<wbr>越高越<wbr>靠前；<wbr>一般<wbr>老屋<wbr>是 100 分，<wbr>倍數<wbr>不代表<wbr>危險<wbr>或受益<wbr>倍數。<wbr>8 層以上<wbr>的 3,⁠709<wbr> 棟不計分，⁠另外看。</p>
+<div class="sheet" data-rise><h2 id="groups-h">這組<wbr>設定，<wbr>選出<wbr>哪些候選？</h2><ul class="facts">
+<li data-rise><b class="num">42,⁠054 棟</b><span>納入<wbr>的歷史<wbr>棟數，<wbr>依使照記載</span></li>
+<li data-rise style="--i:1"><b class="num">38,⁠345 棟</b><span>其中<wbr> 7 層<wbr>以下，<wbr>算出<wbr>優先分數</span></li>
+<li data-rise style="--i:2"><b class="num">385 棟</b><span>第一優先：<wbr>分數<wbr>最高的 1%</span></li>
+<li data-rise style="--i:3"><b class="num">62 個里</b><span>第一優先<wbr>分布的範圍</span></li>
+</ul><p class="note">範圍<wbr>是民國<wbr> 85<wbr> 年以前<wbr>領照、<wbr>能連結<wbr>資料<wbr>的歷史<wbr>使照，<wbr>並非<wbr>全市<wbr>現存<wbr>老屋。<wbr>早年<wbr>磚造<wbr>較難定位，<wbr>未納入<wbr>不代表需求低。<a href="../topics/issue-6-building-resilience.html#data-assessment" target="_blank" rel="noopener">查看納入範圍</a></p>
+
+<p class="note">在這組<wbr>高齡<wbr>關懷<wbr>設定下，<wbr>分數<wbr>越高越<wbr>靠前；<wbr>每組<wbr>計算以<wbr>納入<wbr>老屋<wbr>的指標<wbr>中位數<wbr>為 100，<wbr>倍數<wbr>不代表<wbr>危險<wbr>或受益<wbr>倍數。<wbr>8 層以上<wbr>的 3,⁠709<wbr> 棟不計分，⁠另外看。</p>
 <figure class="dist">
 <figcaption class="cap" id="dist-cap">38,⁠345 棟<wbr>老屋<wbr>的優先分數</figcaption>
 <div class="plot" id="plot"><svg id="hist" role="img" aria-labelledby="dist-cap"></svg><div class="tip" id="tip" hidden></div></div>
 </figure>
-<p class="key"><span class="it"><i class="sw s1"></i>第一優先：⁠前 1%</span><span class="it"><i class="sw s2"></i>第二波：<wbr>前 1% 到 10%</span><span class="it"><i class="sw s3"></i>其他</span></p>
+<p class="key"><span class="it"><i class="sw s1"></i>本研究<wbr>第一優先：⁠前 1%</span><span class="it"><i class="sw s2"></i>第二波：<wbr>前 1% 到 10%</span><span class="it"><i class="sw s3"></i>其他</span></p>
 <ol class="groups">
 <li class="lead"><h3>第一優先</h3><p>前 1%，<wbr>分數<wbr> 229 以上</p><span class="cnt">385 棟</span></li>
 <li class="sub"><h3>其中四、<wbr>五層公寓</h3><p>不在<wbr>市府<wbr>主動<wbr>初評<wbr>的樓層<wbr>範圍，<wbr>見「⁠走哪條路」</p><span class="cnt">236 棟</span></li>
@@ -776,7 +728,7 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <section class="twelve" id="first" aria-labelledby="first-h">
 <div class="wrap">
 <article class="roll" data-rise>
-<h2 id="first-h">第一優先：<wbr>385 棟</h2>
+<h2 id="first-h">前 1%<wbr> 的 385 棟候選</h2>
 <p class="first-sub">使照記載<wbr>共 2,⁠582 戶；⁠現在<wbr>住多少人，<wbr>還沒有確認。</p>
 <div class="where"><div><b>163</b><span>大安區</span></div><div><b>88</b><span>中山區</span></div><div><b>51</b><span>萬華區</span></div><div><b>83</b><span>其他 4 區</span></div></div>
 <p class="top-li">第一優先<wbr>有 10<wbr> 棟以上的里：<span class="nw">中正幸福里 11、</span><span class="nw">大同建明里 15、</span><span class="nw">中山康樂里 10、</span><span class="nw">中山民安里 21、</span><span class="nw">中山興亞里 10、</span><span class="nw">大安昌隆里 111、</span><span class="nw">大安正聲里 15、</span><span class="nw">大安民炤里 20、</span><span class="nw">萬華西門里 11、</span><span class="nw">萬華青山里 16</span></p>
@@ -826,10 +778,10 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 </section>
 
 <section class="unranked" id="route" aria-labelledby="route-h">
-<div class="wrap unranked-grid">
+<div class="wrap unranked-grid"><div class="currentness" id="use"><h2 id="route-h" data-rise>拿到<wbr>候選後，<wbr>先查什麼？</h2><h3>先確認<wbr>房子<wbr>與紀錄<wbr>是否相符</h3><p>385 棟<wbr>候選來自<wbr> 221 <wbr>張歷史<wbr>使照。<wbr>承辦<wbr>可先核對<wbr>建物<wbr>是否<wbr>仍在、<wbr>有沒有<wbr>評估<wbr>或補強，<wbr>再確認<wbr>適用程序。</p><figure><figcaption>對照市府<wbr> 2025<wbr> 年地形圖</figcaption><div class="why-retention-bar" role="img" aria-label="311 棟位置與樓層相符；74 棟需現場核對"><span style="flex:311"></span><span style="flex:74"></span></div><div class="why-retention-labels"><span><b>311</b> 棟相符</span><span><b>74</b> 棟需核對</span></div></figure><p>需核對<wbr>的紀錄<wbr>有樓層<wbr>不同<wbr>或門牌<wbr>未落在<wbr>圖上的情況；<wbr>相符<wbr>也可能是<wbr>原高度<wbr>重建，<wbr>仍須確認<wbr>現場。<wbr>這是<wbr>書面<wbr>初查，<wbr>不另<wbr>排危險程度。</p></div>
 <div class="unranked-left">
 <div>
-<h2 id="route-h" data-rise><span class="nw">每一棟，</span><span class="nw">走哪條路</span></h2>
+
 <p data-rise style="--i:1">市府<wbr>的主動<wbr>初評，<wbr>是主動邀請<span class="nw">屋齡 30 年以上</span>、<span class="nw">6 層以上</span>、⁠有管理<wbr>組織<wbr>的老大樓<wbr>做結構<wbr>初步<wbr>評估，<wbr>市府<wbr>也可以<wbr>個案<wbr>指定。<wbr>列出<wbr>候選後，<wbr>先確認<wbr>房子<wbr>還在<wbr>不在、<wbr>有沒有<wbr>評估過，<wbr>再看<wbr>走哪條路：⁠四、<wbr>五層<wbr>公寓<wbr>不在<wbr>主動<wbr>初評<wbr>的樓層<wbr>範圍，<wbr>屋主可以<wbr>申請<wbr>危老<wbr>結構<wbr>評估補助；<span class="nw">6–7 層</span>要核對<wbr>管理<wbr>組織<wbr>和初評<wbr>條件。<wbr>市府<wbr> 2016 年<wbr>曾沿液化<wbr>潛勢區<wbr>和救災<wbr>道路<wbr>派員<wbr>勘查，<wbr>現在<wbr>是否<wbr>還在<wbr>辦沒有<wbr>確認，<wbr>當時<wbr>的同意<wbr>條件<wbr>也不能<wbr>直接沿用。</p>
 </div>
 <div data-rise style="--i:2">
@@ -849,34 +801,13 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <p class="after">補助<wbr>由屋主<wbr>申請；⁠若<wbr>考慮<wbr>派員<wbr>勘查，<wbr>須先確認<wbr>承辦<wbr>單位<wbr>與現行<wbr>程序。<wbr>有管委會<wbr>報備<wbr>紀錄，<wbr>也仍需核對<wbr>資格、<wbr>徵詢<wbr>與同意。<wbr>未查到<wbr>管委會<wbr>的 81<wbr> 棟中，<wbr>68<wbr> 棟在「⁠可輔導<wbr>成立」<wbr>清冊，<wbr>其餘<wbr> 13 棟<wbr>兩份<wbr>清冊<wbr>都沒有。<wbr>另有<wbr> 13 <wbr>棟位於<wbr>更新<wbr>地區，<wbr>這只<wbr>提供<wbr>區域<wbr>查核線索，<wbr>是否<wbr>啟動<wbr>都更適宜性<wbr>評估<wbr>須另外判斷。</p>
 </div>
 </div>
-</section>
-
-<section class="unranked light" id="era" aria-labelledby="era-h">
-<div class="wrap unranked-grid">
-<div class="unranked-left">
-<div>
-<h2 id="era-h" data-rise>全是<wbr>早年<wbr>設計，<wbr>證據<wbr>站得住嗎</h2>
-<p data-rise style="--i:1">第一優先<wbr>全部<wbr>是民國<wbr> 71<wbr> 年以前<wbr>設計。<wbr>這有<wbr>臺灣<wbr>的震災<wbr>證據<wbr>支持：<wbr>921 <wbr>地震時，<wbr>南投縣<wbr>的鋼筋混凝土<wbr>房子，<wbr>越晚蓋<wbr>的越少<wbr>受損。<wbr>國震<wbr>中心<wbr>自己<wbr>的初步<wbr>評估<wbr>公式，<wbr>也用民國<wbr> 63<wbr> 年和 71 <wbr>年分年代。</p>
-<p data-rise style="--i:2">但證據<wbr>不是<wbr>一面倒。<wbr>2016<wbr> 年美濃<wbr>地震時，<wbr>臺南玉井民國<wbr> 63<wbr> 年以前<wbr>的房子，<wbr>被貼紅單<wbr>的比例<wbr>反而<wbr>比 64<wbr>–⁠71<wbr> 年低；<wbr>報告<wbr>推測<wbr>是很多<wbr>最老<wbr>的房子<wbr>已經<wbr>改建<wbr>或修補過。</p>
-</div>
-</div>
-<div class="receipt" data-rise style="--i:1">
-<h3>921<wbr> 南投縣，<wbr>鋼筋混凝土住戶<wbr>受損比例</h3>
-<div class="row"><span>民國<wbr> 63<wbr> 年以前<wbr>（⁠1974 前）</span><span class="dots"></span><span class="num">32.1%</span></div>
-<div class="row"><span>民國<wbr> 64<wbr>–⁠71<wbr> 年（⁠1975–⁠82）</span><span class="dots"></span><span class="num">28.8%</span></div>
-<div class="row"><span>民國<wbr> 72<wbr>–⁠78<wbr> 年（⁠1983–⁠89）</span><span class="dots"></span><span class="num">22.4%</span></div>
-<div class="row"><span>民國<wbr> 79<wbr>–⁠85<wbr> 年（⁠1990–⁠96）</span><span class="dots"></span><span class="num">20.7%</span></div>
-<div class="row result"><span>越晚蓋，<wbr>越少受損</span><span class="dots"></span><span>4 段都是</span></div>
-<p class="after">受損<wbr>指全倒或半倒，<wbr>以住戶計。<wbr>資料：<wbr>內政部<wbr>建築<wbr>研究所<wbr> 2001 年<wbr>《⁠九二一大<wbr>地震<wbr>建築<wbr>震害特性<wbr>分析與統計》。</p>
-</div>
-</div>
-</section>
+<div class="wrap route-context"><p>市府<wbr> 2026 年<wbr>主動<wbr>初評<wbr>公告<wbr> 50 件，<wbr>是年度<wbr>件數，<wbr>並非<wbr>剩餘<wbr>名額。<wbr>第一優先<wbr>與第二波中，<wbr>165 棟<wbr> 6–⁠7 層<wbr>紀錄<wbr>有管委會<wbr>報備；⁠另有<wbr> 84 <wbr>棟民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的高樓<wbr>有報備。<wbr>棟數<wbr>不等於<wbr>案件數，<wbr>仍須核對<wbr>資格、<wbr>徵詢與同意。</p></div></section>
 
 <section class="listed" id="ground" aria-labelledby="ground-h">
 <img src="assets/2015-05-02-apartment-buildings-in-taipei.jpg" width="1600" height="1060" alt="臺北街邊加裝鐵窗的老公寓，一樓整排是店面" loading="lazy" decoding="async">
 <div class="stub" data-rise>
 <h2 id="ground-h">到現場，<wbr>先看一樓</h2>
-<p>國震<wbr>中心<wbr>在美濃<wbr>和花蓮<wbr>地震<wbr>後逐棟<wbr>調查，<wbr>記錄<wbr>一樓<wbr>的牆是否<wbr>中斷。<wbr>一樓<wbr>整面<wbr>開放、<wbr>上面<wbr>幾層<wbr>都有牆，<wbr>大地震時<wbr>一樓<wbr>最容易先壞。</p>
+<p>國震<wbr>中心<wbr>在美濃<wbr>和花蓮<wbr>地震<wbr>後逐棟<wbr>調查，<wbr>記錄<wbr>一樓<wbr>的牆是否<wbr>中斷。<wbr>在美濃<wbr>這批<wbr>調查<wbr>案例中，<wbr>一樓<wbr>牆面<wbr>中斷<wbr>的建築，<wbr>中度<wbr>以上<wbr>受損<wbr>比例較高。</p>
 <div class="pair">
 <div><b class="num">67%</b><span>一樓<wbr>牆面<wbr>中斷，<wbr>中度<wbr>以上<wbr>受損（⁠美濃，<wbr>60 棟民宅）</span></div>
 <div><b class="num">23%</b><span>一樓<wbr>牆面<wbr>完整，<wbr>中度<wbr>以上<wbr>受損（⁠美濃，<wbr>35 棟民宅）</span></div>
@@ -903,20 +834,76 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 </div>
 </section>
 
-<section class="use" id="use" aria-labelledby="use-h">
-<div class="wrap use-grid">
-<h2 id="use-h" data-rise><span class="nw">市府可以</span><span class="nw">怎麼用</span></h2>
-<div class="use-body">
-<p class="use-lede" data-rise>這份<wbr>名單<wbr>是調查<wbr>候選，<wbr>不是<wbr>安全<wbr>判定。<wbr>柱子、<wbr>牆壁<wbr>和保養<wbr>狀況，<wbr>只有<wbr>專業<wbr>人員<wbr>到現場<wbr>才看得到。</p>
-<ol>
-<li data-rise><h3>先核對<wbr>候選現況</h3><p>這 385 <wbr>棟來自<wbr> 221 <wbr>張歷史<wbr>使照。<wbr>建議<wbr>承辦<wbr>單位<wbr>先核對<wbr>它們<wbr>現在<wbr>的狀況、<wbr>有沒有<wbr>評估過，<wbr>確認<wbr>哪些<wbr>仍是<wbr>待調查<wbr>對象。<wbr>對照<wbr>市府<wbr> 2025<wbr> 年地形圖，<wbr>311<wbr> 棟的位置<wbr>與樓層<wbr>都和使照<wbr>相符；⁠其餘<wbr> 74 <wbr>棟樓層<wbr>不同<wbr>或門牌<wbr>不在<wbr>圖上，<wbr>可以<wbr>先到現場看。</p></li>
-<li data-rise style="--i:1"><h3>公寓：<wbr>先說明<wbr>評估補助</h3><p>236<wbr> 棟是四、<wbr>五層<wbr>公寓，<wbr>不在<wbr>主動<wbr>初評<wbr>的範圍。<wbr>可以<wbr>先向<wbr>屋主<wbr>說明<wbr>危老<wbr>結構<wbr>評估<wbr>補助；<wbr>如果<wbr>市府<wbr>考慮<wbr>分區<wbr>派員<wbr>勘查，<wbr>要先確認<wbr>由誰承接、<wbr>現行<wbr>程序<wbr>和專業人力。</p></li>
-<li data-rise style="--i:2"><h3>大樓：<wbr>核對<wbr>主動<wbr>初評條件</h3><p>市府<wbr> 2026<wbr> 年的主動<wbr>初評<wbr>計畫<wbr>公告<wbr> 50 件，<wbr>這是<wbr>年度<wbr>件數，<wbr>不是<wbr>還剩<wbr>多少<wbr>名額。<wbr>第一優先<wbr>和第二波裡，<wbr>有管委會報備的 <span class="nw">6–7 層</span>紀錄<wbr>共 165 棟；⁠另有<wbr> 84 <wbr>棟民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的 8 層以上<wbr>大樓<wbr>也有<wbr>報備。<wbr>這些<wbr>是查資格<wbr>的線索：<wbr>棟數<wbr>不等於<wbr>件數，<wbr>仍要<wbr>依程序<wbr>徵詢、<wbr>取得<wbr>同意再派案。</p></li>
-<li data-rise style="--i:3"><h3>更新<wbr>地區：<wbr>另外評估</h3><p>13<wbr> 棟第一優先位<wbr>在劃定<wbr>的更新<wbr>地區。<wbr>健檢<wbr>優先<wbr>不等於<wbr>都更優先；⁠要<wbr>不要<wbr>做都更適宜性<wbr>評估，<wbr>仍要<wbr>按區域<wbr>核對<wbr>基地、<wbr>資料<wbr>涵蓋和條件。<a href="../topics/issue-6-building-resilience.html#renewal-b" target="_blank" rel="noopener">公辦<wbr>都更研究案例</a>。</p></li>
+<section class="use" id="answer" aria-labelledby="answer-h"><div class="wrap"><h2 id="answer-h">我們<wbr>回答了多少？</h2>
+<p class="answer-lede">已完成<wbr>可重現<wbr>的候選<wbr>試算<wbr>與書面<wbr>查核。<wbr>排序<wbr>是否<wbr>比現行<wbr>選案<wbr>更好，<wbr>仍待實際比較。</p>
+<div class="answer-rows"><div><h3>健檢先後</h3><p>完成<wbr> 38,⁠345 棟<wbr>歷史<wbr>使照代表<wbr>建築<wbr>的計分，<wbr>提出<wbr> 385 棟<wbr>前 1%<wbr> 候選，<wbr>列出理由<wbr>與現場<wbr>待查問題。</p><p>這組<wbr>設定<wbr>偏重<wbr>高齡<wbr>社區。<wbr>10<wbr> 棟因周邊長者<wbr>比例<wbr>為零而<wbr>得零分，<wbr>不能<wbr>據此<wbr>拒絕<wbr>健檢；<wbr>一般<wbr>選案<wbr>規則<wbr>仍需檢驗。</p></div>
+<div><h3>都更評估先後</h3><p>在 469<wbr> 塊更新<wbr>地區中，<wbr>30<wbr> 塊符合<wbr>本研究<wbr>計算<wbr>條件，<wbr>已做條件<wbr>式比較；<wbr>這些<wbr>區域<wbr>的門牌，<wbr>中位數<wbr>僅 5.⁠1%<wbr> 有可用紀錄。</p><p>應先核對<wbr>資料<wbr>涵蓋<wbr>與實際<wbr>基地，<wbr>再補<wbr>居民<wbr>意願、<wbr>權屬、<wbr>安置<wbr>與財務。<wbr>健檢<wbr>分數<wbr>不能<wbr>直接<wbr>決定都更。<a href="../topics/issue-6-building-resilience.html#renewal-b" target="_blank" rel="noopener">閱讀<wbr>都更區域研究</a></p></div></div>
+<p class="answer-next">下一步<wbr>是核對<wbr>候選<wbr>現況<wbr>與既有<wbr>評估，<wbr>再由<wbr>專業<wbr>人員<wbr>調查；<wbr>取得<wbr>可比較的<wbr>實際<wbr>選案<wbr>資料後，<wbr>才有<wbr>條件<wbr>檢驗<wbr>排序<wbr>是否有幫助。</p>
+<nav class="page-nav" aria-label="繼續閱讀"><a href="#walk">核對<wbr>完整算例</a><a href="../topics/issue-6-building-resilience.html" target="_blank" rel="noopener">閱讀<wbr>完整<wbr>研究報告</a><a href="#faq">查看常見疑問</a></nav></div></section>
+
+<section class="walk" id="walk" aria-labelledby="walk-h">
+<div class="wrap">
+<header class="walk-top">
+<h2 id="walk-h" data-rise><span class="nw">一棟老屋，</span><span class="nw">怎麼算？</span></h2>
+<p data-rise style="--i:1">從第一優先挑<wbr>一棟<wbr>說明：<wbr>中正區<wbr>民國<wbr> 63<wbr> 年以前<wbr>設計<wbr>的 4 層鋼筋混凝土<wbr>公寓。<wbr>同區<wbr>同樣<wbr>條件<wbr>的使照<wbr>有 309 筆，<wbr>不指認<wbr>個別<wbr>建物；<wbr>完整<wbr>計算如下。</p>
+</header>
+<ol class="steps">
+<li class="step">
+<div class="say">
+<h3><span class="nw">第一步：</span><span class="nw">先看房子本身</span></h3>
+<p>按手冊，<wbr>以構造、<wbr>樓層<wbr>與年代<wbr>估算<wbr>中度<wbr>以上<wbr>受損<wbr>機會。<wbr>圖中<wbr>是設計<wbr>地震下<wbr>的類別<wbr>估值，<wbr>未驗證能<wbr>預測單棟。</p>
+<p>這筆<wbr>紀錄<wbr>的設計<wbr>年代<wbr>分類<wbr>明確，<wbr>所以<wbr>只換算法<wbr>和政策<wbr>加成來<wbr>重算。<wbr>4–⁠7 層<wbr>的加重<wbr>尚未<wbr>用臺灣<wbr>資料<wbr>驗證，<wbr>後面<wbr>會取消<wbr>加重再算。</p>
+<p class="def">中度<wbr>受損：<wbr>多數<wbr>梁柱<wbr>出現<wbr>裂縫，<wbr>部分<wbr>混凝土<wbr>剝落。<wbr>要修補，<wbr>但還不是倒塌。</p>
+</div>
+<div class="show">
+<p class="unit">設計<wbr>地震下<wbr>的類別<wbr>模型值，<wbr>以每 100 棟說明</p>
+<div class="pbars" data-ui><div class="pb me"><span class="lb">此類建物</span><span class="tr"><i style="width:81.3%"></i></span><b class="num">16.3</b></div><div class="pb"><span class="lb">計算基準</span><span class="tr"><i style="width:59.0%"></i></span><b class="num">11.8</b></div></div>
+<p class="unit">手冊<wbr>有四種<wbr>解讀，<wbr>這類<wbr>房子<wbr>的值落在<wbr> 11.⁠5 到<wbr> 16.⁠3；<wbr>這裡<wbr>先用<wbr>第一種，<wbr>第三步會<wbr>全部換著算。</p>
+</div>
+</li>
+<li class="step">
+<div class="say">
+<h3><span class="nw">第二步：</span><span class="nw">周邊人口與地點</span></h3>
+<p>乘上<wbr>周邊長者<wbr>比例，<wbr>再乘<wbr>環境<wbr>加成。<wbr>人口<wbr>來自<wbr>最小<wbr>統計區，<wbr>不能<wbr>當成<wbr>這棟<wbr>住戶的年齡。</p>
+<p>巷弄<wbr>與液化<wbr>加成<wbr>尚未<wbr>校準。<wbr>先用<wbr> 25%<wbr> 展示<wbr>算式，<wbr>再換<wbr>其他設定。</p>
+</div>
+<div class="show">
+<div class="ledger">
+<div class="row"><span>受損機會</span><span class="dots"></span><b class="num">16.3</b></div>
+<div class="row"><span>× 65<wbr> 歲以上的比例<small>所在<wbr>最小<wbr>統計區<wbr>的統計，<wbr>計算<wbr>基準 23.⁠8%</small></span><span class="dots"></span><b class="num">27.1%</b></div>
+<div class="row"><span>× 救援不易<small>門牌<wbr>在清冊<wbr>列管<wbr>的巷弄上</small></span><span class="dots"></span><b class="num">1.25</b></div>
+<div class="row"><span>× 土壤液化<small>門牌<wbr>平均<wbr>加成：<wbr>1 + 25% × 1.⁠0</small></span><span class="dots"></span><b class="num">1.250</b></div>
+<div class="row result"><span>這筆<wbr>紀錄的指標</span><span class="dots"></span><b class="num">6.9</b></div>
+<div class="row"><span>計算<wbr>基準的數字<small>以納入<wbr>棟數<wbr>加權，<wbr>取指標中位數</small></span><span class="dots"></span><b class="num">2.8</b></div>
+<div class="row result"><span>÷ 計算<wbr>基準 × 100</span><span class="dots"></span><b class="num">248 分</b></div>
+</div>
+<p class="unit">計算<wbr>基準<wbr>的指標<wbr>設為<wbr> 100，<wbr>這次<wbr>計算<wbr>的指標約<wbr>是它的<wbr> 2.⁠5 倍；<wbr>不是<wbr>危險<wbr>或受益倍數。</p>
+</div>
+</li>
+<li class="step">
+<div class="say">
+<h3><span class="nw">第三步：換設定重算，</span><span class="nw">取中間的分數</span></h3>
+<p>換手冊<wbr>解讀、<wbr>年代<wbr>與加成，<wbr>共算<wbr> 3,⁠600 組；<wbr>每組<wbr>都把居中<wbr>的指標<wbr>設為 100。</p>
+<p>取中間值，<wbr>是為了<wbr>不只<wbr>展示<wbr>一組<wbr>設定。<wbr>設定<wbr>範圍<wbr>與取中間值<wbr>仍是<wbr>研究<wbr>選擇，<wbr>重算<wbr>不等於<wbr>實證驗證。</p>
+</div>
+<div class="show rerun">
+<p class="hits"><b class="num">245.4</b><span>這一棟<wbr>的優先<wbr>分數，<wbr>計算<wbr>基準<wbr>是 100</span></p>
+<figure class="city">
+<svg class="rerun-h" viewBox="0 0 640 230" role="img" aria-label="這一棟 3,600 次重算的分數分佈，中間值 245.4"><line class="base" x1="30" x2="628" y1="202" y2="202"/><rect class="in2" x="64.2" y="45.9" width="14.6" height="156.1" rx="2"/><rect class="in2" x="80.8" y="188.4" width="14.6" height="13.6" rx="2"/><rect class="in2" x="147.3" y="34.0" width="14.6" height="168.0" rx="2"/><rect class="in2" x="163.9" y="200.3" width="14.6" height="1.7" rx="2"/><rect class="in2" x="197.1" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="213.7" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in2" x="230.3" y="95.9" width="14.6" height="106.1" rx="2"/><rect class="in1" x="246.9" y="138.4" width="14.6" height="63.6" rx="2"/><rect class="in1" x="296.8" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="313.4" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="330.0" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="346.6" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="396.4" y="174.0" width="14.6" height="28.0" rx="2"/><rect class="in1" x="413.1" y="60.3" width="14.6" height="141.7" rx="2"/><rect class="in1" x="462.9" y="42.5" width="14.6" height="159.5" rx="2"/><rect class="in1" x="479.5" y="191.8" width="14.6" height="10.2" rx="2"/><rect class="in1" x="579.2" y="117.2" width="14.6" height="84.8" rx="2"/><rect class="in1" x="595.8" y="117.2" width="14.6" height="84.8" rx="2"/><line class="cut2" x1="34.0" x2="34.0" y1="24" y2="202"/><text class="ll" x="38.0" y="20" text-anchor="start">前 10%：161</text><line class="cut" x1="259.6" x2="259.6" y1="24" y2="202"/><text class="ll" x="263.6" y="20" text-anchor="start">前 1%：229</text><circle class="me" cx="313.7" cy="202" r="7"/><text class="tk" x="162.9" y="222" text-anchor="middle">200</text><text class="tk" x="329.0" y="222" text-anchor="middle">250</text><text class="tk" x="495.1" y="222" text-anchor="middle">300</text></svg>
+<figcaption><span class="nw"><i class="kme"></i>中間值 245.4</span><span class="nw"><i class="kcut"></i>前 1%（第一優先）229</span><span class="nw"><i class="kcut2"></i>前 10%（第二波）161</span><span class="nw">每一格是 5 分，高度是次數</span></figcaption>
+</figure>
+<p class="unit">3,⁠600<wbr> 次的分數<wbr>在 172 到<wbr> 333 <wbr>之間：<wbr>100%<wbr> 高於<wbr>圖上<wbr>第二波<wbr>的 161<wbr> 分線，<wbr>56%<wbr> 高於<wbr>第一優先<wbr>的 229<wbr> 分線。<wbr>兩條線<wbr>在每次<wbr>重算<wbr>時也會動，<wbr>所以<wbr>這不<wbr>等於<wbr>入選<wbr>比例；⁠它<wbr>只說明<wbr>分數<wbr>對假設<wbr>有多敏感，<wbr>不是<wbr>現場<wbr>驗證。<wbr>就算<wbr>把 4 到 7 層和 1 到 3 層算成<wbr>一樣，<wbr>分數<wbr>是 262，<wbr>仍在前 1%。</p>
+</div>
+</li>
 </ol>
+<div class="walk-end">
+<h3><span class="nw">所以，第一優先</span><span class="nw">就是分數的前 1%</span></h3>
+<p>38,⁠345 棟<wbr>老屋<wbr>都照這樣<wbr>算出<wbr>分數，<wbr>由高到<wbr>低排，<wbr>數到全部<wbr>的 1%，<wbr>線落在<wbr> 229 分。<wbr>這一棟 245 分，<wbr>在線<wbr>的右邊，<wbr>所以<wbr>列在第一優先；⁠161 到<wbr> 229<wbr> 分是第二波。</p>
+<p>1% 和 10%<wbr> 是示範<wbr>的調查<wbr>範圍，<wbr>沒有<wbr>按實際<wbr>名額<wbr>校準。<wbr>接下來<wbr>應核對<wbr>這棟<wbr>是否<wbr>仍在、<wbr>有沒有<wbr>評估<wbr>或補強，<wbr>再請<wbr>專業<wbr>人員<wbr>看一樓<wbr>牆柱、<wbr>出入口<wbr>與地盤；<wbr>發現<wbr>現況<wbr>不同，<wbr>就重新<wbr>判斷處置。</p>
 </div>
 </div>
 </section>
+
 
 <section class="faq" id="faq" aria-labelledby="faq-h">
 <div class="wrap faq-grid">
