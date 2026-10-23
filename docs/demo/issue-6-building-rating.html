@@ -575,7 +575,16 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 .decision-split{margin-top:48px}.decision-split figcaption,.calculation-path figcaption{font-size:28px;font-weight:800;margin-bottom:24px}
 .decision-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.decision-columns>div{padding:28px;background:var(--paper-2)}.decision-columns>div:first-child{background:var(--ground);color:var(--on-dark)}.decision-columns h3{font-size:28px}.decision-columns p{margin:16px 0}.decision-columns strong{font-weight:650}
 .calculation-path{margin-top:64px}.calculation-path ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;padding-left:24px;margin-bottom:20px}.calculation-path li{padding-right:12px}.calculation-path a{color:inherit}
-.live .facts{text-align:left;margin:0 0 36px}.live .note{max-width:none}.live h2{margin-top:32px}
+.live .sheet{width:100%;padding:clamp(24px,4vw,48px)}
+.live h2{text-align:left;margin:0 0 36px;font-size:clamp(28px,3.2vw,40px);line-height:1.35}
+.live .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;text-align:left;margin:0 0 32px}
+.live .facts li{min-width:0}.live .facts b{font-size:clamp(28px,3.2vw,40px)}
+.live .facts span{max-width:none;line-height:1.65}.live .note{max-width:none;margin:16px 0 0;text-align:left}
+.live .dist{margin-top:36px}.live .dist .cap{text-align:left;font-size:var(--t-body)}
+.live .groups,.live .pick{max-width:none}.live .groups li.lead{margin-inline:0}
+@media(max-width:1050px){.live .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 24px}}
+@media(max-width:600px){.live h2{margin-bottom:28px}.live .facts{gap:24px 16px}.live .facts b{font-size:28px}.live .sheet{padding:24px}.live .note{font-size:16px;line-height:1.8}}
+
 .currentness{grid-column:1/-1;max-width:100%;margin-bottom:40px}.currentness h2{font-size:var(--t-display);line-height:1.15;margin-bottom:32px}.currentness h3{font-size:var(--t-head)}.currentness p{max-width:45em;margin:18px 0}.currentness figure{max-width:760px;margin:28px 0}.currentness figcaption{font-size:18px;margin-bottom:16px;color:var(--on-dark)}.currentness .why-retention-bar{background:var(--paper-2)}.currentness .why-retention-bar span:first-child{background:var(--accent-ink)}.currentness .why-retention-bar span:last-child{background:#9fb8b1}
 .route-context{margin-top:32px}.route-context p{max-width:50em;font-size:16px}.answer-lede{font-size:20px;margin:24px 0 36px;max-width:42em}.answer-rows{display:grid;gap:28px}.answer-rows>div{display:grid;grid-template-columns:minmax(0,.6fr) minmax(0,1fr) minmax(0,1fr);gap:28px;padding:28px;background:var(--paper-2)}.answer-rows h3{font-size:28px}.answer-next{margin-top:32px;max-width:48em}#answer .page-nav{margin:28px 0 0;padding:0}
 @media(max-width:900px){.hero-stage{grid-template-columns:minmax(0,1fr);padding-block:32px;gap:32px}.hero-photo{height:320px}.decision-columns{grid-template-columns:minmax(0,1fr)}.calculation-path ol{grid-template-columns:minmax(0,1fr);gap:18px}.answer-rows>div{grid-template-columns:minmax(0,1fr);gap:16px}.currentness h2{font-size:32px}.hero-view{max-width:100%}}
@@ -724,7 +733,7 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <p class="key"><span class="it"><i class="sw s1"></i>本研究<wbr>第一優先：⁠前 1%</span><span class="it"><i class="sw s2"></i>第二波：<wbr>前 1% 到 10%</span><span class="it"><i class="sw s3"></i>其他</span></p>
 <ol class="groups">
 <li class="lead"><h3>第一優先</h3><p>前 1%，<wbr>分數<wbr> 229 以上</p><span class="cnt">385 棟</span></li>
-<li class="sub"><h3>其中四、<wbr>五層公寓</h3><p>不在<wbr>市府<wbr>主動<wbr>初評<wbr>的樓層<wbr>範圍，<wbr>見「⁠走哪條路」</p><span class="cnt">236 棟</span></li>
+<li class="sub"><h3>其中四、<wbr>五層公寓</h3><p>不在<wbr>市府<wbr>主動<wbr>初評<wbr>的樓層範圍，<a href="#route">查看<wbr>後續<wbr>查核<wbr>與申請途徑</a></p><span class="cnt">236 棟</span></li>
 <li><h3>第二波</h3><p>前 1%<wbr> 到 10%，<wbr>分數<wbr>在 161 到<wbr> 229 之間</p><span class="cnt">3,⁠467 棟</span></li>
 <li><h3>其他</h3><p>分數<wbr>不到 161</p><span class="cnt">34,⁠493 棟</span></li>
 </ol>
