@@ -549,6 +549,18 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 @media(max-width:1000px){.why-heading,.why-comparison,.why-proof{grid-template-columns:minmax(0,1fr)}.why-heading{gap:20px;margin-bottom:32px}.why-input-group{grid-template-columns:minmax(0,1fr);gap:20px}.why-input-group h3{grid-row:auto}.why-comparison,.why-proof{margin-top:48px}.why-photo{max-width:100%}.why-input-row{grid-template-columns:minmax(0,1fr) 16px minmax(0,1.25fr);gap:8px}.why-retention-labels b{font-size:24px}}
 @media(max-width:500px){.why-input-row{grid-template-columns:20px minmax(0,1fr);gap:6px 8px}.why-input-row>strong{grid-column:1/-1}.why-input-group.policy{margin-inline:-8px;padding-inline:8px}.why-inputs{padding:20px 16px}.why-input-group{gap:24px}.why-input-row small{margin-top:6px}}
 @media print{.why-visual{background:white;color:var(--ink)}.why-bar-track{background:var(--paper-2)}.why-bar-track i,.why-bar-track.zero::before,.why-retention-bar span:first-child{background:var(--ink)}.why-input-group,.why-comparison,.why-proof{break-inside:avoid}}
+
+/* Pain → investigation questions → evidence roles. Existing report identity retained. */
+.pain-opening{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.pain-opening h2{font-size:clamp(32px,4.5vw,64px);line-height:1.2}.pain-opening p{margin-top:20px}.pain-opening img{width:100%;height:auto;display:block}.pain-opening figcaption{text-align:left;font-size:16px;margin-top:10px}
+.pain-source{font-size:16px;margin-top:20px;color:var(--soft)}
+.pain-route{margin-top:48px}.pain-route figcaption{font-size:var(--t-head);font-weight:800;text-align:left;margin-bottom:24px}.pain-route ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;list-style:none;padding:0;margin:0}.pain-route li{position:relative;background:var(--paper-2);padding:24px}.pain-route li+li:before{content:"→";position:absolute;left:-27px;top:28px;color:var(--ink)}.pain-route strong,.pain-route span{display:block}.pain-route strong{font-size:24px}.pain-route span{font-size:16px;margin-top:10px}.pain-route .research-part{background:var(--accent-ink);color:var(--paper)}.pain-route p{font-size:16px;margin-top:20px}
+.question-map{background:var(--paper);color:var(--ink);padding:clamp(20px,4vw,48px)}.question-map>figcaption{font-weight:800;font-size:var(--t-head);text-align:left;margin-bottom:24px;color:inherit}
+.question-row{display:grid;grid-template-columns:minmax(0,1fr) 24px minmax(0,1.45fr);gap:24px;align-items:start;padding:20px 0}.question-row:nth-of-type(even){background:var(--paper-2);margin-inline:-12px;padding-inline:12px}.question-row h3{font-size:24px!important}.question-row>span{font-size:24px}.question-row p{margin:0}.question-row strong,.question-row small{display:block}.question-row small{font-size:16px;font-weight:400;margin-top:8px}.question-note{margin-top:20px;font-size:16px}
+.data-routes{margin-top:64px}.data-routes>figcaption{font-size:var(--t-head);font-weight:800;text-align:left;color:inherit}.data-routes>p{margin-top:16px;font-size:16px}.data-routes dl{margin-top:24px}.data-routes dl>div{display:grid;grid-template-columns:9em minmax(0,1fr);gap:24px;padding:20px 24px;background:var(--ground-2);margin-top:8px}.data-routes dt{font-weight:800;font-size:24px}.data-routes dd{margin:0}.data-routes dd span{display:block;font-size:16px;margin-top:6px}
+@media(max-width:850px){.pain-opening{grid-template-columns:minmax(0,1fr);gap:28px}.pain-route ol{grid-template-columns:minmax(0,1fr);gap:28px}.pain-route li+li:before{content:"↓";left:24px;top:-29px}.question-row{grid-template-columns:20px minmax(0,1fr);gap:8px 12px}.question-row h3{grid-column:1/-1}.data-routes dl>div{grid-template-columns:minmax(0,1fr);gap:10px}.why-heading{grid-template-columns:minmax(0,1fr)}}
+@media print{.data-routes dl>div{background:var(--paper-2);color:var(--ink)}.pain-route,.question-row{break-inside:avoid}}
+
 </style>
 </head>
 <body>
@@ -561,11 +573,11 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <p class="thesis" data-report-thesis>健檢前，<wbr>先整理<wbr>值得<wbr>調查<wbr>的線索。<wbr>我們<wbr>結合<wbr>房屋<wbr>條件、<wbr>周邊長者<wbr>比例<wbr>與環境<wbr>資料，<wbr>提出<wbr> 385 棟<wbr>候選，<wbr>說明<wbr>為何<wbr>列入、<wbr>現場<wbr>要查什麼。<wbr>這份<wbr>排序<wbr>帶有<wbr>高齡<wbr>關懷<wbr>的設定，<wbr>仍待檢驗<wbr>是否<wbr>適合<wbr>一般<wbr>健檢選案。</p>
 <ul class="fields">
 <li><b>範圍</b><span>民國<wbr> 85<wbr> 年以前<wbr>領照、<wbr>能連結<wbr>資料<wbr>的歷史<wbr>使照紀錄</span></li>
-<li><b>五類資料</b><span>屋齡<wbr>與結構<wbr>（⁠使用<wbr>執照）、<wbr>土壤<wbr>液化<wbr>（⁠潛勢圖）、<wbr>狹小巷弄救災<wbr>（⁠消防局<wbr>清冊）、<wbr>高齡<wbr>人口（⁠最小統計區）</span></li>
+<li><b>研究問題</b><span>專業<wbr>調查前，<wbr>哪些<wbr>線索<wbr>能幫助<wbr>說明<wbr>先查誰、⁠查什麼？</span></li>
 </ul>
 <div class="permit-foot">
 <small>計算日期<wbr>・⁠2026-<wbr>10-⁠22</small>
-<a class="btn" href="#how">看調查理由</a>
+<a class="btn" href="#why">看調查理由</a>
 <a class="link" href="#first">看 385 棟候選</a>
 </div>
 </article>
@@ -575,49 +587,66 @@ table.kinds{width:100%;margin-top:16px;border-collapse:collapse;font-size:var(--
 <section class="intro" id="why" aria-labelledby="why-h">
 <div class="wrap">
 <nav class="page-nav" aria-label="本頁段落"><a href="#how">為什麼這樣排</a><a href="#walk">算一棟</a><a href="#groups">分數分布</a><a href="#first">第一優先</a><a href="#map">在哪些里</a><a href="#route">走哪條路</a><a href="#use">市府怎麼用</a><a href="#faq">常見疑問</a></nav>
-<div class="intro-top">
-<h2 id="why-h" data-rise><span class="nw">老房子這麼多，</span><span class="nw">健檢從哪一棟</span><span class="nw">開始？</span></h2>
-<p data-rise style="--i:1">市府<wbr>安排<wbr>老屋<wbr>調查時，<wbr>需要<wbr>知道<wbr>先看<wbr>哪些、<wbr>為什麼看。<wbr>市府<wbr>已有<wbr>主動<wbr>初評<wbr>與屋主<wbr>申請<wbr>補助<wbr>等程序；<wbr>我們<wbr>研究<wbr>的是，<wbr>在逐棟<wbr>健檢<wbr>之前，<wbr>公開<wbr>資料<wbr>能提供<wbr>哪些<wbr>調查<wbr>理由。<wbr>使照看得到<wbr>年代、<wbr>材料<wbr>與樓層，<wbr>看不到<wbr>今天<wbr>的牆柱、<wbr>改建<wbr>或補強，<wbr>因此<wbr>名單<wbr>的下一步，<wbr>是核對<wbr>現況<wbr>並請<wbr>專業<wbr>人員判斷。</p>
-<p data-rise style="--i:2">題目來自<wbr>市政 debug松<wbr>第六題，<wbr>活動<wbr>由沈伯洋<wbr>競選<wbr>辦公室<wbr>主辦；<wbr>這份<wbr>研究<wbr>獨立<wbr>進行，<wbr>不是<wbr>市府委託。</p>
+<div class="pain-opening">
+<div>
+<h2 id="why-h">住在老屋，<span class="nw">下一步呢？</span></h2>
+<p>居民<wbr>談到<wbr>安全<wbr>疑慮，<wbr>也遇到<wbr>重建<wbr>意見<wbr>不合、<wbr>需要<wbr>協調的困難。</p>
+<p>我們<wbr>先處理<wbr>調查前<wbr>的一段：<wbr>幫市府<wbr>整理<wbr>候選理由<wbr>與待查問題。</p>
+<p class="pain-source">來自<wbr>有限<wbr>的公開<wbr>居民<wbr>聲音，<wbr>不能<wbr>代表<wbr>所有住戶。<a href="../topics/issue-6-building-resilience.html#original-pain">看原始痛點</a></p>
 </div>
+<figure>
+<img src="assets/xiyuan-road-section-1-wanhua-district-taipei.jpg" width="1600" height="1067" alt="萬華區西園路一段，路旁是招牌密集的老舊樓房" loading="lazy" decoding="async">
+<figcaption>萬華西園路<wbr>一段<wbr>（⁠2009 年）。</figcaption>
+</figure>
+</div>
+<figure class="pain-route" aria-labelledby="pain-route-cap">
+<figcaption id="pain-route-cap">從疑慮到<wbr>處理，<wbr>研究<wbr>先做哪一段？</figcaption>
+<ol>
+<li class="research-part"><strong>整理<wbr>調查理由</strong><span>本研究：<wbr>先查誰、⁠查什麼</span></li>
+<li><strong>專業調查</strong><span>核對<wbr>現況、<wbr>評估耐震</span></li>
+<li><strong>後續處理</strong><span>依結果<wbr>討論<wbr>補強或更新</span></li>
+</ol>
+<p>市府<wbr>已有<wbr>初評<wbr>與補助<wbr>程序；<wbr>取得<wbr>名單，<wbr>還沒有<wbr>解決<wbr>經費、<wbr>同意與協調。</p>
+</figure>
 <ul class="facts">
 <li data-rise><b class="num">42,⁠054 棟</b><span>納入<wbr>的歷史<wbr>棟數，<wbr>依使照記載</span></li>
 <li data-rise style="--i:1"><b class="num">38,⁠345 棟</b><span>其中<wbr> 7 層<wbr>以下，<wbr>算出<wbr>優先分數</span></li>
 <li data-rise style="--i:2"><b class="num">385 棟</b><span>第一優先：<wbr>分數<wbr>最高的 1%</span></li>
 <li data-rise style="--i:3"><b class="num">62 個里</b><span>第一優先<wbr>分布的範圍</span></li>
 </ul>
-<div class="intro-photo">
-<p class="aside note" data-rise>這是<wbr>能連結<wbr>資料<wbr>的歷史<wbr>紀錄，<wbr>不是<wbr>全市<wbr>現存<wbr>老屋<wbr>清冊。<wbr>早年<wbr>磚造<wbr>的定位率<wbr>較低，<wbr>沒有<wbr>地址<wbr>的紀錄<wbr>在士林、<wbr>北投較多；<wbr>沒出現在<wbr>名單<wbr>上的建築，<wbr>不能<wbr>因此<wbr>當成需求低。<a href="../topics/issue-6-building-resilience.html#data-assessment">納入<wbr>範圍與缺口</a>。</p>
-<figure data-rise style="--i:1">
-<img src="assets/xiyuan-road-section-1-wanhua-district-taipei.jpg" width="1600" height="1067" alt="萬華區西園路一段，路旁是招牌密集的老舊樓房" loading="lazy" decoding="async">
-<figcaption>萬華區<wbr>西園路<wbr>一段，<wbr>招牌<wbr>密集<wbr>的老舊<wbr>樓房（⁠2009 年）。</figcaption>
-</figure>
-</div>
+<p class="pain-source">範圍<wbr>是能<wbr>連結<wbr>資料<wbr>的歷史<wbr>使照，<wbr>並非<wbr>全市<wbr>現存<wbr>老屋。<wbr>早年<wbr>磚造<wbr>較難定位；⁠未<wbr>納入<wbr>不代表需求低。<a href="../topics/issue-6-building-resilience.html#data-assessment">看納入範圍</a>。</p>
+<p class="pain-source">題目來自<wbr>市政 debug松<wbr>第六題，<wbr>由沈伯洋<wbr>競選<wbr>辦公室<wbr>主辦；<wbr>研究<wbr>獨立<wbr>進行，<wbr>非市府委託。</p>
 </div>
 </section>
 
 <section class="how why-visual" id="how" aria-labelledby="how-h">
 <div class="wrap">
 <header class="why-heading">
-<h2 id="how-h">為什麼這樣排？</h2>
-<p>工程<wbr>資料<wbr>幫我們<wbr>找線索；<wbr>優先<wbr>關心誰，<wbr>則是<wbr>政策選擇。</p>
+<h2 id="how-h">先問問題，<span class="nw">再找資料</span></h2>
+<p>資料<wbr>要能回答<wbr>調查<wbr>問題，<wbr>也要<wbr>知道<wbr>它看不到什麼。</p>
 </header>
-<figure class="why-inputs" aria-labelledby="inputs-caption">
-<figcaption id="inputs-caption">四項<wbr>資料，<wbr>各有用途</figcaption>
-<div class="why-input-group">
-<h3>工程依據</h3>
-<div class="why-input-row"><strong>年代、<wbr>樓層、⁠材料</strong><span class="why-arrow" aria-hidden="true">→</span><p>估同類<wbr>房子<wbr>的受損機會<small>依國震<wbr>中心<wbr>手冊<wbr>重建；<wbr>仍要<wbr>現場<wbr>查牆柱與改建。</small></p></div>
-</div>
-<div class="why-input-group policy">
-<h3>政策選擇</h3>
-<div class="why-input-row"><strong>周邊長者比例</strong><span class="why-arrow" aria-hidden="true">→</span><p>優先<wbr>關心<wbr>高齡社區<small>區域<wbr>人口<wbr>不是<wbr>單棟住戶。</small></p></div>
-<div class="why-input-row"><strong>消防局<wbr>巷弄清冊</strong><span class="why-arrow" aria-hidden="true">→</span><p>加入<wbr>救援<wbr>查核線索<small>還要<wbr>確認<wbr>巷口<wbr>與出入口。</small></p></div>
-<div class="why-input-row"><strong>區域<wbr>液化潛勢</strong><span class="why-arrow" aria-hidden="true">→</span><p>加入<wbr>地盤查核線索<small>基地<wbr>與基礎<wbr>仍需專業判斷。</small></p></div>
-</div>
+<figure class="question-map" aria-labelledby="inputs-caption">
+<figcaption id="inputs-caption">為什麼選<wbr>這些資料？</figcaption>
+<div class="question-row"><h3>房子<wbr>有什麼弱點？</h3><span aria-hidden="true">→</span><p><strong>使照：<wbr>年代、<wbr>樓層、⁠材料</strong><small>連到<wbr>工程<wbr>類別<wbr>估值；<wbr>看不到<wbr>今天<wbr>的牆柱與改建。</small></p></div>
+<div class="question-row"><h3>誰可能<wbr>需要支持？</h3><span aria-hidden="true">→</span><p><strong>最小<wbr>統計區：<wbr>長者比例</strong><small>提供<wbr>高齡<wbr>關懷線索；<wbr>不是<wbr>這棟<wbr>住戶<wbr>的年齡<wbr>或行動能力。</small></p></div>
+<div class="question-row"><h3>救援<wbr>可能卡在哪？</h3><span aria-hidden="true">→</span><p><strong>消防局：<wbr>巷弄、<wbr>通道清冊</strong><small>找列管路段；⁠實際<wbr>入口<wbr>與通行仍要查。</small></p></div>
+<div class="question-row"><h3>地盤<wbr>有哪些線索？</h3><span aria-hidden="true">→</span><p><strong>液化圖：<wbr>區域潛勢</strong><small>提醒<wbr>查基地<wbr>與基礎；<wbr>不能<wbr>代替<wbr>現場診斷。</small></p></div>
+<p class="question-note">震動<wbr>需求<wbr>另由模型<wbr>的設計<wbr>地震<wbr>情境<wbr>提供。<wbr>資料<wbr>有依據，<wbr>不代表<wbr>加成<wbr>與相乘<wbr>方式<wbr>已獲驗證。</p>
+</figure>
+<figure class="data-routes" aria-labelledby="data-routes-cap">
+<figcaption id="data-routes-cap">找過<wbr>的資料，<wbr>不只這些</figcaption>
+<p>有的進試算，<wbr>有的另有<wbr>用途；<wbr>資料<wbr>越多，<wbr>不代表<wbr>排序越準。</p>
+<dl>
+<div><dt>進試算</dt><dd><strong>使照、<wbr>人口、<wbr>消防、⁠液化</strong><span>提供<wbr>可追溯<wbr>的候選線索。</span></dd></div>
+<div><dt>核對與後續</dt><dd><strong>建物<wbr>圖資、<wbr>管理<wbr>組織、<wbr>既有<wbr>評估紀錄</strong><span>核對<wbr>現況<wbr>與程序；<wbr>有些<wbr>仍待取得。</span></dd></div>
+<div><dt>檢驗方法</dt><dd><strong>臺灣<wbr>震災資料</strong><span>檢查<wbr>推論；⁠部分<wbr>案例<wbr>不能<wbr>代表全體。</span></dd></div>
+<div><dt>暫不算分</dt><dd><strong>照護<wbr>機構、<wbr>床位、<wbr>其他<wbr>震動圖資</strong><span>床位<wbr>不是<wbr>住民；⁠建物<wbr>對應<wbr>與震動<wbr>情境<wbr>還要核對。</span></dd></div>
+</dl>
+<p class="why-links"><a href="../topics/issue-6-building-resilience.html#source-discovery">看查過<wbr>的來源與取捨</a></p>
 </figure>
 <div class="why-comparison">
 <div class="why-chart-copy">
-<h3>相乘，<wbr>改變了先後</h3>
+<h3>怎麼<wbr>取捨，<wbr>還要檢驗</h3>
 <p>類別<wbr>受損估值<wbr> × 周邊長者<wbr>比例，<wbr>再乘<wbr>救援<wbr>與液化<wbr>加成。<wbr>較高<wbr>的長者<wbr>比例，<wbr>可能<wbr>抵銷<wbr>較低<wbr>的結構估值。</p>
 <p>加成<wbr>各試 0%、<wbr>25%、<wbr>50%，<wbr>尚未<wbr>校準。<wbr>兩項<wbr>各加 25%，<wbr>相乘會<wbr>增加<wbr> 56.⁠25%。</p>
 <p class="why-equation" aria-label="1.25 乘 1.25 等於 1.5625"><span>1.25 × 1.25</span><strong>= 1.5625</strong></p>
